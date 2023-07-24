@@ -1,0 +1,241 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using CyUSB;
+using ezAutoMom;
+using ezTools; 
+
+namespace ezAutoMom
+{
+    public class Light_RGBW : Light_Mom
+    {
+        enum eError 
+        { 
+            eLED 
+        };
+
+        const byte c_cCheckDevice = 0xff;
+
+        Auto_Mom m_auto;
+        Work_Mom m_work;
+        XGem300_Mom m_xGem;
+        USBDeviceList m_USBDevice;
+        CyUSBDevice m_device;
+
+        ezRS232[] m_rs232 = new ezRS232[2];
+        string m_cmdSend = "";
+        const int BUF_SIZE = 4096;
+        byte[] m_aBuf = new byte[BUF_SIZE];
+
+        byte[] m_bufSend = new byte[3]; 
+
+        public Light_RGBW()
+        {
+            m_bufSend[1] = 0x0d;
+            m_bufSend[2] = 0x0a;
+        }
+
+        public void Init(string id, Auto_Mom auto)
+        {
+            m_auto = auto;
+            m_rs232[0] = new ezRS232(id + "_0", m_log, true);
+            m_rs232[1] = new ezRS232(id + "_1", m_log, true);
+            base.Init(id, (object)auto);
+            m_rs232[0].m_log = m_log;
+            m_rs232[0].Connect(true);
+            m_rs232[0].CallMsgRcv += m_rs232_CallMsgRcv0; 
+            m_rs232[1].m_log = m_log;
+            m_rs232[1].Connect(true);
+            m_rs232[1].CallMsgRcv += m_rs232_CallMsgRcv1; m_work = m_auto.ClassWork();
+            m_xGem = m_auto.ClassXGem();
+            InitString(); OpenUSB();
+        }
+
+        public override void ThreadStop()
+        {
+            base.ThreadStop();
+            m_rs232[0].ThreadStop();
+            m_rs232[1].ThreadStop();
+            if (m_USBDevice != null) m_USBDevice.Dispose();
+        }
+
+        void InitString()
+        {
+            InitString(eError.eLED, "USB LED Not Found"); 
+        } 
+
+        void InitString(eError eErr, string str)
+        {
+            m_log.AddString(str);
+            if (m_xGem == null) return;
+            m_xGem.AddALID(m_id, (int)eErr, str);
+        } 
+
+        void SetAlarm(eAlarm alarm, eError eErr)
+        {
+            m_work.SetError(alarm, m_log, (int)eErr);
+            if (m_xGem == null) return;
+            m_xGem.SetAlarm(m_id, (int)eErr);
+        } 
+
+        public override void ReConnect()
+        {
+	        m_device.Reset(); 
+	        OpenUSB();
+        }
+
+        protected override void RunGridSetup(bool bChecked, eGrid eMode, ezJob job)
+        {
+            int n, nMode;
+            if ((eMode == eGrid.eJobOpen) || (eMode == eGrid.eJobSave)) return;
+            if (!bChecked && (eMode <= eGrid.eUpdate)) return;
+            m_grid.Set(ref m_nMode, "Mode", "Count", "# of Total Mode");
+            if ((eMode == eGrid.eRegRead) || (eMode == eGrid.eRegWrite)) nMode = c_nLightMode; else nMode = m_nMode;
+            for (n = 0; n < nMode; n++) m_grid.Set(ref m_strMode[n], "Mode", "Mode" + n.ToString("00"), "Mode ID");
+            m_grid.Set(ref m_nCh, "Channel", "Count", "Total Channel Count");
+            if (m_nCh > c_nLightCh) m_nCh = c_nLightCh;
+            for (n = 0; n < m_nCh; n++) m_grid.Set(ref m_aSetup[n], "Channel", n.ToString("Ch00"), "Channel Setting");
+            m_rs232[0].RunGrid(m_grid, eMode);
+            m_rs232[1].RunGrid(m_grid, eMode);
+            m_grid.Refresh();
+        }
+
+        protected override void RunGridLight(bool bChecked, eGrid eMode, ezJob job)
+        {
+            int n, m;
+            if (bChecked && (eMode <= eGrid.eUpdate)) return;
+            if ((eMode == eGrid.eRegRead) || (eMode == eGrid.eRegWrite))
+            {
+                for (n = 0; n < c_nLightMode; n++) for (m = 0; m < c_nLightCh; m++)
+                    m_grid.Set(ref m_aPower[n, m], m_strMode[n], m_aSetup[m].m_id, "LED Power 0~100%");
+            }
+            if (eMode == eGrid.eJobSave || eMode == eGrid.eJobOpen) 
+            {
+                for (n = 0; n < c_nLightMode; n++) for (m = 0; m < c_nLightCh; m++) if (m_aSetup[m].m_bUse)
+                    m_grid.Set(ref m_aPower[n, m], m_strMode[n], m_aSetup[m].m_id, "LED Power 0~100%");
+            }
+            if (comboMode.SelectedIndex >= 0)
+            {
+                n = comboMode.SelectedIndex;
+                for (m = 0; m < c_nLightCh; m++) if (m_aSetup[m].m_bUse)
+                    m_grid.Set(ref m_aPower[n, m], m_strMode[n], m_aSetup[m].m_id, "LED Power 0~100%");
+            } 
+        }
+
+        public override void LightOn(int nID, bool bLightOn)
+        {
+	        int n; 
+	        if (nID < 0) for (n = 0; n < m_nCh; n++) LightOn(n, bLightOn);
+	        base.LightOn(nID, bLightOn);
+            try
+            {
+                ChangePower(nID, nID);
+            }
+            catch
+            {
+                ChangePower(nID, 0); 
+            }
+        }
+
+        public override void ChangePower(int nID, int nMode)
+        {
+	        int nCh; 
+	        for (nCh = 0; nCh < m_nCh; nCh++) if (m_aSetup[nCh].m_bUse) 
+	        {
+	        	if (m_bLightOn) ChangeChannel(nCh, m_aPower[nMode,nCh]);
+		        else ChangeChannel(nCh, 0); 
+	        } 
+        }       
+        
+        void OpenUSB() 
+        {
+            try { m_USBDevice = new USBDeviceList(CyConst.DEVICES_CYUSB); }
+            catch (Exception e) { m_log.Popup("Usb Illi Device Not Found : " + e.ToString()); return; }
+            if (m_USBDevice == null) { m_log.Popup("OpenLight - Device Not Found"); return; }
+            m_device = m_USBDevice[0x0547, 0x1003] as CyUSBDevice;
+            if (m_device == null) { m_log.Popup("OpenLight - Light Board Found"); return; }
+            m_log.Add("OpenLight - OK");
+        }
+        
+        byte ReadPort(ushort wIndex)  
+        {
+            CyControlEndPoint pEP; int nLength = 4;
+            byte[] buf = new byte[4] { 0, 0, 0, 0 }; 
+	        if (m_device == null) return 0; 
+            pEP = m_device.ControlEndPt;
+            pEP.Target = CyConst.TGT_DEVICE; 
+            pEP.ReqType = CyConst.REQ_VENDOR; 
+            pEP.Direction = CyConst.DIR_FROM_DEVICE;
+	        pEP.ReqCode = 0x81; 
+	        pEP.Value = 0; 
+            pEP.Index = wIndex; 
+            Thread.Sleep(1);       
+	        if (pEP.XferData(ref buf, ref nLength)) return buf[0]; else return 0;
+        }
+
+        bool WritePort(ushort wIndex, ushort wValue)
+        {
+            CyControlEndPoint pEP; int nLength = 0;
+            byte[] buf = new byte[4] { 0, 0, 0, 0 }; 
+	        if (m_device == null) return false; 
+            pEP = m_device.ControlEndPt;
+            pEP.Target = CyConst.TGT_DEVICE; 
+            pEP.ReqType = CyConst.REQ_VENDOR; 
+            pEP.Direction = CyConst.DIR_TO_DEVICE;
+	        pEP.ReqCode = 0x80; 
+	        pEP.Value = wValue; 
+            pEP.Index = wIndex;
+            Thread.Sleep(1);
+            try
+            {
+                return pEP.XferData(ref buf, ref nLength);
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        bool ChangeChannel(int nCh, int nVal)
+        {
+            if (m_device == null) return false;
+            if (WritePort((ushort)nCh, (ushort)nVal))
+            {
+                //nRet = ReadPort((ushort)nCh); 
+                //if (nRet != (byte)nVal) { str = "USB LED Run Fail :" + nRet.ToString(); m_log.Popup(str); return false; } 
+            }
+            return true;
+        }
+
+        public void WriteRGB(char ch)
+        {
+            if (m_cmdSend != "")
+            {
+                m_log.Popup(m_id + " Write Cmd not Respond : " + m_cmdSend); 
+            }
+            m_bufSend[0] = (byte)ch; 
+            m_rs232[0].Write(m_bufSend, 3, true);
+            m_rs232[1].Write(m_bufSend, 3, true);
+//            m_cmdSend = str; 
+        }
+
+        void m_rs232_CallMsgRcv0()
+        {
+            int nRead = m_rs232[0].Read(m_aBuf, BUF_SIZE, 0, false);
+            string sMsg = Encoding.Default.GetString(m_aBuf, 0, nRead);
+            m_log.Add("<< RS232 << " + sMsg);
+            m_cmdSend = ""; 
+        }
+
+        void m_rs232_CallMsgRcv1()
+        {
+            int nRead = m_rs232[1].Read(m_aBuf, BUF_SIZE, 0, false);
+            string sMsg = Encoding.Default.GetString(m_aBuf, 0, nRead);
+            m_log.Add("<< RS232 << " + sMsg);
+            m_cmdSend = "";
+        }
+    }
+}

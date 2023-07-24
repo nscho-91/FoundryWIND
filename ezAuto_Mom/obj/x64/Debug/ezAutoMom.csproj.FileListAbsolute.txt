@@ -1,0 +1,744 @@
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csprojResolveAssemblyReference.cache
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csproj.ResolveComReference.cache
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Alarm_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Control_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Count_Tray.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Display_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Aligner_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_BackSide_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_ExcuteForm.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_FFU_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_PowerMeter.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_FDC_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_ImageVS_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_LoadPort_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Rail_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_RFID_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Thick1.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_UnloadEV.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_VisionWorks_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_WTR_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.ImageEdit.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.LampSet_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Model.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Handler_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_LoadEV.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Picker_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Thick6.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Turnover_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Light_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.OCRTool.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.PowerMeter_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Properties.Resources.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.TrayMonitor.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Recipe_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.ezView.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Work_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.WTR_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.WTR_Mom_Wafers.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.XGem300_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.XGem300Pro_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csproj.GenerateResource.Cache
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\bin\x64\Debug\ezAutoMom.dll.config
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\bin\x64\Debug\ezAutoMom.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\bin\x64\Debug\ezAutoMom.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\bin\x64\Debug\CyUSB.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\bin\x64\Debug\ezAxis.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\bin\x64\Debug\ezCam.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\bin\x64\Debug\ezTools.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\bin\x64\Debug\XGem300Pro_Net40_01_64.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\bin\x64\Debug\XSecsMsg_C40_01_64.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\bin\x64\Debug\XSmNet_C40_01_64.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\bin\x64\Debug\ezAxis.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\bin\x64\Debug\ezCam.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\bin\x64\Debug\ezTools.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_Mom\obj\x64\Debug\ezAutoMom.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\ezAutoMom.dll.config
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\ezAutoMom.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\ezAutoMom.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\CyUSB.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\ezAxis.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\ezCam.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\ezTools.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\XGem300Pro_Net40_01_64.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\XSecsMsg_C40_01_64.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\XSmNet_C40_01_64.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\ezAxis.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\ezCam.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\ezTools.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csprojResolveAssemblyReference.cache
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csproj.ResolveComReference.cache
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Alarm_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Control_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Count_Tray.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Display_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Aligner_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_BackSide_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_ExcuteForm.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_FFU_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_PowerMeter.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_FDC_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_ImageVS_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_LoadPort_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Rail_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_RFID_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Thick1.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_UnloadEV.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_VisionWorks_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_WTR_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.ImageEdit.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.LampSet_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Model.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Handler_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_LoadEV.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Picker_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Thick6.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Turnover_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Light_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.OCRTool.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.PowerMeter_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Properties.Resources.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.TrayMonitor.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Recipe_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.ezView.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Work_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.WTR_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.WTR_Mom_Wafers.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.XGem300_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.XGem300Pro_Mom.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csproj.GenerateResource.Cache
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\ezAutoMom.dll.config
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\ezAutoMom.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\ezAutoMom.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\CyUSB.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\ezAxis.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\ezCam.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\ezTools.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\PropertyGridEx.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\XGem300Pro_Net40_01_64.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\XSecsMsg_C40_01_64.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\XSmNet_C40_01_64.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\ezAxis.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\ezCam.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\bin\x64\Debug\ezTools.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csprojResolveAssemblyReference.cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csproj.ResolveComReference.cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Alarm_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Control_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Count_Tray.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Display_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Aligner_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_BackSide_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_ExcuteForm.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_FFU_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_PowerMeter.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_FDC_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_ImageVS_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_LoadPort_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Rail_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_RFID_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Thick1.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_UnloadEV.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_VisionWorks_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_WTR_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.ImageEdit.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.LampSet_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Model.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Handler_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_LoadEV.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Picker_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Thick6.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Turnover_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Light_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.OCRTool.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.PowerMeter_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Properties.Resources.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.TrayMonitor.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Recipe_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.ezView.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Work_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.WTR_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.WTR_Mom_Wafers.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.XGem300_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.XGem300Pro_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csproj.GenerateResource.Cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_Mom\obj\x64\Debug\ezAutoMom.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csprojResolveAssemblyReference.cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csproj.ResolveComReference.cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Alarm_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Control_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Count_Tray.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Display_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Aligner_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_BackSide_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_ExcuteForm.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_FFU_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_PowerMeter.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_FDC_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_ImageVS_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_LoadPort_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Rail_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_RFID_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Thick1.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_UnloadEV.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_VisionWorks_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_WTR_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.ImageEdit.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.LampSet_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Model.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Handler_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_LoadEV.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Picker_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Thick6.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Turnover_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Light_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.OCRTool.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.PowerMeter_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Properties.Resources.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.TrayMonitor.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Recipe_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.ezView.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Work_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.WTR_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.WTR_Mom_Wafers.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.XGem300_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.XGem300Pro_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csproj.GenerateResource.Cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\ezAutoMom.dll.config
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\ezAutoMom.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\ezAutoMom.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\CyUSB.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\ezAxis.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\ezCam.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\ezTools.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\PropertyGridEx.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\XGem300Pro_Net40_01_64.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\XSecsMsg_C40_01_64.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\XSmNet_C40_01_64.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\ezAxis.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\ezCam.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\ezTools.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\ezAutoMom.dll.config
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\ezAutoMom.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\ezAutoMom.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\CyUSB.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\ezAxis.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\ezCam.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\ezTools.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\XGem300Pro_Net40_01_64.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\XSecsMsg_C40_01_64.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\XSmNet_C40_01_64.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\ezAxis.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\ezCam.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\bin\x64\Debug\ezTools.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csprojResolveAssemblyReference.cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csproj.ResolveComReference.cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Alarm_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Control_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Count_Tray.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Display_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Aligner_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_BackSide_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_ExcuteForm.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_FFU_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_PowerMeter.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_FDC_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_ImageVS_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_LoadPort_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Rail_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_RFID_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Thick1.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_UnloadEV.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_VisionWorks_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_WTR_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.ImageEdit.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.LampSet_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Model.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Handler_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_LoadEV.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Picker_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Thick6.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Turnover_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Light_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.OCRTool.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.PowerMeter_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Properties.Resources.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.TrayMonitor.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Recipe_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.ezView.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Work_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.WTR_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.WTR_Mom_Wafers.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.XGem300_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.XGem300Pro_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csproj.GenerateResource.Cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_Mom\obj\x64\Debug\ezAutoMom.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\ezAutoMom.dll.config
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\ezAutoMom.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\ezAutoMom.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\CyUSB.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\ezAxis.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\ezCam.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\ezTools.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\XGem300Pro_Net40_01_64.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\XSecsMsg_C40_01_64.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\XSmNet_C40_01_64.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\ezAxis.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\ezCam.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\ezTools.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csprojResolveAssemblyReference.cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csproj.ResolveComReference.cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Alarm_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Control_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Count_Tray.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Display_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Aligner_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_BackSide_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_ExcuteForm.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_FFU_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_PowerMeter.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_FDC_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_ImageVS_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_LoadPort_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Rail_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_RFID_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Thick1.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_UnloadEV.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_VisionWorks_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_WTR_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.ImageEdit.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.LampSet_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Model.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Handler_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_LoadEV.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Picker_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Thick6.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Turnover_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Light_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.OCRTool.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.PowerMeter_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Properties.Resources.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.TrayMonitor.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Recipe_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.ezView.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Work_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.WTR_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.WTR_Mom_Wafers.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.XGem300_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.XGem300Pro_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csproj.GenerateResource.Cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\ezAutoMom.dll.config
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\ezAutoMom.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\ezAutoMom.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\CyUSB.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\ezAxis.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\ezCam.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\ezTools.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\PropertyGridEx.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\XGem300Pro_Net40_01_64.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\XSecsMsg_C40_01_64.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\XSmNet_C40_01_64.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\ezAxis.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\ezCam.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\bin\x64\Debug\ezTools.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csprojResolveAssemblyReference.cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csproj.ResolveComReference.cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Alarm_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Control_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Count_Tray.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Display_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Aligner_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_BackSide_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_ExcuteForm.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_FFU_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_PowerMeter.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_FDC_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_ImageVS_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_LoadPort_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Rail_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_RFID_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Thick1.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_UnloadEV.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_VisionWorks_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_WTR_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.ImageEdit.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.LampSet_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Model.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Handler_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_LoadEV.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Picker_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Thick6.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Turnover_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Light_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.OCRTool.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.PowerMeter_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Properties.Resources.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.TrayMonitor.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Recipe_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.ezView.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Work_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.WTR_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.WTR_Mom_Wafers.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.XGem300_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.XGem300Pro_Mom.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csproj.GenerateResource.Cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_Mom\obj\x64\Debug\ezAutoMom.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\ezAutoMom.dll.config
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\ezAutoMom.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\ezAutoMom.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\CyUSB.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\ezAxis.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\ezCam.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\ezTools.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\XGem300Pro_Net40_01_64.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\XSecsMsg_C40_01_64.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\XSmNet_C40_01_64.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\ezAxis.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\ezCam.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\ezTools.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csprojResolveAssemblyReference.cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csproj.ResolveComReference.cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Alarm_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Control_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Count_Tray.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Display_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Aligner_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_BackSide_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_ExcuteForm.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_FFU_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_PowerMeter.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_FDC_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_ImageVS_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_LoadPort_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Rail_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_RFID_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Thick1.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_UnloadEV.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_VisionWorks_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_WTR_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.ImageEdit.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.LampSet_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Model.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Handler_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_LoadEV.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Picker_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Thick6.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Turnover_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Light_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.OCRTool.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.PowerMeter_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Properties.Resources.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.TrayMonitor.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Recipe_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.ezView.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Work_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.WTR_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.WTR_Mom_Wafers.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.XGem300_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.XGem300Pro_Mom.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csproj.GenerateResource.Cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\ezAutoMom.dll.config
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\ezAutoMom.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\ezAutoMom.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\CyUSB.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\ezAxis.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\ezCam.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\ezTools.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\PropertyGridEx.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\XGem300Pro_Net40_01_64.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\XSecsMsg_C40_01_64.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\XSmNet_C40_01_64.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\ezAxis.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\ezCam.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\bin\x64\Debug\ezTools.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csprojResolveAssemblyReference.cache
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csproj.ResolveComReference.cache
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Alarm_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Control_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Count_Tray.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Display_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Aligner_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_BackSide_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_ExcuteForm.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_FFU_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_PowerMeter.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_FDC_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_ImageVS_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_LoadPort_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Rail_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_RFID_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Thick1.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_UnloadEV.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_VisionWorks_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_WTR_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.ImageEdit.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.LampSet_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Model.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Handler_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_LoadEV.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Picker_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Thick6.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Turnover_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Light_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.OCRTool.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.PowerMeter_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Properties.Resources.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.TrayMonitor.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Recipe_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.ezView.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Work_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.WTR_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.WTR_Mom_Wafers.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.XGem300_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.XGem300Pro_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csproj.GenerateResource.Cache
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_Mom\obj\x64\Debug\ezAutoMom.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\ezAutoMom.dll.config
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\ezAutoMom.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\ezAutoMom.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\CyUSB.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\ezAxis.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\ezCam.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\ezTools.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\XGem300Pro_Net40_01_64.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\XSecsMsg_C40_01_64.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\XSmNet_C40_01_64.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\ezAxis.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\ezCam.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\ezTools.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csprojResolveAssemblyReference.cache
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csproj.ResolveComReference.cache
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Alarm_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Control_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Count_Tray.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Display_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Aligner_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_BackSide_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_ExcuteForm.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_FFU_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_PowerMeter.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_FDC_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_ImageVS_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_LoadPort_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Rail_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_RFID_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Thick1.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_UnloadEV.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_VisionWorks_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_WTR_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.ImageEdit.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.LampSet_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Model.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Handler_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_LoadEV.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Picker_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Thick6.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Turnover_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Light_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.OCRTool.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.PowerMeter_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Properties.Resources.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.TrayMonitor.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Recipe_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.ezView.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Work_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.WTR_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.WTR_Mom_Wafers.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.XGem300_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.XGem300Pro_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csproj.GenerateResource.Cache
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\ezAutoMom.dll.config
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\ezAutoMom.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\ezAutoMom.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\CyUSB.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\ezAxis.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\ezCam.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\ezTools.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\PropertyGridEx.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\XGem300Pro_Net40_01_64.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\XSecsMsg_C40_01_64.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\XSmNet_C40_01_64.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\ezAxis.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\ezCam.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\bin\x64\Debug\ezTools.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csprojResolveAssemblyReference.cache
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csproj.ResolveComReference.cache
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Alarm_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Control_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Count_Tray.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Display_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Aligner_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_BackSide_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_ExcuteForm.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_FFU_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_PowerMeter.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_FDC_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_ImageVS_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_LoadPort_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Rail_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_RFID_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Thick1.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_UnloadEV.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_VisionWorks_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_WTR_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.ImageEdit.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.LampSet_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Model.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Handler_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_LoadEV.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Picker_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Thick6.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Turnover_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Light_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.OCRTool.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.PowerMeter_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Properties.Resources.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.TrayMonitor.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Recipe_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.ezView.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Work_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.WTR_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.WTR_Mom_Wafers.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.XGem300_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.XGem300Pro_Mom.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csproj.GenerateResource.Cache
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_Mom\obj\x64\Debug\ezAutoMom.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\bin\x64\Debug\ezAutoMom.dll.config
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\bin\x64\Debug\ezAutoMom.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\bin\x64\Debug\ezAutoMom.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\bin\x64\Debug\CyUSB.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\bin\x64\Debug\ezAxis.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\bin\x64\Debug\ezCam.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\bin\x64\Debug\ezTools.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\bin\x64\Debug\XGem300Pro_Net40_01_64.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\bin\x64\Debug\XSecsMsg_C40_01_64.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\bin\x64\Debug\XSmNet_C40_01_64.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\bin\x64\Debug\ezAxis.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\bin\x64\Debug\ezCam.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\bin\x64\Debug\ezTools.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csprojResolveAssemblyReference.cache
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csproj.ResolveComReference.cache
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Alarm_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Control_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Count_Tray.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Display_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Aligner_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_BackSide_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_ExcuteForm.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_FFU_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_PowerMeter.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_FDC_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_ImageVS_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_LoadPort_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Rail_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_RFID_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Thick1.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_UnloadEV.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_VisionWorks_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_WTR_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.ImageEdit.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.LampSet_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Model.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Handler_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_LoadEV.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Picker_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Thick6.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.HW_Turnover_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Light_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.OCRTool.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.PowerMeter_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Properties.Resources.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.TrayMonitor.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Recipe_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.ezView.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.Work_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.WTR_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.WTR_Mom_Wafers.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.XGem300_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.XGem300Pro_Mom.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.csproj.GenerateResource.Cache
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_Mom\obj\x64\Debug\ezAutoMom.pdb

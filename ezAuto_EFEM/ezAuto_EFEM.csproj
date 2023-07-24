@@ -1,0 +1,699 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F85AC0E7-8663-4DB8-9EDA-E0D4C54EC042}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ezAuto_EFEM</RootNamespace>
+    <AssemblyName>ezAuto_EFEM</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\x64\Debug\ezAuto_EFEM.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cognex.VisionPro, Version=47.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64" />
+    <Reference Include="Cognex.VisionPro.CalibFix, Version=47.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505" />
+    <Reference Include="Cognex.VisionPro.CalibFix.Controls, Version=47.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64" />
+    <Reference Include="Cognex.VisionPro.Controls, Version=47.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64" />
+    <Reference Include="Cognex.VisionPro.Core, Version=47.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="PropertyGridEx">
+      <HintPath>..\packages\PropertyGridEx.1.0.0\lib\net20\PropertyGridEx.dll</HintPath>
+    </Reference>
+    <Reference Include="SevenZipSharp">
+      <HintPath>..\packages\SevenZipSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>..\packages\DockPanelSuite.2.9.0.0\lib\net40\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="XGem300Pro_Net40_01_64">
+      <HintPath>C:\Program Files\Linkgenesis\XGem300Pro v3.x\SE\Bin\XGem300Pro_Net40_01_64.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADC.cs" />
+    <Compile Include="EFEM_HomeProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EFEM_HomeProgressBar.Designer.cs">
+      <DependentUpon>EFEM_HomeProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EFEM_RnR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EFEM_RnR.Designer.cs">
+      <DependentUpon>EFEM_RnR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EFEM_Work_Hynix_RGBY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_Aligner_ATI_AOI_Data.cs" />
+    <Compile Include="HW_Aligner_EBR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_Aligner_EBRFix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_Aligner_EBR_3D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_Aligner_EBR_3D.Designer.cs">
+      <DependentUpon>HW_Aligner_EBR_3D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW_Aligner_EBR_3D_Graph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_Aligner_EBR_3D_Graph.Designer.cs">
+      <DependentUpon>HW_Aligner_EBR_3D_Graph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW_Aligner_EBR_AOI.cs" />
+    <Compile Include="HW_Aligner_EBR_EBR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_Aligner_EBR_EBR.Designer.cs">
+      <DependentUpon>HW_Aligner_EBR_EBR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW_Aligner_EBR_EBR_Concentric.cs" />
+    <Compile Include="HW_Aligner_EBR_EBR_Graph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_Aligner_EBR_EBR_Graph.Designer.cs">
+      <DependentUpon>HW_Aligner_EBR_EBR_Graph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW_Aligner_EBR_Edge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_Aligner_EBR_Edge.Designer.cs">
+      <DependentUpon>HW_Aligner_EBR_Edge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW_Aligner_LineScan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_BackSide_ATI_ADC.cs" />
+    <Compile Include="HW_BackSide_ATI_AOI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_BackSide_ATI_AOI.Designer.cs">
+      <DependentUpon>HW_BackSide_ATI_AOI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EFEM.cs" />
+    <Compile Include="EFEM_Control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EFEM_Handler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EFEM_Recipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EFEM_Recovery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EFEM_Recovery.Designer.cs">
+      <DependentUpon>EFEM_Recovery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EFEM_RecoveryModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EFEM_RecoveryModule.Designer.cs">
+      <DependentUpon>EFEM_RecoveryModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EFEM_Work_Hynix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EFEM_Work_MSB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EFEM_Work_MSB.Designer.cs">
+      <DependentUpon>EFEM_Work_MSB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EFEM_Work_Sanken.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EFEM_Work_SEC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EFEM_Work_SSEM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_Aligner_ATI_Edge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_Aligner_ATI_Edge.Designer.cs">
+      <DependentUpon>HW_Aligner_ATI_Edge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW_Aligner_ATI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_Aligner_ATI_AOI.cs" />
+    <Compile Include="HW_Aligner_ATI_Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_Aligner_ATI_Code.Designer.cs">
+      <DependentUpon>HW_Aligner_ATI_Code.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW_Aligner_ATI_Manual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_Aligner_ATI_Manual.Designer.cs">
+      <DependentUpon>HW_Aligner_ATI_Manual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW_Aligner_Tazmo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_BackSide_ATI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_BackSide_ATI_AOI_Chipping.cs" />
+    <Compile Include="HW_BackSide_ATI_AOI_FFT.cs" />
+    <Compile Include="HW_BackSide_ATI_AOI_Ring.cs" />
+    <Compile Include="HW_BackSide_ATI_AOI_Sobel.cs" />
+    <Compile Include="HW_BackSide_ATI_AOI_StainMark.cs" />
+    <Compile Include="HW_BackSide_ATI_AOI_Surface.cs" />
+    <Compile Include="HW_BackSide_ATI_AOI_Edge.cs" />
+    <Compile Include="HW_BackSide_ATI_AOI_Surface_Blob.cs" />
+    <Compile Include="HW_BackSide_ATI_AOI_WhiteBalance.cs" />
+    <Compile Include="HW_BackSide_ATI_AOIData.cs" />
+    <Compile Include="HW_Backside_InfoWafer.cs" />
+    <Compile Include="HW_BackSide_Nothing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_DieMap.cs" />
+    <Compile Include="HW_ImageVS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_ImageVS.Designer.cs">
+      <DependentUpon>HW_ImageVS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW_Klarf.cs" />
+    <Compile Include="HW_LoadPort_ATI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_LoadPortAlign.cs" />
+    <Compile Include="HW_LoadPortCarrier.cs" />
+    <Compile Include="HW_LoadPortCover.cs" />
+    <Compile Include="HW_LoadPortLoader.cs" />
+    <Compile Include="HW_LoadPortMap.cs" />
+    <Compile Include="HW_LoadPort_RND_4568.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_RemoteUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_RemoteUI.Designer.cs">
+      <DependentUpon>HW_RemoteUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MSB_JobCompleteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MSB_JobCompleteForm.Designer.cs">
+      <DependentUpon>MSB_JobCompleteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OHT_EFEM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OHT_EFEM.Designer.cs">
+      <DependentUpon>OHT_EFEM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Dock\UI_Button.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Dock\UI_Button.Designer.cs">
+      <DependentUpon>UI_Button.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Dock\Ui_FDC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Dock\Ui_FDC.Designer.cs">
+      <DependentUpon>Ui_FDC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Dock\UI_Loadport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Dock\UI_Loadport.Designer.cs">
+      <DependentUpon>UI_Loadport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Dock\UI_RunData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Dock\UI_RunData.designer.cs">
+      <DependentUpon>UI_RunData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Dock\UI_Simulation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Dock\UI_Simulation.Designer.cs">
+      <DependentUpon>UI_Simulation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Dock\UI_STATE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Dock\UI_STATE.Designer.cs">
+      <DependentUpon>UI_STATE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Dock\UI_SystemTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Dock\UI_SystemTime.Designer.cs">
+      <DependentUpon>UI_SystemTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Dock\UI_Time.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Dock\UI_Time.Designer.cs">
+      <DependentUpon>UI_Time.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_EFEM_New.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_EFEM_New.Designer.cs">
+      <DependentUpon>UI_EFEM_New.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Dock\UI_JobLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Dock\UI_JobLog.Designer.cs">
+      <DependentUpon>UI_JobLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_ManualJob_MSB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_ManualJob_MSB.Designer.cs">
+      <DependentUpon>UI_ManualJob_MSB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Manual_BCR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Manual_BCR.Designer.cs">
+      <DependentUpon>UI_Manual_BCR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XGem300_25D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XGem300_None.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XGem300_SEC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XGem300_MICRON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_LoadPort_RND.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_LoadPort_TDK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_RFID_Ceyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_RFID_Brooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_VisionWorks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_WTR_RND.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_WTR_Tazmo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RFIDReadFail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RFIDReadFail.Designer.cs">
+      <DependentUpon>RFIDReadFail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_EFEM_old.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_EFEM_old.Designer.cs">
+      <DependentUpon>UI_EFEM_old.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_ManualJob_Hynix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_ManualJob_Hynix.Designer.cs">
+      <DependentUpon>UI_ManualJob_Hynix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_ManualJob_Sanken.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_ManualJob_Sanken.Designer.cs">
+      <DependentUpon>UI_ManualJob_Sanken.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlFDCModule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlFDCModule.Designer.cs">
+      <DependentUpon>UserControlFDCModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlIOIndicator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlIOIndicator.Designer.cs">
+      <DependentUpon>UserControlIOIndicator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlLoadPort.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlLoadPort.Designer.cs">
+      <DependentUpon>UserControlLoadPort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlOverViewLP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlOverViewLP.Designer.cs">
+      <DependentUpon>UserControlOverViewLP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlWaferInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlWaferInfo.Designer.cs">
+      <DependentUpon>UserControlWaferInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XGEM_SSEM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XGEM_SSEM.Designer.cs">
+      <DependentUpon>XGEM_SSEM.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="license.txt" />
+    <None Include="app.config" />
+    <None Include="Resources\wtr3.bmp" />
+    <None Include="Resources\wtr2.bmp" />
+    <None Include="Resources\wtr1.bmp" />
+    <None Include="Resources\wtrUpper1.bmp" />
+    <None Include="Resources\wtrLower1.bmp" />
+    <None Include="Resources\ScanY1.bmp" />
+    <None Include="Resources\wafer.bmp" />
+    <None Include="Resources\ScanY.bmp" />
+    <None Include="Resources\Boat.bmp" />
+    <Content Include="Resources\Cassette.PNG" />
+    <None Include="Resources\EQP2.PNG" />
+    <None Include="Resources\FOUP.PNG" />
+    <None Include="Resources\CST.png" />
+    <None Include="Resources\MainEQ1.bmp" />
+    <None Include="Resources\LightCurtain.PNG" />
+    <None Include="Resources\Loadport.PNG" />
+    <None Include="Resources\UnloadRun.PNG" />
+    <None Include="Resources\Unload.PNG" />
+    <None Include="Resources\LoadRun.PNG" />
+    <None Include="Resources\Load.PNG" />
+    <None Include="Resources\Button_PUsh.PNG" />
+    <None Include="Resources\Button.PNG" />
+    <None Include="Resources\page_white_delete.png" />
+    <None Include="Resources\page_delete.png" />
+    <None Include="Resources\cross.png" />
+    <None Include="Resources\view_refresh.png" />
+    <None Include="Resources\1460123046_circle_red.png" />
+    <None Include="Resources\1460123042_circle_green.png" />
+    <None Include="Resources\1460027369_tick_16.png" />
+    <None Include="Resources\1460027279_letter_16.png" />
+    <None Include="Resources\1460027277_heart_16.png" />
+    <None Include="Resources\1460027276_stop_16.png" />
+    <None Include="Resources\1460027275_bookmark_16.png" />
+    <None Include="Resources\1460027273_flag_16.png" />
+    <None Include="Resources\1460027272_wallet_16.png" />
+    <None Include="Resources\1460027271_briefcase_16.png" />
+    <None Include="Resources\1460027268_shield_16.png" />
+    <None Include="Resources\1460027267_monitor_16.png" />
+    <None Include="Resources\1460027267_bubble_16.png" />
+    <None Include="Resources\1460027266_address_16.png" />
+    <None Include="Resources\1460027264_label_16.png" />
+    <None Include="Resources\1460027264_clipboard_16.png" />
+    <None Include="Resources\1460027263_calendar_16.png" />
+    <None Include="Resources\1460027261_clock_16.png" />
+    <None Include="Resources\1460027260_help_16.png" />
+    <None Include="Resources\1460027258_diagram_16.png" />
+    <None Include="Resources\1460027257_buy_16.png" />
+    <None Include="Resources\1460027256_globe_16.png" />
+    <None Include="Resources\1460027255_present_16.png" />
+    <None Include="Resources\1460027254_down_16.png" />
+    <None Include="Resources\1460027251_home_16.png" />
+    <None Include="Resources\1460027250_up_16.png" />
+    <None Include="Resources\1460027246_right_16.png" />
+    <None Include="Resources\1460027244_left_16.png" />
+    <None Include="Resources\1460027242_key_16.png" />
+    <None Include="Resources\1460027240_block_16.png" />
+    <None Include="Resources\1460027237_info_16.png" />
+    <None Include="Resources\1460027235_warning_16.png" />
+    <None Include="Resources\1460027232_statistics_16.png" />
+    <None Include="Resources\1460027229_folder_16.png" />
+    <None Include="Resources\1460027089_gear_16.png" />
+    <None Include="Resources\1460027087_document_16.png" />
+    <None Include="Resources\1460027084_user_16.png" />
+    <None Include="Resources\1460027082_trash_16.png" />
+    <None Include="Resources\1460027079_save_16.png" />
+    <None Include="Resources\1460027076_pencil_16.png" />
+    <None Include="Resources\1460027072_print_16.png" />
+    <None Include="Resources\1460027070_search_16.png" />
+    <None Include="Resources\1460027068_delete_16.png" />
+    <None Include="Resources\1460027066_plus_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ezATI3D_CLR\ezATI3D_CLR.vcxproj">
+      <Project>{3bdc7af7-675c-4212-9eca-7915e53343e7}</Project>
+      <Name>ezATI3D_CLR</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ezAuto_Mom\ezAutoMom.csproj">
+      <Project>{c5aab995-1c9e-4781-b02e-3d8d86d277d6}</Project>
+      <Name>ezAutoMom</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ezAxis\ezAxis.csproj">
+      <Project>{5fe38647-bdba-4722-ac72-878eb0a38f1f}</Project>
+      <Name>ezAxis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ezCam\ezCam.csproj">
+      <Project>{50829b09-147b-4a52-a7bc-084a4078e53e}</Project>
+      <Name>ezCam</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ezTools\ezTools.csproj">
+      <Project>{1f27233b-dd04-4c96-b046-1425096226fe}</Project>
+      <Name>ezTools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="EFEM_HomeProgressBar.resx">
+      <DependentUpon>EFEM_HomeProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EFEM_RnR.resx">
+      <DependentUpon>EFEM_RnR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW_Aligner_EBR_3D.resx">
+      <DependentUpon>HW_Aligner_EBR_3D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW_Aligner_EBR_3D_Graph.resx">
+      <DependentUpon>HW_Aligner_EBR_3D_Graph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW_Aligner_EBR_EBR.resx">
+      <DependentUpon>HW_Aligner_EBR_EBR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW_Aligner_EBR_EBR_Graph.resx">
+      <DependentUpon>HW_Aligner_EBR_EBR_Graph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW_Aligner_EBR_Edge.resx">
+      <DependentUpon>HW_Aligner_EBR_Edge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW_BackSide_ATI_AOI.resx">
+      <DependentUpon>HW_BackSide_ATI_AOI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EFEM_Recovery.resx">
+      <DependentUpon>EFEM_Recovery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EFEM_RecoveryModule.resx">
+      <DependentUpon>EFEM_RecoveryModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW_Aligner_ATI_Edge.resx">
+      <DependentUpon>HW_Aligner_ATI_Edge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW_Aligner_ATI_Code.resx">
+      <DependentUpon>HW_Aligner_ATI_Code.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW_Aligner_ATI_Manual.resx">
+      <DependentUpon>HW_Aligner_ATI_Manual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW_RemoteUI.resx">
+      <DependentUpon>HW_RemoteUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MSB_JobCompleteForm.resx">
+      <DependentUpon>MSB_JobCompleteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OHT_EFEM.resx">
+      <DependentUpon>OHT_EFEM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RFIDReadFail.resx">
+      <DependentUpon>RFIDReadFail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Dock\UI_Button.resx">
+      <DependentUpon>UI_Button.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Dock\Ui_FDC.resx">
+      <DependentUpon>Ui_FDC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Dock\UI_JobLog.resx">
+      <DependentUpon>UI_JobLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Dock\UI_Loadport.resx">
+      <DependentUpon>UI_Loadport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Dock\UI_RunData.resx">
+      <DependentUpon>UI_RunData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Dock\UI_Simulation.resx">
+      <DependentUpon>UI_Simulation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Dock\UI_STATE.resx">
+      <DependentUpon>UI_STATE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Dock\UI_SystemTime.resx">
+      <DependentUpon>UI_SystemTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Dock\UI_Time.resx">
+      <DependentUpon>UI_Time.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_EFEM_New.resx">
+      <DependentUpon>UI_EFEM_New.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_EFEM_old.resx">
+      <DependentUpon>UI_EFEM_old.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_ManualJob_MSB.resx">
+      <DependentUpon>UI_ManualJob_MSB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_ManualJob_Hynix.resx">
+      <DependentUpon>UI_ManualJob_Hynix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_ManualJob_Sanken.resx">
+      <DependentUpon>UI_ManualJob_Sanken.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Manual_BCR.resx">
+      <DependentUpon>UI_Manual_BCR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFDCModule.resx">
+      <DependentUpon>UserControlFDCModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlIOIndicator.resx">
+      <DependentUpon>UserControlIOIndicator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlLoadPort.resx">
+      <DependentUpon>UserControlLoadPort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlOverViewLP.resx">
+      <DependentUpon>UserControlOverViewLP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlWaferInfo.resx">
+      <DependentUpon>UserControlWaferInfo.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

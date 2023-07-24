@@ -1,0 +1,192 @@
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezCam\obj\x64\Debug\ezCam.csprojResolveAssemblyReference.cache
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezCam\obj\x64\Debug\ezCam.ezCam_Dalsa.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezCam\obj\x64\Debug\ezCam.csproj.GenerateResource.Cache
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezCam\bin\x64\Debug\ezCam.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezCam\bin\x64\Debug\ezCam.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.Utils.PC.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezCam\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezCam\bin\x64\Debug\ezTools.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezCam\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezCam\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezCam\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezCam\bin\x64\Debug\ezTools.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezCam\obj\x64\Debug\ezCam.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezCam\obj\x64\Debug\ezCam.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\bin\x64\Debug\ezCam.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\bin\x64\Debug\ezCam.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.Utils.PC.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\bin\x64\Debug\ezTools.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\bin\x64\Debug\ezTools.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\obj\x64\Debug\ezCam.csprojResolveAssemblyReference.cache
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\obj\x64\Debug\ezCam.ezCam_Dalsa.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\obj\x64\Debug\ezCam.csproj.GenerateResource.Cache
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\obj\x64\Debug\ezCam.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\obj\x64\Debug\ezCam.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\bin\x64\Debug\ezCam.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\bin\x64\Debug\ezCam.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.Utils.PC.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\bin\x64\Debug\ezTools.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\bin\x64\Debug\PropertyGridEx.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\bin\x64\Debug\ezTools.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\obj\x64\Debug\ezCam.csprojResolveAssemblyReference.cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\obj\x64\Debug\ezCam.ezCam_Dalsa.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\obj\x64\Debug\ezCam.csproj.GenerateResource.Cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\obj\x64\Debug\ezCam.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezCam\obj\x64\Debug\ezCam.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\obj\x64\Debug\ezCam.ezCam_Dalsa.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\obj\x64\Debug\ezCam.csproj.GenerateResource.Cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\bin\x64\Debug\ezCam.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\bin\x64\Debug\ezCam.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.Utils.PC.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\bin\x64\Debug\ezTools.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\bin\x64\Debug\PropertyGridEx.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\bin\x64\Debug\ezTools.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\obj\x64\Debug\ezCam.csprojResolveAssemblyReference.cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\obj\x64\Debug\ezCam.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\obj\x64\Debug\ezCam.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\bin\x64\Debug\ezCam.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\bin\x64\Debug\ezCam.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.Utils.PC.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\bin\x64\Debug\ezTools.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\bin\x64\Debug\ezTools.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\obj\x64\Debug\ezCam.csprojResolveAssemblyReference.cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\obj\x64\Debug\ezCam.ezCam_Dalsa.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\obj\x64\Debug\ezCam.csproj.GenerateResource.Cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\obj\x64\Debug\ezCam.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\obj\x64\Debug\ezCam.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\bin\x64\Debug\ezCam.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\bin\x64\Debug\ezCam.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.Utils.PC.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\bin\x64\Debug\ezTools.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\bin\x64\Debug\ezTools.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\obj\x64\Debug\ezCam.csprojResolveAssemblyReference.cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\obj\x64\Debug\ezCam.ezCam_Dalsa.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\obj\x64\Debug\ezCam.csproj.GenerateResource.Cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\obj\x64\Debug\ezCam.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\obj\x64\Debug\ezCam.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\bin\x64\Debug\ezCam.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\bin\x64\Debug\ezCam.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.Utils.PC.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\bin\x64\Debug\ezTools.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\bin\x64\Debug\PropertyGridEx.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\bin\x64\Debug\ezTools.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\obj\x64\Debug\ezCam.csprojResolveAssemblyReference.cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\obj\x64\Debug\ezCam.ezCam_Dalsa.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\obj\x64\Debug\ezCam.csproj.GenerateResource.Cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\obj\x64\Debug\ezCam.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezCam\obj\x64\Debug\ezCam.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezCam\bin\x64\Debug\ezCam.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezCam\bin\x64\Debug\ezCam.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.Utils.PC.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezCam\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezCam\bin\x64\Debug\ezTools.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezCam\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezCam\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezCam\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezCam\bin\x64\Debug\ezTools.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezCam\obj\x64\Debug\ezCam.csprojResolveAssemblyReference.cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezCam\obj\x64\Debug\ezCam.ezCam_Dalsa.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezCam\obj\x64\Debug\ezCam.csproj.GenerateResource.Cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezCam\obj\x64\Debug\ezCam.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezCam\obj\x64\Debug\ezCam.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezCam\bin\x64\Debug\ezCam.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezCam\bin\x64\Debug\ezCam.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.Utils.PC.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezCam\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezCam\bin\x64\Debug\ezTools.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezCam\bin\x64\Debug\PropertyGridEx.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezCam\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezCam\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezCam\bin\x64\Debug\ezTools.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezCam\obj\x64\Debug\ezCam.csprojResolveAssemblyReference.cache
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezCam\obj\x64\Debug\ezCam.ezCam_Dalsa.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezCam\obj\x64\Debug\ezCam.csproj.GenerateResource.Cache
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezCam\obj\x64\Debug\ezCam.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezCam\obj\x64\Debug\ezCam.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\bin\x64\Debug\ezCam.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\bin\x64\Debug\ezCam.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.Utils.PC.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\bin\x64\Debug\ezTools.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\bin\x64\Debug\ezTools.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\obj\x64\Debug\ezCam.csprojResolveAssemblyReference.cache
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\obj\x64\Debug\ezCam.ezCam_Dalsa.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\obj\x64\Debug\ezCam.csproj.GenerateResource.Cache
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\obj\x64\Debug\ezCam.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\obj\x64\Debug\ezCam.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\bin\x64\Debug\ezCam.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\bin\x64\Debug\ezCam.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.Utils.PC.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\bin\x64\Debug\ezTools.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\bin\x64\Debug\PropertyGridEx.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\bin\x64\Debug\ezTools.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\obj\x64\Debug\ezCam.csprojResolveAssemblyReference.cache
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\obj\x64\Debug\ezCam.ezCam_Dalsa.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\obj\x64\Debug\ezCam.csproj.GenerateResource.Cache
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\obj\x64\Debug\ezCam.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezCam\obj\x64\Debug\ezCam.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezCam\bin\x64\Debug\ezCam.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezCam\bin\x64\Debug\ezCam.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezCam\bin\x64\Debug\Cognex.DataMan.SDK.Utils.PC.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezCam\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezCam\bin\x64\Debug\ezTools.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezCam\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezCam\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezCam\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezCam\bin\x64\Debug\ezTools.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezCam\obj\x64\Debug\ezCam.csprojResolveAssemblyReference.cache
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezCam\obj\x64\Debug\ezCam.ezCam_Dalsa.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezCam\obj\x64\Debug\ezCam.csproj.GenerateResource.Cache
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezCam\obj\x64\Debug\ezCam.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezCam\obj\x64\Debug\ezCam.pdb

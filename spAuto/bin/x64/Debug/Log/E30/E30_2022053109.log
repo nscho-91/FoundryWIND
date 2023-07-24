@@ -1,0 +1,876 @@
+09:41:40 [Proc:Seq] >>>>>>>>>>>>>>>>>>>>>>>  Logging Started  <<<<<<<<<<<<<<<<<<<<<<<<
+09:41:40 [Proc:Seq] Build date time: Apr  1 2021 10:53:24 th=550c
+09:41:40 [Proc:Seq] File Version: 3.4.4.36
+          th=550c
+09:41:40 [Debug:E30] Reading file(C:\AVIS\Test_220524\Test_220524\XCfg\Host.cfg)
+09:41:40 [Debug:E30] [General]
+09:41:40 [Debug:E30] 	Host=false
+09:41:40 [Debug:E30] 	HSMS=true
+09:41:40 [Debug:E30] 	Device ID=0
+09:41:40 [Debug:E30] 	Queue=2000000
+09:41:40 [Debug:E30] 	SML=Host.sml
+09:41:40 [Debug:E30] 	SkipSMLCheck=false
+09:41:40 [Debug:E30] [HSMS]
+09:41:40 [Debug:E30] 	IP=127.0.0.1
+09:41:40 [Debug:E30] 	Port=6000
+09:41:40 [Debug:E30] 	Active=false
+09:41:40 [Debug:E30] [SECS-I]
+09:41:40 [Debug:E30] 	Master=true
+09:41:40 [Debug:E30] 	Comm=1
+09:41:40 [Debug:E30] 	Baud=9600
+09:41:40 [Debug:E30] 	Parity=None
+09:41:40 [Debug:E30] 	Data Bits=8
+09:41:40 [Debug:E30] 	Stop Bits=2
+09:41:40 [Debug:E30] [Timeout]
+09:41:40 [Debug:E30] 	T1=1
+09:41:40 [Debug:E30] 	T2=10
+09:41:40 [Debug:E30] 	T3=45
+09:41:40 [Debug:E30] 	T4=30
+09:41:40 [Debug:E30] 	T5=10
+09:41:40 [Debug:E30] 	T6=5
+09:41:40 [Debug:E30] 	T7=10
+09:41:40 [Debug:E30] 	T8=5
+09:41:40 [Debug:E30] 	Link Test Interval=30
+09:41:40 [Debug:E30] 	Retry Limit=0
+09:41:40 [Debug:E30] [Log]
+09:41:40 [Debug:E30] 	Hex=true
+09:41:40 [Debug:E30] 	SECS-II=true
+09:41:40 [Debug:E30] 	Event=true
+09:41:40 [Debug:E30] 	Alarm=true
+09:41:40 [Debug:E30] 	Hour=true
+09:41:40 [Debug:E30] 	Keep Days=30
+09:41:40 [Debug:E30] 	Dir=./Log/XCom
+09:41:40 [Debug:E30] 	Prefix=XCom
+09:41:40 [Debug:E30] 	Extension=log
+09:41:40 [Debug:E30] 	UseLogByMesg=false
+09:41:40 [Debug:E30] 	LogByMesgFlagPath=Host.lbm
+09:41:40 [Debug:E30] 	SECS-II-Summary=false
+09:41:40 [Debug:E30] [S9 Reply]
+09:41:40 [Debug:E30] 	S9F1=true
+09:41:40 [Debug:E30] 	S9F3=true
+09:41:40 [Debug:E30] 	S9F5=true
+09:41:40 [Debug:E30] 	S9F7=true
+09:41:40 [Alarm:000000] Success to open database(MDB). th=550c
+09:41:40 [Debug:LDBInterface] Start to reading module information from database(mdb file).
+09:41:40 [Debug:LDBInterface] 	0000    ModuleInfo=E30, Section=SecondaryMsgReceived, Key=S6F12, KeyValue=1
+09:41:40 [Debug:LDBInterface] 	0001    ModuleInfo=E30, Section=Alarm, Key=S5F5, KeyValue=1
+09:41:40 [Debug:LDBInterface] 	0002    ModuleInfo=E30, Section=CommunicationOffline, Key=S2F25, KeyValue=1
+09:41:40 [Debug:LDBInterface] 	0003    ModuleInfo=E30, Section=ControlState, Key=OperationType, KeyValue=1
+09:41:40 [Debug:LDBInterface] 	0004    ModuleInfo=E30, Section=ControlState, Key=S1F15ReplyType, KeyValue=1
+09:41:40 [Debug:LDBInterface] 	0005    ModuleInfo=E30, Section=ControlState, Key=S1F17ReplyType, KeyValue=1
+09:41:40 [Debug:LDBInterface] 	0006    ModuleInfo=E30, Section=ControlState, Key=SendS1F1, KeyValue=1
+09:41:40 [Debug:LDBInterface] 	0007    ModuleInfo=E30, Section=DynamicEvent, Key=OperationType, KeyValue=1
+09:41:40 [Debug:LDBInterface] 	0008    ModuleInfo=E30, Section=ProcessProgram, Key=FormattedPPType, KeyValue=1
+09:41:40 [Debug:LDBInterface] 	0009    ModuleInfo=E30, Section=Alarm, Key=OperationType, KeyValue=1
+09:41:40 [Debug:LDBInterface] 	0010    ModuleInfo=E30, Section=ProcessProgram, Key=S7F5/F6, KeyValue=1
+09:41:40 [Debug:LDBInterface] 	0011    ModuleInfo=E30, Section=Spool, Key=IntervalTime, KeyValue=0
+09:41:40 [Debug:LDBInterface] 	0012    ModuleInfo=E30, Section=Spool, Key=Max Spool Messages, KeyValue=300
+09:41:40 [Debug:LDBInterface] 	0013    ModuleInfo=E30, Section=Spool, Key=OperationType, KeyValue=1
+09:41:40 [Debug:LDBInterface] 	0014    ModuleInfo=E30, Section=Trace, Key=MaxTraceCount, KeyValue=20
+09:41:40 [Debug:LDBInterface] 	0015    ModuleInfo=E30, Section=CommunicationState, Key=NotUsedStateModel, KeyValue=0
+09:41:40 [Debug:LDBInterface] 	0016    ModuleInfo=E30, Section=CollectionEventNamelist, Key=NotReport_ConditionDV, KeyValue=0
+09:41:40 [Debug:LDBInterface] 	0017    ModuleInfo=E30, Section=ProcessProgram, Key=Separation, KeyValue=1
+09:41:40 [Debug:LDBInterface] 	0018    ModuleInfo=E30, Section=ProcessProgram, Key=S7F3/F4, KeyValue=1
+09:41:40 [Debug:LDBInterface] 	0019    ModuleInfo=E40, Section=JobManager, Key=ScenarioType, KeyValue=0
+09:41:40 [Debug:LDBInterface] 	0020    ModuleInfo=E40, Section=JobConcepts, Key=JobWithoutMaterial, KeyValue=0
+09:41:40 [Debug:LDBInterface] 	0021    ModuleInfo=E87, Section=CMS, Key=Check_S3F17_Validation, KeyValue=0
+09:41:40 [Debug:LDBInterface] Complete to reading module information from database(mdb file).
+09:41:40 [Debug:LDBInterface] Start to reading collection event information from database(mdb file).
+09:41:40 [Debug:LDBInterface] 	0000    ID=1, NAME=Offline, Enabled=1, RPTIDs=UINT4:4, Used=true
+09:41:40 [Debug:LDBInterface] 	0001    ID=2, NAME=Local, Enabled=1, RPTIDs=UINT4:4, Used=true
+09:41:40 [Debug:LDBInterface] 	0002    ID=3, NAME=Remote, Enabled=1, RPTIDs=UINT4:4, Used=true
+09:41:40 [Debug:LDBInterface] 	0003    ID=4, NAME=OperatorCommand, Enabled=1, RPTIDs=UINT4:2, Used=true
+09:41:40 [Debug:LDBInterface] 	0004    ID=8, NAME=EquipmentConstantChanged, Enabled=1, RPTIDs=UINT4:5, Used=true
+09:41:40 [Debug:LDBInterface] 	0005    ID=9, NAME=ProcessProgramChanged, Enabled=1, RPTIDs=UINT4:8, Used=true
+09:41:40 [Debug:LDBInterface] 	0006    ID=10, NAME=ProcessRecipeSeleted, Enabled=1, RPTIDs=NA:, Used=true
+09:41:40 [Debug:LDBInterface] 	0007    ID=11, NAME=MaterialReceived, Enabled=1, RPTIDs=UINT4:10, Used=true
+09:41:40 [Debug:LDBInterface] 	0008    ID=12, NAME=MaterialRemoved, Enabled=1, RPTIDs=UINT4:10, Used=true
+09:41:40 [Debug:LDBInterface] 	0009    ID=13, NAME=SpoolActivated, Enabled=1, RPTIDs=UINT4:11, Used=true
+09:41:40 [Debug:LDBInterface] 	0010    ID=14, NAME=SpoolDeactivated, Enabled=1, RPTIDs=UINT4:12, Used=true
+09:41:40 [Debug:LDBInterface] 	0011    ID=15, NAME=SpoolTransmitFailure, Enabled=1, RPTIDs=UINT4:13, Used=true
+09:41:40 [Debug:LDBInterface] 	0012    ID=16, NAME=MessageRecognition, Enabled=1, RPTIDs=UINT4:1, Used=true
+09:41:40 [Debug:LDBInterface] 	0013    ID=4001, NAME=PJ_NoStateToQueued, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0014    ID=4002, NAME=PJ_QueuedToSettingUp, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0015    ID=4003, NAME=PJ_SettingUpToWaitingForStart, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0016    ID=4004, NAME=PJ_SettingUpToProcessing, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0017    ID=4005, NAME=PJ_WaitingForStartToProcessing, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0018    ID=4006, NAME=PJ_ProcessingToProcessComplete, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0019    ID=4007, NAME=PJ_ProcessCompleteToComplete, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0020    ID=4008, NAME=PJ_AbortedToComplete, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0021    ID=4009, NAME=PJ_StoppedToComplete, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0022    ID=4010, NAME=PJ_AnyPostActiveToComplete, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0023    ID=4011, NAME=PJ_ExecutingToPausing, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0024    ID=4012, NAME=PJ_PausingToPaused, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0025    ID=4013, NAME=PJ_PauseToExecuting, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0026    ID=4014, NAME=PJ_ExecutingToStopping, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0027    ID=4015, NAME=PJ_PauseToStopping, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0028    ID=4016, NAME=PJ_ExecutingToAborting, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0029    ID=4017, NAME=PJ_StoppingToAborting, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0030    ID=4018, NAME=PJ_PauseToAborting, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0031    ID=4019, NAME=PJ_AbortingToAborted, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0032    ID=4020, NAME=PJ_StoppingToStopped, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0033    ID=4021, NAME=PJ_QueuedToNoState, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0034    ID=4022, NAME=PJ_Deleted, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0035    ID=5002, NAME=Carrier_NoStateToWaitingForHost, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0036    ID=5003, NAME=Carrier_NoStateToIDVerificationOK, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0037    ID=5004, NAME=Carrier_NoStateToIDVerificationFail, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0038    ID=5005, NAME=Carrier_IDNotReadToIDVerificationOK, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0039    ID=5006, NAME=Carrier_WaitingForHostToIDVerificationOK, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0040    ID=5007, NAME=Carrier_WaitingForHostToIDVerificationFail, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0041    ID=5008, NAME=Carrier_IDNotReadToWaitingForHost, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0042    ID=5011, NAME=Carrier_SlotMapNotReadToSlotMapVerificationOK, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0043    ID=5012, NAME=Carrier_SlotMapNotReadToWaitingForHost, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0044    ID=5013, NAME=Carrier_WaitingForHostToSlotMapVerificationOK, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0045    ID=5014, NAME=Carrier_WaitingForHostToSlotMapVerificationFail, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0046    ID=5015, NAME=Carrier_NotAccessedToInAccess, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0047    ID=5016, NAME=Carrier_InAccessToCarrierComplete, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0048    ID=5017, NAME=Carrier_InAccessToCarrierStopped, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0049    ID=5018, NAME=Carrier_IDReadFailed, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0050    ID=5019, NAME=Carrier_IDDeleted, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0051    ID=5020, NAME=Carrier_IDUnknown, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0052    ID=5021, NAME=Carrier_LocationChanged, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0053    ID=5022, NAME=Carrier_BufferCapacityChanged, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0054    ID=5023, NAME=LoadPort_NoStateToOutOfService, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0055    ID=5024, NAME=LoadPort_NoStateToInService, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0056    ID=5025, NAME=LoadPort_NoStateToNotReserved, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0057    ID=5026, NAME=LoadPort_OutOfServiceToInService, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0058    ID=5027, NAME=LoadPort_InServiceToOutOfService, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0059    ID=5028, NAME=LoadPort_InServiceToTransferReady, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0060    ID=5029, NAME=LoadPort_InServiceToTransferBlocked, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0061    ID=5030, NAME=LoadPort_TransferReadyToReadyToLoad, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0062    ID=5031, NAME=LoadPort_TransferReadyToReadyToUnload, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0063    ID=5032, NAME=LoadPort_ReadyToLoadToTransferBlocked, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0064    ID=5033, NAME=LoadPort_ReadyToUnloadToTransferBlocked, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0065    ID=5034, NAME=LoadPort_TransferBlockedToReadyToLoad, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0066    ID=5035, NAME=LoadPort_TransferBlockedToReadyToUnload, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0067    ID=5036, NAME=LoadPort_TransferBlockedToTransferReady, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0068    ID=5037, NAME=LoadPort_NoStateToManual, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0069    ID=5038, NAME=LoadPort_NoStateToAuto, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0070    ID=5039, NAME=LoadPort_ManualToAuto, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0071    ID=5040, NAME=LoadPort_AutoToManual, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0072    ID=5041, NAME=LoadPortCarrier_NotAssociatedToAssociated, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0073    ID=5042, NAME=LoadPortCarrier_AssociatedToNotAssociated, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0074    ID=5043, NAME=LoadPortCarrier_AssociatedToAssociated, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0075    ID=5044, NAME=LoadPort_NotReservedToReserved, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0076    ID=6002, NAME=STS_Transport_AtSourceToAtWork, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0077    ID=6003, NAME=STS_Transport_AtWorkToAtSource, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0078    ID=6004, NAME=STS_Transport_AtWorkToAtWork, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0079    ID=6005, NAME=STS_Transport_AtWorkToAtDestination, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0080    ID=6006, NAME=STS_Transport_AtDestinationToAtWork, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0081    ID=6007, NAME=STS_Transport_AtDestinationToNoState, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0082    ID=6008, NAME=STS_Transport_AtDestinationToAtSource, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0083    ID=6009, NAME=STS_AnySubstrateStateToNoState, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0084    ID=6010, NAME=STS_Processing_NoStateToNeedProcessing, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0085    ID=6011, NAME=STS_Processing_NeedProcessingToInProcess, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0086    ID=6012, NAME=STS_Processing_InProcessToProcessed, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0087    ID=6013, NAME=STS_Processing_InProcessToRejected, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0088    ID=6014, NAME=STS_Processing_InProcessToStopped, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0089    ID=6015, NAME=STS_Processing_InProcessToAborted, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0090    ID=6016, NAME=STS_Processing_InProcessToLost, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0091    ID=6017, NAME=STS_Processing_InProcessToSkipped, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0092    ID=6018, NAME=STS_Processing_InProcessToProcessingComplete, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0093    ID=6019, NAME=STS_Processing_InProcessToNeedProcessing, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0094    ID=6020, NAME=STS_Processing_NeedProcessingToProcessed, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0095    ID=6021, NAME=STS_Processing_NeedProcessingToRejected, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0096    ID=6022, NAME=STS_Processing_NeedProcessingToStopped, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0097    ID=6023, NAME=STS_Processing_NeedProcessingToAborted, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0098    ID=6024, NAME=STS_Processing_NeedProcessingToLost, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0099    ID=6025, NAME=STS_Processing_NeedProcessingToSkipped, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0100    ID=6026, NAME=STS_Processing_NeedsProcessingToProcessingComplete, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0101    ID=6027, NAME=STS_Reading_NotConfirmedToConfirmed, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0102    ID=6028, NAME=STS_Reading_NotConfirmedToWaitingForHost_ReadFailed, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0103    ID=7001, NAME=CJ_NoStateToQueued, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0104    ID=7002, NAME=CJ_QueuedToNoState, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0105    ID=7003, NAME=CJ_QueuedToSelected, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0106    ID=7004, NAME=CJ_SelectedToQueued, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0107    ID=7005, NAME=CJ_SelectedToExecuting, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0108    ID=7006, NAME=CJ_SelectedToWaitingForStart, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0109    ID=7007, NAME=CJ_WaitingForStartToExecuting, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0110    ID=7008, NAME=CJ_ExecutingToPaused, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0111    ID=7009, NAME=CJ_PausedToExecuting, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0112    ID=7010, NAME=CJ_ExecutingToCompleted, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0113    ID=7011, NAME=CJ_ActiveToStopped, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0114    ID=7012, NAME=CJ_ActiveToAborted, Enabled=1, RPTIDs=UINT4:, Used=true
+09:41:40 [Debug:LDBInterface] 	0115    ID=10000, NAME=AlarmSet, Enabled=1, RPTIDs=UINT4:6, Used=true
+09:41:40 [Debug:LDBInterface] 	0116    ID=20000, NAME=AlarmClear, Enabled=1, RPTIDs=UINT4:6, Used=true
+09:41:40 [Debug:LDBInterface] 	0117    ID=30000, NAME=EventLimit, Enabled=1, RPTIDs=UINT4:7, Used=true
+09:41:40 [Debug:LDBInterface] Complete to reading collection event information from database(mdb file).
+09:41:40 [Debug:LDBInterface] Start to reading report information from database(mdb file).
+09:41:40 [Debug:LDBInterface] 	0000    RPTID=1, VIDs=UINT4:1
+09:41:40 [Debug:LDBInterface] 	0001    RPTID=2, VIDs=NA:
+09:41:40 [Debug:LDBInterface] 	0002    RPTID=4, VIDs=UINT4:4 34 1
+09:41:40 [Debug:LDBInterface] 	0003    RPTID=5, VIDs=UINT4:25
+09:41:40 [Debug:LDBInterface] 	0004    RPTID=6, VIDs=UINT4:24 6 2
+09:41:40 [Debug:LDBInterface] 	0005    RPTID=7, VIDs=UINT4:26 27 32
+09:41:40 [Debug:LDBInterface] 	0006    RPTID=8, VIDs=UINT4:29 30
+09:41:40 [Debug:LDBInterface] 	0007    RPTID=10, VIDs=UINT4:33
+09:41:40 [Debug:LDBInterface] 	0008    RPTID=11, VIDs=UINT4:17 16 11 12
+09:41:40 [Debug:LDBInterface] 	0009    RPTID=12, VIDs=UINT4:12
+09:41:40 [Debug:LDBInterface] 	0010    RPTID=13, VIDs=UINT4:17 16 13 11 12
+09:41:40 [Debug:LDBInterface] 	0011    RPTID=14, VIDs=UINT4:6 7
+09:41:40 [Debug:LDBInterface] Complete to reading report information from database(mdb file).
+09:41:40 [Debug:LDBInterface] Start to reading limitid information from database(mdb file).
+09:41:40 [Debug:LDBInterface] Complete to reading limitid information from database(mdb file).
+09:41:40 [Debug:LDBInterface] Start to reading alarm information from database(mdb file).
+09:41:40 [Debug:LDBInterface] Complete to reading alarm information from database(mdb file).
+09:41:40 [Debug:LDBInterface] Start to reading User Defined Message from database(mdb file).
+09:41:40 [Debug:LDBInterface] Complete to reading User Defined Message from database(mdb file).
+09:41:40 [Debug:LDBInterface] Start to reading Spool information from database(mdb file).
+09:41:40 [Debug:LDBInterface] 	0000    Stream=-1, Function=-1
+09:41:40 [Debug:LDBInterface] Complete to reading Spool information from database(mdb file).
+09:41:40 [Debug:LDBInterface] Start to reading rcmd information from database(mdb file).
+09:41:40 [Debug:LDBInterface] Complete to reading rcmd information from database(mdb file).
+09:41:40 [Debug:LDBInterface] Start to reading collection event name list information from database(mdb file).
+09:41:40 [Debug:LDBInterface] Complete to reading collection event name list information from database(mdb file).
+09:41:40 [Debug:LDBInterface] Start to reading SECS2 message information from database(mdb file).
+09:41:40 [Debug:LDBInterface] 	0000    Stream=1, Function=0
+09:41:40 [Debug:LDBInterface] 	0001    Stream=1, Function=1
+09:41:40 [Debug:LDBInterface] 	0002    Stream=1, Function=2
+09:41:40 [Debug:LDBInterface] 	0003    Stream=1, Function=3
+09:41:40 [Debug:LDBInterface] 	0004    Stream=1, Function=4
+09:41:40 [Debug:LDBInterface] 	0005    Stream=1, Function=11
+09:41:40 [Debug:LDBInterface] 	0006    Stream=1, Function=12
+09:41:40 [Debug:LDBInterface] 	0007    Stream=1, Function=13
+09:41:40 [Debug:LDBInterface] 	0008    Stream=1, Function=14
+09:41:40 [Debug:LDBInterface] 	0009    Stream=1, Function=15
+09:41:40 [Debug:LDBInterface] 	0010    Stream=1, Function=16
+09:41:40 [Debug:LDBInterface] 	0011    Stream=1, Function=17
+09:41:40 [Debug:LDBInterface] 	0012    Stream=1, Function=18
+09:41:40 [Debug:LDBInterface] 	0013    Stream=1, Function=21
+09:41:40 [Debug:LDBInterface] 	0014    Stream=1, Function=22
+09:41:40 [Debug:LDBInterface] 	0015    Stream=1, Function=23
+09:41:40 [Debug:LDBInterface] 	0016    Stream=1, Function=24
+09:41:40 [Debug:LDBInterface] 	0017    Stream=2, Function=0
+09:41:40 [Debug:LDBInterface] 	0018    Stream=2, Function=13
+09:41:40 [Debug:LDBInterface] 	0019    Stream=2, Function=14
+09:41:40 [Debug:LDBInterface] 	0020    Stream=2, Function=15
+09:41:40 [Debug:LDBInterface] 	0021    Stream=2, Function=16
+09:41:40 [Debug:LDBInterface] 	0022    Stream=2, Function=17
+09:41:40 [Debug:LDBInterface] 	0023    Stream=2, Function=18
+09:41:40 [Debug:LDBInterface] 	0024    Stream=2, Function=23
+09:41:40 [Debug:LDBInterface] 	0025    Stream=2, Function=24
+09:41:40 [Debug:LDBInterface] 	0026    Stream=2, Function=25
+09:41:40 [Debug:LDBInterface] 	0027    Stream=2, Function=26
+09:41:40 [Debug:LDBInterface] 	0028    Stream=2, Function=29
+09:41:40 [Debug:LDBInterface] 	0029    Stream=2, Function=30
+09:41:40 [Debug:LDBInterface] 	0030    Stream=2, Function=31
+09:41:40 [Debug:LDBInterface] 	0031    Stream=2, Function=32
+09:41:40 [Debug:LDBInterface] 	0032    Stream=2, Function=33
+09:41:40 [Debug:LDBInterface] 	0033    Stream=2, Function=34
+09:41:40 [Debug:LDBInterface] 	0034    Stream=2, Function=35
+09:41:40 [Debug:LDBInterface] 	0035    Stream=2, Function=36
+09:41:40 [Debug:LDBInterface] 	0036    Stream=2, Function=37
+09:41:40 [Debug:LDBInterface] 	0037    Stream=2, Function=38
+09:41:40 [Debug:LDBInterface] 	0038    Stream=2, Function=39
+09:41:40 [Debug:LDBInterface] 	0039    Stream=2, Function=40
+09:41:40 [Debug:LDBInterface] 	0040    Stream=2, Function=41
+09:41:40 [Debug:LDBInterface] 	0041    Stream=2, Function=42
+09:41:40 [Debug:LDBInterface] 	0042    Stream=2, Function=43
+09:41:40 [Debug:LDBInterface] 	0043    Stream=2, Function=44
+09:41:40 [Debug:LDBInterface] 	0044    Stream=2, Function=45
+09:41:40 [Debug:LDBInterface] 	0045    Stream=2, Function=46
+09:41:40 [Debug:LDBInterface] 	0046    Stream=2, Function=47
+09:41:40 [Debug:LDBInterface] 	0047    Stream=2, Function=48
+09:41:40 [Debug:LDBInterface] 	0048    Stream=3, Function=0
+09:41:40 [Debug:LDBInterface] 	0049    Stream=3, Function=17
+09:41:40 [Debug:LDBInterface] 	0050    Stream=3, Function=18
+09:41:40 [Debug:LDBInterface] 	0051    Stream=3, Function=19
+09:41:40 [Debug:LDBInterface] 	0052    Stream=3, Function=20
+09:41:40 [Debug:LDBInterface] 	0053    Stream=3, Function=25
+09:41:40 [Debug:LDBInterface] 	0054    Stream=3, Function=26
+09:41:40 [Debug:LDBInterface] 	0055    Stream=3, Function=27
+09:41:40 [Debug:LDBInterface] 	0056    Stream=3, Function=28
+09:41:40 [Debug:LDBInterface] 	0057    Stream=5, Function=0
+09:41:40 [Debug:LDBInterface] 	0058    Stream=5, Function=1
+09:41:40 [Debug:LDBInterface] 	0059    Stream=5, Function=2
+09:41:40 [Debug:LDBInterface] 	0060    Stream=5, Function=3
+09:41:40 [Debug:LDBInterface] 	0061    Stream=5, Function=4
+09:41:40 [Debug:LDBInterface] 	0062    Stream=5, Function=5
+09:41:40 [Debug:LDBInterface] 	0063    Stream=5, Function=6
+09:41:40 [Debug:LDBInterface] 	0064    Stream=5, Function=7
+09:41:40 [Debug:LDBInterface] 	0065    Stream=5, Function=8
+09:41:40 [Debug:LDBInterface] 	0066    Stream=6, Function=0
+09:41:40 [Debug:LDBInterface] 	0067    Stream=6, Function=1
+09:41:40 [Debug:LDBInterface] 	0068    Stream=6, Function=2
+09:41:40 [Debug:LDBInterface] 	0069    Stream=6, Function=11
+09:41:40 [Debug:LDBInterface] 	0070    Stream=6, Function=12
+09:41:40 [Debug:LDBInterface] 	0071    Stream=6, Function=15
+09:41:40 [Debug:LDBInterface] 	0072    Stream=6, Function=16
+09:41:40 [Debug:LDBInterface] 	0073    Stream=6, Function=19
+09:41:40 [Debug:LDBInterface] 	0074    Stream=6, Function=20
+09:41:40 [Debug:LDBInterface] 	0075    Stream=6, Function=23
+09:41:40 [Debug:LDBInterface] 	0076    Stream=6, Function=24
+09:41:40 [Debug:LDBInterface] 	0077    Stream=7, Function=0
+09:41:40 [Debug:LDBInterface] 	0078    Stream=7, Function=1
+09:41:40 [Debug:LDBInterface] 	0079    Stream=7, Function=2
+09:41:40 [Debug:LDBInterface] 	0080    Stream=7, Function=3
+09:41:40 [Debug:LDBInterface] 	0081    Stream=7, Function=4
+09:41:40 [Debug:LDBInterface] 	0082    Stream=7, Function=5
+09:41:40 [Debug:LDBInterface] 	0083    Stream=7, Function=6
+09:41:40 [Debug:LDBInterface] 	0084    Stream=7, Function=17
+09:41:40 [Debug:LDBInterface] 	0085    Stream=7, Function=18
+09:41:40 [Debug:LDBInterface] 	0086    Stream=7, Function=19
+09:41:40 [Debug:LDBInterface] 	0087    Stream=7, Function=20
+09:41:40 [Debug:LDBInterface] 	0088    Stream=7, Function=23
+09:41:40 [Debug:LDBInterface] 	0089    Stream=7, Function=24
+09:41:40 [Debug:LDBInterface] 	0090    Stream=7, Function=25
+09:41:40 [Debug:LDBInterface] 	0091    Stream=7, Function=26
+09:41:40 [Debug:LDBInterface] 	0092    Stream=7, Function=27
+09:41:40 [Debug:LDBInterface] 	0093    Stream=7, Function=28
+09:41:40 [Debug:LDBInterface] 	0094    Stream=10, Function=0
+09:41:40 [Debug:LDBInterface] 	0095    Stream=10, Function=1
+09:41:40 [Debug:LDBInterface] 	0096    Stream=10, Function=2
+09:41:40 [Debug:LDBInterface] 	0097    Stream=10, Function=3
+09:41:40 [Debug:LDBInterface] 	0098    Stream=10, Function=4
+09:41:40 [Debug:LDBInterface] 	0099    Stream=10, Function=5
+09:41:40 [Debug:LDBInterface] 	0100    Stream=10, Function=6
+09:41:40 [Debug:LDBInterface] 	0101    Stream=14, Function=0
+09:41:40 [Debug:LDBInterface] 	0102    Stream=14, Function=1
+09:41:40 [Debug:LDBInterface] 	0103    Stream=14, Function=2
+09:41:40 [Debug:LDBInterface] 	0104    Stream=14, Function=3
+09:41:40 [Debug:LDBInterface] 	0105    Stream=14, Function=4
+09:41:40 [Debug:LDBInterface] 	0106    Stream=14, Function=9
+09:41:40 [Debug:LDBInterface] 	0107    Stream=14, Function=10
+09:41:40 [Debug:LDBInterface] 	0108    Stream=14, Function=11
+09:41:40 [Debug:LDBInterface] 	0109    Stream=14, Function=12
+09:41:40 [Debug:LDBInterface] 	0110    Stream=14, Function=19
+09:41:40 [Debug:LDBInterface] 	0111    Stream=14, Function=20
+09:41:40 [Debug:LDBInterface] 	0112    Stream=16, Function=0
+09:41:40 [Debug:LDBInterface] 	0113    Stream=16, Function=1
+09:41:40 [Debug:LDBInterface] 	0114    Stream=16, Function=2
+09:41:40 [Debug:LDBInterface] 	0115    Stream=16, Function=5
+09:41:40 [Debug:LDBInterface] 	0116    Stream=16, Function=6
+09:41:40 [Debug:LDBInterface] 	0117    Stream=16, Function=11
+09:41:40 [Debug:LDBInterface] 	0118    Stream=16, Function=12
+09:41:40 [Debug:LDBInterface] 	0119    Stream=16, Function=15
+09:41:40 [Debug:LDBInterface] 	0120    Stream=16, Function=16
+09:41:40 [Debug:LDBInterface] 	0121    Stream=16, Function=17
+09:41:40 [Debug:LDBInterface] 	0122    Stream=16, Function=18
+09:41:40 [Debug:LDBInterface] 	0123    Stream=16, Function=19
+09:41:40 [Debug:LDBInterface] 	0124    Stream=16, Function=20
+09:41:40 [Debug:LDBInterface] 	0125    Stream=16, Function=21
+09:41:40 [Debug:LDBInterface] 	0126    Stream=16, Function=22
+09:41:40 [Debug:LDBInterface] 	0127    Stream=16, Function=23
+09:41:40 [Debug:LDBInterface] 	0128    Stream=16, Function=24
+09:41:40 [Debug:LDBInterface] 	0129    Stream=16, Function=25
+09:41:40 [Debug:LDBInterface] 	0130    Stream=16, Function=26
+09:41:40 [Debug:LDBInterface] 	0131    Stream=16, Function=27
+09:41:40 [Debug:LDBInterface] 	0132    Stream=16, Function=28
+09:41:40 [Debug:LDBInterface] 	0133    Stream=16, Function=29
+09:41:40 [Debug:LDBInterface] 	0134    Stream=16, Function=30
+09:41:40 [Debug:LDBInterface] Complete to reading  SECS2 message information from database(mdb file).
+09:41:40 [Proc:Seq] Initialize, Result = 0 th=550c
+09:41:40 [Proc:Seq] Start, Result = 0 th=550c
+09:41:40 [Proc:Seq] Eq connection state is changed from NotConnected to Connected th=550c
+09:41:40 [Proc:Seq] receive message(GEMGetLicense), msgid(0) th=550c
+09:41:40 [Proc:Seq] (E30->EQ) GEMGetLicense, LicenseName=XGemUnknown
+09:41:40 [Proc:Seq] (EQ->E30) GEMGetLicense
+09:41:40 [Proc:Seq] receive message(GEMGetParam), msgid(0) th=550c
+09:41:40 [Alarm:-30251] VID:DefaultCommState does not exist th=550c
+09:41:40 [Proc:Seq] OperationStep state is changed from NotInitialized to CheckedCommState th=550c
+09:41:40 [Proc:Seq] (E30->EQ) GEMGetParam, Count=49
+09:41:40 [Alarm:-30251] GEMGetParam th=550c
+09:41:40 [Proc:Seq] receive message(GEMGetAttributeV), msgid(0) th=550c
+09:41:40 [Proc:Seq] (E30->EQ) GEMGetAttributeV, Count:0
+09:41:40 [Proc:Seq] (EQ->E30) GEMGetAttributeV
+09:45:15 [Proc:Seq] Communication state is changed from NONE to DISABLED th=550c
+09:45:15 [Alarm:-30008] GEMCommStateChanged, State=1 th=550c
+09:45:15 [Proc:Seq] Eq connection state is changed from Connected to NotConnected th=550c
+09:54:01 [Proc:Seq] >>>>>>>>>>>>>>>>>>>>>>>  Logging Started  <<<<<<<<<<<<<<<<<<<<<<<<
+09:54:01 [Proc:Seq] Build date time: Apr  1 2021 10:53:24 th=405c
+09:54:01 [Proc:Seq] File Version: 3.4.4.36
+          th=405c
+09:54:01 [Debug:E30] Reading file(C:\AVIS\Test_220524\Test_220524\XCfg\Host.cfg)
+09:54:01 [Debug:E30] [General]
+09:54:01 [Debug:E30] 	Host=false
+09:54:01 [Debug:E30] 	HSMS=true
+09:54:01 [Debug:E30] 	Device ID=0
+09:54:01 [Debug:E30] 	Queue=2000000
+09:54:01 [Debug:E30] 	SML=Host.sml
+09:54:01 [Debug:E30] 	SkipSMLCheck=false
+09:54:01 [Debug:E30] [HSMS]
+09:54:01 [Debug:E30] 	IP=127.0.0.1
+09:54:01 [Debug:E30] 	Port=6000
+09:54:01 [Debug:E30] 	Active=false
+09:54:01 [Debug:E30] [SECS-I]
+09:54:01 [Debug:E30] 	Master=true
+09:54:01 [Debug:E30] 	Comm=1
+09:54:01 [Debug:E30] 	Baud=9600
+09:54:01 [Debug:E30] 	Parity=None
+09:54:01 [Debug:E30] 	Data Bits=8
+09:54:01 [Debug:E30] 	Stop Bits=2
+09:54:01 [Debug:E30] [Timeout]
+09:54:01 [Debug:E30] 	T1=1
+09:54:01 [Debug:E30] 	T2=10
+09:54:01 [Debug:E30] 	T3=45
+09:54:01 [Debug:E30] 	T4=30
+09:54:01 [Debug:E30] 	T5=10
+09:54:01 [Debug:E30] 	T6=5
+09:54:01 [Debug:E30] 	T7=10
+09:54:01 [Debug:E30] 	T8=5
+09:54:01 [Debug:E30] 	Link Test Interval=30
+09:54:01 [Debug:E30] 	Retry Limit=0
+09:54:01 [Debug:E30] [Log]
+09:54:01 [Debug:E30] 	Hex=true
+09:54:01 [Debug:E30] 	SECS-II=true
+09:54:01 [Debug:E30] 	Event=true
+09:54:01 [Debug:E30] 	Alarm=true
+09:54:01 [Debug:E30] 	Hour=true
+09:54:01 [Debug:E30] 	Keep Days=30
+09:54:01 [Debug:E30] 	Dir=./Log/XCom
+09:54:01 [Debug:E30] 	Prefix=XCom
+09:54:01 [Debug:E30] 	Extension=log
+09:54:01 [Debug:E30] 	UseLogByMesg=false
+09:54:01 [Debug:E30] 	LogByMesgFlagPath=Host.lbm
+09:54:01 [Debug:E30] 	SECS-II-Summary=false
+09:54:01 [Debug:E30] [S9 Reply]
+09:54:01 [Debug:E30] 	S9F1=true
+09:54:01 [Debug:E30] 	S9F3=true
+09:54:01 [Debug:E30] 	S9F5=true
+09:54:01 [Debug:E30] 	S9F7=true
+09:54:01 [Alarm:000000] Success to open database(MDB). th=405c
+09:54:01 [Debug:LDBInterface] Start to reading module information from database(mdb file).
+09:54:01 [Debug:LDBInterface] 	0000    ModuleInfo=E30, Section=SecondaryMsgReceived, Key=S6F12, KeyValue=1
+09:54:01 [Debug:LDBInterface] 	0001    ModuleInfo=E30, Section=Alarm, Key=S5F5, KeyValue=1
+09:54:01 [Debug:LDBInterface] 	0002    ModuleInfo=E30, Section=CommunicationOffline, Key=S2F25, KeyValue=1
+09:54:01 [Debug:LDBInterface] 	0003    ModuleInfo=E30, Section=ControlState, Key=OperationType, KeyValue=1
+09:54:01 [Debug:LDBInterface] 	0004    ModuleInfo=E30, Section=ControlState, Key=S1F15ReplyType, KeyValue=1
+09:54:01 [Debug:LDBInterface] 	0005    ModuleInfo=E30, Section=ControlState, Key=S1F17ReplyType, KeyValue=1
+09:54:01 [Debug:LDBInterface] 	0006    ModuleInfo=E30, Section=ControlState, Key=SendS1F1, KeyValue=1
+09:54:01 [Debug:LDBInterface] 	0007    ModuleInfo=E30, Section=DynamicEvent, Key=OperationType, KeyValue=1
+09:54:01 [Debug:LDBInterface] 	0008    ModuleInfo=E30, Section=ProcessProgram, Key=FormattedPPType, KeyValue=1
+09:54:01 [Debug:LDBInterface] 	0009    ModuleInfo=E30, Section=Alarm, Key=OperationType, KeyValue=1
+09:54:01 [Debug:LDBInterface] 	0010    ModuleInfo=E30, Section=ProcessProgram, Key=S7F5/F6, KeyValue=1
+09:54:01 [Debug:LDBInterface] 	0011    ModuleInfo=E30, Section=Spool, Key=IntervalTime, KeyValue=0
+09:54:01 [Debug:LDBInterface] 	0012    ModuleInfo=E30, Section=Spool, Key=Max Spool Messages, KeyValue=300
+09:54:01 [Debug:LDBInterface] 	0013    ModuleInfo=E30, Section=Spool, Key=OperationType, KeyValue=1
+09:54:01 [Debug:LDBInterface] 	0014    ModuleInfo=E30, Section=Trace, Key=MaxTraceCount, KeyValue=20
+09:54:01 [Debug:LDBInterface] 	0015    ModuleInfo=E30, Section=CommunicationState, Key=NotUsedStateModel, KeyValue=0
+09:54:01 [Debug:LDBInterface] 	0016    ModuleInfo=E30, Section=CollectionEventNamelist, Key=NotReport_ConditionDV, KeyValue=0
+09:54:01 [Debug:LDBInterface] 	0017    ModuleInfo=E30, Section=ProcessProgram, Key=Separation, KeyValue=1
+09:54:01 [Debug:LDBInterface] 	0018    ModuleInfo=E30, Section=ProcessProgram, Key=S7F3/F4, KeyValue=1
+09:54:01 [Debug:LDBInterface] 	0019    ModuleInfo=E40, Section=JobManager, Key=ScenarioType, KeyValue=0
+09:54:01 [Debug:LDBInterface] 	0020    ModuleInfo=E40, Section=JobConcepts, Key=JobWithoutMaterial, KeyValue=0
+09:54:01 [Debug:LDBInterface] 	0021    ModuleInfo=E87, Section=CMS, Key=Check_S3F17_Validation, KeyValue=0
+09:54:01 [Debug:LDBInterface] Complete to reading module information from database(mdb file).
+09:54:01 [Debug:LDBInterface] Start to reading collection event information from database(mdb file).
+09:54:01 [Debug:LDBInterface] 	0000    ID=1, NAME=Offline, Enabled=1, RPTIDs=UINT4:4, Used=true
+09:54:01 [Debug:LDBInterface] 	0001    ID=2, NAME=Local, Enabled=1, RPTIDs=UINT4:4, Used=true
+09:54:01 [Debug:LDBInterface] 	0002    ID=3, NAME=Remote, Enabled=1, RPTIDs=UINT4:4, Used=true
+09:54:01 [Debug:LDBInterface] 	0003    ID=4, NAME=OperatorCommand, Enabled=1, RPTIDs=UINT4:2, Used=true
+09:54:01 [Debug:LDBInterface] 	0004    ID=8, NAME=EquipmentConstantChanged, Enabled=1, RPTIDs=UINT4:5, Used=true
+09:54:01 [Debug:LDBInterface] 	0005    ID=9, NAME=ProcessProgramChanged, Enabled=1, RPTIDs=UINT4:8, Used=true
+09:54:01 [Debug:LDBInterface] 	0006    ID=10, NAME=ProcessRecipeSeleted, Enabled=1, RPTIDs=NA:, Used=true
+09:54:01 [Debug:LDBInterface] 	0007    ID=11, NAME=MaterialReceived, Enabled=1, RPTIDs=UINT4:10, Used=true
+09:54:01 [Debug:LDBInterface] 	0008    ID=12, NAME=MaterialRemoved, Enabled=1, RPTIDs=UINT4:10, Used=true
+09:54:01 [Debug:LDBInterface] 	0009    ID=13, NAME=SpoolActivated, Enabled=1, RPTIDs=UINT4:11, Used=true
+09:54:01 [Debug:LDBInterface] 	0010    ID=14, NAME=SpoolDeactivated, Enabled=1, RPTIDs=UINT4:12, Used=true
+09:54:01 [Debug:LDBInterface] 	0011    ID=15, NAME=SpoolTransmitFailure, Enabled=1, RPTIDs=UINT4:13, Used=true
+09:54:01 [Debug:LDBInterface] 	0012    ID=16, NAME=MessageRecognition, Enabled=1, RPTIDs=UINT4:1, Used=true
+09:54:01 [Debug:LDBInterface] 	0013    ID=4001, NAME=PJ_NoStateToQueued, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0014    ID=4002, NAME=PJ_QueuedToSettingUp, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0015    ID=4003, NAME=PJ_SettingUpToWaitingForStart, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0016    ID=4004, NAME=PJ_SettingUpToProcessing, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0017    ID=4005, NAME=PJ_WaitingForStartToProcessing, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0018    ID=4006, NAME=PJ_ProcessingToProcessComplete, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0019    ID=4007, NAME=PJ_ProcessCompleteToComplete, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0020    ID=4008, NAME=PJ_AbortedToComplete, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0021    ID=4009, NAME=PJ_StoppedToComplete, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0022    ID=4010, NAME=PJ_AnyPostActiveToComplete, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0023    ID=4011, NAME=PJ_ExecutingToPausing, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0024    ID=4012, NAME=PJ_PausingToPaused, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0025    ID=4013, NAME=PJ_PauseToExecuting, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0026    ID=4014, NAME=PJ_ExecutingToStopping, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0027    ID=4015, NAME=PJ_PauseToStopping, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0028    ID=4016, NAME=PJ_ExecutingToAborting, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0029    ID=4017, NAME=PJ_StoppingToAborting, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0030    ID=4018, NAME=PJ_PauseToAborting, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0031    ID=4019, NAME=PJ_AbortingToAborted, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0032    ID=4020, NAME=PJ_StoppingToStopped, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0033    ID=4021, NAME=PJ_QueuedToNoState, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0034    ID=4022, NAME=PJ_Deleted, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0035    ID=5002, NAME=Carrier_NoStateToWaitingForHost, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0036    ID=5003, NAME=Carrier_NoStateToIDVerificationOK, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0037    ID=5004, NAME=Carrier_NoStateToIDVerificationFail, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0038    ID=5005, NAME=Carrier_IDNotReadToIDVerificationOK, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0039    ID=5006, NAME=Carrier_WaitingForHostToIDVerificationOK, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0040    ID=5007, NAME=Carrier_WaitingForHostToIDVerificationFail, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0041    ID=5008, NAME=Carrier_IDNotReadToWaitingForHost, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0042    ID=5011, NAME=Carrier_SlotMapNotReadToSlotMapVerificationOK, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0043    ID=5012, NAME=Carrier_SlotMapNotReadToWaitingForHost, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0044    ID=5013, NAME=Carrier_WaitingForHostToSlotMapVerificationOK, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0045    ID=5014, NAME=Carrier_WaitingForHostToSlotMapVerificationFail, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0046    ID=5015, NAME=Carrier_NotAccessedToInAccess, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0047    ID=5016, NAME=Carrier_InAccessToCarrierComplete, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0048    ID=5017, NAME=Carrier_InAccessToCarrierStopped, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0049    ID=5018, NAME=Carrier_IDReadFailed, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0050    ID=5019, NAME=Carrier_IDDeleted, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0051    ID=5020, NAME=Carrier_IDUnknown, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0052    ID=5021, NAME=Carrier_LocationChanged, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0053    ID=5022, NAME=Carrier_BufferCapacityChanged, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0054    ID=5023, NAME=LoadPort_NoStateToOutOfService, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0055    ID=5024, NAME=LoadPort_NoStateToInService, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0056    ID=5025, NAME=LoadPort_NoStateToNotReserved, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0057    ID=5026, NAME=LoadPort_OutOfServiceToInService, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0058    ID=5027, NAME=LoadPort_InServiceToOutOfService, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0059    ID=5028, NAME=LoadPort_InServiceToTransferReady, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0060    ID=5029, NAME=LoadPort_InServiceToTransferBlocked, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0061    ID=5030, NAME=LoadPort_TransferReadyToReadyToLoad, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0062    ID=5031, NAME=LoadPort_TransferReadyToReadyToUnload, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0063    ID=5032, NAME=LoadPort_ReadyToLoadToTransferBlocked, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0064    ID=5033, NAME=LoadPort_ReadyToUnloadToTransferBlocked, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0065    ID=5034, NAME=LoadPort_TransferBlockedToReadyToLoad, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0066    ID=5035, NAME=LoadPort_TransferBlockedToReadyToUnload, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0067    ID=5036, NAME=LoadPort_TransferBlockedToTransferReady, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0068    ID=5037, NAME=LoadPort_NoStateToManual, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0069    ID=5038, NAME=LoadPort_NoStateToAuto, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0070    ID=5039, NAME=LoadPort_ManualToAuto, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0071    ID=5040, NAME=LoadPort_AutoToManual, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0072    ID=5041, NAME=LoadPortCarrier_NotAssociatedToAssociated, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0073    ID=5042, NAME=LoadPortCarrier_AssociatedToNotAssociated, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0074    ID=5043, NAME=LoadPortCarrier_AssociatedToAssociated, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0075    ID=5044, NAME=LoadPort_NotReservedToReserved, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0076    ID=6002, NAME=STS_Transport_AtSourceToAtWork, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0077    ID=6003, NAME=STS_Transport_AtWorkToAtSource, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0078    ID=6004, NAME=STS_Transport_AtWorkToAtWork, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0079    ID=6005, NAME=STS_Transport_AtWorkToAtDestination, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0080    ID=6006, NAME=STS_Transport_AtDestinationToAtWork, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0081    ID=6007, NAME=STS_Transport_AtDestinationToNoState, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0082    ID=6008, NAME=STS_Transport_AtDestinationToAtSource, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0083    ID=6009, NAME=STS_AnySubstrateStateToNoState, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0084    ID=6010, NAME=STS_Processing_NoStateToNeedProcessing, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0085    ID=6011, NAME=STS_Processing_NeedProcessingToInProcess, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0086    ID=6012, NAME=STS_Processing_InProcessToProcessed, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0087    ID=6013, NAME=STS_Processing_InProcessToRejected, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0088    ID=6014, NAME=STS_Processing_InProcessToStopped, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0089    ID=6015, NAME=STS_Processing_InProcessToAborted, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0090    ID=6016, NAME=STS_Processing_InProcessToLost, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0091    ID=6017, NAME=STS_Processing_InProcessToSkipped, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0092    ID=6018, NAME=STS_Processing_InProcessToProcessingComplete, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0093    ID=6019, NAME=STS_Processing_InProcessToNeedProcessing, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0094    ID=6020, NAME=STS_Processing_NeedProcessingToProcessed, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0095    ID=6021, NAME=STS_Processing_NeedProcessingToRejected, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0096    ID=6022, NAME=STS_Processing_NeedProcessingToStopped, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0097    ID=6023, NAME=STS_Processing_NeedProcessingToAborted, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0098    ID=6024, NAME=STS_Processing_NeedProcessingToLost, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0099    ID=6025, NAME=STS_Processing_NeedProcessingToSkipped, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0100    ID=6026, NAME=STS_Processing_NeedsProcessingToProcessingComplete, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0101    ID=6027, NAME=STS_Reading_NotConfirmedToConfirmed, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0102    ID=6028, NAME=STS_Reading_NotConfirmedToWaitingForHost_ReadFailed, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0103    ID=7001, NAME=CJ_NoStateToQueued, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0104    ID=7002, NAME=CJ_QueuedToNoState, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0105    ID=7003, NAME=CJ_QueuedToSelected, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0106    ID=7004, NAME=CJ_SelectedToQueued, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0107    ID=7005, NAME=CJ_SelectedToExecuting, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0108    ID=7006, NAME=CJ_SelectedToWaitingForStart, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0109    ID=7007, NAME=CJ_WaitingForStartToExecuting, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0110    ID=7008, NAME=CJ_ExecutingToPaused, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0111    ID=7009, NAME=CJ_PausedToExecuting, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0112    ID=7010, NAME=CJ_ExecutingToCompleted, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0113    ID=7011, NAME=CJ_ActiveToStopped, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0114    ID=7012, NAME=CJ_ActiveToAborted, Enabled=1, RPTIDs=UINT4:, Used=true
+09:54:01 [Debug:LDBInterface] 	0115    ID=10000, NAME=AlarmSet, Enabled=1, RPTIDs=UINT4:6, Used=true
+09:54:01 [Debug:LDBInterface] 	0116    ID=20000, NAME=AlarmClear, Enabled=1, RPTIDs=UINT4:6, Used=true
+09:54:01 [Debug:LDBInterface] 	0117    ID=30000, NAME=EventLimit, Enabled=1, RPTIDs=UINT4:7, Used=true
+09:54:01 [Debug:LDBInterface] Complete to reading collection event information from database(mdb file).
+09:54:01 [Debug:LDBInterface] Start to reading report information from database(mdb file).
+09:54:01 [Debug:LDBInterface] 	0000    RPTID=1, VIDs=UINT4:1
+09:54:01 [Debug:LDBInterface] 	0001    RPTID=2, VIDs=NA:
+09:54:01 [Debug:LDBInterface] 	0002    RPTID=4, VIDs=UINT4:4 34 1
+09:54:01 [Debug:LDBInterface] 	0003    RPTID=5, VIDs=UINT4:25
+09:54:01 [Debug:LDBInterface] 	0004    RPTID=6, VIDs=UINT4:24 6 2
+09:54:01 [Debug:LDBInterface] 	0005    RPTID=7, VIDs=UINT4:26 27 32
+09:54:01 [Debug:LDBInterface] 	0006    RPTID=8, VIDs=UINT4:29 30
+09:54:01 [Debug:LDBInterface] 	0007    RPTID=10, VIDs=UINT4:33
+09:54:01 [Debug:LDBInterface] 	0008    RPTID=11, VIDs=UINT4:17 16 11 12
+09:54:01 [Debug:LDBInterface] 	0009    RPTID=12, VIDs=UINT4:12
+09:54:01 [Debug:LDBInterface] 	0010    RPTID=13, VIDs=UINT4:17 16 13 11 12
+09:54:01 [Debug:LDBInterface] 	0011    RPTID=14, VIDs=UINT4:6 7
+09:54:01 [Debug:LDBInterface] Complete to reading report information from database(mdb file).
+09:54:01 [Debug:LDBInterface] Start to reading limitid information from database(mdb file).
+09:54:01 [Debug:LDBInterface] Complete to reading limitid information from database(mdb file).
+09:54:01 [Debug:LDBInterface] Start to reading alarm information from database(mdb file).
+09:54:01 [Debug:LDBInterface] Complete to reading alarm information from database(mdb file).
+09:54:01 [Debug:LDBInterface] Start to reading User Defined Message from database(mdb file).
+09:54:01 [Debug:LDBInterface] Complete to reading User Defined Message from database(mdb file).
+09:54:01 [Debug:LDBInterface] Start to reading Spool information from database(mdb file).
+09:54:01 [Debug:LDBInterface] 	0000    Stream=-1, Function=-1
+09:54:01 [Debug:LDBInterface] Complete to reading Spool information from database(mdb file).
+09:54:01 [Debug:LDBInterface] Start to reading rcmd information from database(mdb file).
+09:54:01 [Debug:LDBInterface] Complete to reading rcmd information from database(mdb file).
+09:54:01 [Debug:LDBInterface] Start to reading collection event name list information from database(mdb file).
+09:54:01 [Debug:LDBInterface] Complete to reading collection event name list information from database(mdb file).
+09:54:01 [Debug:LDBInterface] Start to reading SECS2 message information from database(mdb file).
+09:54:01 [Debug:LDBInterface] 	0000    Stream=1, Function=0
+09:54:01 [Debug:LDBInterface] 	0001    Stream=1, Function=1
+09:54:01 [Debug:LDBInterface] 	0002    Stream=1, Function=2
+09:54:01 [Debug:LDBInterface] 	0003    Stream=1, Function=3
+09:54:01 [Debug:LDBInterface] 	0004    Stream=1, Function=4
+09:54:01 [Debug:LDBInterface] 	0005    Stream=1, Function=11
+09:54:01 [Debug:LDBInterface] 	0006    Stream=1, Function=12
+09:54:01 [Debug:LDBInterface] 	0007    Stream=1, Function=13
+09:54:01 [Debug:LDBInterface] 	0008    Stream=1, Function=14
+09:54:01 [Debug:LDBInterface] 	0009    Stream=1, Function=15
+09:54:01 [Debug:LDBInterface] 	0010    Stream=1, Function=16
+09:54:01 [Debug:LDBInterface] 	0011    Stream=1, Function=17
+09:54:01 [Debug:LDBInterface] 	0012    Stream=1, Function=18
+09:54:01 [Debug:LDBInterface] 	0013    Stream=1, Function=21
+09:54:01 [Debug:LDBInterface] 	0014    Stream=1, Function=22
+09:54:01 [Debug:LDBInterface] 	0015    Stream=1, Function=23
+09:54:01 [Debug:LDBInterface] 	0016    Stream=1, Function=24
+09:54:01 [Debug:LDBInterface] 	0017    Stream=2, Function=0
+09:54:01 [Debug:LDBInterface] 	0018    Stream=2, Function=13
+09:54:01 [Debug:LDBInterface] 	0019    Stream=2, Function=14
+09:54:01 [Debug:LDBInterface] 	0020    Stream=2, Function=15
+09:54:01 [Debug:LDBInterface] 	0021    Stream=2, Function=16
+09:54:01 [Debug:LDBInterface] 	0022    Stream=2, Function=17
+09:54:01 [Debug:LDBInterface] 	0023    Stream=2, Function=18
+09:54:01 [Debug:LDBInterface] 	0024    Stream=2, Function=23
+09:54:01 [Debug:LDBInterface] 	0025    Stream=2, Function=24
+09:54:01 [Debug:LDBInterface] 	0026    Stream=2, Function=25
+09:54:01 [Debug:LDBInterface] 	0027    Stream=2, Function=26
+09:54:01 [Debug:LDBInterface] 	0028    Stream=2, Function=29
+09:54:01 [Debug:LDBInterface] 	0029    Stream=2, Function=30
+09:54:01 [Debug:LDBInterface] 	0030    Stream=2, Function=31
+09:54:01 [Debug:LDBInterface] 	0031    Stream=2, Function=32
+09:54:01 [Debug:LDBInterface] 	0032    Stream=2, Function=33
+09:54:01 [Debug:LDBInterface] 	0033    Stream=2, Function=34
+09:54:01 [Debug:LDBInterface] 	0034    Stream=2, Function=35
+09:54:01 [Debug:LDBInterface] 	0035    Stream=2, Function=36
+09:54:01 [Debug:LDBInterface] 	0036    Stream=2, Function=37
+09:54:01 [Debug:LDBInterface] 	0037    Stream=2, Function=38
+09:54:01 [Debug:LDBInterface] 	0038    Stream=2, Function=39
+09:54:01 [Debug:LDBInterface] 	0039    Stream=2, Function=40
+09:54:01 [Debug:LDBInterface] 	0040    Stream=2, Function=41
+09:54:01 [Debug:LDBInterface] 	0041    Stream=2, Function=42
+09:54:01 [Debug:LDBInterface] 	0042    Stream=2, Function=43
+09:54:01 [Debug:LDBInterface] 	0043    Stream=2, Function=44
+09:54:01 [Debug:LDBInterface] 	0044    Stream=2, Function=45
+09:54:01 [Debug:LDBInterface] 	0045    Stream=2, Function=46
+09:54:01 [Debug:LDBInterface] 	0046    Stream=2, Function=47
+09:54:01 [Debug:LDBInterface] 	0047    Stream=2, Function=48
+09:54:01 [Debug:LDBInterface] 	0048    Stream=3, Function=0
+09:54:01 [Debug:LDBInterface] 	0049    Stream=3, Function=17
+09:54:01 [Debug:LDBInterface] 	0050    Stream=3, Function=18
+09:54:01 [Debug:LDBInterface] 	0051    Stream=3, Function=19
+09:54:01 [Debug:LDBInterface] 	0052    Stream=3, Function=20
+09:54:01 [Debug:LDBInterface] 	0053    Stream=3, Function=25
+09:54:01 [Debug:LDBInterface] 	0054    Stream=3, Function=26
+09:54:01 [Debug:LDBInterface] 	0055    Stream=3, Function=27
+09:54:01 [Debug:LDBInterface] 	0056    Stream=3, Function=28
+09:54:01 [Debug:LDBInterface] 	0057    Stream=5, Function=0
+09:54:01 [Debug:LDBInterface] 	0058    Stream=5, Function=1
+09:54:01 [Debug:LDBInterface] 	0059    Stream=5, Function=2
+09:54:01 [Debug:LDBInterface] 	0060    Stream=5, Function=3
+09:54:01 [Debug:LDBInterface] 	0061    Stream=5, Function=4
+09:54:01 [Debug:LDBInterface] 	0062    Stream=5, Function=5
+09:54:01 [Debug:LDBInterface] 	0063    Stream=5, Function=6
+09:54:01 [Debug:LDBInterface] 	0064    Stream=5, Function=7
+09:54:01 [Debug:LDBInterface] 	0065    Stream=5, Function=8
+09:54:01 [Debug:LDBInterface] 	0066    Stream=6, Function=0
+09:54:01 [Debug:LDBInterface] 	0067    Stream=6, Function=1
+09:54:01 [Debug:LDBInterface] 	0068    Stream=6, Function=2
+09:54:01 [Debug:LDBInterface] 	0069    Stream=6, Function=11
+09:54:01 [Debug:LDBInterface] 	0070    Stream=6, Function=12
+09:54:01 [Debug:LDBInterface] 	0071    Stream=6, Function=15
+09:54:01 [Debug:LDBInterface] 	0072    Stream=6, Function=16
+09:54:01 [Debug:LDBInterface] 	0073    Stream=6, Function=19
+09:54:01 [Debug:LDBInterface] 	0074    Stream=6, Function=20
+09:54:01 [Debug:LDBInterface] 	0075    Stream=6, Function=23
+09:54:01 [Debug:LDBInterface] 	0076    Stream=6, Function=24
+09:54:01 [Debug:LDBInterface] 	0077    Stream=7, Function=0
+09:54:01 [Debug:LDBInterface] 	0078    Stream=7, Function=1
+09:54:01 [Debug:LDBInterface] 	0079    Stream=7, Function=2
+09:54:01 [Debug:LDBInterface] 	0080    Stream=7, Function=3
+09:54:01 [Debug:LDBInterface] 	0081    Stream=7, Function=4
+09:54:01 [Debug:LDBInterface] 	0082    Stream=7, Function=5
+09:54:01 [Debug:LDBInterface] 	0083    Stream=7, Function=6
+09:54:01 [Debug:LDBInterface] 	0084    Stream=7, Function=17
+09:54:01 [Debug:LDBInterface] 	0085    Stream=7, Function=18
+09:54:01 [Debug:LDBInterface] 	0086    Stream=7, Function=19
+09:54:01 [Debug:LDBInterface] 	0087    Stream=7, Function=20
+09:54:01 [Debug:LDBInterface] 	0088    Stream=7, Function=23
+09:54:01 [Debug:LDBInterface] 	0089    Stream=7, Function=24
+09:54:01 [Debug:LDBInterface] 	0090    Stream=7, Function=25
+09:54:01 [Debug:LDBInterface] 	0091    Stream=7, Function=26
+09:54:01 [Debug:LDBInterface] 	0092    Stream=7, Function=27
+09:54:01 [Debug:LDBInterface] 	0093    Stream=7, Function=28
+09:54:01 [Debug:LDBInterface] 	0094    Stream=10, Function=0
+09:54:01 [Debug:LDBInterface] 	0095    Stream=10, Function=1
+09:54:01 [Debug:LDBInterface] 	0096    Stream=10, Function=2
+09:54:01 [Debug:LDBInterface] 	0097    Stream=10, Function=3
+09:54:01 [Debug:LDBInterface] 	0098    Stream=10, Function=4
+09:54:01 [Debug:LDBInterface] 	0099    Stream=10, Function=5
+09:54:01 [Debug:LDBInterface] 	0100    Stream=10, Function=6
+09:54:01 [Debug:LDBInterface] 	0101    Stream=14, Function=0
+09:54:01 [Debug:LDBInterface] 	0102    Stream=14, Function=1
+09:54:01 [Debug:LDBInterface] 	0103    Stream=14, Function=2
+09:54:01 [Debug:LDBInterface] 	0104    Stream=14, Function=3
+09:54:01 [Debug:LDBInterface] 	0105    Stream=14, Function=4
+09:54:01 [Debug:LDBInterface] 	0106    Stream=14, Function=9
+09:54:01 [Debug:LDBInterface] 	0107    Stream=14, Function=10
+09:54:01 [Debug:LDBInterface] 	0108    Stream=14, Function=11
+09:54:01 [Debug:LDBInterface] 	0109    Stream=14, Function=12
+09:54:01 [Debug:LDBInterface] 	0110    Stream=14, Function=19
+09:54:01 [Debug:LDBInterface] 	0111    Stream=14, Function=20
+09:54:01 [Debug:LDBInterface] 	0112    Stream=16, Function=0
+09:54:01 [Debug:LDBInterface] 	0113    Stream=16, Function=1
+09:54:01 [Debug:LDBInterface] 	0114    Stream=16, Function=2
+09:54:01 [Debug:LDBInterface] 	0115    Stream=16, Function=5
+09:54:01 [Debug:LDBInterface] 	0116    Stream=16, Function=6
+09:54:01 [Debug:LDBInterface] 	0117    Stream=16, Function=11
+09:54:01 [Debug:LDBInterface] 	0118    Stream=16, Function=12
+09:54:01 [Debug:LDBInterface] 	0119    Stream=16, Function=15
+09:54:01 [Debug:LDBInterface] 	0120    Stream=16, Function=16
+09:54:01 [Debug:LDBInterface] 	0121    Stream=16, Function=17
+09:54:01 [Debug:LDBInterface] 	0122    Stream=16, Function=18
+09:54:01 [Debug:LDBInterface] 	0123    Stream=16, Function=19
+09:54:01 [Debug:LDBInterface] 	0124    Stream=16, Function=20
+09:54:01 [Debug:LDBInterface] 	0125    Stream=16, Function=21
+09:54:01 [Debug:LDBInterface] 	0126    Stream=16, Function=22
+09:54:01 [Debug:LDBInterface] 	0127    Stream=16, Function=23
+09:54:01 [Debug:LDBInterface] 	0128    Stream=16, Function=24
+09:54:01 [Debug:LDBInterface] 	0129    Stream=16, Function=25
+09:54:01 [Debug:LDBInterface] 	0130    Stream=16, Function=26
+09:54:01 [Debug:LDBInterface] 	0131    Stream=16, Function=27
+09:54:01 [Debug:LDBInterface] 	0132    Stream=16, Function=28
+09:54:01 [Debug:LDBInterface] 	0133    Stream=16, Function=29
+09:54:01 [Debug:LDBInterface] 	0134    Stream=16, Function=30
+09:54:01 [Debug:LDBInterface] Complete to reading  SECS2 message information from database(mdb file).
+09:54:01 [Proc:Seq] Initialize, Result = 0 th=405c
+09:54:01 [Proc:Seq] Start, Result = 0 th=405c
+09:54:01 [Proc:Seq] Eq connection state is changed from NotConnected to Connected th=405c
+09:54:01 [Proc:Seq] receive message(GEMGetLicense), msgid(0) th=405c
+09:54:01 [Proc:Seq] (E30->EQ) GEMGetLicense, LicenseName=XGemUnknown
+09:54:01 [Proc:Seq] (EQ->E30) GEMGetLicense
+09:54:01 [Proc:Seq] receive message(GEMGetParam), msgid(0) th=405c
+09:54:01 [Alarm:-30251] VID:DefaultCommState does not exist th=405c
+09:54:01 [Proc:Seq] OperationStep state is changed from NotInitialized to CheckedCommState th=405c
+09:54:01 [Proc:Seq] (E30->EQ) GEMGetParam, Count=49
+09:54:01 [Alarm:-30251] GEMGetParam th=405c
+09:54:01 [Proc:Seq] receive message(GEMGetAttributeV), msgid(0) th=405c
+09:54:01 [Proc:Seq] (E30->EQ) GEMGetAttributeV, Count:0
+09:54:01 [Proc:Seq] (EQ->E30) GEMGetAttributeV
+09:54:05 [Proc:Seq] receive message(GEMSetEstablish), msgid(0) th=405c
+09:54:05 [Proc:Seq] Communication state is changed from NONE to WAIT CRA th=405c
+09:54:05 [Proc:Seq] (E30->EQ) GEMCommStateChanged, State=4
+09:54:05 [Proc:Seq] (EQ->E30) GEMSetEstablish, State=1
+09:54:05 [Proc:Seq] receive message(GEMControlStateChange), msgid(0) th=405c
+09:54:05 [Alarm:-30011] controlstate can't be changed to onlineremote. because communication state is not communiating state. th=405c
+09:54:05 [Proc:Seq] (E30->EQ) GEMErrorOccurred, ErrorCode=-30011
+09:54:05 [Alarm:-30011] GEMReqControlState, State=5 th=405c
+09:54:05 [Proc:Seq] don't send collection event(LoadPort_NoStateToOutOfService), now is offline. th=405c
+09:54:05 [Proc:Seq] don't send collection event(LoadPort_NoStateToOutOfService), now is offline. th=405c
+09:54:07 [Proc:Seq] receive message(GEMSetAlarm), msgid(0) th=405c
+09:54:07 [Alarm:-30252] alarmid(20) does not exist. th=405c
+09:54:07 [Alarm:-30252] GEMSetAlarm, AlarmId=20 th=405c
+09:54:28 [Proc:Seq] HSMS state is changed from NotConnected to NotSelected th=405c
+09:54:28 [Send:00000000] S1F13 : Mdln=0, SoftRev=0 th=405c
+09:54:28 [Proc:Seq] HSMS state is changed from NotSelected to Selected th=405c
+09:54:28 [Recv:000040B6] S1F14 : CommAck=0 th=405c
+09:54:28 [Proc:Seq] receive message(S1F14), msgid(16566) th=405c
+09:54:28 [Proc:Seq] Communication state is changed from WAIT CRA to COMMUNICATING th=405c
+09:54:28 [Proc:Seq] (E30->EQ) GEMCommStateChanged, State=5
+09:54:28 [Proc:Seq] OperationStep state is changed from CheckedCommState to CheckedControlState th=405c
+09:54:28 [Proc:Seq] Control state is changed from CONTROL_NONE to EQ_OFFLINE th=405c
+09:54:28 [Proc:Seq] receive message(GEMSetEstablish), msgid(0) th=405c
+09:54:28 [Proc:Seq] (EQ->E30) GEMSetEstablish, State=1
+09:54:33 [Proc:Seq] receive message(GEMControlStateChange), msgid(0) th=405c
+09:54:33 [Proc:Seq] Control state is changed from EQ_OFFLINE to ATTEMPT_ONLINE th=405c
+09:54:33 [Send:00000000] S1F1 th=405c
+09:54:33 [Proc:Seq] (E30->EQ) GEMControlStateChanged, State=2
+09:54:33 [Proc:Seq] (EQ->E30) GEMReqControlState, State=5
+09:54:33 [Recv:000040B8] S1F2 th=405c
+09:54:33 [Proc:Seq] receive message(S1F2), msgid(16568) th=405c
+09:54:33 [Proc:Seq] Control state is changed from ATTEMPT_ONLINE to ONLINE_REMOTE th=405c
+09:54:33 [Send:00000000] S6F11 : Ceid Name=Remote th=405c
+09:54:33 [Proc:Seq] (E30->EQ) GEMControlStateChanged, State=5
+09:54:33 [Send:00000000] S6F11 : Ceid Name=MaterialRemoved th=405c
+09:54:33 [Send:00000000] S6F11 : Ceid Name=LoadPort_NoStateToNotReserved th=405c
+09:54:33 [Alarm:-30253] ceid() does not exist. th=405c
+09:54:33 [Proc:Seq] receive message(GEMControlStateChange), msgid(0) th=405c
+09:54:33 [Proc:Seq] (EQ->E30) GEMReqControlState, State=5
+09:54:33 [Send:00000000] S6F11 : Ceid Name=LoadPort_OutOfServiceToInService th=405c
+09:54:33 [Send:00000000] S6F11 : Ceid Name=LoadPort_InServiceToTransferReady th=405c
+09:54:33 [Send:00000000] S6F11 : Ceid Name=LoadPort_TransferReadyToReadyToLoad th=405c
+09:54:33 [Send:00000000] S6F11 : Ceid Name=LoadPort_NoStateToManual th=405c
+09:54:33 [Send:00000000] S6F11 : Ceid Name=MaterialRemoved th=405c
+09:54:33 [Send:00000000] S6F11 : Ceid Name=LoadPort_NoStateToNotReserved th=405c
+09:54:33 [Alarm:-30253] ceid() does not exist. th=405c
+09:54:33 [Send:00000000] S6F11 : Ceid Name=LoadPort_OutOfServiceToInService th=405c
+09:54:33 [Send:00000000] S6F11 : Ceid Name=LoadPort_InServiceToTransferReady th=405c
+09:54:33 [Send:00000000] S6F11 : Ceid Name=LoadPort_TransferReadyToReadyToLoad th=405c
+09:54:33 [Send:00000000] S6F11 : Ceid Name=LoadPort_NoStateToManual th=405c
+09:54:33 [Recv:000040BA] S6F12 th=405c
+09:54:33 [Proc:Seq] receive message(S6F12), msgid(16570) th=405c
+09:54:33 [Recv:000040BC] S6F12 th=405c
+09:54:33 [Proc:Seq] receive message(S6F12), msgid(16572) th=405c
+09:54:33 [Recv:000040BE] S6F12 th=405c
+09:54:33 [Proc:Seq] receive message(S6F12), msgid(16574) th=405c
+09:54:33 [Recv:000040C0] S6F12 th=405c
+09:54:33 [Proc:Seq] receive message(S6F12), msgid(16576) th=405c
+09:54:33 [Recv:000040C2] S6F12 th=405c
+09:54:33 [Proc:Seq] receive message(S6F12), msgid(16578) th=405c
+09:54:33 [Recv:000040C4] S6F12 th=405c
+09:54:33 [Proc:Seq] receive message(S6F12), msgid(16580) th=405c
+09:54:33 [Recv:000040C6] S6F12 th=405c
+09:54:33 [Proc:Seq] receive message(S6F12), msgid(16582) th=405c
+09:54:33 [Recv:000040C8] S6F12 th=405c
+09:54:33 [Proc:Seq] receive message(S6F12), msgid(16584) th=405c
+09:54:33 [Recv:000040CA] S6F12 th=405c
+09:54:33 [Proc:Seq] receive message(S6F12), msgid(16586) th=405c
+09:54:33 [Recv:000040CC] S6F12 th=405c
+09:54:33 [Proc:Seq] receive message(S6F12), msgid(16588) th=405c
+09:54:33 [Recv:000040CE] S6F12 th=405c
+09:54:33 [Proc:Seq] receive message(S6F12), msgid(16590) th=405c
+09:54:33 [Recv:000040D0] S6F12 th=405c
+09:54:33 [Proc:Seq] receive message(S6F12), msgid(16592) th=405c
+09:54:33 [Recv:000040D2] S6F12 th=405c
+09:54:33 [Proc:Seq] receive message(S6F12), msgid(16594) th=405c
+09:54:43 [Recv:00003DC4] S2F23 : TraceId=1 th=405c
+09:54:43 [Proc:Seq] receive message(S2F23), msgid(15812) th=405c
+09:54:43 [Send:00003DC4] S2F24 : TIAACK=0 th=405c
+09:54:43 [Proc:Seq] send message(S2F24), msgid(15812), return(0) th=405c
+09:54:43 [Proc:Seq] add trace(1) th=405c
+09:54:53 [Send:00000000] S6F1 : TraceId=1 th=21ec
+09:54:53 [Proc:Seq] send message(S6F1), msgid(0), return(0) th=21ec
+09:55:03 [Send:00000000] S6F1 : TraceId=1 th=21ec
+09:55:03 [Proc:Seq] send message(S6F1), msgid(0), return(0) th=21ec
+09:55:13 [Send:00000000] S6F1 : TraceId=1 th=21ec
+09:55:13 [Proc:Seq] send message(S6F1), msgid(0), return(0) th=21ec
+09:55:23 [Send:00000000] S6F1 : TraceId=1 th=21ec
+09:55:23 [Proc:Seq] send message(S6F1), msgid(0), return(0) th=21ec
+09:55:33 [Send:00000000] S6F1 : TraceId=1 th=21ec
+09:55:33 [Proc:Seq] send message(S6F1), msgid(0), return(0) th=21ec
+09:55:43 [Send:00000000] S6F1 : TraceId=1 th=21ec
+09:55:43 [Proc:Seq] send message(S6F1), msgid(0), return(0) th=21ec
+09:55:53 [Send:00000000] S6F1 : TraceId=1 th=21ec
+09:55:53 [Proc:Seq] send message(S6F1), msgid(0), return(0) th=21ec
+09:56:03 [Send:00000000] S6F1 : TraceId=1 th=21ec
+09:56:03 [Proc:Seq] send message(S6F1), msgid(0), return(0) th=21ec
+09:56:13 [Send:00000000] S6F1 : TraceId=1 th=21ec
+09:56:13 [Proc:Seq] send message(S6F1), msgid(0), return(0) th=21ec
+09:56:23 [Send:00000000] S6F1 : TraceId=1 th=21ec
+09:56:23 [Proc:Seq] send message(S6F1), msgid(0), return(0) th=21ec
+09:56:24 [Proc:Seq] receive message(GEMSetVariable), msgid(1) th=405c
+09:56:24 [Proc:Seq] (EQ->E30) GEMSetVariable, Count=1
+09:56:33 [Send:00000000] S6F1 : TraceId=1 th=21ec
+09:56:33 [Proc:Seq] send message(S6F1), msgid(0), return(0) th=21ec
+09:56:43 [Send:00000000] S6F1 : TraceId=1 th=21ec
+09:56:43 [Proc:Seq] send message(S6F1), msgid(0), return(0) th=21ec
+09:56:53 [Send:00000000] S6F1 : TraceId=1 th=21ec
+09:56:53 [Proc:Seq] send message(S6F1), msgid(0), return(0) th=21ec
+09:57:03 [Send:00000000] S6F1 : TraceId=1 th=21ec
+09:57:03 [Proc:Seq] send message(S6F1), msgid(0), return(0) th=21ec
+09:57:13 [Send:00000000] S6F1 : TraceId=1 th=21ec
+09:57:13 [Proc:Seq] send message(S6F1), msgid(0), return(0) th=21ec
+09:57:23 [Send:00000000] S6F1 : TraceId=1 th=21ec
+09:57:23 [Proc:Seq] send message(S6F1), msgid(0), return(0) th=21ec
+09:57:33 [Send:00000000] S6F1 : TraceId=1 th=21ec
+09:57:33 [Proc:Seq] send message(S6F1), msgid(0), return(0) th=21ec
+09:57:43 [Send:00000000] S6F1 : TraceId=1 th=21ec
+09:57:43 [Proc:Seq] send message(S6F1), msgid(0), return(0) th=21ec
+09:57:53 [Send:00000000] S6F1 : TraceId=1 th=21ec
+09:57:53 [Proc:Seq] send message(S6F1), msgid(0), return(0) th=21ec
+09:58:03 [Send:00000000] S6F1 : TraceId=1 th=21ec
+09:58:03 [Proc:Seq] send message(S6F1), msgid(0), return(0) th=21ec

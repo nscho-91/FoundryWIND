@@ -1,0 +1,753 @@
+﻿using System;
+using System.Collections; 
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading; 
+using System.Threading.Tasks;
+using ezAutoMom;
+using ezTools;
+using System.Windows.Forms;
+using ezCam;
+
+namespace ezAuto_EFEM
+{
+    class HW_LoadPort_RND_4568 : HW_LoadPort_Mom, Control_Child 
+    {
+        delegate void CallRS232(string sMsg, string[] sMsgs);
+
+        enum eError
+        {
+            Connect,
+            Timeout,
+            CSTVerifyError,
+            SlotMapVerifyError,
+        }
+        string[] m_sErrors = new string[]
+        {
+            "Not Connect !!",
+            "Operation TimeOver !!",
+            "CST ID Verification Error",
+            "Slotmap Verification Error"
+        }; 
+
+        int m_msMotion = 20000;
+        int m_msRS232 = 20000;
+        bool m_bFirstHome = true;
+        bool m_bNeedInit = false;
+
+        const char c_cSplitter = ' ';
+
+        enum eCmd
+        {
+            ORG,    // Home
+            DRT,    // error시 명령어가 듣지 않음. 리셋.
+            INID,   // 카세트 정보 확인 4, 5, 6, 8 또는 0
+            RLNP,   // 매핑없이 로드
+            RLMP,   // 매핑 후 로드
+            RUNP,   // 언로드
+            MLD,    // Mapping 결과 읽기
+            CPDN,   // Lift Up
+            CPUP,   // Lift Down
+        }
+
+        string[,] m_strErrorMsgs = new string[,]
+        {
+            { "201", "Foup Clamp UP Error" },
+            { "202", "Foup Clamp Down Error" }, 
+            { "203", "Foup Clam Lock Error" },
+            { "204", "Foup Clamp Foreward Error" },
+            { "205", "Foup Clamp Back Error" },
+            { "206", "Foup Docking Error" }, 
+            { "207", "Foup Undocking Error" }, 
+            { "208", "Door Latch Error" }, 
+            { "209", "Door Unlatch Error" }, 
+            { "210", "Door Suction On Error" }, 
+            { "211", "Door Suction On/Off Error" }, 
+            { "212", "Door Open Error" }, 
+            { "213", "Door Close Error" }, 
+            { "214", "Mapping Arm Home Error" }, 
+            { "215", "Mapping Arm Position Error" }, 
+            { "240", "Wafer Protrution Detected Error" }, 
+            { "241", "Main Air Error" }, 
+            { "243", "No Product on Loadport Error" }, 
+            { "246", "Cassette Loading Error" }, 
+            { "247", "Cassette Unloading Error" }, 
+            { "248", "Safty bar Detected Error" }, 
+            { "249", "Cover Open Error" }, 
+            { "E02", "Loadport Busy Error" }
+        };
+
+        const int c_nReadBuf = 4096;
+
+        ezRS232 m_rs232; // BaudRate 56000, Data 8, Stop 1, Parity & flow None
+        CallRS232 m_cbRS232 = null;
+        char[] m_aBuf = new char[c_nReadBuf];     //RS232 Recieve Data Buffer
+        string m_sLastCmd = "";
+
+        ezCam_CognexBCR m_cogBCR = new ezCam_CognexBCR(); // ing for BCR
+        HW_RnR_Mom m_RnR;
+
+        int m_diPresent = -1;
+        int m_diPlacement = -1;
+        int m_diSwitch = -1;
+        int m_diOpen = -1;
+        int m_diUnloadSwitch = -1;
+        int m_diDocking = -1;   //KDG 161216 KDG Add Docking
+        int m_diPlacement4inch = -1;
+        int m_diPlacement5inch = -1;
+        int m_diPlacement6inch = -1;
+        int m_diPlacement8inch = -1;
+
+        public override void Init(int nID, Auto_Mom auto)
+        {
+            string strSize = "mm300";
+            int nMode = 0, nType = 0;
+            base.Init(nID, auto);
+            m_control.Add(this);
+            m_log.m_reg.Read("Mode", ref nMode);
+            m_log.m_reg.Read("WaferSize", ref strSize);
+            m_log.m_reg.Read("TypeSlot", ref nType); // ing 171106
+            m_infoCarrier.m_eSlotType = (Info_Carrier.eSlotType)nType;  // ing 171106
+            
+            Wafer_Size.eSize eSize = (Wafer_Size.eSize)Enum.Parse(typeof(Wafer_Size.eSize), strSize);
+            m_infoCarrier.Init(m_id + "InfoCarrier", m_log, eSize);
+            m_cogBCR.Init("BCR", m_log);
+            m_RnR = m_auto.ClassRnR();
+            m_rs232 = new ezRS232(m_id + "_RS232", m_log);
+            m_rs232.CallMsgRcv += m_rs232_CallMsgRcv;
+
+            RunGrid(eGrid.eRegRead);
+            RunGrid(eGrid.eInit);
+            InitString();
+            if (!m_rs232.Connect(true))
+            {
+                Thread.Sleep(500);
+                if (!m_rs232.Connect(true))
+                {
+                    SetAlarm(eAlarm.Stop, eError.Connect);
+                }
+            }
+        }
+
+        public override void ThreadStop()
+        {
+            base.ThreadStop();
+            m_rs232.ThreadStop();
+        }
+
+        void InitString()
+        {
+            if (Enum.GetNames(typeof(eError)).Length != m_sErrors.Length) m_log.Popup("Init String Error"); 
+            for (int n = 0; n < m_sErrors.Length; n++) InitString((eError)n, m_sErrors[n]); 
+        } 
+
+        void InitString(eError eErr, string str)
+        {
+            m_log.AddString(str);
+            if (m_xGem == null) return;
+            m_xGem.AddALID(m_id, (int)eErr, str);
+        } 
+
+        void SetAlarm(eAlarm alarm, eError eErr)
+        {
+            SetState(eState.Error);
+            m_work.SetError(alarm, m_log, (int)eErr);
+            if (alarm != eAlarm.Popup) m_infoCarrier.m_eState = Info_Carrier.eState.Init; // ing 170408
+            if (m_xGem == null) return;
+            m_xGem.SetAlarm(m_id, (int)eErr);
+        } 
+
+        public void ControlGrid(Control_Mom control, ezGrid rGrid, eGrid eMode)
+        {
+            control.AddDI(rGrid, ref m_diPlacement, m_id, "Placement", "Placement Check Sensor");
+            control.AddDI(rGrid, ref m_diPresent, m_id, "Present", "Present Check Sensor");
+            control.AddDI(rGrid, ref m_diOpen, m_id, "Open", "Open Check Sensor");
+            control.AddDI(rGrid, ref m_diSwitch, m_id, "Switch", "Loadport Switch");
+            control.AddDI(rGrid, ref m_diUnloadSwitch, m_id, "UnloadSwitch", "Unload Switch");
+            control.AddDI(rGrid, ref m_diDocking, m_id, "Docking", "Load Port Docking Check Sensor");
+        }
+
+        public override void RunGrid(ezTools.eGrid eMode)
+        {
+            m_grid.Update(eMode);
+            m_rs232.RunGrid(m_grid, eMode);
+            m_grid.Set(ref m_msHome, "Timeout", "Home", "Timeout (ms)");
+            m_grid.Set(ref m_msMotion, "Timeout", "Motion", "Timeout (ms)");
+            m_grid.Set(ref m_msRS232, "Timeout", "RS232", "Timeout (ms)");
+            m_infoCarrier.RunGrid(m_grid, eMode);
+            m_grid.Set(ref m_bUseBCR, "BCR", "Use", "Use DM100X"); // ing for BCR
+            m_grid.Set(ref m_bMSB, "BCR", "MSBMode", "Always Use CST ID = AAA");
+            m_grid.Set(ref m_bUseSlimSlot, "SlimSlot", "Use SlimSlot", "Use SlimSlot");
+            m_grid.Set(ref m_nSlimSlot, "SlimSlot", "TeachingPoint", "SlimSlot Teaching Point");
+            m_cogBCR.RunGrid(m_grid, eMode);
+            m_grid.Refresh();
+        }
+
+        void m_rs232_CallMsgRcv()
+        {
+            int nRead = m_rs232.Read(m_aBuf, c_nReadBuf);
+            m_aBuf[nRead] = (char)0x00;
+            m_aBuf[nRead + 1] = (char)0x00;
+            string sMsg = new string(m_aBuf, 0, nRead);
+            sMsg = sMsg.Replace("\r\n", "");
+            string[] sMsgs = sMsg.Split(c_cSplitter);
+
+            m_log.Add("CMD Recieve : " + sMsg);
+            if (m_cbRS232 != null)
+            {
+                m_cbRS232(sMsg, sMsgs);
+                return;
+            }
+        }
+
+        void WriteCmd(params object[] objs)
+        {
+            string str = m_sLastCmd = objs[0].ToString();
+            for (int n = 1; n < objs.Length; n++) str += " " + objs[n].ToString();
+            m_log.Add(" --> " + str);
+            str = str + (char)0x0D + (char)0x0A;
+            m_rs232.Write(str, false);
+        }
+
+        string FindErrorMsg(string sErr)
+        {
+            for (int n = 0; n < m_strErrorMsgs.Length / 2; n++)
+            {
+                if (sErr == m_strErrorMsgs[n, 0]) return m_strErrorMsgs[n, 1]; 
+            }
+            return "Can not Find Error MSG"; 
+        }
+
+        string ConvertErrorMSG(string sErr)
+        {
+            SetState(eState.Error);
+            if (sErr.IndexOf(",") >= 0) return null;
+            m_bNeedInit = true;
+            return "RND Error MSG : " + FindErrorMsg(sErr);
+        }
+
+        eHWResult WaitReply(int msDelay, string sMsg)
+        {
+            int ms10 = 0;
+            while (m_cbRS232 != null)
+            {
+                Thread.Sleep(10);
+                ms10 += 10;
+                if (ms10 > msDelay)
+                {
+                    SetAlarm(eAlarm.Warning, eError.Timeout);
+                    m_log.Popup(m_sLastCmd + " Timeout !!");
+                    return eHWResult.Error;
+                }
+            }
+            if (GetState() == eState.Error) return eHWResult.Error;
+            else return eHWResult.OK;
+        }
+
+        bool GetLoadRequest()
+        {
+            return m_control.GetInputBit(m_diSwitch);
+        }
+
+        public override eHWResult SetMappingData(string strMaps)
+        {
+            string strMap = "";
+            for (int i = 0; i < m_infoCarrier.m_lWafer; i++)
+            {
+                m_infoCarrier.m_infoWafer[i].m_wafer.m_eSize = m_infoCarrier.m_wafer.m_eSize; 
+                strMap += strMaps.Substring(i, 1);
+                switch (strMaps.Substring(i, 1))
+                {
+                    case "1": m_infoCarrier.m_infoWafer[i].SetExist(true); break;
+                    case "0": m_infoCarrier.m_infoWafer[i].SetExist(false); break;
+                    case "D":
+                        m_log.Popup("Double Wafer Detected Slot : " + i.ToString());
+                        m_infoCarrier.m_eState = Info_Carrier.eState.Done;
+                        SetState(eState.RunUnload);
+                        return eHWResult.Error;
+                    case "C":
+                        m_log.Popup("Cross Wafer Detected, Slot : " + i.ToString());
+                        m_infoCarrier.m_eState = Info_Carrier.eState.Done;
+                        SetState(eState.RunUnload);
+                        return eHWResult.Error;
+                    default:
+                        m_log.Popup("Can not be Analyzed MapData");
+                        return eHWResult.Error;
+                }
+            }
+            m_infoCarrier.m_eState = Info_Carrier.eState.MapDone;
+            if (m_auto.m_strWork == Auto_Mom.eWork.SSEM.ToString())
+            {
+                if (m_work.GetSSEMGEM() != null) 
+                {
+                    if (((Gem_SSEM)m_work.GetSSEMGEM()).IsOnlineRemote())
+                        ((Gem_SSEM)m_work.GetSSEMGEM()).SetMappingDone(strMap);
+                }
+            }
+            else if (m_xGem.IsOnlineRemote() && m_auto.m_bXgemUse && m_work.GetState() == eWorkRun.Run)
+            {
+                if (!m_xGem.SetSlotMap(m_infoCarrier))
+                    SetAlarm(eAlarm.Warning, eError.SlotMapVerifyError);
+            }
+            m_infoCarrier.m_bMappingDone = true; 
+            return eHWResult.OK;
+        }
+
+        protected override void ProcInit()
+        {
+        }
+
+        protected override void ProcHome()
+        {
+            m_infoCarrier.m_eState = Info_Carrier.eState.Init; // ing 171197
+            if (CmdResetCPU()) return;
+            if (!m_wtr.IsArmClose(HW_WTR_Mom.eArm.Upper) || !m_wtr.IsArmClose(HW_WTR_Mom.eArm.Lower))
+            {
+                m_log.Popup("Check WTR Arm Close");
+                SetState(eState.Error);
+                return; 
+            }
+            //if (m_bFirstHome || m_bNeedInit)
+            //{
+                if (CmdHome()) return;
+            //    m_bFirstHome = false;
+           //     m_bNeedInit = false;
+                SetState(eState.Ready);
+            //}
+            //else if (!m_bFirstHome)
+            //{
+            //    if (!IsDoorOpenPos()) SetState(eState.Ready);
+            //    else
+            //    {
+            //        if (CmdUnload())
+            //        {
+            //            SetState(eState.Error);
+            //            return;
+            //        }
+            //        SetState(eState.Ready);
+            //    }
+            //}
+        }
+
+        protected override void ProcReady()
+        {
+            m_auto.ClassHandler().ClassRFID(m_nID).ResetID();
+            if (!GetLoadRequest()) return;
+            if (m_bRFIDUse || m_bUseBCR) SetState(eState.CSTIDRead);
+            else SetState(eState.RunLoad);
+        }
+
+        protected override void ProcCSTIDRead()
+        {
+            if (m_bRFIDUse)
+            {
+                HW_RFID_Mom RFID = m_auto.ClassHandler().ClassRFID(m_nID);
+                RFID.ResetID();
+                ezStopWatch sw = new ezStopWatch();
+                bool bRFIDFail = false;
+                if (RFID.GetCSTID() != "" && RFID.GetLOTID() != "")
+                {
+                    RFID.LOTIDRead();
+                    sw.Start();
+                    while (true)
+                    {
+                        if (RFID.GetLOTID() != "")
+                        {
+                            m_infoCarrier.m_strLotID = RFID.GetLOTID();
+                            m_log.Add("Lot ID = " + RFID.GetLOTID());
+                            break;
+                        }
+                        else if (sw.Check() > 2000)
+                        {
+                            RFIDReadFail RFIDFailUI = new RFIDReadFail(m_infoCarrier);
+                            if (RFIDFailUI.ShowModal() == DialogResult.OK)
+                                bRFIDFail = true;
+                            break;
+                        }
+                    }
+                    RFID.CSTIDRead();
+                    sw.Start();
+                    while (true && !bRFIDFail)
+                    {
+                        if (RFID.GetCSTID() != "")
+                        {
+                            m_infoCarrier.m_strCarrierID = RFID.GetCSTID();
+                            m_log.Add("CST ID = " + RFID.GetCSTID());
+                            break;
+                        }
+                        else if (sw.Check() > 2000)
+                        {
+                            RFIDReadFail RFIDFailUI = new RFIDReadFail(m_infoCarrier);
+                            if (RFIDFailUI.ShowModal() == DialogResult.OK)
+                                bRFIDFail = true;
+                            break;
+                        }
+                    }
+                }
+            }
+            else if (m_bUseBCR)
+            {
+                if (m_bMSB)
+                {
+                    m_infoCarrier.m_strCarrierID = "AAA";
+                }
+                else
+                {
+                    m_cogBCR.Read();
+                    Thread.Sleep(1000);
+                    ezStopWatch sw = new ezStopWatch();
+                    while (!m_cogBCR.IsSuccessReading() && sw.Check() < 5000) Thread.Sleep(100);
+                    if (sw.Check() >= 5000)
+                    {
+                        m_log.Add("Barcode Reading Fail !!");
+                        UI_Manual_BCR uiManualBCR = new UI_Manual_BCR(m_infoCarrier);
+                        uiManualBCR.GetImage(m_cogBCR.GetImage());
+                        if (uiManualBCR.ShowDialog() != System.Windows.Forms.DialogResult.OK)
+                        {
+                            SetState(eState.Placed);
+                            return;
+                        }
+                    }
+                    else
+                    {
+                        m_infoCarrier.m_strCarrierID = m_cogBCR.GetResult();
+                    }
+
+                }
+            }
+            if (m_auto.m_strWork == Auto_Mom.eWork.SSEM.ToString())
+            {
+                if (m_work.GetSSEMGEM() != null) // ing 161121
+                {
+                    while (((Gem_SSEM)(m_work.GetSSEMGEM())).GetCMS(m_nID + 1).m_eCarrierIDState != Gem_SSEM.cCMS.eCarrierIDState.ID_VERIFICATION_OK)
+                    {
+                        Thread.Sleep(100);
+                    }
+                }
+                SetState(eState.RunLoad);
+            }
+            else
+            {
+                if (m_auto.m_bXgemUse && m_xGem.IsOnlineRemote())
+                {
+                    if (!(m_xGem.SetCarrierID(m_nID, m_infoCarrier.m_strCarrierID)))
+                        SetAlarm(eAlarm.Warning, eError.CSTVerifyError);
+                }
+                SetState(eState.RunLoad);
+            }
+        }
+
+        protected override void ProcLoad()
+        {
+            if (m_infoCarrier.m_bRNR && !m_bRnRStart)           //170213 SDH ADD RnR Check
+            {
+                m_RnR.SetInit(m_nID);
+                m_bRnRStart = true;
+            }
+            for (int i = 0; i < m_infoCarrier.m_lWafer; i++)
+            {
+                m_infoCarrier.m_infoWafer[i].m_nTotal = 0;
+                m_infoCarrier.m_infoWafer[i].WAFERID = "";
+            }
+
+            if (CmdGetWaferSize()) return;
+            if (CmdLoad()) return;
+            if (CmdMapping()) return; 
+            if (GetState() != eState.RunUnload)
+            {
+                SetState(eState.LoadDone);
+                if (m_auto.m_strWork == EFEM.eWork.MSB.ToString())
+                {
+                    if (m_bMSB && m_xGem.IsOnlineRemote()) m_infoCarrier.m_strCarrierID = m_xGem.m_XGem300Process[m_nID].m_sJobID; // ing 170408
+                    if (m_xGem.IsOnlineRemote()) m_infoCarrier.m_strLotID = m_xGem.m_XGem300Process[m_nID].m_sJobID; // ing 170329
+                }
+                
+            }
+        }
+
+        protected override void ProcDone()
+        {
+        }
+
+        protected override void ProcUnload()
+        {
+            if (CmdUnload()) return;
+            if (m_auto.m_bXgemUse && m_xGem.IsOnlineRemote() && m_work.GetState() == eWorkRun.Run) m_xGem.ProcessEnd(m_nID);
+            m_wtr.ClearIndexCarrier();
+            if (m_auto.m_bXgemUse && m_xGem.IsOnlineRemote() && m_work.GetState() == eWorkRun.Run)
+            {
+                m_xGem.CarrierOffEvent(m_nID);
+                m_xGem.ClearJob(m_nID);
+            }
+            if (m_infoCarrier.m_bRNR && m_bRnRStart)
+            {
+                SetState(eState.RunLoad);
+                m_RnR.UpdateRnRState(m_nID);     //170213 SDH ADD LoadPort 별 RNR 갱신 (횟수 다차면 RnR 종료)
+                m_bRnRStart = false;
+            }
+            else SetState(eState.Ready);
+            m_auto.ClassHandler().ClassAligner().LotEnd(); //ing 170208
+            m_infoCarrier.m_eState = Info_Carrier.eState.Done; // ing 170408
+        }
+
+        bool CheckReplyError(int nError, string sMsg, string[] sMsgs)
+        {
+            if (sMsgs.Length > nError)
+            {
+                m_log.Popup("Error : " + sMsg + " -> " + ConvertErrorMSG(sMsgs[nError]));
+                SetState(eState.Error);
+                return true;
+            }
+            return false;
+        }
+
+        bool CheckReplyLength(int nLength, string sMsg, string[] sMsgs)
+        {
+            if (sMsgs.Length < nLength)
+            {
+                m_log.Popup("Cmd Length Short : " + sMsg);
+                SetState(eState.Error);
+                return true;
+            }
+            return false;
+        }
+
+        void CheckLastCmd(string sMsg)
+        {
+            if (sMsg != m_sLastCmd)
+            {
+                m_log.Popup("Commnuication Error : " + m_sLastCmd + " != " + sMsg);
+                SetState(eState.Error);
+            }
+        }
+
+        bool CmdResetCPU()
+        {
+            WriteCmd(eCmd.DRT);
+            m_cbRS232 = ReplyCMD;
+            if (WaitReply(m_msRS232, "Error Reset TimeOut") != eHWResult.Error) return false;
+            SetState(eState.Error);
+            return true;
+        }
+
+        bool CmdHome()
+        {
+            WriteCmd(eCmd.ORG);
+            m_cbRS232 = ReplyCMD;
+            if (WaitReply(m_msHome, "Cmd Home TimeOut") != eHWResult.Error) return false;
+            SetState(eState.Error);
+            return true;
+        }
+
+        void ReplyCMD(string sMsg, string[] sMsgs)
+        {
+            m_cbRS232 = null;
+            if (CheckReplyError(1, sMsg, sMsgs)) return;
+            CheckLastCmd(sMsgs[0]);
+        }
+
+        bool CmdGetWaferSize()
+        {
+            WriteCmd(eCmd.INID);
+            m_cbRS232 = ReplyWaferSize;
+            if (WaitReply(m_msRS232, "Get Wafer Size Timeout") != eHWResult.Error) return false;
+            SetState(eState.Error);
+            return true;
+        }
+
+        void ReplyWaferSize(string sMsg, string[] sMsgs)
+        {
+            m_cbRS232 = null;
+            if (CheckReplyError(2, sMsg, sMsgs)) return;
+            CheckLastCmd(sMsgs[0]);
+            if (CheckReplyLength(2, sMsg, sMsgs)) return;
+            switch (sMsgs[1])
+            {
+                case "4": m_infoCarrier.m_wafer.m_eSize = Wafer_Size.eSize.inch4; break;
+                case "5": m_infoCarrier.m_wafer.m_eSize = Wafer_Size.eSize.inch5; break;
+                case "6": m_infoCarrier.m_wafer.m_eSize = Wafer_Size.eSize.inch6; break;
+                case "8": m_infoCarrier.m_wafer.m_eSize = Wafer_Size.eSize.inch8; break;
+                default: m_infoCarrier.m_wafer.m_eSize = Wafer_Size.eSize.Error; break;
+            }
+            m_infoCarrier.m_lWafer = m_infoCarrier.m_wafer.GetWaferCount();
+            m_log.m_reg.Write("WaferSize", m_infoCarrier.m_wafer.m_eSize.ToString()); // ing 171027
+        }
+
+        string GetWaferSizeString()
+        {
+            switch (m_infoCarrier.m_wafer.m_eSize)
+            {
+                case Wafer_Size.eSize.inch4: return "4";
+                case Wafer_Size.eSize.inch5: return "5";
+                case Wafer_Size.eSize.inch6: return "6";
+                case Wafer_Size.eSize.inch8: return "8";
+                default: return "6";
+            }
+        }
+
+        bool CmdLoad()
+        {
+            if (CmdGetWaferSize()) return true;
+            if (m_infoCarrier.m_wafer.IsLPMapping()) 
+                WriteCmd(eCmd.RLMP, GetWaferSizeString());
+            else 
+                WriteCmd(eCmd.RLNP, GetWaferSizeString());
+            m_infoCarrier.m_bMappingDone = false;
+            m_cbRS232 = ReplyLoad;
+            if (WaitReply(m_msRS232, "Cmd Load TimeOut") != eHWResult.Error) return false;
+            SetState(eState.Error);
+            return true;
+        }
+
+        bool CmdUnload()
+        {
+            WriteCmd(eCmd.RUNP, GetWaferSizeString());
+            m_cbRS232 = ReplyLoad;
+            if (WaitReply(m_msRS232, "Cmd Unload TimeOut") != eHWResult.Error) return false;
+            SetState(eState.Error);
+            return true;
+        }
+
+        void ReplyLoad(string sMsg, string[] sMsgs)
+        {
+            m_cbRS232 = null;
+            if (CheckReplyError(2, sMsg, sMsgs)) return;
+            CheckLastCmd(sMsgs[0]);
+        }
+
+        bool CmdMapping()
+        {
+            if (!m_infoCarrier.m_wafer.IsLPMapping()) return false;
+            WriteCmd(eCmd.MLD, GetWaferSizeString());
+            m_cbRS232 = ReplyMapping;
+            if (WaitReply(m_msRS232, "Cmd Mapping TimeOut") != eHWResult.Error) return false;
+            SetState(eState.Error);
+            return true;
+        }
+
+        void ReplyMapping(string sMsg, string[] sMsgs)
+        {
+            m_cbRS232 = null;
+            if (CheckReplyError(3, sMsg, sMsgs)) return;
+            CheckLastCmd(sMsgs[0]);
+            if (CheckReplyLength(2, sMsg, sMsgs)) return;
+            if (SetMappingData(sMsgs[1]) == eHWResult.Error) SetState(eState.Error);
+            else m_infoCarrier.m_bMappingDone = true;
+        }
+
+        public override eHWResult RunLiftUp()
+        {
+            WriteCmd(eCmd.CPDN);
+            m_cbRS232 = ReplyCMD;
+            SetState(eState.Error);
+            return WaitReply(m_msRS232, "LP Lift Up Timeout");
+        }
+
+        public override eHWResult RunLiftDown()
+        {
+            WriteCmd(eCmd.CPUP);
+            m_cbRS232 = ReplyCMD;
+            SetState(eState.Error);
+            return WaitReply(m_msRS232, "LP Lift Down Timeout");
+        }
+
+        public override eHWResult RunLoad(bool bLoad)
+        {
+            if (bLoad)
+            {
+                if (CmdLoad()) return eHWResult.Error;
+            }
+            else
+            {
+                if (CmdUnload()) return eHWResult.Error; 
+            }
+            return eHWResult.OK;
+        }
+
+        protected override eHWResult RunMapping()
+        {
+            if (CmdMapping()) return eHWResult.Error; 
+            return eHWResult.OK;
+        }
+
+        public override void Reset()
+        {
+            if (CmdResetCPU()) return; 
+            SetState(eState.Init);
+        }
+
+        protected override eHWResult IsCoverOpen(bool bOpen)
+        {
+            return eHWResult.Off;
+        }
+
+        protected override eHWResult IsLoad(bool bLoad)
+        {
+            if (m_control.GetInputBit(m_diOpen) == bLoad)
+                return eHWResult.OK;
+            else
+                return eHWResult.Error;
+        }
+
+        protected override eHWResult IsCarrierReady()
+        {
+            return eHWResult.OK;
+        }
+
+        public override bool IsDoorOpenPos()
+        {
+            return m_control.GetInputBit(m_diOpen);
+        }
+
+        public override Wafer_Size.eSize CheckCarrier()
+        {
+            if (IsPlaced()) return m_infoCarrier.m_wafer.m_eSize;
+            else return Wafer_Size.eSize.Empty;
+        }
+
+        public override bool IsDoorAxisMove()
+        {
+            return false;
+        }
+
+        public override bool IsCoverClose()
+        {
+            return true;
+        }
+        public override bool IsDocking()
+        {
+            if (m_diDocking < 0)                            //161216 KDG Modify Docking센서 사용 유/무
+                return m_control.GetInputBit(m_diOpen);
+            else
+                return m_control.GetInputBit(m_diDocking);
+        }
+
+        public override bool IsPlaced()
+        {
+            return m_control.GetInputBit(m_diPresent);
+        }
+
+        public bool IsPlacement()
+        {
+            if (m_diPlacement4inch > -1 && m_control.GetInputBit(m_diPlacement4inch)) return true;
+            if (m_diPlacement5inch > -1 && m_control.GetInputBit(m_diPlacement5inch)) return true;
+            if (m_diPlacement6inch > -1 && m_control.GetInputBit(m_diPlacement6inch)) return true;
+            if (m_diPlacement8inch > -1 && m_control.GetInputBit(m_diPlacement8inch)) return true;
+            return false;
+        }
+
+        protected override void RunTimer(bool bLED)
+        {
+            if (!IsPlaced())
+                m_infoCarrier.Clear();
+        }
+
+        public override bool NeedWTRMapping()
+        {
+            if (GetState() != eState.LoadDone) return false;
+            if (m_infoCarrier.m_wafer.IsLPMapping()) return false;
+            return (m_infoCarrier.m_bMappingDone == false); 
+        }
+    }
+}

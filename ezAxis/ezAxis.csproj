@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5FE38647-BDBA-4722-AC72-878EB0A38F1F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ezAxis</RootNamespace>
+    <AssemblyName>ezAxis</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PropertyGridEx, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\PropertyGridEx.1.0.0\lib\net20\PropertyGridEx.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.9.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DockPanelSuite.2.9.0.0\lib\net40\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AND.cs" />
+    <Compile Include="ANHS.cs" />
+    <Compile Include="ANL.cs" />
+    <Compile Include="ANM.cs" />
+    <Compile Include="AXD.cs" />
+    <Compile Include="AXHS.cs" />
+    <Compile Include="Axiss_Ajin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Axiss_Ajin.Designer.cs">
+      <DependentUpon>Axiss_Ajin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Axis_Ajin.cs" />
+    <Compile Include="Axis_Ajin_EIP.cs" />
+    <Compile Include="Axis_Mom.cs" />
+    <Compile Include="AXL.cs" />
+    <Compile Include="AXM.cs" />
+    <Compile Include="DB96T2_Ajin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DB96T2_Ajin.Designer.cs">
+      <DependentUpon>DB96T2_Ajin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DIO_Ajin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DIO_Ajin.Designer.cs">
+      <DependentUpon>DIO_Ajin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DIO_Ajin_ID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DIO_Ajin_ID.Designer.cs">
+      <DependentUpon>DIO_Ajin_ID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DIO_Mom.cs" />
+    <Compile Include="DI_Ajin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DI_Ajin.Designer.cs">
+      <DependentUpon>DI_Ajin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DO_Ajin_ID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DO_Ajin_ID.Designer.cs">
+      <DependentUpon>DO_Ajin_ID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Type.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ezTools\ezTools.csproj">
+      <Project>{1f27233b-dd04-4c96-b046-1425096226fe}</Project>
+      <Name>ezTools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Axiss_Ajin.resx">
+      <DependentUpon>Axiss_Ajin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DB96T2_Ajin.resx">
+      <DependentUpon>DB96T2_Ajin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DIO_Ajin.resx">
+      <DependentUpon>DIO_Ajin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DIO_Ajin_ID.resx">
+      <DependentUpon>DIO_Ajin_ID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DI_Ajin.resx">
+      <DependentUpon>DI_Ajin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DO_Ajin_ID.resx">
+      <DependentUpon>DO_Ajin_ID.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="license.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,609 @@
+﻿using System;
+using System.Drawing;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using System.IO;
+using WeifenLuo.WinFormsUI.Docking;
+using ezAxis;
+using ezCam;
+using ezAutoMom;
+using ezTools;
+
+namespace ezAuto_EFEM
+{
+    class HW_BackSide_ATI : HW_BackSide_Mom, Control_Child
+    {
+        enum eError
+        {
+            GrabMax, 
+            GrabMin, 
+            AxisMove,
+            CheckWafer,
+            CamBusy,
+            InspectionTimeout,
+            Vaccum,
+            Rotate,
+            KlarfTimeout,
+        }
+
+        int[] m_posTriger = new int[2] { 0, 0 };
+        int[] m_nGrab = new int[2] { 0, 0 };
+        int[] m_vGrab = new int[2] { 1, 1 };
+        int[] m_dpGrab = new int[2] { 0, 0 };
+        int[] m_msGrab = new int[2] { 500, 5000 };
+        int[] m_posTheta = new int[2] { 0, 0 };
+        int m_nPulse90 = 90000;
+        int m_posReadyZ = 0;
+        int m_posInterlock = 0;
+        int m_doVacOn = -1, m_doBlowOn = -1;
+        int m_diIonizer = -1, m_diStageVac = -1, m_diWaferCheck = -1;
+        int m_nStripAngle = -1;
+        int m_dpTrigger = 1;
+        int m_msBlow = 50, m_msDelay = 5000, m_msInspectionTime = 120000;
+        bool m_bCmd = true, m_bRun = false;
+        bool[] m_bThreadInspect = new bool[4] { false, false, false, false };
+        bool m_bVacCheck = false;
+
+        ezCam_Dalsa m_cam = new ezCam_Dalsa();
+        Light_ATI m_light = new Light_ATI();
+        HW_BackSide_ATI_AOI m_backsideAOI = new HW_BackSide_ATI_AOI();
+        Axis_Mom m_axis;
+        Axis_Mom m_axisZ;
+        Axis_Mom m_axisTheta = null;
+        Thread m_threadInspect;
+
+        public HW_BackSide_ATI()
+        {
+            m_bEnable = true; 
+        }
+
+        public override void Init(string id, Auto_Mom auto)
+        {
+            base.Init(id, auto);
+            m_cam.Init(id, m_auto.ClassLogView());
+            m_backsideAOI.Init("Inspection", auto, m_log);
+            m_light.Init("Light", auto);
+            m_control = ((Auto_Mom)m_auto).ClassControl();
+            m_control.Add(this);
+            RunGrid(eGrid.eRegRead);
+            RunGrid(eGrid.eInit);
+            m_threadInspect = new Thread(new ThreadStart(ThreadInspect));
+            m_threadInspect.Start();
+            InitString();
+        }
+
+        public override void ThreadStop()
+        {
+            base.ThreadStop();
+            m_backsideAOI.ThreadStop();
+            m_cam.ThreadStop();
+            m_light.ThreadStop();
+            if (m_bRun) { m_bRun = false; m_threadInspect.Join(); }
+        }
+
+        public override IDockContent GetContentFromPersistString(string persistString)
+        {
+            if (m_backsideAOI.IsPersistString(persistString)) return m_backsideAOI;
+            if (m_backsideAOI.m_view[0].IsPersistString(persistString)) return m_backsideAOI.m_view[0];
+            if (m_backsideAOI.m_view[1].IsPersistString(persistString)) return m_backsideAOI.m_view[1];
+            if (m_light.IsPersistString(persistString)) return m_light;
+            return null;
+        }
+
+        public override void ShowAll(DockPanel dockPanel)
+        {
+            m_backsideAOI.Show(dockPanel);
+            m_backsideAOI.m_view[0].Show(dockPanel);
+            m_backsideAOI.m_view[1].Show(dockPanel);
+            m_light.Show(dockPanel);
+        }
+
+        void InitString()
+        {
+            InitString(eError.GrabMax, "Grab Timeover !!");
+            InitString(eError.GrabMin, "Grab Time too Short !!");
+            InitString(eError.AxisMove, "Axis Move Error !!");
+            InitString(eError.CheckWafer, "Wafer Check Error !!");
+            InitString(eError.CamBusy, "Camera Is Busy !!");
+            InitString(eError.InspectionTimeout, "Inspection Timeout !!");
+            InitString(eError.Vaccum, "Vaccum Error !!");
+            InitString(eError.Rotate, "Rotate Error !!");
+            InitString(eError.KlarfTimeout, "Klarf File Save Timeout !!");
+        } 
+
+        void InitString(eError eErr, string str)
+        {
+            m_log.AddString(str);
+            if (m_xGem == null) return;
+            m_xGem.AddALID(m_id, (int)eErr, str);
+        } 
+
+        void SetAlarm(eAlarm alarm, eError eErr)
+        {
+            m_work.SetError(alarm, m_log, (int)eErr);
+            if (m_xGem == null) return;
+            m_xGem.SetAlarm(m_id, (int)eErr);
+        } 
+
+        public void ControlGrid(Control_Mom control, ezGrid rGrid, eGrid eMode)
+        {
+            m_axis = control.AddAxis(rGrid, m_id, "CamY", "Axis Camera Y");
+            m_axisZ = control.AddAxis(rGrid, m_id, "CamZ", "Axis Camera Z");
+            m_axisTheta = control.AddAxis(rGrid, m_id, "BSTheta", "Axis Backside Theta");
+            control.AddDI(rGrid, ref m_diIonizer, m_id, "Ionizer", "DI Ionizer Alarm");
+            control.AddDI(rGrid, ref m_diStageVac, m_id, "StageVac", "DI Backside Stage Vacuum");
+            control.AddDI(rGrid, ref m_diWaferCheck, m_id, "WaferCheck", "DI Backside Wafer Check");
+            control.AddDO(rGrid, ref m_doVacOn, m_id, "VacOn", "DO Backside Stage Vacuum On");
+            control.AddDO(rGrid, ref m_doBlowOn, m_id, "BlowOn", "DO Backside Stage Blow On");
+        }
+        
+        protected override void RunGrid(eGrid eMode)
+        {
+            base.RunGrid(eMode);
+            m_grid.Set(ref m_posTriger[0], "Grab0", "Start", "Trigger Start (pulse)");
+            m_grid.Set(ref m_nGrab[0], "Grab0", "Size", "Grab Size (pulse)");
+            m_grid.Set(ref m_dpGrab[0], "Grab0", "Acc", "Acceleration Area (pulse)");
+            m_grid.Set(ref m_vGrab[0], "Grab0", "V", "Grab Speed (pulse/s)");
+            m_grid.Set(ref m_posTriger[1], "Grab1", "Start", "Trigger Start (pulse)");
+            m_grid.Set(ref m_nGrab[1], "Grab1", "Size", "Grab Size (pulse)");
+            m_grid.Set(ref m_dpGrab[1], "Grab1", "Acc", "Acceleration Area (pulse)");
+            m_grid.Set(ref m_vGrab[1], "Grab1", "V", "Grab Speed (pulse/s)");
+            m_grid.Set(ref m_dpTrigger, "Trigger", "Period", "Trigger Period (pulse)");
+            m_grid.Set(ref m_bCmd, "Trigger", "Cmd", "Trigger Source (Y=Command, N=Actual)");
+            m_grid.Set(ref m_posReadyZ, "Position_Z", "Ready", "Ready Position (pulse))");
+            m_grid.Set(ref m_posTheta[0], "Theta", "Ready", "Ready Position (pulse)");
+            m_grid.Set(ref m_posTheta[1], "Theta", "Done", "Done Position (pulse)");
+            m_grid.Set(ref m_nPulse90, "Theta", "Pulse90", "90 Dgree Pulse (pulse)");
+            m_grid.Set(ref m_msBlow, "Delay", "Blow", "Blow Delay (ms)");
+            m_grid.Set(ref m_msGrab[0], "GrabTime", "Min", "Minimum Grab Time (ms)");
+            m_grid.Set(ref m_msGrab[1], "GrabTime", "Max", "Maximum Grab Time (ms)");
+            m_grid.Set(ref m_nStripAngle, "Angle", "InspectAngle", "Angle Correction (-1, 0, 1)");
+            m_grid.Set(ref m_msHome, "Time", "Home", "Home Timeout (ms)");
+            m_grid.Set(ref m_msDelay, "Time", "Delay", "Second Grab Delay (ms)");
+            m_grid.Set(ref m_msInspectionTime, "Time", "Inspection", "Inspection Timeout (ms)");
+            m_grid.Set(ref m_posInterlock, "InterLock", "AxisY", "Axis InterLock (pusle)");
+            m_grid.Set(ref m_bVacCheck, "InterLock", "VacCheck", "True = Only Vacuum Check, False = Only Sensor Check");
+            m_grid.Set(ref m_backsideAOI.m_aoiData.m_fResolution, "Inspect", "Resolution", "Resolution");
+            m_grid.Set(ref m_backsideAOI.m_aoiData.m_bSetup, "Inspect", "SetupDraw", "Draw for Setup");
+            m_grid.Set(ref m_backsideAOI.m_aoiData.m_fAnglePeriod, "Inspect", "Period", "Period of Angle");
+            m_grid.Set(ref m_backsideAOI.m_aoiData.m_cpManualCenter, "Inspect", "Center", "Estimated Center Position");
+            m_grid.Set(ref m_backsideAOI.m_aoiData.m_nManualR, "Inspect", "Radius", "Estimated Radius");
+            m_grid.Set(ref m_backsideAOI.m_aoiData.m_nRange, "Inspect", "Range", "Estimated Range");
+            m_grid.Set(ref m_backsideAOI.m_aoiData.m_strPathKlarf, "Inspect", "KlarfPath", "Path To Save Klarf Files");
+            m_backsideAOI.m_klarf[0].RunGrid(m_grid, eMode);
+            m_grid.Set(ref m_backsideAOI.m_strPMRecipe, "PM", "RecipeName", "PM Recipe Name");
+            m_grid.Set(ref m_backsideAOI.m_cpScaleBarRange[0], "PM", "PosScalebar_RT", "Scalebar Posotion Right Top");
+            m_grid.Set(ref m_backsideAOI.m_cpScaleBarRange[1], "PM", "PosScalebar_LB", "Scalebar Posotion Left Bottom");
+            m_grid.Set(ref m_backsideAOI.m_aoiData.m_fScaleBar, "PM", "SizeScaleBar", "ScaleBar Size (mm)");
+            m_backsideAOI.RunHandlerGrid(m_grid, eMode, null);
+            m_grid.Refresh();
+        }
+
+        public override bool IsBackSideEnable()
+        {
+            return m_recipe.m_bUseBackSide;
+        }
+
+        public override void ShowCamera()
+        {
+            m_cam.ShowDialog();
+        }
+
+        public override bool IsReady(Info_Wafer infoWafer)
+        {
+            return (InfoWafer == null);
+        }
+
+        public override bool IsAxisOK()
+        {
+            if (m_axis.GetPos(true) > m_posInterlock)
+            {
+                return m_axis.Move(m_posInterlock);
+            }
+            return true;
+        }
+
+        public override eHWResult CheckWaferExist(bool bVac = true)
+        {
+            if (m_bVacCheck)
+            {
+                if (bVac)
+                {
+                    m_control.WriteOutputBit(m_doVacOn, true);
+                    if (!m_control.WaitInputBit(m_diStageVac, true))
+                    {
+                        m_waferExist = eHWResult.On;
+                    }
+                    else
+                    {
+                        m_waferExist = eHWResult.Off;
+                    }
+                    m_control.WriteOutputBit(m_doVacOn, false);
+                    return m_waferExist;
+                }
+                else
+                    return m_waferExist;
+            }
+            else
+            {
+                if (m_control.GetInputBit(m_diWaferCheck)) m_waferExist = eHWResult.On;
+                else m_waferExist = eHWResult.Off;
+                return m_waferExist;
+            }
+        }
+
+        public override void Grab(int nID)
+        {
+            CPoint sz = new CPoint(0, 0);
+            m_backsideAOI.m_bDraw = false;
+            if (m_axis == null || m_axisZ == null) { m_log.Popup("Axis Class not Defined !!"); return; }
+            m_light.LightOn(nID, true);
+            Thread.Sleep(500);
+            RunVac(true);
+            //if (RunVac(true))
+            //{
+            //    SetAlarm(eAlarm.Error, eError.Vaccum);
+            //    SetState(eState.Error);
+            //    return;
+            //}
+            if (AxisMoveZ(m_posReadyZ, true))
+            {
+                SetAlarm(eAlarm.Warning, eError.AxisMove);
+                SetState(eState.Error);
+                return;
+            }
+            ezStopWatch swGrab = new ezStopWatch();
+            if (nID == 0)
+            {
+                if (m_axis.GetPosDst() > m_posTriger[nID] - m_dpGrab[nID]) { if (AxisMove(m_posTriger[0] - m_dpGrab[0], true)) return; }
+                m_axis.SetTrigger(m_posTriger[nID], m_posTriger[nID] + m_nGrab[nID], m_dpTrigger, m_bCmd, 5);
+                m_axis.MoveV(m_posTriger[nID] + m_nGrab[nID] + m_dpGrab[nID], m_posTriger[nID] - m_dpGrab[nID] / 2, m_vGrab[nID]);
+            }
+            else
+            {
+                if (m_axis.GetPosDst() < m_posTriger[1] + m_dpGrab[1]) { if (AxisMove(m_posTriger[1] + m_dpGrab[1], true)) return; }
+                m_cam.ChangeMirror();
+                m_axis.SetTrigger(m_posTriger[nID], m_posTriger[nID] - m_nGrab[nID], m_dpTrigger, m_bCmd, 5);
+                m_axis.MoveV(m_posTriger[nID] - m_nGrab[nID] - m_dpGrab[nID], m_posTriger[nID] + m_dpGrab[nID] / 2, m_vGrab[nID]);
+            }
+            if (m_cam == null) { m_log.Popup("Camera Class not Defined !"); return; }
+            swGrab.Start();
+            if (m_cam.Grab(m_backsideAOI.m_view[nID].ClassImage(), ref sz, m_msGrab[1], m_work.m_nThres, 0)) { m_log.Popup("Grab Buffer Pointer Error !"); return; }
+            Thread.Sleep(10); while (!m_cam.IsGrabDone() && (swGrab.Check() <= m_msGrab[1])) Thread.Sleep(1);
+            m_light.LightOn(-1, false);
+            if (swGrab.Check() >= m_msGrab[1]) { SetAlarm(eAlarm.Warning, eError.GrabMax); SetState(eState.Error); return; }
+            if (swGrab.Check() < m_msGrab[0]) { SetAlarm(eAlarm.Warning, eError.GrabMin); SetState(eState.Error); return; }
+            m_axis.OverrideVel(-1); m_axis.StopTrigger();
+            m_log.Add("Grab : " + swGrab.Check().ToString() + " ms");
+            m_backsideAOI.m_view[nID].ClassImage().m_bNew = true;
+            Thread.Sleep(100);
+            m_backsideAOI.m_view[nID].InvalidView(false);
+            if (nID == 1) m_cam.ChangeMirror();
+        }
+
+        void SaveImage(int nID)
+        {
+            string strPath;
+            if (m_infoWafer == null) m_infoWafer = new Info_Wafer(-1, -1, -1, m_log);
+            strPath = "c:\\TestImg\\Backside\\" + m_infoWafer.m_nSlot.ToString() + "_" + nID.ToString();
+            if (m_infoWafer.m_eAngleRF == Info_Wafer.eAngleRF.R90 || m_infoWafer.m_eAngleRF == Info_Wafer.eAngleRF.R270) strPath += "_Rotate";
+            m_backsideAOI.m_view[nID].m_imgView.FileSave(strPath + ".bmp");
+        }
+
+        public override void JobSave(ezJob job)
+        {
+            m_backsideAOI.JobSave(job);
+            m_light.JobSave(job);
+        }
+
+        public override void JobOpen(ezJob job)
+        {
+            m_backsideAOI.JobOpen(job);
+            m_light.JobOpen(job);
+        }
+
+        public override void Draw(Graphics dc, ezImgView imgView)
+        {
+            m_backsideAOI.Draw(dc, imgView);
+        }
+
+        public override void InvalidView()
+        {
+            m_backsideAOI.m_view[0].InvalidView(false);
+            m_backsideAOI.m_view[1].InvalidView(false);
+        }
+
+        public bool AxisMove(int y, bool bWait)
+        {
+            if (m_axis == null) return true;
+            if (m_axis.Move(y)) return true;
+            if (bWait) return m_axis.WaitReady(10);
+            return false;
+        }
+
+        public bool AxisMoveZ(int z, bool bWait)
+        {
+            if (m_axisZ == null) return true;
+            if (m_axisZ.Move(z)) return true;
+            if (bWait) return m_axisZ.WaitReady(10);
+            return false;
+        }
+
+        public bool AxisMoveTheta(int nTheta, bool bWait)
+        {
+            if (m_axisTheta == null) return true;
+            if (m_axisTheta.Move(nTheta)) return true;
+            if (bWait) return m_axisTheta.WaitReady(10);
+            return false;
+        }
+
+        public override bool RunVac(bool bVac, int msWait = 3000)
+        {
+            m_control.WriteOutputBit(m_doVacOn, bVac);
+            return m_control.WaitInputBit(m_diStageVac, bVac, 3000);
+        }
+
+        public override void RunBlow()
+        {
+            m_control.WriteOutputBit(m_doBlowOn, true);
+            Thread.Sleep(m_msBlow);
+            m_control.WriteOutputBit(m_doBlowOn, false);
+        }
+
+        void RunDone()
+        {
+            if (AxisMove(m_posTriger[0] - m_dpGrab[0], true)) { SetAlarm(eAlarm.Warning, eError.AxisMove); m_eState = eState.Error; return; }
+            if (Rotate(0)) return;
+            SetState(eState.Done);
+        }
+
+        protected override void ProcHome() 
+        {
+            int nDeg = GetCurrentDeg90();
+            if (CheckWaferExist() == eHWResult.On)
+            {
+                if (RunVac(true))
+                {
+                   SetAlarm(eAlarm.Error, eError.Vaccum);
+                   SetState(eState.Error);
+                   return;
+                }
+            }
+            ezStopWatch sw = new ezStopWatch();
+            m_axis.HomeSearch();
+            m_axisZ.HomeSearch();
+            if (m_axisTheta != null) m_axisTheta.HomeSearch();
+            while (!m_axis.IsReady() && (sw.Check() <= m_msHome)) Thread.Sleep(10);
+            while (!m_axisZ.IsReady() && (sw.Check() <= m_msHome)) Thread.Sleep(10);
+            if (m_axisTheta != null)
+            {
+                while (!m_axisTheta.IsReady() && (sw.Check() <= m_msHome)) Thread.Sleep(10);
+            }
+            if (sw.Check() >= m_msHome)
+            {
+                m_log.Popup("Axis Home Time Out !!");
+                SetState(eState.Init);
+            }
+            else
+            {
+                m_log.Add("Find Home Finished");
+                SetState(eState.RunReady);
+            }
+            if (m_infoWafer != null) m_infoWafer.m_eAngleRF = (Info_Wafer.eAngleRF)(((int)m_infoWafer.m_eAngleRF - nDeg + 4) % 4);
+            RunVac(false); 
+        }
+
+        protected override void ProcRunReady() 
+        {
+            m_light.LightOn(-1, false);
+            if (AxisMoveZ(m_posReadyZ, true))
+            {
+                SetAlarm(eAlarm.Error, eError.AxisMove);
+                SetState(eState.Error);
+            }
+            if ((m_axisTheta != null) && AxisMoveTheta(m_posTheta[0], true))
+            {
+                SetAlarm(eAlarm.Error, eError.AxisMove);
+                SetState(eState.Error);
+            }
+            SetState(eState.Ready);
+        }
+
+        protected override void ProcReady()
+        {
+            ProcRunReady();
+            RunVac(false);
+        }
+
+        protected override void ProcRun() 
+        {
+            HW_Klarf klarf;
+            ezStopWatch sw = new ezStopWatch();
+            m_backsideAOI.ClearDefect();
+            
+            sw.Start();
+            Grab(0);
+            SaveImage(0);
+            m_bThreadInspect[0] = true;
+            if (WaitCam(sw)) return;
+
+            sw.Start();
+            Grab(1);
+            SaveImage(1);
+            m_bThreadInspect[1] = true;
+            if (WaitCam(sw)) return;
+
+            if (m_axisTheta != null && m_recipe.m_strFile.ToLower().IndexOf(m_backsideAOI.m_strPMRecipe.ToLower()) < 0)
+            {
+                if (Rotate(1)) return;
+
+                sw.Start();
+                if (WaitInspect(sw, ref m_bThreadInspect[0])) return;
+                Grab(0);
+                SaveImage(0);
+                m_bThreadInspect[2] = true;
+
+                sw.Start();
+                if (WaitInspect(sw, ref m_bThreadInspect[1])) return;
+                //            Grab(1);
+                //            SaveImage(1);
+                //            m_bThreadInspect[3] = true;
+                //            if (WaitCam(sw)) return;            
+
+                RunDone();
+
+                sw.Start();
+                //            if (WaitInspect(sw, m_bThreadInspect[3])) return;
+            }
+            else
+            {
+                RunVac(false);
+                RunDone();
+            }
+            if (WaitInspect(sw, ref m_bThreadInspect[2])) return;
+            m_bThreadInspect[0] = m_bThreadInspect[1] = m_bThreadInspect[2] = false;
+            sw.Start();
+            while (m_backsideAOI.m_klarf[0].m_bBusy && m_backsideAOI.m_klarf[1].m_bBusy)
+            {
+                if (sw.Check() > m_msInspectionTime) break;
+                Thread.Sleep(100);
+            }
+            if (!m_backsideAOI.m_klarf[0].m_bBusy) klarf = m_backsideAOI.m_klarf[0];
+            else if (!m_backsideAOI.m_klarf[1].m_bBusy) klarf = m_backsideAOI.m_klarf[1];
+            else
+            {
+                SetAlarm(eAlarm.Warning, eError.KlarfTimeout);
+                return;
+            }
+
+            Thread threadKlarf = new Thread(delegate()
+            {
+                if (m_infoWafer != null && m_backsideAOI.m_bsInfoWafer[0].m_infoWafer != null && m_infoWafer.m_nSlot == m_backsideAOI.m_bsInfoWafer[0].m_infoWafer.m_nSlot)
+                {
+                    if (m_axisTheta == null) m_backsideAOI.m_bsInfoWafer[0].AfterInspect(klarf, m_infoWafer, m_auto.ClassHandler().ClassCarrier(m_infoWafer.m_nLoadPort), 0, m_axisTheta != null);
+                    else m_backsideAOI.m_bsInfoWafer[0].AfterInspect(klarf, m_infoWafer, m_auto.ClassHandler().ClassCarrier(m_infoWafer.m_nLoadPort), 2, m_axisTheta != null);
+                    return;
+                }
+                if (m_infoWafer != null && m_backsideAOI.m_bsInfoWafer[1].m_infoWafer != null && m_infoWafer.m_nSlot == m_backsideAOI.m_bsInfoWafer[1].m_infoWafer.m_nSlot)
+                {
+                    if (m_axisTheta == null) m_backsideAOI.m_bsInfoWafer[1].AfterInspect(klarf, m_infoWafer, m_auto.ClassHandler().ClassCarrier(m_infoWafer.m_nLoadPort), 0, m_axisTheta != null);
+                    else m_backsideAOI.m_bsInfoWafer[1].AfterInspect(klarf, m_infoWafer, m_auto.ClassHandler().ClassCarrier(m_infoWafer.m_nLoadPort), 2, m_axisTheta != null); // ing 170616 nRotate -> 2
+                    return;
+                }
+                //m_backsideAOI.AfterInspect(klarf, m_infoWafer, m_auto.ClassHandler().ClassCarrier(m_infoWafer.m_nLoadPort), nID);
+            });
+            threadKlarf.Start();
+        }
+
+        protected override void ProcError() 
+        {
+
+        }
+
+        void ThreadInspect()
+        {
+            m_bRun = true; Thread.Sleep(5000);
+            //m_bRun = false; // ing for RNR 
+            while (m_bRun)
+            {
+                Thread.Sleep(1);
+                if (m_bThreadInspect[0])
+                {
+                    m_backsideAOI.Inspect(m_infoWafer, m_auto.ClassHandler().ClassCarrier(m_infoWafer.m_nLoadPort), 0);//0번스냅후 검사
+                    m_backsideAOI.m_view[0].InvalidView(false);
+                    m_bThreadInspect[0] = false;
+                }
+                if (m_bThreadInspect[1])
+                {
+                    m_backsideAOI.Inspect(m_infoWafer, m_auto.ClassHandler().ClassCarrier(m_infoWafer.m_nLoadPort), 1);//1번 검사
+                    m_backsideAOI.m_view[1].InvalidView(false);
+                    m_bThreadInspect[1] = false;
+                }
+                if (m_bThreadInspect[2])
+                {
+                    m_backsideAOI.Inspect(m_infoWafer, m_auto.ClassHandler().ClassCarrier(m_infoWafer.m_nLoadPort), 0);//1번 검사
+                    m_backsideAOI.m_view[0].InvalidView(false);
+                    m_bThreadInspect[2] = false;
+                }
+                if (m_bThreadInspect[3])
+                {
+                    m_backsideAOI.Inspect(m_infoWafer, m_auto.ClassHandler().ClassCarrier(m_infoWafer.m_nLoadPort), 1);//1번 검사
+                    m_backsideAOI.m_view[1].InvalidView(false);
+                    m_bThreadInspect[3] = false;
+                }
+            }
+        }
+
+        bool Rotate(int n)
+        {
+            if (m_axisTheta == null) return false; 
+            if (RunVac(true))
+            {
+                SetAlarm(eAlarm.Error, eError.Vaccum);
+                SetState(eState.Error);
+                return true;
+            }
+            if (AxisMoveTheta(m_posTheta[n], true))
+            {
+                SetAlarm(eAlarm.Error, eError.Rotate);
+                return true;
+            }
+            if (n == 1) m_infoWafer.m_eAngleRF = (Info_Wafer.eAngleRF)(((int)m_infoWafer.m_eAngleRF + 1) % 4);
+            else m_infoWafer.m_eAngleRF = (Info_Wafer.eAngleRF)(((int)m_infoWafer.m_eAngleRF - 1 + 4) % 4);
+            RunVac(false);
+            return false;
+        }
+
+        int GetCurrentDeg90()
+        {
+            if (m_axisTheta == null) return 0; 
+            int nPos = (int)m_axisTheta.GetPos(true) + (m_nPulse90 / 10);
+            return (nPos / m_nPulse90);
+        }
+
+        bool WaitCam(ezStopWatch sw)
+        {
+            while (m_cam.IsBusy() && sw.Check() < m_msGrab[1]) Thread.Sleep(100);
+            if (sw.Check() >= m_msGrab[1])
+            {
+                SetAlarm(eAlarm.Warning, eError.CamBusy);
+                SetState(eState.Error);
+                return true;
+            }
+            return false;
+        }
+
+        bool WaitInspect(ezStopWatch sw, ref bool bInspectThread)
+        {
+            while (bInspectThread)
+            {
+                if (sw.Check() > m_msInspectionTime) break;
+                Thread.Sleep(100);
+            }
+            if (sw.Check() > m_msInspectionTime)
+            {
+                SetAlarm(eAlarm.Warning, eError.InspectionTimeout);
+                bInspectThread = true;
+                SetState(eState.Error);
+                return true;
+            }
+            return false;
+        }
+
+        public override ezView GetView(int nID)
+        {
+            return m_backsideAOI.m_view[(nID + 1) % 2];
+        }
+
+        public override void SavePM()
+        {
+            RunGrid(eGrid.eUpdate);
+            RunGrid(eGrid.eInit);
+            RunGrid(eGrid.eRegWrite);
+        }
+    }
+}

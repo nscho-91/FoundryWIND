@@ -1,0 +1,7 @@
+10:10:36 [Proc:Seq] [E40Base::HostConnectionStateChanged] nState[101], lParam[0], nS[0], nF[0], lSysByte[0] th=405c
+10:10:36 [Proc:Seq] [E40Base::CommunicationStateChanged] nState[1] th=405c
+10:10:36 [Proc:Seq] [E40Base::EqConnectionStateChanged] nState[0] th=405c
+10:10:36 [Proc:Seq] [E40Base::HostConnectionStateChanged] nState[101], lParam[0], nS[0], nF[0], lSysByte[0] th=405c
+10:12:26 [Proc:Seq] [E40Base::Stop] result[0] th=1338
+10:12:26 [Proc:Seq] [LE40_0307][Stop] th=1338
+10:12:26 [Proc:Seq] [E40Base::Terminate]<Started> result[0] th=1338

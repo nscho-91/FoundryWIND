@@ -1,0 +1,556 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using ezAutoMom;
+using ezTools;
+
+namespace ezAuto_EFEM
+{
+    class HW_Aligner_Tazmo : HW_Aligner_Mom, Control_Child
+    {
+        delegate void CallRS232(string[] sMsgs);
+
+        #region Define
+        const int BUF_SIZE = 4096; 
+
+        const char ACK = (char)0x06;
+        const char NAK = (char)0x15;
+        const char BUSY = (char)0x11;
+        const char SPLITTER = ',';
+        const string True = "1";
+        const string False = "0";
+
+        //command
+        const string RESET_CPU = "CPI";          // error시 명령어가 듣지 않음. 리셋.    [<-ACK]
+        const string INIT = "RST";               // Initialize (얼라이너는 이걸로 홈)    [<-ACK]
+        const string PAUSE = "PAU";              // 일시 정지 (셋업시 사용)        [<-ACK]
+        const string CANCEL_PAUSE = "CNT";       // 일시 정지 해제 (셋업시 사용)   [<-ACK]
+        const string VAC_ON = "VVN";             // Vaccuum on      [<-ACK]
+        const string VAC_OFF = "VVF";            // Vaccuum off     [<-ACK]
+        const string TURN = "OCH";               // notch 정보는 갖고있는 상태에서 원하는 방향으로 돌림. 돌리기만 함. (뒤에 방향에따른 숫자 붙여줌) (1~8)    [<-ACK]
+        const string IS_WAFER_EXIST = "WCH";     // 웨이퍼 존재여부 (센서 & Vac)     <-CMD,*[CR]
+        const string IS_WAFER_EXIST_VAC = "VCH"; // 웨이퍼 존재여부 (Vac)            <-CMD,*[CR]
+        const string READ_WAFERSIZE = "RWF";     // 웨이퍼 사이즈 읽는 기능 같은데 아직 사용한적은 없음.      <-CMD,*[CR]
+        const string READ_ERROR = "RER";         // 발생한 에러를 읽음. History 0~1000      <-CMD,*,#[CR]
+        const string ALIGN = "ALS";              // 얼라인 & notch 정보를 획득. + Vac시퀀스 포함. "ALG" + Vac 시퀀스 포함.  (1~8)   ALS,*[CR]→     [<-ACK]
+        #endregion
+
+        #region enum
+
+        enum eError
+        {
+            Connect,
+            Timeout,
+            Protocol,
+            NAK
+        }
+        #endregion
+
+        ezRS232 m_rs232;
+        char[] m_aBuf = new char[BUF_SIZE];
+        int m_diCheck = -1;
+        int m_msCheck = 2000;
+        int m_msAlign = 2000;
+        string m_sLastCmd = ""; 
+        CallRS232 m_cbRS232 = null;
+
+        int[,] m_nTeaching = new int[(int)Wafer_Size.eSize.Empty, 4]; //[4inch, 5inch, 6inch, 200mm, 300mm][0, 90, 180, 270]
+
+        string[,] m_sErrorMsgs = new string[13, 2]
+        {
+            { "00", "There is no error." },
+            { "31", "The wafer disappeared while alignment was operating." },                                           // 얼라인중에 웨이퍼가 사라짐
+            { "32", "The alignment operation is not completed exaggeratedly at time." },                                // 얼라인이 제 시간에 끝나지 않음
+            { "34", "The wafer size cannot be judged." },                                                               // 웨이퍼 사이즈 판단 불가
+            { "35", "The wafer is not set in Aligner."},                                                                // 얼라이너에 웨이퍼가 없음
+            { "37", "It exceeded it to the range of detection of the line sensor." },                                   // 라인 센서의 detection범위 초과
+            { "38", "The sampling operation is not processing."},                                                       // 샘플링작업 진행 안됨
+            { "39", "Alignment cannot be executed."},                                                                   // 얼라인 수행 불가
+            { "3A", "Aligner has not been initialized."},                                                               // 얼라인 초기화 안됨
+            { "3B", "It is a reception of D-I/O command error."},                                                       // D-I/O 커맨드 수신 에러
+            { "3D", "It is a command execution error (other errors)."},                                                 // 커맨드 수행 에러 (other errors)
+            { "3E", "The input value of the line sensor is abnormal."},                                                 // 라인 센서 입력 값 비정상.
+            { "3F", "The initialization operation of Aligner cannot be normally done. Operation stopped to interlock."} // 얼라이너 초기화 비정상완료. 
+        };
+
+        string[] m_sMsgs;
+
+        public override void Init(string id, Auto_Mom auto)
+        {
+            m_strAlignModel = "Tazmo";
+            base.Init(id, auto);
+            m_control.Add(this); 
+            m_rs232 = new ezRS232(m_id, m_log);
+            m_rs232.CallMsgRcv += m_rs232_CallMsgRcv;
+            InitString();
+            RunGrid(eGrid.eRegRead);
+            RunGrid(eGrid.eInit);
+            if (!m_rs232.Connect(true)) SetAlarm(eAlarm.Stop, eError.Connect);
+        }
+
+        public void InitString()
+        {
+            InitString(eError.Connect, "Not Connect !!");
+            InitString(eError.Timeout, "RS232 Cmd Response Timeout !!");
+            InitString(eError.Protocol, "RS232 Cmd Protocol Error !!");
+            InitString(eError.NAK, "RS232 Return NAK !!");
+        } 
+
+        void InitString(eError eErr, string str)
+        {
+            m_log.AddString(str);
+            if (m_xGem == null) return;
+            m_xGem.AddALID(m_id, (int)eErr, str);
+        } 
+
+        void SetAlarm(eAlarm alarm, eError eErr)
+        {
+            m_work.SetError(alarm, m_log, (int)eErr);
+            if (m_xGem == null) return;
+            m_xGem.SetAlarm(m_id, (int)eErr);
+        }
+
+        public void ControlGrid(Control_Mom control, ezGrid rGrid, eGrid eMode)
+        {
+            control.AddDI(rGrid, ref m_diCheck, m_id, "Check", "DI Check Wafer");
+        }
+
+        protected override void RunGrid(eGrid eMode)
+        {
+            base.RunGrid(eMode);
+            m_rs232.RunGrid(m_grid, eMode);
+            m_grid.Set(ref m_msHome, "Timeout", "Home", "Timeout (ms)");
+            m_grid.Set(ref m_msCheck, "Timeout", "Check", "Timeout (ms)");
+            m_grid.Set(ref m_msAlign, "Timeout", "Align", "Timeout (ms)");
+            for (int nSize = 0; nSize < (int)(Wafer_Size.eSize.Empty); nSize++)
+            {
+                string strSize = ((Wafer_Size.eSize)nSize).ToString();
+                m_grid.Set(ref m_nTeaching[nSize, 0], strSize, "0", "Align Rotate Index (0~8)", false, m_wafer.m_bEnable[nSize]);
+                m_grid.Set(ref m_nTeaching[nSize, 1], strSize, "90", "Align Rotate Index (0~8)", false, m_wafer.m_bEnable[nSize]);
+                m_grid.Set(ref m_nTeaching[nSize, 2], strSize, "180", "Align Rotate Index (0~8)", false, m_wafer.m_bEnable[nSize]);
+                m_grid.Set(ref m_nTeaching[nSize, 3], strSize, "270", "Align Rotate Index (0~8)", false, m_wafer.m_bEnable[nSize]); 
+            }
+        }
+
+        void m_rs232_CallMsgRcv()
+        {
+            int nRead = m_rs232.Read(m_aBuf, BUF_SIZE);
+            
+            string sMsg = new string(m_aBuf, 0, nRead);
+            m_sMsgs = sMsg.Split(SPLITTER);
+            if (m_sMsgs.Length < 1) 
+            {
+                m_log.Popup("Receive Message Is Short !!" );
+                SetAlarm(eAlarm.Warning, eError.Protocol);
+                return;
+            }
+            if (m_sMsgs[0][0] ==ACK)
+                m_log.Add("Receive ACK");
+            else
+                m_log.Add("CMD Recieve : " + sMsg);
+            if (m_cbRS232 == null) return; 
+            m_cbRS232(m_sMsgs);
+            
+        }
+
+        void WriteCmd(string cmd)
+        {
+            CallDelegateFunction(cmd);
+            m_sMsgs = null;
+            m_sLastCmd = cmd.Substring(0,3);
+            cmd = cmd + (char)0x0D;
+            char[] sChar = cmd.ToCharArray();
+            m_rs232.Write(sChar, cmd.Length, true);
+            m_log.Add("CMD Send : " + m_sLastCmd);
+        }
+
+        void WriteACK()
+        {
+            m_rs232.Write(ACK);
+            m_log.Add("Send Ack");
+        }
+
+        void CallDelegateFunction(string sCMD)              // CheckACKAndCMD  (PC)CMD->(Module)ACK->동작->(Module)CMD->(PC)ACK 의 형태
+        {                                                  //  * CheckCMD    (PC)CMD ->동작->(Module)CMD 의 형태      
+            switch (sCMD.Substring(0,3))                  //  CheckACK (PC)CMD->동작->Module(ACK) 의 형태          
+            {
+                case RESET_CPU:
+                    m_cbRS232 = CheckACK;
+                    break;
+                case INIT:
+                case PAUSE:
+                case VAC_ON:
+                case VAC_OFF:
+                case CANCEL_PAUSE:
+                case TURN:
+                case ALIGN:
+                    m_cbRS232 = CheckACKAndCMD;
+                    break;
+
+                case IS_WAFER_EXIST:
+                case IS_WAFER_EXIST_VAC:
+                    m_cbRS232 = CheckWaferExist;
+                    break;
+
+                case READ_ERROR:
+                    m_cbRS232 = CheckRecentError;
+                    break;
+
+                case READ_WAFERSIZE:
+                    break;
+            }
+            m_log.Add("Set Delegate Function :" + m_cbRS232.Method.ToString());
+        }
+
+        protected override void SetProcess(eProcess run)
+        {
+            base.SetProcess(run); 
+            m_sLastCmd = "";
+        }
+
+        eHWResult WaitReply(int msDelay)
+        {
+            int ms10 = 0; 
+            while (m_cbRS232 != null)
+            {
+                Thread.Sleep(10); 
+                ms10 += 10;
+                if (ms10 > m_msHome)
+                {
+                    SetAlarm(eAlarm.Warning, eError.Timeout);
+                    m_log.Popup(m_sLastCmd + " Timeout !!");
+                    m_cbRS232 = null;
+                    return eHWResult.Error;
+                }
+            }
+            return eHWResult.OK;
+        }
+
+        #region CheckReply Functions
+        void CheckACK(string[] sMsgs)
+        {
+            m_cbRS232 = null;
+            if (sMsgs[0][0] == ACK)
+            {
+                m_log.Add("Received Successfully : " + m_sLastCmd);
+            }
+            else if (sMsgs[0][0] == NAK)
+            {
+                SetAlarm(eAlarm.Warning, eError.NAK);
+                m_log.Popup("Command : " + m_sLastCmd);
+                SetState(eState.Error);
+            }
+            else
+            {
+                SetAlarm(eAlarm.Warning, eError.Protocol);
+                m_log.Popup("Invalid Protocol : " + m_sLastCmd + " -> " + sMsgs[0]);
+                SetState(eState.Error);
+
+            }
+        }
+
+        void CheckACKAndCMD(string[] sMsgs)
+        {
+            if (sMsgs[0][0] == ACK)
+            {
+                m_log.Add("Recieved Successfully (ACK) : " + m_sLastCmd);
+            }
+            else if (sMsgs[0][0] == NAK)
+            {
+                m_log.Popup("NAK Received  : " + m_sLastCmd);
+                SetState(eState.Error);
+            }
+            else if ((sMsgs[0].Length > 2) && (sMsgs[0].Substring(0, 3) == m_sLastCmd))
+            {
+                WriteACK();
+                m_cbRS232 = null;
+            }
+            else
+            {
+                m_log.Popup("Invalid Protocol : " + m_sLastCmd + " -> " + sMsgs[0]);
+                SetState(eState.Error);
+            }
+        }
+
+        void CheckRecentError(string[] sMsgs)
+        {
+            if (sMsgs[0][0] == ACK)
+            {
+                m_log.Add("Recieved Successfully (ACK) : " + m_sLastCmd);
+            }
+            else if ((sMsgs[0] != READ_ERROR) || (sMsgs.Length < 3))
+            {
+                SetAlarm(eAlarm.Warning, eError.Protocol);
+                m_log.Popup("Invalid Protocol : " + m_sLastCmd + " -> " + sMsgs[0]);
+            }
+            else
+            {
+                m_cbRS232 = null;
+                WriteACK();
+            }
+            
+        }
+
+        void CheckWaferExist(string[] sMsgs)
+        {
+            if (sMsgs[0][0] == ACK)
+            {
+                m_log.Add("Recieved Successfully (ACK) : " + m_sLastCmd);
+            }
+            else if ((sMsgs[0] != IS_WAFER_EXIST) || (sMsgs.Length < 2))
+            {
+                SetAlarm(eAlarm.Warning, eError.Protocol);
+                m_log.Popup("Invalid Protocol : " + m_sLastCmd + " -> " + sMsgs[0]);
+            }
+            else
+            {
+                WriteACK();
+                m_cbRS232 = null;
+            }
+        }
+        #endregion
+
+        #region Home Process
+        protected override void ProcHome()
+        {
+            WriteCmd(INIT);
+
+            if (WaitReply(m_msHome) == eHWResult.Error)
+            {
+                SetState(eState.Error);
+                return;
+            }
+
+            SetState(eState.Ready);
+        }
+        #endregion
+
+        protected override void ProcRunReady()
+        {
+            ProcHome(); 
+        }
+
+        #region Run Process
+        protected override void ProcPreProcess()
+        {
+            if (CheckWaferExist() == eHWResult.On)
+            {
+                WriteCmd(VAC_ON);
+
+                if (WaitReply(m_msHome) == eHWResult.Error)
+                {
+                    SetState(eState.Error);
+                    return;
+                }
+                Thread.Sleep(200);
+
+                SetProcess(eProcess.Align);
+            }
+            else
+            {
+                m_log.Popup("Command : " + m_sLastCmd);
+                SetState(eState.Error);
+            }
+        }
+
+        protected override void ProcAlign()
+        {
+            if (m_infoWafer == null) return; 
+            int nPos = GetPosIndex(m_infoWafer.m_fAngleAlign); 
+            string str = ALIGN + ","+ nPos.ToString();
+            WriteCmd(str);
+
+            if (WaitReply(m_msAlign) == eHWResult.Error)
+            {
+                SetState(eState.Error);
+                return;
+            }
+
+            SetProcess(eProcess.BCR);
+        }
+
+        protected override void ProcBCR()
+        {
+            if (m_infoWafer != null)
+            {
+                if (m_infoWafer.m_bUseBCR)
+                {
+                    RunRotate(m_infoWafer.m_fAngleBCR);
+                    //forget
+                }
+            }
+            SetProcess(eProcess.OCR);
+            //            SetProcess(eRunProcess.Rotate);    //forget
+        }
+
+        protected override void ProcOCR() 
+        {
+            if (m_infoWafer != null)
+            {
+                if (m_infoWafer.m_bUseOCR)
+                {
+                    RunRotate(m_infoWafer.m_fAngleOCR); 
+                    //forget
+                }
+            }
+            SetProcess(eProcess.Rotate);
+        }
+
+        protected override void ProcRotate()
+        {
+            if (m_infoWafer == null) return;
+            RunVac(true);
+            RunRotate(m_infoWafer.m_fAngleAlign); 
+            RunVac(false);
+            SetState(eState.Done);
+        }
+
+        int GetPosIndex(double fAngle)
+        {
+            int nAngle = (int)(fAngle + 45); 
+            while (nAngle < 0) nAngle += 360;
+            nAngle = nAngle % 360;
+            int nIndex = nAngle / 90;
+            return m_nTeaching[(int)m_infoWafer.m_wafer.m_eSize, nIndex]; 
+/*            switch (nAngle)
+            {
+                case 0:
+                    if (WaferSize == eWaferSize.inch5)
+                        Point = 3;
+                    else
+                        Point = 7;
+                    break;
+                case 90:
+                    if (WaferSize == eWaferSize.inch5)
+                        Point = 4;
+                    else
+                        Point = 8;
+                    break;
+                case 180:
+                    if (WaferSize == eWaferSize.inch5)
+                        Point = 1;
+                    else
+                        Point = 5;
+                    break;
+                case 270:
+                    if (WaferSize == eWaferSize.inch5)
+                        Point = 2;
+                    else
+                        Point = 6;
+                    break;
+            } */
+        }
+
+        protected override void RunRotate(double fAngle)
+        {
+            RunVac(true);
+            int nPos = GetPosIndex(fAngle);
+            WriteCmd(TURN + SPLITTER + nPos.ToString());
+
+            if (WaitReply(m_msHome) == eHWResult.Error)
+            {
+                SetState(eState.Error);
+                return;
+            }
+        }
+
+        #endregion
+
+        #region Error Process
+        protected override void ProcError()
+        {
+            if(m_rs232.IsConnect())
+                m_rs232.Connect(true);
+//            string sErrorMsg; 
+            WriteCmd(RESET_CPU);
+
+            if (WaitReply(m_msHome) == eHWResult.Error)
+            {
+                SetState(eState.Init);
+                return;
+            }
+
+            //sErrorMsg = ReadRecentError();
+            //m_log.Popup(sErrorMsg); 
+
+            SetState(eState.RunReady);
+            //SetState(eState.Init); 
+            //알람을 여기서? & MessageBox
+        }
+        #endregion
+
+        
+        public override bool RunVac(bool bVac)
+        {
+            if (bVac)
+            {
+                WriteCmd(VAC_ON);
+            }
+            else
+            {
+                WriteCmd(VAC_OFF);
+            }
+            if (WaitReply(m_msHome) == eHWResult.Error)
+            {
+                SetState(eState.Error);
+                return true;
+            }
+            return false; 
+        }
+
+        public override eHWResult CheckWaferExist(bool bVacCheck = false)
+        {
+            m_waferExist = CheckWafer();
+            return m_waferExist; 
+        }
+
+        eHWResult CheckWafer()
+        {
+            /*WriteCmd(IS_WAFER_EXIST);
+            if (WaitReply(m_msHome) == eHWResult.Error) 
+            {
+                return eHWResult.Error;
+            }
+            if (m_control.GetInputBit(m_diCheck) && (m_sMsgs[1].Substring(0, 1) == "1"))
+            {
+                return eHWResult.On;
+            }
+            if (!m_control.GetInputBit(m_diCheck) && (m_sMsgs[1].Substring(0, 1) == "0"))
+            {
+                return eHWResult.Off;
+            }
+            SetState(eState.Error);*/
+            //return eHWResult.Error;
+            if (m_control.GetInputBit(m_diCheck)) return eHWResult.On;
+            return eHWResult.Off; 
+        }
+
+        string ReadRecentError()
+        {
+            string sHistoryNum = "0000";
+
+            WriteCmd(READ_ERROR + SPLITTER + sHistoryNum);
+
+            if (WaitReply(m_msHome) == eHWResult.Error)
+            {
+                return "Read Error Timeout !!";
+            }
+
+            return GetErrorString(m_sMsgs[2]);
+        }
+
+        string GetErrorString(string sCode)
+        {
+            int n;
+            for (n = 0; n < m_sError.Length; n++)
+            {
+                if (m_sErrorMsgs[n, 0] == sCode)
+                    return m_sErrorMsgs[n, 1];
+            }
+            return "Can't Find Error Massage !!";
+        }
+    }
+}

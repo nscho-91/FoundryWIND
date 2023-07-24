@@ -1,0 +1,3 @@
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\obj\x64\Release\ezCam.csprojResolveAssemblyReference.cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\obj\x64\Release\ezCam.ezCam_Dalsa.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCam\obj\x64\Release\ezCam.csproj.GenerateResource.Cache

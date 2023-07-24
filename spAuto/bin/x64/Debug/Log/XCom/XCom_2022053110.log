@@ -1,0 +1,134 @@
+10:00:07[HSMS:Send] Linktest.req, 0000410A
+10:00:07 [Socket:Send]
+	00 00 00 0A FF FF 00 00 00 05 00 00 41 0A
+10:00:07 [Socket:Rcv]
+	00 00 00 0A FF FF 00 00 00 06 00 00 41 0A
+10:00:07[HSMS:Rcv] Linktest.rsp, 0000410A
+10:00:38[HSMS:Send] Linktest.req, 0000410E
+10:00:38 [Socket:Send]
+	00 00 00 0A FF FF 00 00 00 05 00 00 41 0E
+10:00:38 [Socket:Rcv]
+	00 00 00 0A FF FF 00 00 00 06 00 00 41 0E
+10:00:38[HSMS:Rcv] Linktest.rsp, 0000410E
+10:01:09[HSMS:Send] Linktest.req, 00004112
+10:01:09 [Socket:Send]
+	00 00 00 0A FF FF 00 00 00 05 00 00 41 12
+10:01:09 [Socket:Rcv]
+	00 00 00 0A FF FF 00 00 00 06 00 00 41 12
+10:01:09[HSMS:Rcv] Linktest.rsp, 00004112
+10:01:40[HSMS:Send] Linktest.req, 00004116
+10:01:40 [Socket:Send]
+	00 00 00 0A FF FF 00 00 00 05 00 00 41 16
+10:01:40 [Socket:Rcv]
+	00 00 00 0A FF FF 00 00 00 06 00 00 41 16
+10:01:40[HSMS:Rcv] Linktest.rsp, 00004116
+10:02:11[HSMS:Send] Linktest.req, 0000411A
+10:02:11 [Socket:Send]
+	00 00 00 0A FF FF 00 00 00 05 00 00 41 1A
+10:02:11 [Socket:Rcv]
+	00 00 00 0A FF FF 00 00 00 06 00 00 41 1A
+10:02:11[HSMS:Rcv] Linktest.rsp, 0000411A
+10:02:42[HSMS:Send] Linktest.req, 0000411E
+10:02:42 [Socket:Send]
+	00 00 00 0A FF FF 00 00 00 05 00 00 41 1E
+10:02:42 [Socket:Rcv]
+	00 00 00 0A FF FF 00 00 00 06 00 00 41 1E
+10:02:42[HSMS:Rcv] Linktest.rsp, 0000411E
+10:03:13[HSMS:Send] Linktest.req, 00004122
+10:03:13 [Socket:Send]
+	00 00 00 0A FF FF 00 00 00 05 00 00 41 22
+10:03:13 [Socket:Rcv]
+	00 00 00 0A FF FF 00 00 00 06 00 00 41 22
+10:03:13[HSMS:Rcv] Linktest.rsp, 00004122
+10:03:44[HSMS:Send] Linktest.req, 00004126
+10:03:44 [Socket:Send]
+	00 00 00 0A FF FF 00 00 00 05 00 00 41 26
+10:03:44 [Socket:Rcv]
+	00 00 00 0A FF FF 00 00 00 06 00 00 41 26
+10:03:44[HSMS:Rcv] Linktest.rsp, 00004126
+10:04:15[HSMS:Send] Linktest.req, 0000412A
+10:04:15 [Socket:Send]
+	00 00 00 0A FF FF 00 00 00 05 00 00 41 2A
+10:04:15 [Socket:Rcv]
+	00 00 00 0A FF FF 00 00 00 06 00 00 41 2A
+10:04:15[HSMS:Rcv] Linktest.rsp, 0000412A
+10:04:46[HSMS:Send] Linktest.req, 0000412E
+10:04:46 [Socket:Send]
+	00 00 00 0A FF FF 00 00 00 05 00 00 41 2E
+10:04:46 [Socket:Rcv]
+	00 00 00 0A FF FF 00 00 00 06 00 00 41 2E
+10:04:46[HSMS:Rcv] Linktest.rsp, 0000412E
+10:05:17[HSMS:Send] Linktest.req, 00004132
+10:05:17 [Socket:Send]
+	00 00 00 0A FF FF 00 00 00 05 00 00 41 32
+10:05:17 [Socket:Rcv]
+	00 00 00 0A FF FF 00 00 00 06 00 00 41 32
+10:05:17[HSMS:Rcv] Linktest.rsp, 00004132
+10:05:48[HSMS:Send] Linktest.req, 00004136
+10:05:48 [Socket:Send]
+	00 00 00 0A FF FF 00 00 00 05 00 00 41 36
+10:05:48 [Socket:Rcv]
+	00 00 00 0A FF FF 00 00 00 06 00 00 41 36
+10:05:48[HSMS:Rcv] Linktest.rsp, 00004136
+10:06:19[HSMS:Send] Linktest.req, 0000413A
+10:06:19 [Socket:Send]
+	00 00 00 0A FF FF 00 00 00 05 00 00 41 3A
+10:06:19 [Socket:Rcv]
+	00 00 00 0A FF FF 00 00 00 06 00 00 41 3A
+10:06:19[HSMS:Rcv] Linktest.rsp, 0000413A
+10:06:50[HSMS:Send] Linktest.req, 0000413E
+10:06:50 [Socket:Send]
+	00 00 00 0A FF FF 00 00 00 05 00 00 41 3E
+10:06:50 [Socket:Rcv]
+	00 00 00 0A FF FF 00 00 00 06 00 00 41 3E
+10:06:50[HSMS:Rcv] Linktest.rsp, 0000413E
+10:07:21[HSMS:Send] Linktest.req, 00004142
+10:07:21 [Socket:Send]
+	00 00 00 0A FF FF 00 00 00 05 00 00 41 42
+10:07:21 [Socket:Rcv]
+	00 00 00 0A FF FF 00 00 00 06 00 00 41 42
+10:07:21[HSMS:Rcv] Linktest.rsp, 00004142
+10:07:52[HSMS:Send] Linktest.req, 00004146
+10:07:52 [Socket:Send]
+	00 00 00 0A FF FF 00 00 00 05 00 00 41 46
+10:07:52 [Socket:Rcv]
+	00 00 00 0A FF FF 00 00 00 06 00 00 41 46
+10:07:52[HSMS:Rcv] Linktest.rsp, 00004146
+10:08:23[HSMS:Send] Linktest.req, 0000414A
+10:08:23 [Socket:Send]
+	00 00 00 0A FF FF 00 00 00 05 00 00 41 4A
+10:08:23 [Socket:Rcv]
+	00 00 00 0A FF FF 00 00 00 06 00 00 41 4A
+10:08:23[HSMS:Rcv] Linktest.rsp, 0000414A
+10:08:54[HSMS:Send] Linktest.req, 0000414E
+10:08:54 [Socket:Send]
+	00 00 00 0A FF FF 00 00 00 05 00 00 41 4E
+10:08:54 [Socket:Rcv]
+	00 00 00 0A FF FF 00 00 00 06 00 00 41 4E
+10:08:54[HSMS:Rcv] Linktest.rsp, 0000414E
+10:09:25[HSMS:Send] Linktest.req, 00004152
+10:09:25 [Socket:Send]
+	00 00 00 0A FF FF 00 00 00 05 00 00 41 52
+10:09:25 [Socket:Rcv]
+	00 00 00 0A FF FF 00 00 00 06 00 00 41 52
+10:09:25[HSMS:Rcv] Linktest.rsp, 00004152
+10:09:56[HSMS:Send] Linktest.req, 00004156
+10:09:56 [Socket:Send]
+	00 00 00 0A FF FF 00 00 00 05 00 00 41 56
+10:09:56 [Socket:Rcv]
+	00 00 00 0A FF FF 00 00 00 06 00 00 41 56
+10:09:56[HSMS:Rcv] Linktest.rsp, 00004156
+10:10:27[HSMS:Send] Linktest.req, 0000415A
+10:10:27 [Socket:Send]
+	00 00 00 0A FF FF 00 00 00 05 00 00 41 5A
+10:10:27 [Socket:Rcv]
+	00 00 00 0A FF FF 00 00 00 06 00 00 41 5A
+10:10:27[HSMS:Rcv] Linktest.rsp, 0000415A
+10:10:35[HSMS:Send] Separate.req, 0000415E
+10:10:35 [Socket:Send]
+	00 00 00 0A FF FF 00 00 00 09 00 00 41 5E
+10:10:35[Socket:Event] CLOSE - event=, err=10060
+10:10:35[HSMS:Event] Socket closed
+10:10:36[HSMS:State] State Changed : Selected -> Not Connected
+10:10:36[Proc:Event] XComGPro Stopped
+10:12:26[I/F:Error] XComPro driver was stopped directly by DestroyWindow

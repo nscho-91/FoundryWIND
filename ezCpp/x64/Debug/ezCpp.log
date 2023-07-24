@@ -1,0 +1,20 @@
+﻿빌드 시작: 2023-07-24 오후 3:02:13
+     1>2 노드의 "D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezCpp\ezCpp.vcxproj" 프로젝트(Rebuild 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /Od /D WIN32 /D _WINDOWS /D _DEBUG /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"x64\Debug\ezCpp.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /Od /D WIN32 /D _WINDOWS /D _DEBUG /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Debug\ezCpp.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt ezCpp.cpp
+         ezCpp.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0412" /Ix64\Debug\ /nologo /fo"x64\Debug\ezCpp.res" ezCpp.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\spAuto\bin\x64\Debug\ezCpp.dll" /INCREMENTAL /NOLOGO /DEF:".\ezCpp.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\spAuto\bin\x64\Debug\ezCpp.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\spAuto\bin\x64\Debug\ezCpp.lib" /MACHINE:X64 /DLL x64\Debug\ezCpp.res
+         x64\Debug\ezCpp.obj
+         x64\Debug\stdafx.obj
+            D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\spAuto\bin\x64\Debug\ezCpp.lib 라이브러리 및 D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\spAuto\bin\x64\Debug\ezCpp.exp 개체를 생성하고 있습니다.
+         ezCpp.vcxproj -> D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\spAuto\bin\x64\Debug\ezCpp.dll
+     1>"D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezCpp\ezCpp.vcxproj" 프로젝트를 빌드했습니다(Rebuild 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:04.76

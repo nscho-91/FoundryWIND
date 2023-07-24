@@ -1,0 +1,4 @@
+10:10:36 [Proc:Seq] [LE94Base::CommunicationStateChanged] nState(1) th=405c
+10:10:36 [Proc:Seq] [LE94Base::EqConnectionStateChanged] nState(0) th=405c
+10:12:26 [Proc:Seq] [LE94_1106::Stop] th=1338
+10:12:26 [Proc:Seq] [LE94Base::Terminate] [96293544] th=1338

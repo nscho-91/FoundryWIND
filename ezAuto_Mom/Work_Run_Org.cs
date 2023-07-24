@@ -1,0 +1,385 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using ezTools;
+
+namespace ezAutoMom
+{
+    class Work_Run_Org : Work_Run
+    {
+        enum eError 
+        { 
+            eEMG,
+            eAir,
+            eVac,
+            eDoor,
+            eInterLockKey,
+            eHomeNow,
+            eFANAlarm,
+        };
+
+        const int c_nLampCount = 100;
+        const int c_msWait = 3000;
+
+        public string m_id;
+        bool m_bRun = false; 
+        bool m_bPushReset = false;
+        public eAlarm m_eAlarm = eAlarm.Stop; 
+
+        eWorkRun m_eRun, m_eRunWarning; 
+        Thread m_thread;
+        Log m_log;
+        Control_Mom m_control;
+        Count_Mom m_count; 
+        XGem300_Mom m_xGem;
+        Work_Mom m_work;
+        Auto_Mom m_auto; 
+        ezStopWatch m_swSwitch = new ezStopWatch();
+        ezStopWatch m_swError = new ezStopWatch();
+        Alarm_Mom m_AlarmForm = new Alarm_Mom();
+
+        public Work_Run_Org()
+        {
+        }
+
+        public void Init(string id, object auto)
+        {
+            m_id = id; m_auto = (Auto_Mom)auto; 
+            m_log = new Log(id, m_auto.m_logView, "Work");
+            m_control = m_auto.ClassControl(); 
+            m_xGem = m_auto.ClassXGem();
+            m_work = m_auto.ClassWork();
+            m_count = m_auto.ClassCount(); 
+            InitString(); m_swSwitch.Start(); m_swError.Start(); 
+            m_thread = new Thread(new ThreadStart(RunThread)); m_thread.Start();
+        }
+
+        public void ThreadStop()
+        {
+            if (m_bRun) { m_bRun = false; m_thread.Join(); }
+        }
+
+        void InitString()
+        {
+            InitString(eError.eEMG, "Emergency Error, MC Reset 버튼이나 Emergency 버튼을 활성화 해주세요.");
+            InitString(eError.eAir, "설비 공압에 이상이 발견되었습니다!!");
+            InitString(eError.eVac, "설비 VAC에 이상이 발경되었습니다.");
+            InitString(eError.eDoor, "Machine Door Open.!!");
+            InitString(eError.eInterLockKey, "Interlock KeySwitch Error");
+            InitString(eError.eHomeNow, "Home Now!! Don't Open Door !!");
+            InitString(eError.eFANAlarm, "설비내 FAN 동작에 이상이 감지 되었습니다.");
+        }
+
+
+        void InitString(eError eErr, string str)
+        {
+            m_log.AddString(str);
+            if (m_xGem == null) return;
+            m_xGem.AddALID(m_id, (int)eErr, str);
+        } 
+
+        void SetAlarm(eAlarm alarm, eError eErr)
+        {
+            m_work.SetError(alarm, m_log, (int)eErr);
+            if (m_xGem == null) return;
+            m_xGem.SetAlarm(m_id, (int)eErr);
+        } 
+
+        void RunThread()
+        {
+            m_bRun = true; Thread.Sleep(5000);
+            while (m_bRun)
+            {
+                Thread.Sleep(10);
+                if (m_work.IsEMGError()) 
+                { 
+                    SetAlarm(eAlarm.Error, eError.eEMG); 
+                    if (m_xGem != null) m_xGem.SetMSBAlarm(XGem300_Mom.eMSBAlarm.EQ_EmergencyStop_Error); 
+                }
+                else if (m_work.IsVacError()) 
+                { 
+                    SetAlarm(eAlarm.Error, eError.eVac);
+                    if (m_xGem != null) m_xGem.SetMSBAlarm(XGem300_Mom.eMSBAlarm.EQ_MainVacLow_Error); 
+                }
+                else if (m_work.IsCDAError()) 
+                { 
+                    SetAlarm(eAlarm.Error, eError.eAir);
+                    if (m_xGem != null) m_xGem.SetMSBAlarm(XGem300_Mom.eMSBAlarm.EQ_MainAirLow_Error);
+                }
+                else if (false) {   
+                    SetAlarm(eAlarm.Error, eError.eInterLockKey);
+                    
+                }
+                else if (m_auto.m_bUseFANAlarm)
+                {
+                    for (int i = 0; i < Enum.GetNames(typeof(Work_Mom.eFanAlarmPlace)).Length; i++)
+                    {
+                        if (m_work.m_diDoorFan[i] != -1 && !m_control.GetInputBit(m_work.m_diDoorFan[i]))
+                        {
+                            SetAlarm(eAlarm.Error, eError.eFANAlarm);
+                        }
+                    }
+                }
+                else if ((m_eRun == eWorkRun.Run) || (m_eRun == eWorkRun.Home)) {
+                    if (CheckDoorLock()) {
+                        Stop();
+                        m_log.Popup("Door Open Detected (" + m_work.m_strDoorName + ")");
+                        SetAlarm(eAlarm.Error, eError.eDoor);
+                        if (m_xGem != null) m_xGem.SetMSBAlarm(XGem300_Mom.eMSBAlarm.EQ_DoorLockSignal_Error);
+                    }
+                }
+                if (IsEnableSW())
+                {
+                    if (m_work.IsDI_Reset()) { if (!m_bPushReset) Reset(); }
+                    else if (m_work.IsDI_Stop()) Stop();
+                    else if (m_work.IsStartEnable(false) && m_work.IsDI_Start()) Run();
+                    else if (m_work.IsDI_PickerSet()) Stop();
+                    else if (m_work.IsDI_Home()) Home();
+                    else if (m_work.IsDI_BuzzerOff()) BuzzerOff();
+                    else if (m_work.IsDI_DoorOpen()) DoorLock(false);
+                }
+                m_work.RunLamp(); 
+                if (!m_work.IsDI_Reset()) m_bPushReset = false;
+            } 
+        }
+
+        public bool IsEnableSW()
+        {
+            return m_swSwitch.Check() > c_msWait;
+        }
+
+        public void Run()
+        {
+            if (m_AlarmForm.Visible) {
+                MessageBox.Show("알람창 종료후 실행하여 주십시오.");
+                return;
+            }
+            if (!m_work.IsStartEnable(true)) return;
+            if (!m_work.m_bPickerSetDone && (m_auto.ClassModel().m_strModel != "EFEM" && m_auto.ClassModel().m_strModel != "EFEM_C"))
+            {
+                if (System.Windows.Forms.MessageBox.Show("Did not PickerSet, Continue?", "Start", MessageBoxButtons.YesNo, 0, 0, MessageBoxOptions.ServiceNotification) == DialogResult.No) return;
+                else m_work.m_bPickerSetDone = true;
+            }
+            if (CheckDoorLock()) { SetAlarm(eAlarm.Stop, eError.eDoor); m_log.Popup("Door Open Detected (" + m_work.m_strDoorName + ")"); Thread.Sleep(200); return; }
+            if (IsManual()) return;
+            if (!IsEnableSW()) { m_log.Popup("Wait 3 Seconds"); Thread.Sleep(200); return; }
+            switch (m_eRun)
+            {
+                case eWorkRun.Home: m_log.Popup("Work Run State is Home"); Thread.Sleep(1000); break;
+                case eWorkRun.Run: m_log.Popup("Work Run State is Run"); Thread.Sleep(1000); break;
+                case eWorkRun.Init: m_log.Popup("Work Run State Init"); Thread.Sleep(1000); break;
+                case eWorkRun.Warning1: m_log.Popup("Work Run State is Warning"); Thread.Sleep(1000); break;
+                case eWorkRun.Error: m_log.Popup("Work Run State is Error"); Thread.Sleep(1000); break;
+                case eWorkRun.Ready:
+                case eWorkRun.Warning0:
+                    m_eRun = eWorkRun.Run;
+                    m_work.m_nStripStart = m_work.m_nStrip + 1; 
+                    if (m_count != null) m_count.Start();
+                    m_log.Add("<Start>"); break;
+            }
+            m_work.m_nCheckStart = 0;
+        }
+
+        public void Stop(bool bDelay = true)
+        {
+            if (m_eRun == eWorkRun.PickerSet) return;
+            if (bDelay && !IsEnableSW()) { m_log.Popup("Wait 3 Seconds"); Thread.Sleep(200); return; }
+            if (!IsManual() && (m_eRun != eWorkRun.Run)) { m_log.Add("Work is not Run !!"); Thread.Sleep(500); return; }
+            m_eRun = eWorkRun.Ready; m_swSwitch.Start(); m_log.Add("<Stop>");
+        }
+
+        public void Reset()
+        {
+            if (m_AlarmForm.Visible) {
+                MessageBox.Show("알람창 종료후 실행하여 주십시오.");
+                return;
+            }
+            m_work.RunBuzzerOff();
+            if (CheckDoorLock()) { SetAlarm(eAlarm.Stop, eError.eDoor); Thread.Sleep(200); m_log.Popup("Door Open Detected (" + m_work.m_strDoorName + ")"); return; }
+            if (IsManual()) { m_log.Popup("Please release PickerSet !"); Thread.Sleep(200); return; }
+            if (!IsEnableSW()) { m_log.Popup("Wait 3 Seconds"); Thread.Sleep(200); return; }
+            m_bPushReset = true; m_swSwitch.Start();
+            switch (m_eRun)
+            {
+                case eWorkRun.Error: m_eRun = eWorkRun.Init; break;
+                case eWorkRun.Ready: m_eRun = eWorkRun.Reset; m_eAlarm = 0; break;
+                case eWorkRun.Warning0:
+                    switch (m_eRunWarning)
+                    {
+                        case eWorkRun.Home: m_eRun = eWorkRun.Init; break;
+                        default: m_eRun = eWorkRun.Ready; break;
+                    }
+                    break;
+                case eWorkRun.Warning1: 
+                    switch (m_eRunWarning)
+                    {
+                        case eWorkRun.Home: m_eRun = eWorkRun.Init; break;
+                        case eWorkRun.AutoLoad:
+                        case eWorkRun.AutoUnload:
+                        case eWorkRun.PickerSet:
+                        case eWorkRun.Warning0:
+                        case eWorkRun.Reset: m_eRun = eWorkRun.Reset; break; // ing
+                        case eWorkRun.Ready: m_eRun = eWorkRun.Reset; break; // ing
+                        case eWorkRun.Run: m_eRun = eWorkRun.Reset; break;
+                    }
+                    break;
+            }
+            m_log.Add("<Reset>");
+        }
+
+        public void Home()
+        {
+            if (CheckDoorLock()) { SetAlarm(eAlarm.Stop, eError.eDoor); m_log.Popup("Door Open Detected (" + m_work.m_strDoorName + ")"); Thread.Sleep(200); return; }
+            if (IsManual()) return;
+            if (m_eRun == eWorkRun.Run) return;
+            if (m_eRun == eWorkRun.Home) return;
+            if (!IsEnableSW()) { m_log.Popup("Wait 3 Seconds"); Thread.Sleep(200); return; }       
+            m_eRun = eWorkRun.Home;
+            m_log.Popup("Home Now");
+            
+            m_log.Add("<Home>");
+        }
+
+        public void BuzzerOff()
+        {
+            m_work.RunBuzzerOff(); 
+        }
+
+        public void DoorLock(bool bOn)
+        {
+            if (m_eRun != eWorkRun.Run)
+            {
+                m_work.RunDoorLock(bOn);
+            }
+        }
+
+        public void SetError(eAlarm alarm, Log log, int iError) 
+        {
+            SetError(alarm);
+            //if (m_swError.Check() < c_msWait) return; m_swError.Start();
+            //log.Popup(iError); 
+
+            LogString str = log.GetLogString(iError);
+            m_log.WriteLog("Sequence", str.m_strLog);
+            if (m_AlarmForm.Visible == false) {
+                SetAlarmForm(log, iError);
+            }
+
+        }
+        public delegate void Delegate_LogString(Log log, int iError);
+        void SetAlarmForm(Log log, int iError)
+        {
+            if (m_AlarmForm.InvokeRequired) {
+                Delegate_LogString d = new Delegate_LogString(SetAlarmForm);
+                m_AlarmForm.BeginInvoke(d, new object[] { log, iError });
+            }
+            else {
+                LogString str = log.GetLogString(iError);
+                int num = 0;
+                int AlarmNum = 0;
+
+                AlarmNum = GetAlarmNumber(str.m_strDef);
+
+                if (m_auto != null) {
+                    if (str != null && !m_AlarmForm.Visible) {
+                        //AlarmForm = new Alarm_Mom();
+                        m_AlarmForm.SetAlarmInfo(m_auto, log.m_id, iError.ToString(), str.m_strDef, num, AlarmNum);
+                        //m_auto.ClassXGem().SetAlarm(AlarmNum, true);
+                        m_AlarmForm.ShowDialog();
+                    }
+                }
+            }
+
+        }
+
+        public int GetAlarmNumber(string str)
+        {
+            if (str.IndexOf("WTR") >= 0)
+                return 401;
+            else if (str.IndexOf("Emergency") >= 0)
+                return 1;
+            else if (str.IndexOf("설비 공압") >= 0)
+                return 2;
+            else
+                return 0;
+               
+        }
+
+
+        public void SetError(eAlarm alarm)
+        {
+            m_eAlarm = alarm;
+            switch (alarm)
+            {
+                case eAlarm.Error:
+                    if (m_eRun == eWorkRun.Error) return; 
+                    m_eRun = eWorkRun.Error; 
+                    if (m_auto != null) m_auto.RunEmergency();
+                    break;
+                case eAlarm.Warning:
+                    if (m_eRun == eWorkRun.Warning1) return; 
+                    if ((m_eRun == eWorkRun.Init) || (m_eRun == eWorkRun.Error)) 
+                    { 
+                        m_eRun = eWorkRun.Error; 
+                        return; 
+                    }
+                    m_eRunWarning = m_eRun; 
+                    m_eRun = eWorkRun.Warning1;
+                    break;
+                case eAlarm.Stop:
+                    if (m_eRun == eWorkRun.Warning0) return;
+                    if ((m_eRun == eWorkRun.Init) || (m_eRun == eWorkRun.Error))
+                    {
+                        m_eRun = eWorkRun.Error;
+                        return;
+                    }
+                    m_eRunWarning = m_eRun;
+                    m_eRun = eWorkRun.Warning0;
+                    break;
+                default: break;
+            }
+        }
+
+        bool CheckDoorLock()
+        {
+            if (!m_work.m_bDoorLock) return false;
+            if (!m_work.IsDoorOpen()) return false; 
+            return true; 
+        }
+
+        public eWorkRun GetState()
+        {
+            return m_eRun; 
+        }
+
+        public bool IsManual()
+        {
+            if (m_eRun == eWorkRun.AutoLoad) return true;
+            if (m_eRun == eWorkRun.AutoUnload) return true;
+            if (m_eRun == eWorkRun.PickerSet) return true;
+            return false;
+        }
+
+        public void SetManual(eWorkRun eRun)
+        {
+            switch (eRun)
+            {
+                case eWorkRun.AutoLoad: case eWorkRun.AutoUnload: case eWorkRun.PickerSet:
+                    if (m_eRun == eWorkRun.Ready) m_eRun = eRun; 
+                    break;
+            }
+            if (m_eRun != eRun) m_log.Popup(m_eRun.ToString() + " -> " + eRun.ToString() + " State Change Error !!");
+        }
+
+        public void SetReady()
+        {
+            if (m_eRun != eWorkRun.Init) m_eRun = eWorkRun.Ready; 
+            else m_log.Popup(m_eRun.ToString() + " -> Ready " + " State Change Error !!");
+        }
+
+    }
+}

@@ -1,0 +1,315 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.IO;
+using ezTools;
+
+namespace ezAutoMom
+{
+    public enum eTrayType { eTrayEtc, eTrayXout, eTrayError };
+    public enum eTrayStat { eTrayReady, eTraySort, eTrayFull, eTrayOpen, eTrayStatError };
+    public partial class Count_Tray : Form
+    {
+
+        enum eError { eCheck, eCount, eOpen };
+        int[] m_iError = new int[3] { -1, -1, -1 };
+
+        string m_strDraw = "", m_strLED = "", m_strDisp = "";
+        bool m_bDisp, m_bCheck, m_bClose, m_bClose0, m_bUseSensor;
+        int m_ms10Tray, m_nRS232, m_nRS232Add;
+        CPoint m_cpDraw;
+        CPoint m_szDraw;
+        Color m_color;
+        Auto_Mom m_auto;
+        Count_Mom m_count;
+        Work_Mom m_work;
+        Control_Mom m_control;
+        XGem300_Mom m_xGem;
+        Count_TrayLED m_LED;
+        Log m_log;
+
+        public string m_id;
+        public bool m_bNeedPaper;
+        public int m_nType, m_nID, m_nXout, m_nCount;
+        public int m_diCheck, m_diClose, m_diSW, m_doSW;
+        public int[,] m_bitLED = new int[5, 8];
+        public eTrayStat m_eStat;
+
+        public Count_Tray()
+        {
+            InitializeComponent();
+            int n;
+            m_nType = 0; m_nXout = -1; m_nCount = 0; m_ms10Tray = 0; m_eStat = eTrayStat.eTrayReady;
+            m_bDisp = true; m_bCheck = m_bClose = m_bClose0 = true; m_bNeedPaper = true;
+            m_strDraw = "??"; m_color = Color.FromArgb(50, 100, 150); m_cpDraw = new CPoint(0, 0);
+            for (n = 0; n < 8; n++) { m_bitLED[0, n] = 0; m_bitLED[1, n] = (n / 4) % 2; m_bitLED[2, n] = (n / 2) % 2; m_bitLED[3, n] = 1; m_bitLED[4, n] = n % 2; }
+        }
+
+        public void Init(int nID, CPoint cpDraw, CPoint szDraw, Auto_Mom auto, Log log, bool bUseSensor = true)
+        {
+            m_nID = nID; m_cpDraw = cpDraw; m_szDraw = szDraw; m_auto = auto; m_log = log; 
+            m_bUseSensor = bUseSensor;
+            m_id = m_nID.ToString("Tray_000");
+            m_work = m_auto.ClassWork();
+            m_count = m_auto.ClassCount();
+            m_control = m_auto.ClassControl();
+            m_xGem = m_auto.ClassXGem();
+            m_log.m_reg.Read(m_id + "Type", ref m_nType);
+            m_log.m_reg.Read(m_id + "Xout", ref m_nXout);
+            m_log.m_reg.Read(m_id + "Count", ref m_nCount);
+            SetProperty((eTrayType)m_nType, m_nXout);
+        }
+
+        public void InitDIO(int diCheck, int diClose, int diSW, int doSW, bool bCheck, bool bClose)
+        {
+            m_diCheck = diCheck; m_diClose = diClose; m_diSW = diSW; m_doSW = doSW;
+            m_bCheck = bCheck; m_bClose = bClose;
+        }
+
+        public void InitRS232(object LED, int nRS232, int nRS232Add)
+        {
+            m_LED = (Count_TrayLED)LED; m_nRS232 = nRS232; m_nRS232Add = nRS232Add;
+        }
+
+        public void InitString()
+        {
+            InitString(eError.eCheck, "Check Sensor not Detect !!");
+            InitString(eError.eCount, "Tray Count Error !!");
+            InitString(eError.eOpen, "Tray Open Error !!");
+        }
+
+        void InitString(eError eErr, string str)
+        {
+            m_log.AddString(str);
+            if (m_xGem == null) return;
+            m_xGem.AddALID("Count_Tray", (int)eErr, str);
+        }
+
+        void SetAlarm(eAlarm alarm, eError eErr)
+        {
+            m_work.SetError(alarm, m_log, (int)eErr);
+            if (m_xGem == null) return;
+            m_xGem.SetAlarm("Count_Tray", (int)eErr);
+        }
+
+        public void ThreadStop()
+        {
+            m_log.m_reg.Write(m_id + "Type", m_nType);
+            m_log.m_reg.Write(m_id + "Xout", m_nXout);
+            m_log.m_reg.Write(m_id + "Count", m_nCount);
+        }
+
+        public void Draw(Graphics dc)
+        {
+            string str;
+            str = m_nCount.ToString("0");
+            dc.DrawString(m_strDraw, this.Font, new SolidBrush(m_color), m_cpDraw.x, m_cpDraw.y);
+            dc.DrawString(str, this.Font, new SolidBrush(Color.FromArgb(0, 0, 0)), m_cpDraw.x, m_cpDraw.y + 17);
+        }
+
+        public void DrawMonitor(Graphics dc, CPoint cp, Font ft)
+        {
+            string str;
+            str = m_nCount.ToString("0");
+            dc.DrawString(m_strDraw, ft, new SolidBrush(m_color), cp.x, cp.y);
+            dc.DrawString(str, ft, new SolidBrush(Color.FromArgb(0, 0, 0)), cp.x, cp.y + ft.Size * 3 / 2);
+        }
+
+        public bool IsInside(CPoint cp)
+        {
+            cp -= m_cpDraw;
+            if ((cp.x < 0) || (cp.y < 0) || (cp.x > m_szDraw.x) || (cp.y > m_szDraw.y)) return false;
+            return true;
+        }
+        void EnableControl()
+        {
+            textBoxXout.Visible = (m_nType != (int)eTrayType.eTrayEtc);
+            textBoxXout.ReadOnly = (m_nCount != 0);
+        }
+
+        public void SetProperty(eTrayType eType, int nXout)
+        {
+            m_nType = (int)eType; m_nXout = nXout; m_bDisp = true; //m_count.ReDraw();
+            switch (eType)
+            {
+                case eTrayType.eTrayEtc: m_color = Color.FromArgb(150, 0, 250); m_strDraw = "??"; m_strLED = " ?? "; break;
+                case eTrayType.eTrayError: m_color = Color.FromArgb(250, 50, 50); m_strDraw = m_nXout.ToString("Er00"); m_strLED = m_nXout.ToString("ER00"); break;
+                case eTrayType.eTrayXout: if (m_nXout == 0) m_color = Color.FromArgb(0, 200, 50); else m_color = Color.FromArgb(50, 100, 150);
+                    if (m_nXout >= 0) { m_strDraw = m_nXout.ToString("000"); m_strLED = "X" + m_nXout.ToString("000"); }
+                    else { m_strDraw = " #"; m_strLED = "X   "; } break;
+            }
+        }
+
+        public bool IsMatch(eTrayType eType, int nXout, bool bMatch)
+        {
+            if (m_nCount >= m_count.GetMaxLoad()) m_eStat = eTrayStat.eTrayFull; else m_eStat = eTrayStat.eTrayReady;
+            if (m_eStat >= eTrayStat.eTrayFull) return false;
+            if (eType == eTrayType.eTrayEtc) { if (m_nType == (int)eTrayType.eTrayEtc) return true; }
+            else
+            {
+                if (bMatch) { if ((m_nType == (int)eType) && (m_nXout == nXout)) return true; }
+                else if ((m_nType == (int)eType) && (m_nXout == -1)) { SetProperty(eTrayType.eTrayXout, nXout); return true; }
+            }
+            return false;
+        }
+
+        public void Clear()
+        {
+            m_nCount = 0; m_bDisp = true; m_eStat = eTrayStat.eTrayReady;
+            m_log.m_reg.Write(m_id + "Count", m_nCount);
+        }
+
+        public void ClearXout()
+        {
+            if (m_count.GetDynamic()) return;
+            if (m_nType == (int)eTrayType.eTrayXout) SetProperty(eTrayType.eTrayXout, -1);
+        }
+        public void Add(int nXout)
+        {
+            ezStopWatch sw = new ezStopWatch();
+            sw.Start();
+            if (m_nCount == 0)
+            {
+                while (!IsCheck() && m_bUseSensor)
+                {
+                    Thread.Sleep(5);
+                    if (m_work.m_bDryRun) return;
+                    if (sw.Check() > 2500) 
+                    {
+                        m_log.Popup(m_id + " : Check Sensor not Detect !!");
+                        SetAlarm(eAlarm.Stop, eError.eCheck); 
+                        return; 
+                    }
+                }
+            } 
+            m_nCount++; m_bDisp = true;
+            m_log.Add(m_id + " : Xout=" + m_nXout.ToString() + ", Count=" + m_nCount.ToString());
+            if (m_nCount >= m_count.GetMaxLoad()) m_eStat = eTrayStat.eTrayFull; else m_eStat = eTrayStat.eTrayReady;
+            if ((m_nXout < 0) && (m_nType != (int)eTrayType.eTrayEtc)) m_nXout = nXout;
+            m_log.m_reg.Write(m_id + "Count", m_nCount); m_bNeedPaper = true;
+        }
+
+        public void CheckStat(int ms)
+        {
+            eTrayStat eStat; string str;
+            eStat = m_eStat;
+            if (m_bClose0 != IsClose()) { m_bClose0 = IsClose(); m_bDisp = true; }
+            if (m_count == null) return;
+            switch (m_eStat)
+            {
+                case eTrayStat.eTrayReady: if (m_control.GetInputBit(m_diSW)) m_eStat = eTrayStat.eTrayFull; break;
+                case eTrayStat.eTraySort: break;
+                case eTrayStat.eTrayFull: if (!IsClose()) m_eStat = eTrayStat.eTrayOpen; break;
+                case eTrayStat.eTrayOpen: if (IsClose() && !IsCheck()) { Clear(); /*ClearXout();*/ } break; 
+            }
+            if (!IsMatchSensor() && (m_eStat != eTrayStat.eTrayOpen) && m_bUseSensor) 
+            {
+                m_ms10Tray++;
+                Thread.Sleep(10); 
+            }
+            else m_ms10Tray = 0;
+            if (m_ms10Tray > 100 && m_bUseSensor) 
+            {
+                SetAlarm(eAlarm.Warning, eError.eCount); 
+                m_eStat = eTrayStat.eTrayStatError;
+                m_log.Popup(m_id + " : Tray Count Error !!");
+                Thread.Sleep(3000);
+            }
+            if (!IsClose() && (m_eStat <= eTrayStat.eTraySort) && m_work.IsRun())
+            {
+                SetAlarm(eAlarm.Stop, eError.eOpen);
+                m_eStat = eTrayStat.eTrayStatError;
+            }
+            if (eStat != m_eStat) { str = " : " + ((int)eStat).ToString() + " --> " + ((int)m_eStat).ToString(); }
+            m_control.WriteOutputBit(m_doSW, m_bitLED[(int)m_eStat, ms] == 1);
+        }
+
+        public void DispLED()
+        {
+            string strDisp;
+            if (m_LED == null) return;
+            if (IsClose() && (m_nCount == 0) && IsCheck()) strDisp = "CHCK";
+            else if (IsClose() && (m_nCount != 0) && !IsCheck()) strDisp = "EMTY";
+            else if (m_nCount == 0) strDisp = "    ";
+            else if (!IsClose()) strDisp = m_nCount.ToString("0000");
+            else strDisp = m_strLED;
+            if (!m_bDisp) return; m_bDisp = false;
+            if (strDisp == m_strDisp) return;
+            m_strDisp = strDisp; m_LED.Write(m_nRS232, m_nRS232Add, m_strDisp);
+        }
+
+        public bool IsClose()
+        {
+            return m_bClose == m_control.GetInputBit(m_diClose);
+        }
+
+        public bool IsCheck()
+        {
+            return m_bCheck == m_control.GetInputBit(m_diCheck);
+        }
+
+        public bool IsMatchSensor()
+        {
+            return !(IsCheck() ^ (m_nCount > 0));
+        }
+
+        public void FileOpen(StreamReader sr)
+        {
+            string str, strL, strR; int index;
+            str = sr.ReadLine();
+            index = str.IndexOf(" ");
+            strL = str.Remove(index, str.Length - index);
+            strR = str.Remove(0, index + 1);
+            m_nType = Convert.ToInt32(strL);
+            m_nXout = Convert.ToInt32(strR);
+            SetProperty((eTrayType)m_nType, m_nXout);
+        }
+
+        public void FileSave(StreamWriter sw)
+        {
+            sw.WriteLine(m_nType.ToString() + " " + m_nXout.ToString());
+        }
+
+        private void buttonClear_Click(object sender, EventArgs e)
+        {
+            m_nCount = 0; textBoxCount.Text = "0"; m_log.m_reg.Write(m_id + "Count", m_nCount); EnableControl();
+            m_eStat = eTrayStat.eTrayReady;
+            m_log.Add(m_id + " Count Clear"); //eom20160930
+        }
+
+        private void Count_Tray_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                if (textBoxXout.Text == "") m_nXout = 0;
+                else m_nXout = Convert.ToInt32(textBoxXout.Text);
+                if (this.textBoxCount.Text == "") m_nCount = 0;
+                else m_nCount = Convert.ToInt32(textBoxCount.Text);
+                SetProperty((eTrayType)m_nType, m_nXout);
+                Close();
+                m_log.Add(m_id + " Changed Count = " + m_nCount.ToString()); //eom20160930
+            }
+        }
+
+        private void comboBoxType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            m_nType = comboBoxType.SelectedIndex;
+            EnableControl();
+        }
+
+        private void Count_Tray_Load(object sender, EventArgs e)
+        {
+            EnableControl(); this.Text = m_id;
+            comboBoxType.SelectedIndex = m_nType;
+            textBoxXout.Text = m_nXout.ToString();
+            textBoxCount.Text = m_nCount.ToString();
+        }
+    }
+}

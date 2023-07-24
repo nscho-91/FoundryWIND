@@ -1,0 +1,49 @@
+14:02:09.162 [Proc:Seq] Log Initialized
+14:02:09.164 [Proc:Seq] Cfg File: C:\AVIS\Init_Gem300.cfg
+14:02:09.165 [Proc:Seq] (c) IT Innovation.  All rights reserved.
+14:02:09.220 [Proc:Seq] [DEBUG] Initialize() : TCP/IP Ret = 0, <Cls:LXGemConnectMgr>
+14:02:09.222 [Proc:Seq] [DEBUG] Execute Process(C:\Program Files (x86)\Linkgenesis\XGem300Pro v3.x\SE\Bin\XGem.exe) reading sucessed from registry., <Cls:LXGemProc>
+14:02:11.474 [Proc:Seq] [STATE] changed from INIT to IDLE
+14:02:11.476 [Proc:Seq] [DEBUG] Success to initialize = 0, <Cls:LXGemProc>
+14:02:11.476 [Proc:Seq] [DEBUG] XGem.Initialize: Release : th=9, <Cls:CEXGemCsCtrl>
+14:02:11.478 [Proc:Seq] [DEBUG] XGem.Start: Lock : th=9, <Cls:CEXGemCsCtrl>
+14:02:11.480 [Proc:Seq] XNetSocket::OpenClient2() OpenClient socket:ip=127.0.0.1, port=2001
+14:02:11.481 [Proc:Seq] XNetSocket::OpenClient2() Socket connected
+14:02:11.493 [Proc:Seq] [DEBUG] [CONNECTION STATE] Connected TCP/IP, <Cls:CXGemEventWnd>
+14:02:11.493 [Proc:Seq] [STATE] changed from IDLE to READY
+14:02:11.499 [Proc:Seq] [DEBUG] Success to send SendGetLicense = 0, <Cls:LXGemProc>
+14:02:11.508 [Proc:Seq] [DEBUG] Success to send SendGetParam = 0, <Cls:LXGemProc>
+14:02:11.511 [Proc:Seq] XNetConnect::notifyEvent() Dequeue string: msg=System.Byte[]
+14:02:11.514 [Proc:Seq] [DEBUG] Success to send SendGetAttributeV = 0, <Cls:LXGemProc>
+14:02:11.516 [Proc:Seq] [DEBUG] Start() : TCP/IP Ret = 0, IP:127.0.0.1, Port:2001, Active:true, <Cls:LXGemConnectMgr>
+14:02:11.522 [Proc:Seq] [DEBUG] Success to start = 0, <Cls:LXGemProc>
+14:02:11.523 [Proc:Seq] [DEBUG] XGem.Start: Release : th=9, <Cls:CEXGemCsCtrl>
+14:02:11.530 [Proc:Seq] XNetConnect::notifyEvent() Dequeue string: msg=System.Byte[]
+14:02:11.565 [Proc:Seq] XNetConnect::notifyEvent() Dequeue string: msg=System.Byte[]
+14:04:12.651 [Proc:Seq] [STATE] changed from READY to EXECUTE
+14:04:12.652 [Proc:Seq] [DEBUG] XGem.GEMSetEstablish: Lock : th=129, <Cls:CEXGemCsCtrl>
+14:04:12.656 [Proc:Seq] [DEBUG] Success to send GEMSetEstablish = 0, <Cls:LXGemProc>
+14:04:12.656 [Proc:Seq] [DEBUG] XGem.GEMSetEstablish: Release : th=129, <Cls:CEXGemCsCtrl>
+14:04:12.657 [Proc:Seq] [DEBUG] XGem.GEMReqRemote: Lock : th=129, <Cls:CEXGemCsCtrl>
+14:04:12.660 [Proc:Seq] [DEBUG] Success to send GEMReqRemote = 0, <Cls:LXGemProc>
+14:04:12.660 [Proc:Seq] [DEBUG] XGem.GEMReqRemote: Release : th=129, <Cls:CEXGemCsCtrl>
+14:04:12.662 [Proc:Seq] [DEBUG] XGem.CMSReqChangeServiceStatus: Lock : th=129, <Cls:CEXGemCsCtrl>
+14:04:12.680 [Proc:Seq] XNetConnect::notifyEvent() Dequeue string: msg=System.Byte[]
+14:04:12.682 [Proc:Seq] XNetConnect::notifyEvent() Dequeue string: msg=System.Byte[]
+14:04:12.683 [Proc:Seq] [DEBUG] call function(CMSReqChangeServiceStatus) LocId=LP1, State=0, <Cls:LXGemProc>
+14:04:12.683 [Proc:Seq] [DEBUG] XGem.CMSReqChangeServiceStatus: Release : th=129, <Cls:CEXGemCsCtrl>
+14:04:12.684 [Proc:Seq] [DEBUG] XGem.CMSReqChangeServiceStatus: Lock : th=129, <Cls:CEXGemCsCtrl>
+14:04:12.686 [Proc:Seq] [DEBUG] call function(CMSReqChangeServiceStatus) LocId=LP2, State=0, <Cls:LXGemProc>
+14:04:12.686 [Proc:Seq] [DEBUG] XGem.CMSReqChangeServiceStatus: Release : th=129, <Cls:CEXGemCsCtrl>
+14:04:12.687 [Proc:Seq] [DEBUG] XGem.CMSReqChangeAccess: Lock : th=129, <Cls:CEXGemCsCtrl>
+14:04:12.689 [Proc:Seq] [DEBUG] call function(CMSReqChangeAccess) Mode=0, LocId=LP1, <Cls:LXGemProc>
+14:04:12.690 [Proc:Seq] [DEBUG] XGem.CMSReqChangeAccess: Release : th=129, <Cls:CEXGemCsCtrl>
+14:04:12.691 [Proc:Seq] [DEBUG] XGem.CMSReqChangeAccess: Lock : th=129, <Cls:CEXGemCsCtrl>
+14:04:12.692 [Proc:Seq] [DEBUG] call function(CMSReqChangeAccess) Mode=0, LocId=LP2, <Cls:LXGemProc>
+14:04:12.693 [Proc:Seq] [DEBUG] XGem.CMSReqChangeAccess: Release : th=129, <Cls:CEXGemCsCtrl>
+14:04:12.701 [Proc:Seq] XNetConnect::notifyEvent() Dequeue string: msg=System.Byte[]
+14:04:12.706 [Proc:Seq] XNetConnect::notifyEvent() Dequeue string: msg=System.Byte[]
+14:04:12.721 [Proc:Seq] XNetConnect::notifyEvent() Dequeue string: msg=System.Byte[]
+14:04:12.724 [Proc:Seq] XNetConnect::notifyEvent() Dequeue string: msg=System.Byte[]
+14:04:12.737 [Proc:Seq] XNetConnect::notifyEvent() Dequeue string: msg=System.Byte[]
+14:04:12.748 [Proc:Seq] XNetConnect::notifyEvent() Dequeue string: msg=System.Byte[]

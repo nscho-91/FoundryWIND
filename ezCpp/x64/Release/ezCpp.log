@@ -1,0 +1,23 @@
+﻿빌드 시작: 2021-12-14 오전 9:42:47
+     1>2 노드의 "C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCpp\ezCpp.vcxproj" 프로젝트(Rebuild 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"x64\Release\ezCpp.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Release\ezCpp.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt ezCpp.cpp
+         ezCpp.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0412" /Ix64\Release\ /nologo /fo"x64\Release\ezCpp.res" ezCpp.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\spAuto\bin\x64\Release\ezCpp.dll" /INCREMENTAL /NOLOGO /DEF:".\ezCpp.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\spAuto\bin\x64\Release\ezCpp.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\spAuto\bin\x64\Release\ezCpp.lib" /MACHINE:X64 /DLL x64\Release\ezCpp.res
+         x64\Release\ezCpp.obj
+         x64\Release\stdafx.obj
+     1>LINK : warning LNK4075: '/INCREMENTAL'이(가) '/LTCG' 사양으로 인해 무시됩니다.
+            C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\spAuto\bin\x64\Release\ezCpp.lib 라이브러리 및 C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\spAuto\bin\x64\Release\ezCpp.exp 개체를 생성하고 있습니다.
+         코드를 생성하고 있습니다.
+         코드를 생성했습니다.
+         ezCpp.vcxproj -> C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\spAuto\bin\x64\Release\ezCpp.dll
+     1>"C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezCpp\ezCpp.vcxproj" 프로젝트를 빌드했습니다(Rebuild 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:08.80

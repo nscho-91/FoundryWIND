@@ -1,0 +1,363 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using ezTools;
+using ezAxis;
+
+namespace ezAutoMom
+{
+    public class HW_Rail : HW_Rail_Mom, Control_Child
+    {
+        public enum eError 
+        { 
+            Ready, 
+            Done, 
+            Empty, 
+            ArrivalCheck, 
+            ArrivalOff, 
+            StopCheck, 
+            StopOff, 
+            AlignOn, 
+            AlignOff, 
+            Width,
+            Send
+        };
+
+        protected const int c_msDIO = 10000;
+        protected const int c_msSend = 10000;
+        const int c_msHome = 30000;
+
+        protected bool m_bStopper = true;
+        protected bool m_bDouble = true;
+        protected bool m_bArrival = true;
+        protected bool m_bAlign = true;
+        protected int[] m_diStopper = new int[2] { -1, -1 };
+        protected int[] m_diAlign = new int[2] { -1, -1 };
+        protected int m_diArrival = -1;
+        protected int m_diStop = -1;
+        protected int m_diCheck = -1;
+        protected int[] m_doStopper = new int[2] { -1, -1 };
+        protected int m_doAlign = -1;
+        protected int m_doMove = -1;
+        protected int m_msAlign = 500;
+        protected int m_msSend = 500;
+        protected int m_msStop = 500;
+        protected int[] m_nAxisPos = new int[2] { 0, 1 };
+        protected double[] m_fWidth = new double[2] { 0, 1 };
+        protected ezStopWatch m_swAxis = new ezStopWatch();
+        protected Axis_Mom m_axis;
+        protected bool m_bUse = true;
+        double m_fStripWidth = -1; 
+
+        public HW_Rail()
+        {
+
+        }
+
+        public override void Init(int nID, string id, Auto_Mom auto, If_InlineFlow nextFlow)
+        {
+            base.Init(nID, id, auto, nextFlow);
+            m_control.Add(this);
+            InitString();
+            RunGrid(eGrid.eRegRead);
+            RunGrid(eGrid.eInit); 
+        }
+
+        protected virtual void InitString()
+        {
+            InitString(eError.Ready, "Can not Start Load, Rail is not Ready !!");
+            InitString(eError.Done, "Can not Start Send, Rail is not Done !!");
+            InitString(eError.Empty, "Rail not Empty !!");
+            InitString(eError.ArrivalCheck, "Arrival Sensor not Check !!");
+            InitString(eError.ArrivalOff, "Arrival Sensor not Off !!");
+            InitString(eError.StopCheck, "Stop Sensor not Check !!");
+            InitString(eError.StopOff, "Stop Sensor not Off !!");
+            InitString(eError.AlignOn, "Align On Error !!");
+            InitString(eError.AlignOff, "Align Off Error !!");
+            InitString(eError.Width, "Change Width Error !!");
+            InitString(eError.Send, "Send Strip Error !!");
+        }
+
+        void InitString(eError eErr, string str)
+        {
+            m_log.AddString(str);
+            if (m_xGem == null) return;
+            m_xGem.AddALID(m_id, (int)eErr, str);
+        }
+
+        public void SetAlarm(eAlarm alarm, eError eErr)
+        {
+            m_work.SetError(alarm, m_log, (int)eErr);
+            if (m_xGem == null) return;
+            m_xGem.SetAlarm(m_id, (int)eErr);
+        }
+
+        public override void RunGrid(eGrid eMode, ezJob job = null) 
+        {
+            m_grid.Update(eMode, job);
+            m_grid.Set(ref m_msAlign, "Delay", "Align", "Align Delay (ms)");
+            m_grid.Set(ref m_msSend, "Delay", "Send", "Send Delay (ms)");
+            m_grid.Set(ref m_msStop, "Delay", "Stop", "Stop Down Delay (ms)");
+            m_grid.Set(ref m_nAxisPos[0], "Width0", "Axis", "Axis Position (pulse)");
+            m_grid.Set(ref m_fWidth[0], "Width0", "Width", "Rail Width (mm)");
+            m_grid.Set(ref m_nAxisPos[1], "Width1", "Axis", "Axis Position (pulse)");
+            m_grid.Set(ref m_fWidth[1], "Width1", "Width", "Rail Width (mm)");
+            m_grid.Set(ref m_bArrival, "Sensor", "Arrival", "Arrival Sensor State");
+            m_grid.Set(ref m_bDouble, "Sensor", "Stopper", "Stopper Output Method Double");
+            m_grid.Set(ref m_bUse, "Use", "Rail", "Use Rail");
+            m_grid.Set(ref m_bStopper, "Use", "Stopper", "Use Stopper");
+            m_grid.Set(ref m_bAlign, "Use", "Align", "Use Align");
+            m_grid.Refresh(); 
+        }
+
+        public virtual void ControlGrid(Control_Mom control, ezGrid rGrid, eGrid eMode)
+        {
+            m_axis = control.AddAxis(rGrid, m_id, "Axis", "Axis ID");
+            control.AddDI(rGrid, ref m_diStopper[0], m_id, "Stopper_Down", "DI Stopper_Down");
+            control.AddDI(rGrid, ref m_diStopper[1], m_id, "Stopper_Up", "DI Stopper_Up");
+            control.AddDI(rGrid, ref m_diAlign[0], m_id, "Align_Off", "DI Align_Off");
+            control.AddDI(rGrid, ref m_diAlign[1], m_id, "Align_On", "DI Align_On");
+            control.AddDI(rGrid, ref m_diArrival, m_id, "Arrival", "DI Arrival");
+            control.AddDI(rGrid, ref m_diStop, m_id, "Stop", "DI Stop");
+            control.AddDI(rGrid, ref m_diCheck, m_id, "Check", "DI Check");
+            control.AddDO(rGrid, ref m_doStopper[0], m_id, "Stopper_Down", "DI Stopper_Down");
+            control.AddDO(rGrid, ref m_doStopper[1], m_id, "Stopper_Up", "DI Stopper_Up");
+            control.AddDO(rGrid, ref m_doAlign, m_id, "Align", "DI Align");
+            control.AddDO(rGrid, ref m_doMove, m_id, "Move", "DI Move");
+        }
+
+        protected override void RunMove(bool bMove) 
+        {
+            m_control.WriteOutputBit(m_doMove, bMove); 
+        }
+
+        protected override void RunStopper(bool bUp)
+        {
+            bUp = bUp && m_bStopper;
+            m_control.WriteOutputBit(m_doStopper[0], !bUp);
+            m_control.WriteOutputBit(m_doStopper[1], bUp);
+        }
+
+        protected void Align()
+        {
+            bool bError = false;
+            m_control.WriteOutputBit(m_doAlign, true); 
+            Thread.Sleep(m_msAlign);
+            if (m_control.WaitInputBit(m_diAlign[1], true, c_msDIO))
+            {
+                SetAlarm(eAlarm.Warning, eError.AlignOn);
+                bError = true; 
+            }
+            m_control.WriteOutputBit(m_doAlign, false);
+            if (bError) return;
+            if (m_control.WaitInputBit(m_diAlign[0], true, c_msDIO))
+            {
+                SetAlarm(eAlarm.Warning, eError.AlignOff);
+            }
+        }
+
+        public override bool StartLoad(Info_Strip infoStrip) 
+        {
+            if (m_eState != eState.Ready) { SetAlarm(eAlarm.Warning, eError.Ready); return true; }
+            if (infoStrip == null) { SetAlarm(eAlarm.Warning, eError.Empty); return true; }
+            m_infoStripLoad = infoStrip; 
+            m_eState = eState.Load;
+            m_log.Add("Start Load " + infoStrip.m_nStrip.ToString());
+            return false; 
+        }
+
+        public override bool Send()
+        {
+            ezStopWatch sw = new ezStopWatch(); 
+            if (m_nextFlow == null) return true; 
+            if (m_nextFlow.IsReady(m_id))
+            {
+                if (m_infoStrip == null)
+                {
+                    m_infoStrip = new Info_Strip();
+                    m_log.Popup("new InfoStrip Use"); 
+                }
+                m_nextFlow.StartLoad(m_infoStrip);
+                m_eState = eState.Send;
+            }
+            while ((m_eState == eState.Send) && (sw.Check() <= c_msSend)) Thread.Sleep(100);
+            if (sw.Check() >= c_msSend)
+            {
+                SetAlarm(eAlarm.Warning, eError.Send);
+                return true;
+            }
+            return false;
+        }
+
+        public override bool IsArrival() 
+        {
+            return m_control.GetInputBit(m_diArrival) == m_bArrival;
+        }
+
+        public override bool IsStop() 
+        {
+            return m_control.GetInputBit(m_diStop); 
+        }
+
+        public override bool IsCheck() 
+        {
+            return m_control.GetInputBit(m_diCheck);
+        }
+
+        public void ChangeWidth(double fWidth)
+        {
+            double fAxisPos;
+            fAxisPos = m_nAxisPos[0] + (fWidth - m_fWidth[0]) * (m_nAxisPos[1] - m_nAxisPos[0]) / (m_fWidth[1] - m_fWidth[0]);
+            m_axis.Move(fAxisPos); 
+            m_swAxis.Start(); 
+        }
+
+        public bool CheckWidth() 
+        {
+            while (!m_axis.IsReady() && (m_swAxis.Check() <= c_msDIO)) Thread.Sleep(10);
+            if (m_swAxis.Check() >= c_msDIO) 
+            {
+                SetAlarm(eAlarm.Warning, eError.Width);
+                m_eState = eState.Init;
+                return true; 
+            }
+            else return false;
+        }
+
+        public override void RunInit()
+        {
+            if (IsStop() || IsArrival()) return;
+            if (!IsStop()) m_infoStrip = null;
+            if (!IsArrival()) m_infoStripLoad = null;
+            m_fStripWidth = 0; 
+            m_eState = eState.RunReady;
+        }
+
+        public override bool CheckInitOK() 
+        {
+            if (!base.CheckInitOK()) return false;
+            if (IsArrival()) 
+            {
+                m_log.Popup("Arrival Sensor Error !!"); 
+                return false; 
+            }
+            if (IsStop()) 
+            { 
+                m_log.Popup("Stop Sensor Error !!"); 
+                return false; 
+            }
+            if (IsCheck()) 
+            {
+                m_log.Popup("Check Sensor Error !!"); 
+                return false; 
+            }
+            return true; 
+        }
+
+        protected override void StateHome()
+        {
+            ezStopWatch sw = new ezStopWatch();
+            m_axis.HomeSearch();
+            while (!m_axis.IsReady() && sw.Check() <= c_msHome) Thread.Sleep(10);
+            if (m_axis.IsReady())
+            {
+                m_log.Add("Find Home Finished");
+                m_eState = eState.RunReady;
+            }
+            else
+            {
+                m_log.Popup("Axis Home Time Out !!");
+                m_eState = eState.Init; 
+            }
+        }
+
+        protected override void StateRunReady()
+        {
+            if (m_fStripWidth != m_work.m_fStripCX[0])
+            {
+                m_fStripWidth = m_work.m_fStripCX[0]; 
+                ChangeWidth(m_work.m_fStripCX[0]);
+                if (CheckWidth()) return;
+            }
+            m_strReady = ""; // ing
+            m_eState = eState.Ready; 
+        }
+
+        protected override void StateLoad()
+        {
+            RunStopper(true);
+            RunMove(true);
+            if (m_control.WaitInputBit(m_diArrival, m_bArrival, c_msDIO))
+            {
+                SetAlarm(eAlarm.Warning, eError.ArrivalCheck);
+                RunMove(false);
+                return;
+            }
+            if (m_control.WaitInputBit(m_diArrival, !m_bArrival, c_msDIO))
+            {
+                SetAlarm(eAlarm.Warning, eError.ArrivalOff);
+                RunMove(false);
+                return;
+            }
+            if (m_control.WaitInputBit(m_diStop, true, c_msDIO))
+            {
+                SetAlarm(eAlarm.Warning, eError.StopCheck);
+                RunMove(false);
+                return;
+            }
+            Thread.Sleep(m_msStop); RunMove(false);
+            Thread.Sleep(m_msStop); RunStopper(false);
+            if (m_bStopper) Align();
+            m_infoStrip = m_infoStripLoad;
+            m_eState = eState.RunDone;
+            m_log.Add("Finish Load " + m_infoStrip.m_nStrip.ToString());
+        }
+
+        protected override void StateRunDone()
+        {
+            m_eState = eState.Done; 
+        }
+
+        protected override void StateDone()
+        {
+            if (!m_work.IsRun()) return; 
+            if (m_strDone != "") return;
+            if (m_nextFlow == null) return; 
+            if (m_nextFlow.IsReady(m_id))
+            {
+                m_nextFlow.StartLoad(m_infoStrip);
+                m_eState = eState.Send;
+            }
+        }
+
+        protected override void StateSend()
+        {
+            m_log.Add("Start Send " + m_infoStrip.m_nStrip.ToString());
+            if (m_bAlign) Align();
+            RunStopper(false);
+            RunMove(true);
+            if (m_control.WaitInputBit(m_diStop, true, c_msDIO))
+            {
+                SetAlarm(eAlarm.Warning, eError.StopCheck);
+                RunMove(false);
+                return;
+            }
+            if (m_control.WaitInputBit(m_diStop, false, c_msDIO))
+            {
+                SetAlarm(eAlarm.Warning, eError.StopOff);
+                RunMove(false);
+                return;
+            }
+            Thread.Sleep(m_msSend);
+            RunMove(false);
+            m_log.Add("Finish Send " + m_infoStrip.m_nStrip.ToString());
+            m_infoStrip = null;
+            m_eState = eState.RunReady;
+        }
+
+    }
+
+}

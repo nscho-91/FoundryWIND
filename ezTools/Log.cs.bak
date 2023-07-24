@@ -1,0 +1,251 @@
+﻿using System;
+using System.Collections; 
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace ezTools
+{
+    public enum eHWResult
+    {
+        Off,
+        On,
+        OK,
+        Error      
+    }
+
+    public enum eLogLv
+    {
+        Add,
+        Popup,
+        Error
+    }
+
+    public class LogDat
+    {
+        public bool m_bShowList = true;
+        public eLogLv m_eLogLv = eLogLv.Add; 
+        public string m_id, m_str;
+        public int m_iGroup;
+        public ezDateTime m_date = new ezDateTime();
+
+        public LogDat(string id, int iGroup)
+        {
+            m_id = id;
+            m_iGroup = iGroup; 
+        }
+
+        public void Add(string str, eLogLv nLogLv, bool bShowList)
+        {
+            m_str = str; 
+            m_eLogLv = nLogLv; 
+            m_bShowList = bShowList;
+            m_date.Check(); 
+        }
+
+        public string GetLog()
+        {
+            return "[" + m_date.GetTime(true) + "]<" + m_id + "> " + m_str;
+        }
+
+        public int GetPeriodSec()
+        {
+            ezDateTime m_now = new ezDateTime();
+            return m_date.GetPeriodSec(m_now);
+        }
+    }
+
+    public class LogString
+    {
+        public int m_nID; 
+        public string m_strLog, m_strDef; 
+
+        public LogString(string str)
+        {
+            m_strDef = str; m_strLog = str; 
+        } // 210405 nscho
+    }
+
+    class LogNotify
+    {
+        public bool m_bOn; 
+        public string m_strLog;
+
+        public LogNotify(string str, bool bOn)
+        {
+            m_strLog = str;
+            m_bOn = bOn; 
+        }
+
+        public bool IsChange(bool bOn)
+        {
+            if (m_bOn == bOn) return false;
+            m_bOn = bOn;
+            return true; 
+        }
+    }
+
+    public class Log
+    {
+        const int c_nLog = 1000;
+
+        public string m_id, m_strModel, m_sGroup;
+        public LogDat[] m_aLogData = new LogDat[c_nLog];
+        ArrayList m_aLogNotify = new ArrayList(); 
+        public ezRegistry m_reg;
+
+        ArrayList m_aString = new ArrayList();
+        public int m_lLogString = 0; 
+
+        bool m_bInit = false;
+        int m_nIndex = 0;
+        public LogView m_logView;
+
+        public Log(string id, LogView logView, string sGroup = null)
+        {
+            int n;
+            m_id = id;
+            m_logView = logView;
+            m_sGroup = sGroup;
+            m_strModel = m_logView.m_strModel;
+            if (m_bInit) return; m_bInit = true;
+            int iGroup = m_logView.Add(this, m_sGroup); 
+            for (n = 0; n < c_nLog; n++) m_aLogData[n] = new LogDat(m_id, iGroup); 
+            Add("Log Start"); 
+            m_reg = new ezRegistry(m_logView.m_strModel, m_id);
+        }
+
+        public void RunGrid(ezGrid grid, eGrid eMode)
+        {
+            int n; LogString logString; 
+            for (n = 0; n < m_aString.Count; n++)
+            {
+                logString = (LogString)m_aString[n];
+                grid.Set(ref logString.m_strLog, m_id, logString.m_strDef, logString.m_strDef);
+            }
+        }
+
+        public void AddString(string str)
+        {
+            foreach (LogString logStr in m_aString)
+            {
+                if (logStr.m_strDef == str) return;
+            }
+            LogString logString = new LogString(str);
+            m_reg.Read("ID_" + str, ref logString.m_strLog);
+            m_aString.Add(logString);
+        } // 210405 nscho
+
+        public void ChangeString(int iError, string str)
+        {
+            LogString changeLog = new LogString(str);
+            m_aString[iError] = changeLog;
+        } // 210405 nscho
+
+
+        static readonly object m_csLock = new object();
+
+        void AddLog(string str, eLogLv nLogLv, bool bShowList)
+        {
+            lock (m_csLock)
+            {
+                int n = m_nIndex % c_nLog;
+                m_nIndex++;
+                m_aLogData[n].Add(str, nLogLv, bShowList);
+                m_logView.Add(m_aLogData[n]);
+            }
+        }
+
+        public LogString GetLogString(int iError)
+        {
+            if (m_aString.Count <= iError) return null;
+            return (LogString)m_aString[iError]; 
+        } //210401 nscho
+
+        void Add(int iError, eLogLv nLogLv, bool bShowList)
+        {
+            LogString logString = GetLogString(iError);
+            if (logString == null)
+            {
+                AddLog("Log String not Defined + " + iError.ToString(), nLogLv, bShowList);
+            }
+            else
+            {
+                AddLog(logString.m_strLog, nLogLv, bShowList);
+                AddLog("[ " + logString.m_strDef + " ]", eLogLv.Add, bShowList);
+            }
+        }
+
+        public void Add(string str, bool bShowList = true )
+        {
+            AddLog(str, eLogLv.Add, bShowList); 
+        }
+
+        public void Add(int iError, bool bShowList = true)
+        {
+            Add(iError, eLogLv.Add, bShowList);
+        }
+
+        public void Popup(string str, bool bShowList = true) //forgetPopup
+        {
+            AddLog(str, eLogLv.Popup, bShowList); 
+        }
+
+        public void Popup(int iError, bool bShowList = true)
+        {
+            Add(iError, eLogLv.Error, bShowList);
+        }
+
+        static readonly object m_csLockNotify = new object();
+
+        public void Notify(string str, bool bOn, bool bPopup, bool bShowList = true) 
+        {
+            eLogLv nLogLv = eLogLv.Add;
+            if (bPopup) nLogLv = eLogLv.Popup; 
+            lock (m_csLockNotify)
+            {
+                foreach (LogNotify notify in m_aLogNotify)
+                {
+                    if (notify == null)
+                    {
+                        m_aLogNotify.Remove(notify);
+                        return;
+                    }
+                    if (notify.m_strLog == str)
+                    {
+                        if (notify.IsChange(bOn) == false) return;
+                        if (bOn) AddLog(str, nLogLv, bShowList);
+                        else AddLog(str + " -> Clear", nLogLv, bShowList);
+                        return;
+                    }
+                }
+                LogNotify logNotify = new LogNotify(str, bOn);
+                m_aLogNotify.Add(logNotify);
+                if (bOn) AddLog(str, nLogLv, bShowList);
+            }
+        }
+
+        public string GetLog(int nIndex)
+        {
+            return m_aLogData[nIndex].GetLog(); 
+        }
+
+        public bool IsPopup(int nIndex)
+        {
+            return m_aLogData[nIndex].m_eLogLv > eLogLv.Add; 
+        }
+
+        public string GetDate(int nIndex)
+        {
+            return m_aLogData[nIndex].m_date.GetDate(); 
+        }
+
+        public void HidePopup(bool bHide)
+        {
+            m_logView.HidePopup(bHide); 
+        }
+
+    }
+}

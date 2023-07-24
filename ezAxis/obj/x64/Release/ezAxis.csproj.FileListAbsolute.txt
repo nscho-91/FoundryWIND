@@ -1,0 +1,8 @@
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\obj\x64\Release\ezAxis.csprojResolveAssemblyReference.cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\obj\x64\Release\ezAxis.Axiss_Ajin.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\obj\x64\Release\ezAxis.DB96T2_Ajin.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\obj\x64\Release\ezAxis.DIO_Ajin.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\obj\x64\Release\ezAxis.DIO_Ajin_ID.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\obj\x64\Release\ezAxis.DI_Ajin.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\obj\x64\Release\ezAxis.DO_Ajin_ID.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\obj\x64\Release\ezAxis.csproj.GenerateResource.Cache

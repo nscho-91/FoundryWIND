@@ -1,0 +1,18 @@
+09:41:40 [Proc:Seq] >>>>>>>>>>>>>>>>>>>>>>>  Logging Started  <<<<<<<<<<<<<<<<<<<<<<<< th=550c
+09:41:40 [Proc:Seq] Build date time: Apr  1 2021 10:53:20 th=550c
+09:41:40 [Proc:Seq] Success to open database(MDB). th=550c
+09:41:40 [Proc:Seq] SubstrateLocation table reading... th=550c
+09:41:40 [Proc:Seq] Index =    0, LocID = Boat, LocType = 1, Enabled = 0 th=550c
+09:41:40 [Proc:Seq] Index =    1, LocID = BCR, LocType = 1, Enabled = 0 th=550c
+09:41:40 [Proc:Seq] SubstrateLocation table complete... th=550c
+09:41:40 [Proc:Seq] BatchLocation table reading... th=550c
+09:41:40 [Proc:Seq] BatchLocation table complete... th=550c
+09:54:01 [Proc:Seq] >>>>>>>>>>>>>>>>>>>>>>>  Logging Started  <<<<<<<<<<<<<<<<<<<<<<<< th=405c
+09:54:01 [Proc:Seq] Build date time: Apr  1 2021 10:53:20 th=405c
+09:54:01 [Proc:Seq] Success to open database(MDB). th=405c
+09:54:01 [Proc:Seq] SubstrateLocation table reading... th=405c
+09:54:01 [Proc:Seq] Index =    0, LocID = Boat, LocType = 1, Enabled = 0 th=405c
+09:54:01 [Proc:Seq] Index =    1, LocID = BCR, LocType = 1, Enabled = 0 th=405c
+09:54:01 [Proc:Seq] SubstrateLocation table complete... th=405c
+09:54:01 [Proc:Seq] BatchLocation table reading... th=405c
+09:54:01 [Proc:Seq] BatchLocation table complete... th=405c

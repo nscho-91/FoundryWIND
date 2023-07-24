@@ -1,0 +1,1074 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ezAuto_EFEM</name>
+    </assembly>
+    <members>
+        <member name="F:ezAuto_EFEM.EFEM_HomeProgressBar.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.EFEM_HomeProgressBar.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.EFEM_HomeProgressBar.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.EFEM_RnR.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.EFEM_RnR.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.EFEM_RnR.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.HW_Aligner_EBR_3D.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.HW_Aligner_EBR_3D.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.HW_Aligner_EBR_3D.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.HW_Aligner_EBR_3D_Graph.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.HW_Aligner_EBR_3D_Graph.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.HW_Aligner_EBR_3D_Graph.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.HW_Aligner_EBR_EBR.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.HW_Aligner_EBR_EBR.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.HW_Aligner_EBR_EBR.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.HW_Aligner_EBR_EBR_Graph.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.HW_Aligner_EBR_EBR_Graph.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.HW_Aligner_EBR_EBR_Graph.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.HW_Aligner_EBR_Edge.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.HW_Aligner_EBR_Edge.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.HW_Aligner_EBR_Edge.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.HW_BackSide_ATI_AOI.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.HW_BackSide_ATI_AOI.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.HW_BackSide_ATI_AOI.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.EFEM_Recovery.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.EFEM_Recovery.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.EFEM_Recovery.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.EFEM_RecoveryModule.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.EFEM_RecoveryModule.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.EFEM_RecoveryModule.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.EFEM_Work_MSB.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.EFEM_Work_MSB.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.EFEM_Work_MSB.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.HW_Aligner_ATI_Edge.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.HW_Aligner_ATI_Edge.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.HW_Aligner_ATI_Edge.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.HW_Aligner_ATI_Code.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.HW_Aligner_ATI_Code.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.HW_Aligner_ATI_Code.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.HW_Aligner_ATI_Manual.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.HW_Aligner_ATI_Manual.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.HW_Aligner_ATI_Manual.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.HW_ImageVS.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.HW_ImageVS.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.HW_ImageVS.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.HW_RemoteUI.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.HW_RemoteUI.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.HW_RemoteUI.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.MSB_JobCompleteForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.MSB_JobCompleteForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.MSB_JobCompleteForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.OHT_EFEM.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.OHT_EFEM.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.OHT_EFEM.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ezAuto_EFEM.Properties.Resources">
+            <summary>
+              지역화된 문자열 등을 찾기 위한 강력한 형식의 리소스 클래스입니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources.ResourceManager">
+            <summary>
+              이 클래스에서 사용하는 캐시된 ResourceManager 인스턴스를 반환합니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources.Culture">
+            <summary>
+              이 강력한 형식의 리소스 클래스를 사용하여 모든 리소스 조회에 대한 현재 스레드의 CurrentUICulture
+              속성을 재정의합니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027066_plus_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027068_delete_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027070_search_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027072_print_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027076_pencil_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027079_save_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027082_trash_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027084_user_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027087_document_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027089_gear_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027229_folder_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027232_statistics_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027235_warning_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027237_info_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027240_block_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027242_key_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027244_left_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027246_right_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027250_up_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027251_home_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027254_down_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027255_present_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027256_globe_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027257_buy_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027258_diagram_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027260_help_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027261_clock_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027263_calendar_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027264_clipboard_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027264_label_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027266_address_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027267_bubble_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027267_monitor_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027268_shield_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027271_briefcase_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027272_wallet_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027273_flag_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027275_bookmark_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027276_stop_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027277_heart_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027279_letter_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460027369_tick_16">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460123042_circle_green">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources._1460123046_circle_red">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources.Boat">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources.Button">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources.Button_PUsh">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources.Cassette">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources.cross">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources.CST">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources.EQP2">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources.FOUP">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources.LightCurtain">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources.Load">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources.Loadport">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources.LoadRun">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources.MainEQ">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources.page_delete">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources.page_white_delete">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources.ScanY">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources.ScanY1">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources.Unload">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources.UnloadRun">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources.view_refresh">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources.wafer">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources.wtr">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources.wtr1">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources.wtr2">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources.wtrLower">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources.wtrLower1">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources.wtrUpper">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="P:ezAuto_EFEM.Properties.Resources.wtrUpper1">
+            <summary>
+              System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.UI_Button.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_Button.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_Button.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.Ui_FDC.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.Ui_FDC.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.Ui_FDC.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.UI_Loadport.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_Loadport.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_Loadport.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.UI_RunData.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_RunData.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_RunData.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.UI_Simulation.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_Simulation.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_Simulation.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.UI_STATE.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_STATE.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_STATE.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.UI_SystemTime.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_SystemTime.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_SystemTime.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.UI_Time.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_Time.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_Time.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.UI_EFEM_New.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_EFEM_New.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_EFEM_New.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.UI_JobLog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_JobLog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_JobLog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.UI_ManualJob_MSB.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_ManualJob_MSB.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_ManualJob_MSB.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.UI_Manual_BCR.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_Manual_BCR.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_Manual_BCR.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.RFIDReadFail.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.RFIDReadFail.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.RFIDReadFail.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_EFEM_old.CheckRecipeList">
+            @brief EFEM 기준 Vision의 Recipe가 없는 경우 MainUI에서 표기 되는 기능
+            @param 없음
+            @return 없음 
+            @note Patch-notes
+            날짜|작성자|설명|비고
+            -|-|-|-
+            2023-01-11|조남수|EFEM 기준 Vision의 Recipe가 없는 경우 MainUI에서 표기 되는 기능|- 
+            @warning 없음
+        </member>
+        <member name="F:ezAuto_EFEM.UI_EFEM_old.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_EFEM_old.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_EFEM_old.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.UI_ManualJob_Hynix.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_ManualJob_Hynix.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_ManualJob_Hynix.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.UI_ManualJob_Sanken.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_ManualJob_Sanken.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_ManualJob_Sanken.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.UserControlFDCModule.components">
+            <summary> 
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.UserControlFDCModule.Dispose(System.Boolean)">
+            <summary> 
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.UserControlFDCModule.InitializeComponent">
+            <summary> 
+            디자이너 지원에 필요한 메서드입니다. 
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.UserControlIOIndicator.components">
+            <summary> 
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.UserControlIOIndicator.Dispose(System.Boolean)">
+            <summary> 
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.UserControlIOIndicator.InitializeComponent">
+            <summary> 
+            디자이너 지원에 필요한 메서드입니다. 
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.UserControlLoadPort.components">
+            <summary> 
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.UserControlLoadPort.Dispose(System.Boolean)">
+            <summary> 
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.UserControlLoadPort.InitializeComponent">
+            <summary> 
+            디자이너 지원에 필요한 메서드입니다. 
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.UserControlOverViewLP.components">
+            <summary> 
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.UserControlOverViewLP.Dispose(System.Boolean)">
+            <summary> 
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.UserControlOverViewLP.InitializeComponent">
+            <summary> 
+            디자이너 지원에 필요한 메서드입니다. 
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.UserControlWaferInfo.components">
+            <summary> 
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.UserControlWaferInfo.Dispose(System.Boolean)">
+            <summary> 
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.UserControlWaferInfo.InitializeComponent">
+            <summary> 
+            디자이너 지원에 필요한 메서드입니다. 
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+        <member name="F:ezAuto_EFEM.UI_Gem300.components">
+            <summary>
+            필수 디자이너 변수입니다.
+            </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_Gem300.Dispose(System.Boolean)">
+            <summary>
+            사용 중인 모든 리소스를 정리합니다.
+            </summary>
+            <param name="disposing">관리되는 리소스를 삭제해야 하면 true이고, 그렇지 않으면 false입니다.</param>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_Gem300.InitializeComponent">
+            <summary>
+            디자이너 지원에 필요한 메서드입니다.
+            이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
+            </summary>
+        </member>
+    </members>
+</doc>

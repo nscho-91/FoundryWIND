@@ -1,0 +1,348 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using ezAutoMom;
+using ezTools;
+
+namespace ezAutoMom
+{
+    public partial class HW_FDC_Mom : Form
+    {
+        const int BUF_SIZE = 4096;
+
+        Auto_Mom m_auto;
+        Handler_Mom m_handler;
+        Size[] m_sz = new Size[2];
+        protected string m_id;
+        protected Log m_log;
+        protected ezGrid m_grid;
+        Thread m_thread = null;
+        protected bool m_bRunThread = false;
+        ezRS232 m_rs232;
+        byte[] m_aBuf = new byte[BUF_SIZE];
+        public FDCModule[] m_FDCModule = new FDCModule[10];
+        int TimerCount = 1;
+        //RS232 Setting 9600 8 1 None
+        public FDCModule GetFDCModule(int nNum)
+        {
+            return m_FDCModule[nNum];
+        }
+        public HW_FDC_Mom()
+        {
+            InitializeComponent();
+            m_sz[0] = m_sz[1] = this.Size;
+            m_sz[0].Height = 26;
+        }
+
+        public void Init(string sID, Auto_Mom auto)
+        {
+            m_id = sID;
+            m_auto = auto;
+            checkView.Text = m_id;
+            m_log = new Log(m_id, m_auto.m_logView, m_id);
+            m_grid = new ezGrid(m_id, grid, m_log, false);
+            m_handler = m_auto.ClassHandler();
+            m_rs232 = new ezRS232(m_id + "_RS232", m_log);
+            m_rs232.CallMsgRcv += m_rs232_CallMsgRcv;
+            for (int i = 0; i < m_auto.ClassHandler().m_nFDCModuleNum; i++) 
+            {
+                m_FDCModule[i] = new FDCModule();
+            }
+            RunGrid(eGrid.eRegRead);
+            RunGrid(eGrid.eInit);
+            if (m_handler.m_bFDCUse) m_rs232.Connect(true);
+            timer1.Interval = m_handler.m_bFDCITV_Val;
+        }
+
+        public virtual void ThreadStop()
+        {
+            if (m_bRunThread) { m_bRunThread = false; m_thread.Join(); }
+        }
+
+        public void ShowDlg(Form parent, ref CPoint cpShow)
+        {
+            int nIndex;
+            this.TopLevel = false;
+            this.Parent = parent;
+            this.Location = cpShow.ToPoint();
+            if (checkView.Checked) nIndex = 1;
+            else nIndex = 0;
+            this.Size = m_sz[nIndex];
+            cpShow.y += m_sz[nIndex].Height;
+            Show();
+        }
+
+        protected void RunGrid(eGrid eMode)
+        {
+            m_grid.Update(eMode, null);
+            m_rs232.RunGrid(m_grid, eMode);
+            string[] strUnits = new string[Enum.GetNames(typeof(FDCModule.eUnit)).Length];
+            for(int i=0; i< Enum.GetNames(typeof(FDCModule.eUnit)).Length; i++){
+                strUnits[i] = Enum.GetName(typeof(FDCModule.eUnit),i);
+            }
+            for (int j = 0; j < m_handler.m_nFDCModuleNum; j++) 
+            {
+                string strUnit = m_FDCModule[j].m_eUnit.ToString();
+                m_grid.Set(ref strUnit, strUnits, j.ToString("FDC 0"), "Unit", "Unit");
+                for (int n = 0; n < 6; n++)
+                    if (strUnit == ((FDCModule.eUnit)n).ToString())
+                        m_FDCModule[j].m_eUnit = (FDCModule.eUnit)n;
+                m_grid.Set(ref m_FDCModule[j].m_fHighLimit, j.ToString("FDC 0"), "High Limit", "High Limit");
+                m_grid.Set(ref m_FDCModule[j].m_fLowLimit, j.ToString("FDC 0"), "Low Limit", "High Limit");
+                m_grid.Set(ref m_FDCModule[j].m_nDecimalPoint, j.ToString("FDC 0"), "Dec Point", "소수점");
+                m_grid.Set(ref m_FDCModule[j].m_sName, j.ToString("FDC 0"), "Name", "Name");
+                m_grid.Set(ref m_FDCModule[j].m_nSV, j.ToString("FDC 0"), "SV", "Gem SV"); // 210405 nscho
+                m_grid.Set(ref m_FDCModule[j].m_bFDCError, j.ToString("FDC 0"), "Error", "Select FDC Error State"); // 210405 nscho
+                m_grid.Set(ref m_FDCModule[j].m_nOffset_buf, j.ToString("FDC 0"), "Offset_buf", "Offset(buffer)"); // 210405 nscho
+                m_grid.Set(ref m_FDCModule[j].m_nOffset_Val, j.ToString("FDC 0"), "Offset_Val", "Offset(Value)");
+            }
+            m_grid.Refresh();
+        }
+
+        private void checkView_CheckedChanged(object sender, EventArgs e)
+        {
+            m_handler.ShowChild();
+        }
+
+        private void grid_PropertyValueChanged(object s, PropertyValueChangedEventArgs e)
+        {
+            m_grid.PropertyChange(e);
+            RunGrid(eGrid.eUpdate);
+            RunGrid(eGrid.eRegWrite);
+        }
+
+        void m_rs232_CallMsgRcv()
+        {
+            int nRead;
+            Thread.Sleep(100);
+            nRead = m_rs232.Read(m_aBuf, BUF_SIZE, 0, false);     //20160928 SDH ADD Log 안남기도록 수정
+            if (nRead != 9) return; // ing 161115
+            m_aBuf[nRead] = (byte)0x00;
+
+            byte[] CheckSum = GetCRC16(m_aBuf, 9);
+
+            if (CheckSum[0] != m_aBuf[7] ||
+                CheckSum[1] != m_aBuf[8])
+            {
+                string strLog = string.Format("Check Error => CheckSum[0] : {0} , CheckSum[1] : {1} / BufferCRC[0] : {3}", CheckSum[0], CheckSum[1], m_aBuf[7], m_aBuf[8]);
+                m_log.Add(strLog);
+                m_log.Add(Encoding.Default.GetString(m_aBuf));
+                return;
+            }
+
+            int ModuleNum = Convert.ToInt16(m_aBuf[0]);
+            int nData = 0;
+
+            int nData1 = (int)(char)m_aBuf[3];
+            int nData2 = (int)(char)m_aBuf[4];
+            //if (nData1 > 127) nData1 = nData1 - 256;
+            //nData = nData1 * 16 * 16 + nData2;
+            nData1 <<= 8; // BHJ 190812 add
+            nData = nData1 | nData2;
+            if ((nData & 0x8000) == 0x8000) nData -= (1 << 16);
+
+            if (ModuleNum > m_FDCModule.Length) return;
+            if (m_FDCModule[ModuleNum - 1] != null)
+            {
+                double fData = nData;
+                fData /= Math.Pow(10, (double)m_aBuf[6]);
+                m_FDCModule[ModuleNum - 1].SetFDCData(fData);
+            }
+            if (m_FDCModule[ModuleNum - 1].m_nSV >= 0)
+            {
+                ((Auto_Mom)m_auto).ClassXGem().SetFDCValue(m_FDCModule[ModuleNum - 1].m_nSV, GetFDCModule(ModuleNum - 1).GetFDCData().ToString());
+            }
+            //int nRead;
+            //nRead = m_rs232.Read(m_aBuf, BUF_SIZE,0,false);     //20160928 SDH ADD Log 안남기도록 수정
+            //if (nRead != 9) return;
+            //m_aBuf[nRead] = (byte)0x00;
+            //int ModuleNum = Convert.ToInt16(m_aBuf[0]);
+            //int nData=0;
+            //int nData1 = 0;
+            //int nData2 = 0;
+            //bFDCReady = true;
+
+            //if (ModuleNum > 0 && ModuleNum > m_auto.ClassHandler().m_nFDCModuleNum) return;             //190208 SDH ADD
+
+            //if (Convert.ToInt16(m_aBuf[3]) > 200)
+            //    nData1 = (-1 * (255 - Convert.ToInt16(m_aBuf[3]))) - m_FDCModule[ModuleNum - 1].m_nOffset_buf;
+            //else
+            //    nData1 = Convert.ToInt16(m_aBuf[3]) - m_FDCModule[ModuleNum - 1].m_nOffset_buf;
+
+
+            //if (Convert.ToInt16(m_aBuf[4]) > 200)
+            //    nData2 = (-1 * (255 - Convert.ToInt16(m_aBuf[4]))) - m_FDCModule[ModuleNum - 1].m_nOffset_buf;
+            //else
+            //    nData2 = Convert.ToInt16(m_aBuf[4]) - m_FDCModule[ModuleNum - 1].m_nOffset_buf;
+
+
+            //if (Math.Abs(nData1) < Math.Abs(nData2))        //20160907 SDH ADD
+            //{
+            //        nData = nData1 * 16 * 16 + nData2;
+            //    if (ModuleNum > 0 && ModuleNum <= m_auto.ClassHandler().m_nFDCModuleNum)
+            //        m_FDCModule[ModuleNum - 1].m_fData = nData;
+            //}
+        }
+        public static byte[] GetCRC16(byte[] strData, int nLength)
+        {
+            byte[] checkSum = new byte[2];
+            ushort reg_crc = 0xFFFF;
+
+            for (int i = 0; i < nLength - 2; i++)
+            {
+                reg_crc ^= strData[i];
+                for (int j = 0; j < 8; j++)
+                {
+                    if ((reg_crc & 0x01) == 1)
+                    {
+                        reg_crc = (ushort)((reg_crc >> 1) ^ 0xA001);
+                    }
+                    else
+                    {
+                        reg_crc = (ushort)((reg_crc >> 1));
+                    }
+                }
+            }
+
+            checkSum[1] = (byte)((reg_crc >> 8) & 0xFF);
+            checkSum[0] = (byte)(reg_crc & 0xFF);
+
+            return checkSum;
+        }
+
+        public void SendGetDataMSGToFDCModule(int nModuleNum, int nStartAddress, int DataLenght)
+        {
+            byte[] SendByte = new byte[8];
+            byte[] Funtion = { (byte)0x04 };
+            int n = 0;
+
+            Buffer.BlockCopy(BitConverter.GetBytes(nModuleNum), 0, SendByte, n, 1);
+            n += 1;
+            Buffer.BlockCopy(Funtion, 0, SendByte, n, 1);
+            n += 1;
+            Buffer.BlockCopy(BitConverter.GetBytes(nStartAddress), 1, SendByte, n, 1);
+            n += 1;
+            Buffer.BlockCopy(BitConverter.GetBytes(nStartAddress), 0, SendByte, n, 1);
+            n += 1;
+            Buffer.BlockCopy(BitConverter.GetBytes(DataLenght), 1, SendByte, n, 1);
+            n += 1;
+            Buffer.BlockCopy(BitConverter.GetBytes(DataLenght), 0, SendByte, n, 1);
+            n += 1;
+            UInt32 CRCData = ComputeCrc(SendByte);
+            Buffer.BlockCopy(BitConverter.GetBytes(CRCData), 0, SendByte, n, 2);
+            n += 2;
+
+            m_rs232.Write(SendByte, n, false);
+        }
+
+        public static UInt32 ComputeCrc(byte[] data)
+        {
+            UInt32 usCRC = 0xFFFF;
+            byte bytTemp;
+
+            for (int i = 0; i < 6; i += 1) {
+                bytTemp = data[i];
+                usCRC = Convert.ToUInt32(usCRC ^ bytTemp);
+
+                for (int j = 1; j < 9; j++) {
+                    if ((usCRC & 1) == 1) {
+                        usCRC = usCRC >> 1;
+                        usCRC = Convert.ToUInt32(usCRC ^ Convert.ToUInt32(0xa001));
+                    }
+                    else {
+                        usCRC = usCRC >> 1;
+                    }
+                }
+            }
+            return usCRC;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (m_auto == null) return;
+            if (m_auto.ClassHandler().m_bFDCUse)
+            {
+                SendGetDataMSGToFDCModule(TimerCount + 1, 1000, 2);
+                if (TimerCount == m_auto.ClassHandler().m_nFDCModuleNum)
+                    TimerCount = 0;
+                else
+                {
+                    TimerCount++;
+                    TimerCount %= m_FDCModule.Length;
+                }
+            }
+        }
+        public string GetFDCError()
+        {
+            for (int i = 0; i < m_auto.ClassHandler().m_nFDCModuleNum; i++)
+            {
+                if (m_FDCModule[i].m_bFDCError && m_FDCModule[i].m_sFDCError != null && m_FDCModule[i].m_sFDCError != "")
+                {
+                    return m_FDCModule[i].m_sFDCError;
+                }
+            }
+            return null;
+        } //201009 nscho
+
+    }
+
+    public class FDCModule
+    {
+        public enum eUnit
+        {
+            None = 0,
+            KPA,
+            MPA,
+            Temp,
+            Voltage,
+        }
+        public eUnit m_eUnit = eUnit.None;
+        public int m_nDecimalPoint = 0;
+        public double m_fData = 0;
+        public double m_fHighLimit = 0;
+        public double m_fLowLimit = 0;
+        public string m_sName = "";
+        public int m_nOffset_buf = 0;
+        public double m_nOffset_Val = 0;
+        public int m_nSV = -1;
+        public const int nMaxErrCnt = 5;
+        public int nErrCnt = 0;
+        public bool m_bFDCError = false; //201009 nscho
+        public string m_sFDCError = ""; //201009 nscho
+
+        public void SetFDCData(double dData)
+        {
+            if (dData > m_fHighLimit || dData < m_fLowLimit)
+            {
+                nErrCnt++;
+                if (nErrCnt > nMaxErrCnt)
+                {
+                    nErrCnt = 0;
+                    m_fData = dData;
+                }
+                return;
+            }
+            nErrCnt = 0;
+            m_fData = dData;
+        }
+
+        public double GetFDCData()
+        {
+            double dDecimal = Math.Pow(10.0, (double)m_nDecimalPoint);
+
+            return (double)((m_fData / dDecimal) - m_nOffset_Val);
+        }
+        
+    }
+
+}
+
+   
+        

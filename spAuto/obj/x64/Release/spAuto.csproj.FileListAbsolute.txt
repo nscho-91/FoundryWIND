@@ -1,0 +1,5 @@
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\spAuto\bin\x64\Release\spAuto.exe.config
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\spAuto\obj\x64\Release\spAuto.csprojResolveAssemblyReference.cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\spAuto\obj\x64\Release\spAuto.spAuto.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\spAuto\obj\x64\Release\spAuto.Properties.Resources.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\spAuto\obj\x64\Release\spAuto.csproj.GenerateResource.Cache

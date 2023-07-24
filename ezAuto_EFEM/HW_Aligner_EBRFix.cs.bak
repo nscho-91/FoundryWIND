@@ -1,0 +1,833 @@
+﻿using System;
+using System.Drawing;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using System.IO;
+using WeifenLuo.WinFormsUI.Docking;
+using System.Windows.Forms;
+using ezAxis;
+using ezCam;
+using ezAutoMom;
+using ezTools;
+
+namespace ezAuto_EFEM
+{
+    class HW_Aligner_EBRFix : HW_Aligner_Mom, Control_Child
+    {
+        enum eError
+        {
+            CheckWafer,
+            Rotate,
+            RotateTime,
+            Shift,
+            InfoWafer,
+            AlignError,
+            Vac,
+            MoveCam
+        }
+
+        enum eAlignMode
+        {
+            Align,
+            Inspect,
+            Grab,
+            Setup,
+            CamSetup,
+        }
+        string[] m_strAlignModes = Enum.GetNames(typeof(eAlignMode));
+        string m_strAlignMode = eAlignMode.Align.ToString();
+
+        enum eLight
+        {
+            EBR,
+            Surface,
+            Off
+        };
+        int[] m_idLight = new int[Enum.GetNames(typeof(eLight)).Length - 1];
+
+        Light_ATI_4CH m_light = new Light_ATI_4CH();
+
+        int m_msAlign = 10000;
+        int m_nAlignCount = 0; // BHJ 190312 add
+
+        Axis_Mom m_axisRotate;
+        int m_nPulseRotate = 360000;
+        int m_dTrigger = 2; 
+        int m_nPulseBack = 10000;
+        double m_vRotateBack = 100000;
+        double m_dRotate = 0;
+        double m_degVision = 0;
+        double m_degCam = 270;
+
+        Axis_Mom m_axisCamX;
+        Axis_Mom m_axisCamZ;
+        int m_xReady = 0;
+        int m_zReady = 0;
+
+        int m_doVac = -1;
+        int m_doBlow = -1;
+        int m_diVac = -1;
+        int m_diWaferCheck = -1;
+        int[] m_nLightPower = new int[20];
+        ezCam_Dalsa m_camAlign = new ezCam_Dalsa();
+        CPoint m_szCam = new CPoint(); 
+
+        ezView m_viewAlign;
+
+        CPoint m_szImg = new CPoint(0, 0); 
+
+
+        HW_Aligner_EBR_AOI m_AOI = new HW_Aligner_EBR_AOI(); 
+        HW_Aligner_EBR_EBR m_EBR = new HW_Aligner_EBR_EBR();
+        HW_WTR_Mom m_wtr = null; // BHJ 190304 add
+
+        RPoint m_rtSetup = new RPoint(100, 0); // BHJ 190305 add
+
+
+        public override void Init(string id, Auto_Mom auto)
+        {
+            m_strAlignModel = "EBRFix";
+            m_light.Init("AlignLight", auto);
+            m_light.evhUpdateData += new EventHandler(UpdateLightData);
+            base.Init(id, auto);
+            m_wtr = m_auto.ClassHandler().ClassWTR(); // BHJ 190305 add
+            m_control.Add(this);
+            InitString();
+            m_camAlign.Init("Cam_Align", m_auto.ClassLogView());
+            m_viewAlign = new ezView("Align", 0, m_auto);
+            m_AOI.Init(m_id + "AOI", m_log); 
+            m_EBR.Init(m_id + "EBR", m_auto, m_viewAlign, m_AOI);
+            RunGrid(eGrid.eRegRead);
+            m_strAlignMode = eAlignMode.Align.ToString(); 
+            RunGrid(eGrid.eInit);
+            m_log.m_reg.Read("rtSetup", ref m_rtSetup); // BHJ 190312 add
+        }
+
+        public override void ThreadStop()
+        {
+            base.ThreadStop();
+            m_camAlign.ThreadStop();
+            m_AOI.ThreadStop(); 
+            m_EBR.ThreadStop();
+            m_viewAlign.ThreadStop();
+            m_light.ThreadStop();
+        }
+
+        public override IDockContent GetContentFromPersistString(string persistString)
+        {
+            IDockContent iDock;
+            iDock= m_EBR.GetContentFromPersistString(persistString); 
+            if (iDock != null) return iDock;
+            if (m_viewAlign.IsPersistString(persistString)) return m_viewAlign;
+            if (m_light.IsPersistString(persistString)) return m_light;
+            return null;
+        }
+
+        public override void ShowAll(DockPanel dockPanel)
+        {
+            m_viewAlign.Show(dockPanel);
+            m_EBR.ShowAll(dockPanel);
+            m_light.Show(dockPanel);
+        }
+
+        public override void ShowDlg(Form parent, ref CPoint cpShow)
+        {
+            base.ShowDlg(parent, ref cpShow);
+            m_EBR.ShowDlg(parent, ref cpShow);
+        }
+
+        public void InitString()
+        {
+            InitString(eError.CheckWafer, "Wafer Check Error !!");
+            InitString(eError.Rotate, "Rotate AxisMove Error !!");
+            InitString(eError.RotateTime, "Rotate Timeout Error !!");
+            InitString(eError.Shift, "Shift AxisMove Error !!");
+            InitString(eError.InfoWafer, "Info Wafer not Exist !!");
+            InitString(eError.AlignError, "Aligner Align Fail !!");
+            InitString(eError.Vac, "Aligner Vacuum Fail !!");
+            InitString(eError.MoveCam, "Move Camera AxisMove Error !!");
+        }
+
+        void InitString(eError eErr, string str)
+        {
+            m_log.AddString(str);
+            if (m_xGem == null) return;
+            m_xGem.AddALID(m_id, (int)eErr, str);
+        }
+
+        void SetAlarm(eAlarm alarm, eError eErr)
+        {
+            m_work.SetError(alarm, m_log, (int)eErr);
+            if (m_xGem == null) return;
+            m_xGem.SetAlarm(m_id, (int)eErr);
+        }
+
+        public void ControlGrid(Control_Mom control, ezGrid rGrid, eGrid eMode)
+        {
+            m_axisRotate = control.AddAxis(rGrid, m_id, "Rotate", "Axis Rotate");
+            m_axisCamX = control.AddAxis(rGrid, m_id, "CamX", "Axis CamX");
+            m_axisCamZ = control.AddAxis(rGrid, m_id, "CamZ", "Axis CamZ");
+            control.AddDI(rGrid, ref m_diWaferCheck, m_id, "WaferCheck", "DI WaferCheck");
+            control.AddDO(rGrid, ref m_doVac, m_id, "Chuck_Vac", "DO Chuck Vac");
+            control.AddDO(rGrid, ref m_doBlow, m_id, "Chuck_Blow", "DO Chuck Blow");
+            control.AddDI(rGrid, ref m_diVac, m_id, "Chuck_Vac", "DI Chuck Vac");
+        }
+
+        protected override void RunGrid(eGrid eMode)
+        {
+            base.RunGrid(eMode);
+            m_grid.Set(ref m_strAlignMode, m_strAlignModes, "Mode", "Align", "Align Mode");
+            m_grid.Set(ref m_nPulseRotate, "Rotate", "PpR", "Pulse / 1R");
+            m_grid.Set(ref m_dTrigger, "Rotate", "Trigger", "dTrigger (pulse)");
+            m_grid.Set(ref m_nPulseBack, "Rotate", "Back", "Back Pulse cause Backlash (pulse)");
+            m_grid.Set(ref m_degVision, "Rotate", "Vision", "Rotate Offset (deg)");
+            m_grid.Set(ref m_degCam, "Rotate", "Cam", "Rotate Camera Position (deg)");
+            m_grid.Set(ref m_vRotateBack, "Rotate", "V_Back", "Back Rotate Speed (pulse/sec)");
+            m_grid.Set(ref m_xReady, "CamX", "Ready", "CamX Axis Ready Pos (pulse)");
+            m_grid.Set(ref m_zReady, "CamZ", "Ready", "CamZ Axis Ready Pos (pulse)");
+            m_grid.Set(ref m_msHome, "Time", "Home", "Home Timeout (ms)");
+            m_grid.Set(ref m_msAlign, "Time", "Align", "Align Timeout (ms)");
+            for (int n = 0; n < m_idLight.Length; n++)
+            {
+                m_grid.Set(ref m_idLight[n], "Light", ((eLight)n).ToString(), "Align Light ID");
+            }
+            m_AOI.RunGrid(m_grid, eMode); 
+            m_EBR.RunGrid(m_grid, eMode);
+            m_grid.Set(ref m_bWTRShiftUse, "WTR Shift", "Use", "Enable WTR Shift Centering function"); // BHJ 190304 add
+        }
+
+        public void RecipeGrid(ezGrid rGrid, eGrid eMode, ezJob job)
+        {
+            //kw Light 라벨 얻어옴
+            int nUseCnt = m_light.GetUseChannelCount();
+            for (int i = 0; i < nUseCnt; i++)
+            {
+                string szLabel = m_light.GetLabel(i);
+                rGrid.Set(ref m_nLightPower[i], "Light", szLabel, "0~100");
+            }
+
+            rGrid.Set(ref m_bEnableAlign, "Align", "Use", "Use Align");
+            rGrid.Set(ref m_nAlignCount, "Align", "Count", "EBR Centering Count"); // BHJ 190305 add
+            m_AOI.RecipeGrid(rGrid, eMode, job, false, false, false);
+            m_EBR.RecipeGrid(rGrid, eMode, job);
+        }
+
+        public override void Draw(Graphics dc, ezImgView imgView)
+        {
+            if (imgView.m_id == "Align")
+            {
+                m_AOI.Draw(dc, imgView);
+                if (m_EBR.m_bUseSurface) m_EBR.m_concentric.DrawDefect(dc);
+            }
+            if (imgView.m_id == "EBR") m_EBR.Draw(dc, imgView);
+        }
+
+        public override void InvalidView()
+        {
+            m_viewAlign.InvalidView(false);
+            m_EBR.InvalidView();
+        }
+
+        protected override void SetProcess(eProcess run)
+        {
+            base.SetProcess(run);
+        }
+
+        protected override void ProcHome()
+        {
+            ezStopWatch sw = new ezStopWatch();
+            m_control.WriteOutputBit(m_doVac, true);
+            Thread.Sleep(500);
+            m_axisRotate.HomeSearch();
+            if (m_axisCamZ != null)
+            {
+                Thread.Sleep(500);
+                m_axisCamZ.HomeSearch();
+                while (!m_axisCamZ.IsReady() && (sw.Check() <= m_msHome)) Thread.Sleep(10);
+            }
+            if (m_axisCamX != null)
+            {
+                Thread.Sleep(500);
+                m_axisCamX.HomeSearch();
+                while (!m_axisCamX.IsReady() && (sw.Check() <= m_msHome)) Thread.Sleep(10);
+            }
+            while (!m_axisRotate.IsReady() && (sw.Check() <= m_msHome)) Thread.Sleep(10);
+            if ((sw.Check() >= m_msHome))
+            {
+                m_log.Popup("Axis Home Time Out !!");
+                SetState(eState.Init);
+            }
+            else
+            {
+                m_log.Add("Find Home Finished");
+                SetState(eState.RunReady);
+            }
+            RunVac(false);
+        }
+
+        double GetDeg(double fPulse)
+        {
+            return fPulse * 360 / m_nPulseRotate;
+        }
+
+        void SetRotatePos(double fPos)
+        {
+            double m_fDiff;
+            Thread.Sleep(100);
+            m_fDiff = m_axisRotate.GetPos(true) - m_axisRotate.GetPos(false);
+            if (Math.Abs(m_fDiff) > 100)
+            {
+                SetAlarm(eAlarm.Warning, eError.Rotate);
+                SetState(eState.Error);
+                return;
+            }
+            m_dRotate += (m_axisRotate.GetPos(true) - fPos); 
+            m_axisRotate.SetPos(true, fPos);
+            m_axisRotate.SetPos(false, fPos);
+            m_log.Add("SetRotatePos : " + fPos.ToString()); 
+        }
+     
+        protected override void ProcRunReady()
+        {
+            SetRotatePos(-m_nPulseBack);
+            if (MoveCamZAxis()) return;
+            if (MoveCamXAxis()) return;
+            SetState(eState.Ready);
+        }
+
+        protected override void ProcPreProcess()
+        {
+            if (m_infoWafer == null)
+            {
+                SetAlarm(eAlarm.Warning, eError.InfoWafer);
+                SetState(eState.Error);
+                return;
+            }
+            if (RunVac(true)) return;
+            if (CheckWaferExist() != eHWResult.On)
+            {
+                SetAlarm(eAlarm.Warning, eError.CheckWafer);
+                SetState(eState.Error);
+                return;
+            }
+            RunLight(eLight.EBR);
+            SetProcess(eProcess.Align);
+        }
+
+        bool RotatePulse(double pulse)
+        {
+            Thread.Sleep(500);
+            double posNow = m_axisRotate.GetPos(true);
+            while ((posNow - pulse) > (m_nPulseRotate / 2)) posNow -= m_nPulseRotate;
+            while ((posNow - pulse) < (-m_nPulseRotate / 2)) posNow += m_nPulseRotate;
+            SetRotatePos(posNow); 
+            m_axisRotate.MoveV(pulse, m_vRotateBack);
+            if (m_axisRotate.WaitReady())
+            {
+                SetAlarm(eAlarm.Warning, eError.Rotate);
+                SetState(eState.Error);
+                return true;
+            }
+            return false; 
+        }
+
+        protected override void RunRotate(double fDeg)
+        {
+            RotatePulse(fDeg * m_nPulseRotate / 360);
+        }
+
+        bool MoveCamZAxis()
+        {
+            if (m_axisCamZ == null) return false;
+            m_axisCamZ.Move(m_zReady);
+            if (m_axisCamZ.WaitReady())
+            {
+                SetAlarm(eAlarm.Warning, eError.MoveCam);
+                SetState(eState.Error);
+                return true;
+            }
+            Thread.Sleep(500); 
+            return false;
+        }
+
+        bool MoveCamXAxis()
+        {
+            if (m_axisCamX == null) return false;
+            m_axisCamX.Move(m_xReady);
+            if (m_axisCamX.WaitReady())
+            {
+                SetAlarm(eAlarm.Warning, eError.MoveCam);
+                SetState(eState.Error);
+                return true;
+            }
+            Thread.Sleep(500); 
+            return false;
+        }
+
+
+        bool GrabAlign()
+        {
+            ezStopWatch sw = new ezStopWatch();
+            m_camAlign.GetszCam(ref m_szCam);
+            m_axisRotate.SetTrigger(-m_dTrigger * m_szCam.y, m_nPulseRotate + m_nPulseBack, m_dTrigger, true, 1);
+            if (m_camAlign.Grab(m_viewAlign.ClassImage(), ref m_szImg, m_msAlign, -1, 1)) return true; 
+            Thread.Sleep(10);
+            while (!m_camAlign.IsGrabDone() && (sw.Check() <= m_msAlign)) Thread.Sleep(1);
+            if (sw.Check() >= m_msAlign) return true;
+            return false; 
+        }
+
+        bool MoveToCenter(double pulseR, double pulseX)
+        {
+            ezStopWatch sw = new ezStopWatch();
+            m_log.Add("MoveToCenter : " + pulseR.ToString() + ", " + pulseX.ToString());
+            //if (m_Edge.SearchHome(m_msHome, sw) != eHWResult.OK) return true;       //KDG 161229 Add Center 진행 전 Edge Cam축 이동 필요
+            //if (m_3D.MoveCam(false)) return true;
+
+
+            if (pulseX < 0) //forget190219
+            {
+                pulseX = -pulseX;
+                pulseR += m_nPulseRotate / 2;
+            }
+            if (RotatePulse(pulseR)) return true;
+            if (RunVac(false)) return true;
+            m_wtr.RunWTRShift(pulseX / 1000); // forget190219
+            if (RunVac(true)) return true;
+
+            //else   // BHJ 190305 aligner x축 사용시 알고리즘
+            //{
+            //    if (RotatePulse(pulseR)) return true;
+            //    RunVac(false);
+            //    if (RunLift(true) != eHWResult.OK) return true;
+            //    RotateBack();
+            //    if (MoveAxis(pulseX)) return true;
+            //    if (m_axisRotate.WaitReady())
+            //    {
+            //        m_log.Popup("Rotate Back Error !!");
+            //        SetAlarm(eAlarm.Warning, eError.RotateTime);
+            //        SetState(eState.Error);
+            //        return true;
+            //    }
+            //    if (RunLift(false) != eHWResult.OK) return true;
+            //    RunVac(true);
+            //    MoveAxis(0);
+            //}
+
+            return false;
+        }
+
+        const int c_rShift = 1000;
+
+        bool MoveToCenter()
+        {
+            return MoveToCenter((-m_AOI.m_rtFFT.y + m_rtSetup.y) * m_nPulseRotate / 360, -c_rShift * m_AOI.m_rtFFT.x / m_rtSetup.x);
+        }
+
+        // BHJ 190305 comment : before
+        //void RunAlignSetup()
+        //{
+        //    m_log.Add("Start RunAlignSetup"); 
+        //    RunLight(eLight.EBR);
+        //    RunVac(true);
+
+        //    SetRotatePos(-m_nPulseBack);
+        //    m_axisRotate.Move(m_nPulseRotate + m_nPulseBack);
+        //    if (GrabAlign())
+        //    {
+        //        SetAlarm(eAlarm.Warning, eError.RotateTime);
+        //        SetState(eState.Error);
+        //        return;
+        //    }
+        //    RunLight(eLight.Off);
+        //    m_AOI.Inspect(m_viewAlign.ClassImage());
+        //    if (m_axisRotate.WaitReady())
+        //    {
+        //        SetAlarm(eAlarm.Warning, eError.Rotate);
+        //        SetState(eState.Error);
+        //        return; 
+        //    }
+        //    m_AOI.SetupNotchDiff();
+        //}
+
+        void RunAlignSetup() // BHJ 190305 add new RunAlignSetup()
+        {
+            //if (m_control.GetInputBit(m_diWaferCheck) == false) return;
+            m_log.Add("Start RunAlignSetup");
+            RunLight(eLight.EBR);
+            RunVac(true);
+
+            SetRotatePos(-m_nPulseBack);
+            m_axisRotate.Move(m_nPulseRotate + m_nPulseBack);
+            if (GrabAlign())
+            {
+                SetAlarm(eAlarm.Warning, eError.RotateTime);
+                SetState(eState.Error);
+                return;
+            }
+
+            m_AOI.Inspect(m_viewAlign.ClassImage(), m_EBR.m_EBRGraph.m_umX); // BHJ 190313 add
+            RPoint xyShift0 = m_AOI.m_xyFFT;
+            if (m_axisRotate.WaitReady())
+            {
+                SetAlarm(eAlarm.Warning, eError.Rotate);
+                SetState(eState.Error);
+                return;
+            }
+
+            if (MoveToCenter(0, c_rShift)) return;
+
+            RotatePulse(-m_nPulseBack);
+            m_axisRotate.Move(m_nPulseRotate + m_nPulseBack);
+            if (GrabAlign())
+            {
+                SetAlarm(eAlarm.Warning, eError.RotateTime);
+                SetState(eState.Error);
+                return;
+            }
+            m_viewAlign.m_imgView.FileSave("D:\\ShiftImage.bmp");
+            m_AOI.Inspect(m_viewAlign.ClassImage(), m_EBR.m_EBRGraph.m_umX); // BHJ 190313 add
+            RPoint xyShift1 = m_AOI.m_xyFFT;
+            if (m_axisRotate.WaitReady())
+            {
+                SetAlarm(eAlarm.Warning, eError.Rotate);
+                SetState(eState.Error);
+                return;
+            }
+
+            RPoint xyDelta = xyShift1 - xyShift0;
+            m_rtSetup.x = Math.Sqrt(xyDelta.x * xyDelta.x + xyDelta.y * xyDelta.y);
+            m_rtSetup.y = 180 * Math.Atan2(xyDelta.y, xyDelta.x) / Math.PI;
+            m_log.Add("rtSetup = " + m_rtSetup.ToString());
+            m_log.m_reg.Write("rtSetup", m_rtSetup);
+
+            if (MoveToCenter()) return;
+
+            RotatePulse(-m_nPulseBack);
+            m_axisRotate.Move(m_nPulseRotate + m_nPulseBack);
+            if (GrabAlign())
+            {
+                SetAlarm(eAlarm.Warning, eError.RotateTime);
+                SetState(eState.Error);
+                return;
+            }
+
+            RunLight(eLight.Off);
+            m_AOI.Inspect(m_viewAlign.ClassImage(), m_EBR.m_EBRGraph.m_umX); // BHJ 190313 add
+            if (m_axisRotate.WaitReady())
+            {
+                SetAlarm(eAlarm.Warning, eError.Rotate);
+                SetState(eState.Error);
+                return;
+            }
+            m_AOI.SetupNotchPattern(); // ing 170302
+        }
+
+        protected override void TestRun()
+        {
+            ezStopWatch sw = new ezStopWatch();
+            if (m_strAlignMode == eAlignMode.Align.ToString() && !m_work.IsRun())
+            {
+                if (RunAlign(sw)) return;
+                SetProcess(eProcess.BCR);
+                return;
+            }
+            if (m_strAlignMode == eAlignMode.Inspect.ToString() && !m_work.IsRun())
+            {
+                m_AOI.Inspect(m_viewAlign.m_imgView.m_pImg, m_EBR.m_EBRGraph.m_umX);
+                m_auto.Invalidate(0);
+                return;
+            }
+
+            if (m_strAlignMode == eAlignMode.Grab.ToString() && !m_work.IsRun())
+            {
+                RunLight(eLight.EBR);
+                SetRotatePos(-m_nPulseBack);
+                m_axisRotate.Move(m_nPulseRotate + m_nPulseBack);
+                if (GrabAlign())
+                {
+                    SetAlarm(eAlarm.Warning, eError.RotateTime);
+                    SetState(eState.Error);
+                    RunLight(eLight.Off);
+                    return;
+                }
+                if (m_axisRotate.WaitReady())
+                {
+                    SetAlarm(eAlarm.Warning, eError.Rotate);
+                    SetState(eState.Error);
+                }
+                RunLight(eLight.Off);
+                SetState(eState.RunReady);
+                return;
+            }
+
+            if (m_strAlignMode == eAlignMode.Setup.ToString() && !m_work.IsRun())
+            {
+                RunAlignSetup();
+                SetState(eState.RunReady);
+                return;
+            }
+
+            if (m_strAlignMode == eAlignMode.CamSetup.ToString() && !m_work.IsRun())
+            {
+                m_camAlign.ShowDialog();
+                SetState(eState.RunReady);
+                return;
+            }
+        }
+
+        protected override void ProcAlign()
+        {            
+            ezStopWatch sw = new ezStopWatch();            
+            if (m_infoWafer == null) return;
+
+            if (m_AOI.m_bFindNotchNoAlign)
+            {
+                if (RunGrabAndRecovery(sw)) return;
+                m_EBR.SetKlarf(ref m_infoWafer);
+                //m_EBR.m_strFile = "LotEnd_" + m_auto.ClassRecipe().m_sRecipe + "_" + m_EBR.m_klarfChipping.m_strLotID + "_00-" + m_EBR.m_klarfChipping.m_nSlot.ToString("00");
+                //m_EBR.m_klarfChipping.m_strTiffFileName = m_auto.ClassRecipe().m_sRecipe + "_" + m_EBR.m_klarfChipping.m_strLotID + "_00-" + m_EBR.m_klarfChipping.m_nSlot.ToString("00") + ".tif";
+                m_EBR.m_strFile = "LotEnd_" + m_auto.ClassRecipe().m_sRecipe + "_" + m_EBR.m_klarfChipping.m_strCSTID + "_00-" + m_EBR.m_klarfChipping.m_nSlot.ToString("00");
+                m_EBR.m_klarfChipping.m_strTiffFileName = m_auto.ClassRecipe().m_sRecipe + "_" + m_EBR.m_klarfChipping.m_strCSTID + "_00-" + m_EBR.m_klarfChipping.m_nSlot.ToString("00") + ".tif";
+                string strDate = DateTime.Now.Date.Year.ToString() + DateTime.Now.Date.Month.ToString() + DateTime.Now.Date.Day.ToString();
+                Directory.CreateDirectory(m_EBR.m_strPathBackupChipping);
+                Directory.CreateDirectory(m_EBR.m_strPathBackupChipping + "\\" + strDate);
+                //string strPath = m_EBR.m_strPathChipping + "\\" + m_auto.ClassRecipe().m_sRecipe + "_" + m_EBR.m_klarfChipping.m_strLotID + "_00-" + m_EBR.m_klarfChipping.m_nSlot.ToString("00");
+                //string strPathBackup = m_EBR.m_strPathBackupChipping + "\\" + strDate + "\\" + m_auto.ClassRecipe().m_sRecipe + "_" + m_EBR.m_klarfChipping.m_strLotID + "_00-" + m_EBR.m_klarfChipping.m_nSlot.ToString("00");
+                string strPath = m_EBR.m_strPathChipping + "\\" + m_auto.ClassRecipe().m_sRecipe + "_" + m_EBR.m_klarfChipping.m_strCSTID + "_00-" + m_EBR.m_klarfChipping.m_nSlot.ToString("00");
+                string strPathBackup = m_EBR.m_strPathBackupChipping + "\\" + strDate + "\\" + m_auto.ClassRecipe().m_sRecipe + "_" + m_EBR.m_klarfChipping.m_strCSTID + "_00-" + m_EBR.m_klarfChipping.m_nSlot.ToString("00");
+                m_EBR.m_klarfChipping.SaveKlarf(strPath, true, (m_AOI.GetNotchAngle() + (double)(m_nPulseBack * 360 / m_nPulseRotate)) % 360.0);
+                m_EBR.m_klarfChipping.SaveKlarf(strPathBackup, true, (m_AOI.GetNotchAngle() + (double)(m_nPulseBack * 360 / m_nPulseRotate)) % 360.0);
+                SetState(eState.Done);
+                return;
+            }
+
+            if (RunAlign(sw)) return;
+
+            SetProcess(eProcess.BCR); 
+        }
+
+        bool RunAlign(ezStopWatch sw)
+        {
+            //if (m_nAlignCount < 1)
+            //{
+            //    m_log.Popup("Align Count Is Low !!");
+            //    return true;
+            //}
+
+            RunLight(eLight.EBR);
+            RunVac(true);
+            if (m_bEnableAlign && m_bWTRShiftUse) // BHJ 190319 add
+            {
+                for (int n = 0; n < m_nAlignCount; n++)
+                {
+                    SetRotatePos(-m_nPulseBack);
+                    if (RunGrab(sw)) return true;
+
+                    if (MoveToCenter())
+                    {
+                        SetAlarm(eAlarm.Warning, eError.AlignError);
+                        SetState(eState.Error);
+                        RunLight(eLight.Off);
+                        return true;
+                    }
+                    m_log.Add("Move To Center : " + sw.Check().ToString());
+                }
+            }
+
+
+            SetRotatePos(-m_nPulseBack);
+            if (RunGrab(sw)) return true;      
+            RunLight(eLight.Off);
+
+            ezStopWatch swSave = new ezStopWatch();
+            while (swSave.Check() < m_EBR.m_msSaveTimeout)
+            {
+                Thread.Sleep(10);
+                if (!m_EBR.m_klarf.m_bBusy && !m_EBR.m_klarfChipping.m_bBusy) break;
+            }
+            if (m_EBR.m_klarf.m_bBusy || m_EBR.m_klarfChipping.m_bBusy)
+            {
+                m_log.Popup("Klarf File Save Fail, Can not Inspect EBR !!");
+                return true;
+            }
+
+            //m_AOI.Inspect(m_viewAlign.ClassImage(), m_EBR.m_EBRGraph.m_umX); // BHJ 190320 comment 중복 코드 제거
+            m_EBR.SetInfoWafer(m_infoWafer);
+            m_EBR.StartInspect();
+            m_log.Add("EBR Grab Done : " + sw.Check().ToString());
+
+            return false; 
+        }
+
+        bool RunGrabAndRecovery(ezStopWatch sw)
+        {
+            RunLight(eLight.EBR);
+            RunVac(true);
+
+            SetRotatePos(-m_nPulseBack);
+            if (RunGrab(sw)) return true;
+
+            m_axisRotate.Move(-m_nPulseBack);
+            RunLight(eLight.Off);
+            if (m_axisRotate.WaitReady())
+            {
+                SetAlarm(eAlarm.Warning, eError.Rotate);
+                SetState(eState.Error);
+                return true;
+            }
+            m_AOI.Inspect(m_viewAlign.ClassImage(), m_EBR.m_EBRGraph.m_umX);
+            m_log.Add("Wafer Grab And Recovery : " + sw.Check().ToString());
+            m_log.Add("NotchAngle : " + ((m_AOI.GetNotchAngle() + (double)(m_nPulseBack * 360 / m_nPulseRotate)) % 360.0).ToString("0.00"));
+            return false;
+        }
+
+        bool RunGrab(ezStopWatch sw)
+        {
+            m_axisRotate.Move(m_nPulseRotate + m_nPulseBack);
+            if (GrabAlign())
+            {
+                SetAlarm(eAlarm.Warning, eError.RotateTime);
+                SetState(eState.Error);
+                RunLight(eLight.Off);
+                return true;
+            }
+            try
+            {
+                m_viewAlign.m_imgView.m_pImg.FileSave("D:\\Aligner\\" + m_infoWafer.m_nSlot.ToString("00") + ".bmp");
+            }
+            catch (Exception ex)
+            {
+                m_log.Add(ex.Message);
+            }
+            m_AOI.Inspect(m_viewAlign.ClassImage(), m_EBR.m_EBRGraph.m_umX);
+            if (m_axisRotate.WaitReady())
+            {
+                SetAlarm(eAlarm.Warning, eError.Rotate);
+                SetState(eState.Error);
+                return true;
+            }
+            return false; 
+        }
+
+        protected override void ProcBCR()
+        {
+            SetProcess(eProcess.OCR);
+        }
+
+        protected override void ProcOCR()
+        {
+            SetProcess(eProcess.Edge);
+        }
+
+        protected override void ProcEdge()
+        {
+            SetProcess(eProcess.Rotate);
+        }
+
+        protected override void ProcRotate()
+        {
+            if (m_infoWafer == null) return;
+            RunLight(eLight.Off);
+            RunRotate(m_infoWafer.m_fAngleAlign + m_AOI.GetNotchAngle() + (360 - m_degVision) + m_degCam);
+            m_log.Add("Rotate : " + m_AOI.GetNotchAngle().ToString());
+            Thread.Sleep(500);
+            RunVac(false);
+            SetState(eState.Done);
+        }
+
+        protected override void ProcError()
+        {
+        }
+
+        protected override void RunTimer_200ms()
+        {
+        }
+
+        public override bool RunVac(bool bVac)
+        {
+            m_control.WriteOutputBit(m_doVac, bVac);
+            Thread.Sleep(100);
+            if (m_control.WaitInputBit(m_diVac, bVac))
+            {
+                SetAlarm(eAlarm.Warning, eError.Vac);
+                SetState(eState.Error);
+                return true; 
+            }
+            return false; 
+        }
+
+        public override eHWResult CheckWaferExist(bool bVacCheck = false)
+        {
+            bool bExist = m_control.GetInputBit(m_diWaferCheck);
+            bool bVacOn = false;
+            if (bVacCheck && m_infoWafer != null)
+            {
+                bVacOn = m_control.GetOutputBit(m_doVac);
+                m_control.WriteOutputBit(m_doVac, true);
+                Thread.Sleep(500);
+                bExist = m_control.GetInputBit(m_diVac);
+                m_control.WriteOutputBit(m_doVac, bVacOn);
+            }
+            //          if ((m_infoWafer != null) && (bExist == false)) bExist = CheckWaferExistCam(); 
+            if (bExist) m_waferExist = eHWResult.On;
+            else m_waferExist = eHWResult.Off;
+            return m_waferExist; 
+        }
+
+        public override bool IsReady(Info_Wafer infoWafer)
+        {
+            return (InfoWafer == null); 
+        }
+
+        public override void Grab()
+        {
+        }
+        
+        
+        void RunLight(eLight light)
+        {
+            if (light == eLight.Off)
+            {
+                m_light.LightOn(-1, false);
+                return;
+            }
+
+            //kw LightOn 신규 함수 호출
+            int nUseCnt = m_light.GetUseChannelCount();
+            for (int i = 0; i < nUseCnt; i++)
+            {
+                string szLabel = m_light.GetLabel(i);
+                m_log.Add(" Light Name : " + szLabel + " / " + "Power : " + m_nLightPower[i]);
+                m_light.LightOn(szLabel, m_nLightPower[i]);
+            }
+            
+        }
+
+        public override void LotStart()
+        {
+            m_EBR.LotStart();
+        }
+
+        public override void LotEnd()
+        {
+            m_EBR.LotEnd();
+        }
+
+        public override ezView ClassView()
+        {
+            return m_viewAlign;
+        }
+
+        //kw Grid 갱신 이벤트 핸들러 함수
+        public void UpdateLightData(object sender , EventArgs e)
+        {
+            m_auto.ClassRecipe().RunGrid(eGrid.eUpdate);
+            m_auto.ClassRecipe().RunGrid(eGrid.eInit);
+        }
+    }
+}

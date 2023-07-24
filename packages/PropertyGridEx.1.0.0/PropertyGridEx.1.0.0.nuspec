@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>PropertyGridEx</id>
+    <version>1.0.0</version>
+    <title>PropertyGridEx</title>
+    <authors>Danilo Corallo</authors>
+    <owners>Danilo Corallo</owners>
+    <projectUrl>http://www.codeproject.com/Articles/13630/Add-Custom-Properties-to-a-PropertyGrid</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>For my last project, I looked at the PropertyGrid control that has a very nice look and feel. Immediately, I noticed how difficult it was to use it. Looking over the Internet, I found lots of people wishing for something easier to use, like the TreeView or the ListView. So I started developing an extended version of the PropertyGrid that includes an Item collection.</description>
+    <summary>Extend a PropertyGrid with an Item collection; easy customization of properties with custom editor, custom converter and databinding.</summary>
+    <releaseNotes>I did not create this control, I packaged it up for NuGet because it is awsome. Here are the sources: http://www.codeproject.com/Articles/13630/Add-Custom-Properties-to-a-PropertyGrid</releaseNotes>
+    <copyright>Apache</copyright>
+    <language>en-US</language>
+  </metadata>
+</package>

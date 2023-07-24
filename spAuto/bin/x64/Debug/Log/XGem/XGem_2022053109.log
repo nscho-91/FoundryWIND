@@ -1,0 +1,860 @@
+09:41:40 [Proc:Seq] >>>>>>>>>>>>>>>>>>>>>>>  Logging Started  <<<<<<<<<<<<<<<<<<<<<<<<
+09:41:40 [Proc:Seq] Build date time: Apr  1 2021 10:55:33 th=550c
+09:41:40 [Proc:Seq] File Version: 3.4.4.36
+          th=550c
+09:41:40 [Proc:Seq] ProjectType : XGem300. th=550c
+09:41:40 [Alarm:000012] [Sentinel:Alarm] Sentinel SuperPro Driver is not installed
+09:41:40 [Alarm:000000] can't read product type from SENTINEL driver., th=550c
+09:41:40 [Alarm:000003] failed to initialize ROCKEY driver., th=550c
+09:41:40 [Proc:Seq] Can't find license key. XGem is started for trial version. th=550c
+09:41:40 [Proc:Seq] Loaded config file path: C:\AVIS\Test_220524\Test_220524\XGem.cfg. th=550c
+09:41:40 [Proc:Seq] Success to open database(MDB). th=550c
+09:41:40 [Debug:LDBInterface] Start to reading data SV/DVVAL information from database(mdb file). th=550c
+09:41:40 [Debug:LDBInterface] 	0000    Name=Clock, Vid=1, Type=16, Size=16, Class=SV, Min=, Max=, Unit=YYYYMMDDhhmmsscc, Def=, Use=1, MemoryType=1, Val=ASCII:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0001    Name=ALCD, Vid=2, Type=8, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=BINARY:00 th=550c
+09:41:40 [Debug:LDBInterface] 	0002    Name=AlarmSet, Vid=3, Type=0, Size=0, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0003    Name=ControlState, Vid=4, Type=41, Size=1, Class=SV, Min=1, Max=5, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0004    Name=EventsEnabled, Vid=5, Type=0, Size=0, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0005    Name=ProcessState, Vid=6, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0006    Name=PreviousProcessState, Vid=7, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0007    Name=AlarmsEnabled, Vid=8, Type=0, Size=0, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0008    Name=SpoolCountActual, Vid=11, Type=42, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT2:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0009    Name=SpoolCountTotal, Vid=12, Type=42, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT2:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0010    Name=SpoolFullTime, Vid=13, Type=16, Size=16, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0011    Name=MDLN, Vid=14, Type=16, Size=20, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0012    Name=SOFTREV, Vid=15, Type=16, Size=20, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0013    Name=SpoolStartTime, Vid=16, Type=16, Size=16, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0014    Name=SpoolStatus, Vid=17, Type=41, Size=1, Class=SV, Min=, Max=1, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0015    Name=SpoolFull, Vid=18, Type=41, Size=1, Class=SV, Min=5, Max=6, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0016    Name=AlarmID, Vid=24, Type=42, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT2:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0017    Name=ChangedECID, Vid=25, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0018    Name=EventLimit, Vid=26, Type=42, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT2:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0019    Name=LimitVariable, Vid=27, Type=42, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT2:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0020    Name=OperatorCommand, Vid=28, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0021    Name=PPChangeName, Vid=29, Type=16, Size=20, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0022    Name=PPChangeStatus, Vid=30, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0023    Name=PPError, Vid=31, Type=16, Size=20, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0024    Name=TransitionType, Vid=32, Type=8, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=BINARY:00 th=550c
+09:41:40 [Debug:LDBInterface] 	0025    Name=PortID, Vid=33, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0026    Name=PreviousControlState, Vid=34, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0027    Name=CommState, Vid=35, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0028    Name=PreviousCommState, Vid=36, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0029    Name=CDA, Vid=2001, Type=16, Size=10, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=2, Val=ASCII:5 th=550c
+09:41:40 [Debug:LDBInterface] 	0030    Name=Vac, Vid=2002, Type=16, Size=10, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=2, Val=ASCII:10 th=550c
+09:41:40 [Debug:LDBInterface] 	0031    Name=PJ_EventName, Vid=4001, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=550c
+09:41:40 [Debug:LDBInterface] 	0032    Name=PJ_PauseEvent, Vid=4002, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0033    Name=PJQueueMaxSpace, Vid=4003, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0034    Name=PRJobID, Vid=4004, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=550c
+09:41:40 [Debug:LDBInterface] 	0035    Name=PRJobIDList, Vid=4005, Type=0, Size=0, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0036    Name=PRJobList, Vid=4006, Type=0, Size=0, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0037    Name=PRJobPreviousState, Vid=4007, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0038    Name=PRJobSpace, Vid=4008, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0039    Name=PRJobState, Vid=4009, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0040    Name=PRMtlNameList, Vid=4010, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0041    Name=PRMtlType, Vid=4011, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0042    Name=PRProcessStart, Vid=4012, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0043    Name=PRRecipeMethod, Vid=4013, Type=9, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=BOOL:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0044    Name=RecID, Vid=4014, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=550c
+09:41:40 [Debug:LDBInterface] 	0045    Name=RecVariableList, Vid=4015, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0046    Name=AccessMode, Vid=5001, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0047    Name=AvailPartitionCapacity, Vid=5002, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0048    Name=BufferCapacityList, Vid=5003, Type=0, Size=0, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0049    Name=BufferPartitionInfo, Vid=5004, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0050    Name=CarrierAccessingStatus, Vid=5005, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0051    Name=CarrierID, Vid=5006, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=550c
+09:41:40 [Debug:LDBInterface] 	0052    Name=CarrierIDStatus, Vid=5007, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0053    Name=CarrierLocationMatrix, Vid=5008, Type=0, Size=0, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0054    Name=CMS_EventName, Vid=5009, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=550c
+09:41:40 [Debug:LDBInterface] 	0055    Name=LoadPortReservationState, Vid=5010, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0056    Name=LoadPortReservationStateList, Vid=5011, Type=0, Size=0, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0057    Name=LocationID, Vid=5012, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=550c
+09:41:40 [Debug:LDBInterface] 	0058    Name=PartitionCapacity, Vid=5013, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0059    Name=PartitionID, Vid=5014, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=550c
+09:41:40 [Debug:LDBInterface] 	0060    Name=PartitionType, Vid=5015, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=550c
+09:41:40 [Debug:LDBInterface] 	0061    Name=PortAssociationState, Vid=5016, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0062    Name=PortAssociationStateList, Vid=5017, Type=0, Size=0, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0063    Name=PortStateInfo, Vid=5018, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0064    Name=PortStateInfoList, Vid=5019, Type=0, Size=0, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0065    Name=PortTransferState, Vid=5020, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0066    Name=PortTransferStateList, Vid=5021, Type=0, Size=0, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0067    Name=Reason, Vid=5022, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0068    Name=SlotMap, Vid=5023, Type=0, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0069    Name=SlotMapStatus, Vid=5024, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0070    Name=UnAllocatedPartitionCapacity, Vid=5025, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0071    Name=ContentMap, Vid=5027, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0072    Name=AccessMode1, Vid=5201, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0073    Name=CarrierID1, Vid=5202, Type=16, Size=30, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=550c
+09:41:40 [Debug:LDBInterface] 	0074    Name=LoadPortReservationState1, Vid=5204, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0075    Name=LocationID1, Vid=5205, Type=16, Size=30, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=550c
+09:41:40 [Debug:LDBInterface] 	0076    Name=PortAssociationState1, Vid=5206, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0077    Name=PortID1, Vid=5207, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0078    Name=PortStateInfo1, Vid=5208, Type=0, Size=0, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0079    Name=PortTransferState1, Vid=5209, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0080    Name=AccessMode2, Vid=5212, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0081    Name=CarrierID2, Vid=5213, Type=16, Size=30, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=550c
+09:41:40 [Debug:LDBInterface] 	0082    Name=LoadPortReservationState2, Vid=5215, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0083    Name=LocationID2, Vid=5216, Type=16, Size=30, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=550c
+09:41:40 [Debug:LDBInterface] 	0084    Name=PortAssociationState2, Vid=5217, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0085    Name=PortID2, Vid=5218, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0086    Name=PortStateInfo2, Vid=5219, Type=0, Size=0, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0087    Name=PortTransferState2, Vid=5220, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0088    Name=BatchLocID, Vid=6001, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=550c
+09:41:40 [Debug:LDBInterface] 	0089    Name=BatchLocState, Vid=6002, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0090    Name=BatchSubstIDMap, Vid=6003, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0091    Name=STS_EventName, Vid=6004, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=550c
+09:41:40 [Debug:LDBInterface] 	0092    Name=SubstBatchLocID, Vid=6005, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=550c
+09:41:40 [Debug:LDBInterface] 	0093    Name=SubstDestination, Vid=6006, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=550c
+09:41:40 [Debug:LDBInterface] 	0094    Name=SubstHistory, Vid=6007, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0095    Name=SubstID, Vid=6008, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=550c
+09:41:40 [Debug:LDBInterface] 	0096    Name=SubstIDStatus, Vid=6009, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0097    Name=SubstLocID, Vid=6010, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=550c
+09:41:40 [Debug:LDBInterface] 	0098    Name=SubstLocState, Vid=6011, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0099    Name=SubstLocSubstID, Vid=6012, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=550c
+09:41:40 [Debug:LDBInterface] 	0100    Name=SubstLotID, Vid=6013, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=550c
+09:41:40 [Debug:LDBInterface] 	0101    Name=SubstMtrlStatus, Vid=6014, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0102    Name=SubstPosInBatch, Vid=6015, Type=16, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=550c
+09:41:40 [Debug:LDBInterface] 	0103    Name=SubstProcState, Vid=6016, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0104    Name=SubstSource, Vid=6017, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=550c
+09:41:40 [Debug:LDBInterface] 	0105    Name=SubstState, Vid=6018, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0106    Name=SubstSubstLocID, Vid=6019, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=550c
+09:41:40 [Debug:LDBInterface] 	0107    Name=SubstType, Vid=6020, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0108    Name=SubstUsage, Vid=6021, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0109    Name=AcquiredID, Vid=6022, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=550c
+09:41:40 [Debug:LDBInterface] 	0110    Name=AcquiredIDList, Vid=6023, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0111    Name=SubstIDList, Vid=6024, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0112    Name=SubstIDStatusList, Vid=6025, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0113    Name=SubstLotIDList, Vid=6026, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0114    Name=SubstMtrlStatusList, Vid=6027, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0115    Name=SubstSourceList, Vid=6028, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0116    Name=SubstDestinationList, Vid=6029, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0117    Name=SubstTypeList, Vid=6030, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0118    Name=SubstUsageList, Vid=6031, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0119    Name=SubstStateList, Vid=6032, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0120    Name=SubstProcStateList, Vid=6033, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0121    Name=SubstHistoryList, Vid=6034, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0122    Name=SubstBatchLocIDList, Vid=6035, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0123    Name=SubstPosInBatchList, Vid=6036, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0124    Name=SubstSubstLocIDList, Vid=6037, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0125    Name=BatchLocIDandPosInBatch, Vid=6040, Type=16, Size=256, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=550c
+09:41:40 [Debug:LDBInterface] 	0126    Name=CarrierInputSpec, Vid=7001, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0127    Name=CJ_EventName, Vid=7002, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=550c
+09:41:40 [Debug:LDBInterface] 	0128    Name=CJ_PauseEvent, Vid=7003, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0129    Name=CtrlJobID, Vid=7004, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=550c
+09:41:40 [Debug:LDBInterface] 	0130    Name=CtrlJobState, Vid=7005, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0131    Name=CurrentPRJob, Vid=7006, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0132    Name=DataCollectionPlan, Vid=7007, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=550c
+09:41:40 [Debug:LDBInterface] 	0133    Name=MtrlOutByStatus, Vid=7008, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0134    Name=MtrlOutSpec, Vid=7009, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0135    Name=PRJobStatusList, Vid=7010, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0136    Name=ProcessingCtrlSpec, Vid=7011, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0137    Name=ProcessOrderMgmt, Vid=7012, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0138    Name=QueueAvailableSpace, Vid=7013, Type=41, Size=0, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0139    Name=QueuedCJobs, Vid=7014, Type=0, Size=0, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=550c
+09:41:40 [Debug:LDBInterface] 	0140    Name=StartMethod, Vid=7015, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0141    Name=TargetGV, Vid=9101, Type=16, Size=10, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=2, Val=ASCII:0 th=550c
+09:41:40 [Debug:LDBInterface] Complete to reading SV/DVVAL information from database(mdb file). th=550c
+09:41:40 [Debug:LDBInterface] Start to reading data ECV information from database(mdb file). th=550c
+09:41:40 [Debug:LDBInterface] 	0000    Name=Equipment_Initiated_Connected, Vid=101, Type=9, Size=1, Min=, Max=, Unit=, Def=1, Use=1, MemoryType=1, Val=BOOL:1 th=550c
+09:41:40 [Debug:LDBInterface] 	0001    Name=EstablishCommunicationsTimeout, Vid=102, Type=42, Size=1, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT2:20 th=550c
+09:41:40 [Debug:LDBInterface] 	0002    Name=MaxSpoolTransmit, Vid=103, Type=44, Size=1, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT4:10 th=550c
+09:41:40 [Debug:LDBInterface] 	0003    Name=OverWriteSpool, Vid=104, Type=9, Size=1, Min=, Max=, Unit=, Def=1, Use=1, MemoryType=1, Val=BOOL:1 th=550c
+09:41:40 [Debug:LDBInterface] 	0004    Name=EnableSpooling, Vid=105, Type=9, Size=1, Min=, Max=, Unit=, Def=1, Use=1, MemoryType=1, Val=BOOL:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0005    Name=TimeFormat, Vid=106, Type=9, Size=1, Min=, Max=, Unit=, Def=1, Use=1, MemoryType=1, Val=BOOL:1 th=550c
+09:41:40 [Debug:LDBInterface] 	0006    Name=T3Timeout, Vid=109, Type=42, Size=1, Min=1, Max=120, Unit=seconds, Def=45, Use=1, MemoryType=1, Val=UINT2:45 th=550c
+09:41:40 [Debug:LDBInterface] 	0007    Name=T5Timeout, Vid=110, Type=42, Size=1, Min=1, Max=240, Unit=seconds, Def=10, Use=1, MemoryType=1, Val=UINT2:10 th=550c
+09:41:40 [Debug:LDBInterface] 	0008    Name=T6Timeout, Vid=111, Type=42, Size=1, Min=1, Max=240, Unit=seconds, Def=5, Use=1, MemoryType=1, Val=UINT2:5 th=550c
+09:41:40 [Debug:LDBInterface] 	0009    Name=T7Timeout, Vid=112, Type=42, Size=1, Min=1, Max=240, Unit=seconds, Def=10, Use=1, MemoryType=1, Val=UINT2:10 th=550c
+09:41:40 [Debug:LDBInterface] 	0010    Name=T8Timeout, Vid=113, Type=42, Size=1, Min=1, Max=120, Unit=seconds, Def=5, Use=1, MemoryType=1, Val=UINT2:5 th=550c
+09:41:40 [Debug:LDBInterface] 	0011    Name=InitControlState, Vid=117, Type=41, Size=1, Min=1, Max=2, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:1 th=550c
+09:41:40 [Debug:LDBInterface] 	0012    Name=OffLineSubState, Vid=118, Type=41, Size=1, Min=1, Max=3, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:1 th=550c
+09:41:40 [Debug:LDBInterface] 	0013    Name=OnLineSubState, Vid=119, Type=41, Size=1, Min=1, Max=2, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:1 th=550c
+09:41:40 [Debug:LDBInterface] 	0014    Name=OnLineFailState, Vid=120, Type=41, Size=1, Min=1, Max=2, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:2 th=550c
+09:41:40 [Debug:LDBInterface] 	0015    Name=Maker, Vid=121, Type=16, Size=20, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=550c
+09:41:40 [Debug:LDBInterface] 	0016    Name=MaxSpoolMsg, Vid=123, Type=42, Size=1, Min=0, Max=300, Unit=100, Def=, Use=1, MemoryType=1, Val=UINT2:300 th=550c
+09:41:40 [Debug:LDBInterface] 	0017    Name=DeviceID, Vid=124, Type=16, Size=20, Min=, Max=, Unit=, Def=0, Use=1, MemoryType=1, Val=ASCII:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0018    Name=IPAddress, Vid=125, Type=16, Size=16, Min=, Max=, Unit=, Def=127.0.0.1, Use=1, MemoryType=1, Val=ASCII:127.0.0.1 th=550c
+09:41:40 [Debug:LDBInterface] 	0019    Name=PortNumber, Vid=126, Type=42, Size=1, Min=, Max=, Unit=, Def=6000, Use=1, MemoryType=1, Val=UINT2:6000 th=550c
+09:41:40 [Debug:LDBInterface] 	0020    Name=ActiveMode, Vid=127, Type=9, Size=1, Min=, Max=, Unit=, Def=0, Use=1, MemoryType=1, Val=BOOL:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0021    Name=LinkTestInterval, Vid=128, Type=41, Size=1, Min=, Max=, Unit=, Def=30, Use=1, MemoryType=1, Val=UINT1:30 th=550c
+09:41:40 [Debug:LDBInterface] 	0022    Name=RetryLimit, Vid=129, Type=41, Size=1, Min=, Max=, Unit=, Def=0, Use=1, MemoryType=1, Val=UINT1:0 th=550c
+09:41:40 [Debug:LDBInterface] 	0023    Name=BypassReadID, Vid=5026, Type=9, Size=1, Min=, Max=, Unit=, Def=0, Use=1, MemoryType=1, Val=BOOL:0 th=550c
+09:41:40 [Debug:LDBInterface] Complete to reading ECV information from database(mdb file). th=550c
+09:41:40 [Debug:LDBInterface] Start to reading data item dictionary information from database(mdb file). th=550c
+09:41:40 [Debug:LDBInterface] 	0000    Name=ABS, Type=8, Size=-1 th=550c
+09:41:40 [Debug:LDBInterface] 	0001    Name=ACCESSMODE, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0002    Name=ACDS, Type=42, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0003    Name=ACKA, Type=9, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0004    Name=ACKC10, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0005    Name=ACKC5, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0006    Name=ACKC6, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0007    Name=ACKC7, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0008    Name=ACKC7A, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0009    Name=ALCD, Type=8, Size=-1 th=550c
+09:41:40 [Debug:LDBInterface] 	0010    Name=ALED, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0011    Name=ALID, Type=42, Size=-1 th=550c
+09:41:40 [Debug:LDBInterface] 	0012    Name=ALTX, Type=16, Size=120 th=550c
+09:41:40 [Debug:LDBInterface] 	0013    Name=ATTRDATA, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0014    Name=ATTRID, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0015    Name=BATCHLOCID, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0016    Name=BATCHLOCIDVALUE, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0017    Name=CAACK, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0018    Name=CAPACITY, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0019    Name=CARRIERACCESSINGSTATUS, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0020    Name=CARRIERACTION, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0021    Name=CARRIERID, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0022    Name=CARRIERIDSTATUS, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0023    Name=CARRIERINPUTID, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0024    Name=CARRIERINPUTSPEC, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0025    Name=CARRIERSPEC, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0026    Name=CATTRDATA, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0027    Name=CATTRID, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0028    Name=CCODE, Type=42, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0029    Name=CEED, Type=9, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0030    Name=CEID, Type=44, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0031    Name=CENAME, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0032    Name=CEPACK, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0033    Name=COMMACK, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0034    Name=CPACK, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0035    Name=CPNAME, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0036    Name=CPVAL, Type=32, Size=-1 th=550c
+09:41:40 [Debug:LDBInterface] 	0037    Name=CTLJOBCMD, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0038    Name=CTLJOBID, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0039    Name=DATA, Type=16, Size=100 th=550c
+09:41:40 [Debug:LDBInterface] 	0040    Name=DATACOLLECTIONPLAN, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0041    Name=DATAID, Type=42, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0042    Name=DATALENGTH, Type=42, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0043    Name=DATASEG, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0044    Name=DESTCARRIERID, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0045    Name=DISABLEEVENTS, Type=9, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0046    Name=DRACK, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0047    Name=DSID, Type=42, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0048    Name=DSPER, Type=16, Size=8 th=550c
+09:41:40 [Debug:LDBInterface] 	0049    Name=DVVAL, Type=32, Size=-1 th=550c
+09:41:40 [Debug:LDBInterface] 	0050    Name=DVVALNAME, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0051    Name=EAC, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0052    Name=ECDEF, Type=32, Size=-1 th=550c
+09:41:40 [Debug:LDBInterface] 	0053    Name=ECID, Type=42, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0054    Name=ECMAX, Type=32, Size=-1 th=550c
+09:41:40 [Debug:LDBInterface] 	0055    Name=ECMIN, Type=32, Size=-1 th=550c
+09:41:40 [Debug:LDBInterface] 	0056    Name=ECNAME, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0057    Name=ECV, Type=32, Size=-1 th=550c
+09:41:40 [Debug:LDBInterface] 	0058    Name=EDID, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0059    Name=EPT_BLOCKED_REASON, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0060    Name=EPT_BLOCKED_REASON_TEXT, Type=16, Size=80 th=550c
+09:41:40 [Debug:LDBInterface] 	0061    Name=EPT_ELEMENTNAME, Type=16, Size=80 th=550c
+09:41:40 [Debug:LDBInterface] 	0062    Name=EPT_ELEMENTTYPE, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0063    Name=EPT_PREV_STATE, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0064    Name=EPT_PREV_TASKNAME, Type=16, Size=80 th=550c
+09:41:40 [Debug:LDBInterface] 	0065    Name=EPT_PREV_TASKTYPE, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0066    Name=EPT_STATE, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0067    Name=EPT_STATETIME, Type=44, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0068    Name=EPT_TASKNAME, Type=16, Size=80 th=550c
+09:41:40 [Debug:LDBInterface] 	0069    Name=EPT_TASKTYPE, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0070    Name=EPT_TRNASITION, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0071    Name=EPT_TRNASITION_TIMESTAMP, Type=16, Size=16 th=550c
+09:41:40 [Debug:LDBInterface] 	0072    Name=ERACK, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0073    Name=ERRCODE, Type=42, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0074    Name=ERRTEXT, Type=16, Size=120 th=550c
+09:41:40 [Debug:LDBInterface] 	0075    Name=ERRW7, Type=16, Size=120 th=550c
+09:41:40 [Debug:LDBInterface] 	0076    Name=FCNID, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0077    Name=GRANT, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0078    Name=GRANT6, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0079    Name=HCACK, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0080    Name=LENGTH, Type=42, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0081    Name=LIMITACK, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0082    Name=LIMITID, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0083    Name=LIMITMAX, Type=32, Size=-1 th=550c
+09:41:40 [Debug:LDBInterface] 	0084    Name=LIMITMIN, Type=32, Size=-1 th=550c
+09:41:40 [Debug:LDBInterface] 	0085    Name=LINKID, Type=44, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0086    Name=LOCID, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0087    Name=LOTID, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0088    Name=LOWERDB, Type=32, Size=-1 th=550c
+09:41:40 [Debug:LDBInterface] 	0089    Name=LRACK, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0090    Name=LVACK, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0091    Name=MATERIALSTATUS, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0092    Name=MDLN, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0093    Name=MEXP, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0094    Name=MF, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0095    Name=MHEAD, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0096    Name=MID, Type=16, Size=80 th=550c
+09:41:40 [Debug:LDBInterface] 	0097    Name=MTRLOUTSPEC, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0098    Name=OBJACK, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0099    Name=OBJID, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0100    Name=OBJSPEC, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0101    Name=OBJTYPE, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0102    Name=OFLACK, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0103    Name=ONLACK, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0104    Name=OPID, Type=42, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0105    Name=ORDERVALUE, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0106    Name=OUTPUTRULEVALUE, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0107    Name=PARAMNAME, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0108    Name=PARAMVAL, Type=32, Size=-1 th=550c
+09:41:40 [Debug:LDBInterface] 	0109    Name=PAUSEEVENT, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0110    Name=PFCD, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0111    Name=PORTACTION, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0112    Name=PPARM, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0113    Name=PPBODY, Type=16, Size=10000 th=550c
+09:41:40 [Debug:LDBInterface] 	0114    Name=PPGNT, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0115    Name=PPID, Type=16, Size=120 th=550c
+09:41:40 [Debug:LDBInterface] 	0116    Name=PPNAME, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0117    Name=PPVALUE, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0118    Name=PRCMDNAME, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0119    Name=PREVENTID, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0120    Name=PRJOBID, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0121    Name=PRJOBMILESTONE, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0122    Name=PRJOBSPACE, Type=42, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0123    Name=PRMTRLORDER, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0124    Name=PROCESSINGCTRLSPEC, Type=16, Size=80 th=550c
+09:41:40 [Debug:LDBInterface] 	0125    Name=PROCESSINGJOBID, Type=16, Size=80 th=550c
+09:41:40 [Debug:LDBInterface] 	0126    Name=PROCESSORDERMGMT, Type=16, Size=80 th=550c
+09:41:40 [Debug:LDBInterface] 	0127    Name=PRPROCESSSTART, Type=9, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0128    Name=PRRECIPEMETHOD, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0129    Name=PRSTATE, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0130    Name=PTN, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0131    Name=RCMD, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0132    Name=RCPPARNM, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0133    Name=RCPPARVAL, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0134    Name=RCPSPEC, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0135    Name=RECID, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0136    Name=REPGSZ, Type=44, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0137    Name=RPTID, Type=42, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0138    Name=RSDA, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0139    Name=RSDC, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0140    Name=RSPACK, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0141    Name=RULENAME, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0142    Name=RULEVALUE, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0143    Name=SEQNUM, Type=42, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0144    Name=SHEAD, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0145    Name=SLOTID, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0146    Name=SLOTMAP, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0147    Name=SLOTMAPSTATUS, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0148    Name=SMPLN, Type=44, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0149    Name=SOFTREV, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0150    Name=SPNAME, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0151    Name=SPVAL, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0152    Name=SRCCARRIERID, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0153    Name=SSACK, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0154    Name=STARTMETHOD, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0155    Name=STARTMETHODVALUE, Type=9, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0156    Name=STATE, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0157    Name=STATUS, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0158    Name=STIME, Type=16, Size=16 th=550c
+09:41:40 [Debug:LDBInterface] 	0159    Name=STRACK, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0160    Name=STRID, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0161    Name=SUBSTID, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0162    Name=SUBSTLOCID, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0163    Name=SUBSTPOSINBATCH, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0164    Name=SUBSTPROCESSINGSTATE, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0165    Name=SUBSTRATECOUNT, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0166    Name=SUBSTSTATE, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0167    Name=SUBSTTYPE, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0168    Name=SUBSTUSAGE, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0169    Name=SV, Type=32, Size=-1 th=550c
+09:41:40 [Debug:LDBInterface] 	0170    Name=SVCACK, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0171    Name=SVCNAME, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0172    Name=SVID, Type=44, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0173    Name=SVNAME, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0174    Name=TEXT, Type=16, Size=256 th=550c
+09:41:40 [Debug:LDBInterface] 	0175    Name=TIAACK, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0176    Name=TIACK, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0177    Name=TID, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0178    Name=TIME, Type=16, Size=16 th=550c
+09:41:40 [Debug:LDBInterface] 	0179    Name=TIMESTAMP, Type=16, Size=16 th=550c
+09:41:40 [Debug:LDBInterface] 	0180    Name=TOTSMP, Type=44, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0181    Name=TRID, Type=41, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0182    Name=UNITS, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0183    Name=UPPERDB, Type=32, Size=-1 th=550c
+09:41:40 [Debug:LDBInterface] 	0184    Name=USAGE, Type=16, Size=30 th=550c
+09:41:40 [Debug:LDBInterface] 	0185    Name=V, Type=32, Size=-1 th=550c
+09:41:40 [Debug:LDBInterface] 	0186    Name=VID, Type=42, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] 	0187    Name=VLAACK, Type=8, Size=1 th=550c
+09:41:40 [Debug:LDBInterface] Complete to reading data item dictionary information from database(mdb file). th=550c
+09:41:40 [Proc:Seq] Data Manager initialized. th=550c
+09:41:40 [Proc:Seq] Operator Manager initialized. th=550c
+09:41:40 [Proc:Seq] Host Communication Manager initialized. th=550c
+09:41:40 [Proc:Seq] Eq Communication Manager initialized. th=550c
+09:41:40 [Proc:Seq] Factory initialized. th=550c
+09:41:40 [Proc:Seq] XGem Initialized th=550c
+09:41:40 [Proc:Seq] XGem Started th=550c
+09:41:40 [Alarm:000012] [Sentinel:Alarm] Sentinel SuperPro Driver is not installed
+09:41:40 [Alarm:000000] can't read product type from SENTINEL driver., th=550c
+09:41:40 [Alarm:000000] failed to initialize ROCKEY driver., th=550c
+09:41:40 [Alarm:000012] [Sentinel:Alarm] Sentinel SuperPro Driver is not installed
+09:41:40 [Alarm:000000] can't read product type from SENTINEL driver., th=550c
+09:41:40 [Alarm:000000] failed to initialize ROCKEY driver., th=550c
+09:54:00 [Proc:Seq] >>>>>>>>>>>>>>>>>>>>>>>  Logging Started  <<<<<<<<<<<<<<<<<<<<<<<<
+09:54:00 [Proc:Seq] Build date time: Apr  1 2021 10:55:33 th=405c
+09:54:00 [Proc:Seq] File Version: 3.4.4.36
+          th=405c
+09:54:00 [Proc:Seq] ProjectType : XGem300. th=405c
+09:54:00 [Alarm:000012] [Sentinel:Alarm] Sentinel SuperPro Driver is not installed
+09:54:00 [Alarm:000000] can't read product type from SENTINEL driver., th=405c
+09:54:00 [Alarm:000003] failed to initialize ROCKEY driver., th=405c
+09:54:00 [Proc:Seq] Can't find license key. XGem is started for trial version. th=405c
+09:54:00 [Proc:Seq] Loaded config file path: C:\AVIS\Test_220524\Test_220524\XGem.cfg. th=405c
+09:54:00 [Proc:Seq] Success to open database(MDB). th=405c
+09:54:00 [Debug:LDBInterface] Start to reading data SV/DVVAL information from database(mdb file). th=405c
+09:54:00 [Debug:LDBInterface] 	0000    Name=Clock, Vid=1, Type=16, Size=16, Class=SV, Min=, Max=, Unit=YYYYMMDDhhmmsscc, Def=, Use=1, MemoryType=1, Val=ASCII:0 th=405c
+09:54:00 [Debug:LDBInterface] 	0001    Name=ALCD, Vid=2, Type=8, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=BINARY:00 th=405c
+09:54:00 [Debug:LDBInterface] 	0002    Name=AlarmSet, Vid=3, Type=0, Size=0, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:00 [Debug:LDBInterface] 	0003    Name=ControlState, Vid=4, Type=41, Size=1, Class=SV, Min=1, Max=5, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:00 [Debug:LDBInterface] 	0004    Name=EventsEnabled, Vid=5, Type=0, Size=0, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:00 [Debug:LDBInterface] 	0005    Name=ProcessState, Vid=6, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:00 [Debug:LDBInterface] 	0006    Name=PreviousProcessState, Vid=7, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:00 [Debug:LDBInterface] 	0007    Name=AlarmsEnabled, Vid=8, Type=0, Size=0, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:00 [Debug:LDBInterface] 	0008    Name=SpoolCountActual, Vid=11, Type=42, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT2:0 th=405c
+09:54:00 [Debug:LDBInterface] 	0009    Name=SpoolCountTotal, Vid=12, Type=42, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT2:0 th=405c
+09:54:00 [Debug:LDBInterface] 	0010    Name=SpoolFullTime, Vid=13, Type=16, Size=16, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII:0 th=405c
+09:54:00 [Debug:LDBInterface] 	0011    Name=MDLN, Vid=14, Type=16, Size=20, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII:0 th=405c
+09:54:00 [Debug:LDBInterface] 	0012    Name=SOFTREV, Vid=15, Type=16, Size=20, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII:0 th=405c
+09:54:00 [Debug:LDBInterface] 	0013    Name=SpoolStartTime, Vid=16, Type=16, Size=16, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII:0 th=405c
+09:54:00 [Debug:LDBInterface] 	0014    Name=SpoolStatus, Vid=17, Type=41, Size=1, Class=SV, Min=, Max=1, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:00 [Debug:LDBInterface] 	0015    Name=SpoolFull, Vid=18, Type=41, Size=1, Class=SV, Min=5, Max=6, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:00 [Debug:LDBInterface] 	0016    Name=AlarmID, Vid=24, Type=42, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT2:0 th=405c
+09:54:00 [Debug:LDBInterface] 	0017    Name=ChangedECID, Vid=25, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:00 [Debug:LDBInterface] 	0018    Name=EventLimit, Vid=26, Type=42, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT2:0 th=405c
+09:54:00 [Debug:LDBInterface] 	0019    Name=LimitVariable, Vid=27, Type=42, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT2:0 th=405c
+09:54:00 [Debug:LDBInterface] 	0020    Name=OperatorCommand, Vid=28, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:00 [Debug:LDBInterface] 	0021    Name=PPChangeName, Vid=29, Type=16, Size=20, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII:0 th=405c
+09:54:00 [Debug:LDBInterface] 	0022    Name=PPChangeStatus, Vid=30, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:00 [Debug:LDBInterface] 	0023    Name=PPError, Vid=31, Type=16, Size=20, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII:0 th=405c
+09:54:00 [Debug:LDBInterface] 	0024    Name=TransitionType, Vid=32, Type=8, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=BINARY:00 th=405c
+09:54:00 [Debug:LDBInterface] 	0025    Name=PortID, Vid=33, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:00 [Debug:LDBInterface] 	0026    Name=PreviousControlState, Vid=34, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:00 [Debug:LDBInterface] 	0027    Name=CommState, Vid=35, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:00 [Debug:LDBInterface] 	0028    Name=PreviousCommState, Vid=36, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:00 [Debug:LDBInterface] 	0029    Name=CDA, Vid=2001, Type=16, Size=10, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=2, Val=ASCII:5 th=405c
+09:54:00 [Debug:LDBInterface] 	0030    Name=Vac, Vid=2002, Type=16, Size=10, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=2, Val=ASCII:10 th=405c
+09:54:00 [Debug:LDBInterface] 	0031    Name=PJ_EventName, Vid=4001, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=405c
+09:54:00 [Debug:LDBInterface] 	0032    Name=PJ_PauseEvent, Vid=4002, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:00 [Debug:LDBInterface] 	0033    Name=PJQueueMaxSpace, Vid=4003, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:00 [Debug:LDBInterface] 	0034    Name=PRJobID, Vid=4004, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=405c
+09:54:00 [Debug:LDBInterface] 	0035    Name=PRJobIDList, Vid=4005, Type=0, Size=0, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0036    Name=PRJobList, Vid=4006, Type=0, Size=0, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0037    Name=PRJobPreviousState, Vid=4007, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0038    Name=PRJobSpace, Vid=4008, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0039    Name=PRJobState, Vid=4009, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0040    Name=PRMtlNameList, Vid=4010, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0041    Name=PRMtlType, Vid=4011, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0042    Name=PRProcessStart, Vid=4012, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0043    Name=PRRecipeMethod, Vid=4013, Type=9, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=BOOL:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0044    Name=RecID, Vid=4014, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=405c
+09:54:01 [Debug:LDBInterface] 	0045    Name=RecVariableList, Vid=4015, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0046    Name=AccessMode, Vid=5001, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0047    Name=AvailPartitionCapacity, Vid=5002, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0048    Name=BufferCapacityList, Vid=5003, Type=0, Size=0, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0049    Name=BufferPartitionInfo, Vid=5004, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0050    Name=CarrierAccessingStatus, Vid=5005, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0051    Name=CarrierID, Vid=5006, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=405c
+09:54:01 [Debug:LDBInterface] 	0052    Name=CarrierIDStatus, Vid=5007, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0053    Name=CarrierLocationMatrix, Vid=5008, Type=0, Size=0, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0054    Name=CMS_EventName, Vid=5009, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=405c
+09:54:01 [Debug:LDBInterface] 	0055    Name=LoadPortReservationState, Vid=5010, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0056    Name=LoadPortReservationStateList, Vid=5011, Type=0, Size=0, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0057    Name=LocationID, Vid=5012, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=405c
+09:54:01 [Debug:LDBInterface] 	0058    Name=PartitionCapacity, Vid=5013, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0059    Name=PartitionID, Vid=5014, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=405c
+09:54:01 [Debug:LDBInterface] 	0060    Name=PartitionType, Vid=5015, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=405c
+09:54:01 [Debug:LDBInterface] 	0061    Name=PortAssociationState, Vid=5016, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0062    Name=PortAssociationStateList, Vid=5017, Type=0, Size=0, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0063    Name=PortStateInfo, Vid=5018, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0064    Name=PortStateInfoList, Vid=5019, Type=0, Size=0, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0065    Name=PortTransferState, Vid=5020, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0066    Name=PortTransferStateList, Vid=5021, Type=0, Size=0, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0067    Name=Reason, Vid=5022, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0068    Name=SlotMap, Vid=5023, Type=0, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0069    Name=SlotMapStatus, Vid=5024, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0070    Name=UnAllocatedPartitionCapacity, Vid=5025, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0071    Name=ContentMap, Vid=5027, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0072    Name=AccessMode1, Vid=5201, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0073    Name=CarrierID1, Vid=5202, Type=16, Size=30, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=405c
+09:54:01 [Debug:LDBInterface] 	0074    Name=LoadPortReservationState1, Vid=5204, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0075    Name=LocationID1, Vid=5205, Type=16, Size=30, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=405c
+09:54:01 [Debug:LDBInterface] 	0076    Name=PortAssociationState1, Vid=5206, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0077    Name=PortID1, Vid=5207, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0078    Name=PortStateInfo1, Vid=5208, Type=0, Size=0, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0079    Name=PortTransferState1, Vid=5209, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0080    Name=AccessMode2, Vid=5212, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0081    Name=CarrierID2, Vid=5213, Type=16, Size=30, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=405c
+09:54:01 [Debug:LDBInterface] 	0082    Name=LoadPortReservationState2, Vid=5215, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0083    Name=LocationID2, Vid=5216, Type=16, Size=30, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=405c
+09:54:01 [Debug:LDBInterface] 	0084    Name=PortAssociationState2, Vid=5217, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0085    Name=PortID2, Vid=5218, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0086    Name=PortStateInfo2, Vid=5219, Type=0, Size=0, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0087    Name=PortTransferState2, Vid=5220, Type=41, Size=1, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0088    Name=BatchLocID, Vid=6001, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=405c
+09:54:01 [Debug:LDBInterface] 	0089    Name=BatchLocState, Vid=6002, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0090    Name=BatchSubstIDMap, Vid=6003, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0091    Name=STS_EventName, Vid=6004, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=405c
+09:54:01 [Debug:LDBInterface] 	0092    Name=SubstBatchLocID, Vid=6005, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=405c
+09:54:01 [Debug:LDBInterface] 	0093    Name=SubstDestination, Vid=6006, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=405c
+09:54:01 [Debug:LDBInterface] 	0094    Name=SubstHistory, Vid=6007, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0095    Name=SubstID, Vid=6008, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=405c
+09:54:01 [Debug:LDBInterface] 	0096    Name=SubstIDStatus, Vid=6009, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0097    Name=SubstLocID, Vid=6010, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=405c
+09:54:01 [Debug:LDBInterface] 	0098    Name=SubstLocState, Vid=6011, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0099    Name=SubstLocSubstID, Vid=6012, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=405c
+09:54:01 [Debug:LDBInterface] 	0100    Name=SubstLotID, Vid=6013, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=405c
+09:54:01 [Debug:LDBInterface] 	0101    Name=SubstMtrlStatus, Vid=6014, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0102    Name=SubstPosInBatch, Vid=6015, Type=16, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=405c
+09:54:01 [Debug:LDBInterface] 	0103    Name=SubstProcState, Vid=6016, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0104    Name=SubstSource, Vid=6017, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=405c
+09:54:01 [Debug:LDBInterface] 	0105    Name=SubstState, Vid=6018, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0106    Name=SubstSubstLocID, Vid=6019, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=405c
+09:54:01 [Debug:LDBInterface] 	0107    Name=SubstType, Vid=6020, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0108    Name=SubstUsage, Vid=6021, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0109    Name=AcquiredID, Vid=6022, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=405c
+09:54:01 [Debug:LDBInterface] 	0110    Name=AcquiredIDList, Vid=6023, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0111    Name=SubstIDList, Vid=6024, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0112    Name=SubstIDStatusList, Vid=6025, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0113    Name=SubstLotIDList, Vid=6026, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0114    Name=SubstMtrlStatusList, Vid=6027, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0115    Name=SubstSourceList, Vid=6028, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0116    Name=SubstDestinationList, Vid=6029, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0117    Name=SubstTypeList, Vid=6030, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0118    Name=SubstUsageList, Vid=6031, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0119    Name=SubstStateList, Vid=6032, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0120    Name=SubstProcStateList, Vid=6033, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0121    Name=SubstHistoryList, Vid=6034, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0122    Name=SubstBatchLocIDList, Vid=6035, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0123    Name=SubstPosInBatchList, Vid=6036, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0124    Name=SubstSubstLocIDList, Vid=6037, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0125    Name=BatchLocIDandPosInBatch, Vid=6040, Type=16, Size=256, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=405c
+09:54:01 [Debug:LDBInterface] 	0126    Name=CarrierInputSpec, Vid=7001, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0127    Name=CJ_EventName, Vid=7002, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=405c
+09:54:01 [Debug:LDBInterface] 	0128    Name=CJ_PauseEvent, Vid=7003, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0129    Name=CtrlJobID, Vid=7004, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=405c
+09:54:01 [Debug:LDBInterface] 	0130    Name=CtrlJobState, Vid=7005, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0131    Name=CurrentPRJob, Vid=7006, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0132    Name=DataCollectionPlan, Vid=7007, Type=16, Size=30, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=405c
+09:54:01 [Debug:LDBInterface] 	0133    Name=MtrlOutByStatus, Vid=7008, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0134    Name=MtrlOutSpec, Vid=7009, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0135    Name=PRJobStatusList, Vid=7010, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0136    Name=ProcessingCtrlSpec, Vid=7011, Type=0, Size=0, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0137    Name=ProcessOrderMgmt, Vid=7012, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0138    Name=QueueAvailableSpace, Vid=7013, Type=41, Size=0, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0139    Name=QueuedCJobs, Vid=7014, Type=0, Size=0, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=LIST:{
+         } th=405c
+09:54:01 [Debug:LDBInterface] 	0140    Name=StartMethod, Vid=7015, Type=41, Size=1, Class=DVVAL, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0141    Name=DailyGV, Vid=9101, Type=16, Size=10, Class=SV, Min=, Max=, Unit=, Def=, Use=1, MemoryType=2, Val=ASCII:0 th=405c
+09:54:01 [Debug:LDBInterface] Complete to reading SV/DVVAL information from database(mdb file). th=405c
+09:54:01 [Debug:LDBInterface] Start to reading data ECV information from database(mdb file). th=405c
+09:54:01 [Debug:LDBInterface] 	0000    Name=Equipment_Initiated_Connected, Vid=101, Type=9, Size=1, Min=, Max=, Unit=, Def=1, Use=1, MemoryType=1, Val=BOOL:1 th=405c
+09:54:01 [Debug:LDBInterface] 	0001    Name=EstablishCommunicationsTimeout, Vid=102, Type=42, Size=1, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT2:20 th=405c
+09:54:01 [Debug:LDBInterface] 	0002    Name=MaxSpoolTransmit, Vid=103, Type=44, Size=1, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=UINT4:10 th=405c
+09:54:01 [Debug:LDBInterface] 	0003    Name=OverWriteSpool, Vid=104, Type=9, Size=1, Min=, Max=, Unit=, Def=1, Use=1, MemoryType=1, Val=BOOL:1 th=405c
+09:54:01 [Debug:LDBInterface] 	0004    Name=EnableSpooling, Vid=105, Type=9, Size=1, Min=, Max=, Unit=, Def=1, Use=1, MemoryType=1, Val=BOOL:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0005    Name=TimeFormat, Vid=106, Type=9, Size=1, Min=, Max=, Unit=, Def=1, Use=1, MemoryType=1, Val=BOOL:1 th=405c
+09:54:01 [Debug:LDBInterface] 	0006    Name=T3Timeout, Vid=109, Type=42, Size=1, Min=1, Max=120, Unit=seconds, Def=45, Use=1, MemoryType=1, Val=UINT2:45 th=405c
+09:54:01 [Debug:LDBInterface] 	0007    Name=T5Timeout, Vid=110, Type=42, Size=1, Min=1, Max=240, Unit=seconds, Def=10, Use=1, MemoryType=1, Val=UINT2:10 th=405c
+09:54:01 [Debug:LDBInterface] 	0008    Name=T6Timeout, Vid=111, Type=42, Size=1, Min=1, Max=240, Unit=seconds, Def=5, Use=1, MemoryType=1, Val=UINT2:5 th=405c
+09:54:01 [Debug:LDBInterface] 	0009    Name=T7Timeout, Vid=112, Type=42, Size=1, Min=1, Max=240, Unit=seconds, Def=10, Use=1, MemoryType=1, Val=UINT2:10 th=405c
+09:54:01 [Debug:LDBInterface] 	0010    Name=T8Timeout, Vid=113, Type=42, Size=1, Min=1, Max=120, Unit=seconds, Def=5, Use=1, MemoryType=1, Val=UINT2:5 th=405c
+09:54:01 [Debug:LDBInterface] 	0011    Name=InitControlState, Vid=117, Type=41, Size=1, Min=1, Max=2, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:1 th=405c
+09:54:01 [Debug:LDBInterface] 	0012    Name=OffLineSubState, Vid=118, Type=41, Size=1, Min=1, Max=3, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:1 th=405c
+09:54:01 [Debug:LDBInterface] 	0013    Name=OnLineSubState, Vid=119, Type=41, Size=1, Min=1, Max=2, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:1 th=405c
+09:54:01 [Debug:LDBInterface] 	0014    Name=OnLineFailState, Vid=120, Type=41, Size=1, Min=1, Max=2, Unit=, Def=, Use=1, MemoryType=1, Val=UINT1:2 th=405c
+09:54:01 [Debug:LDBInterface] 	0015    Name=Maker, Vid=121, Type=16, Size=20, Min=, Max=, Unit=, Def=, Use=1, MemoryType=1, Val=ASCII: th=405c
+09:54:01 [Debug:LDBInterface] 	0016    Name=MaxSpoolMsg, Vid=123, Type=42, Size=1, Min=0, Max=300, Unit=100, Def=, Use=1, MemoryType=1, Val=UINT2:300 th=405c
+09:54:01 [Debug:LDBInterface] 	0017    Name=DeviceID, Vid=124, Type=16, Size=20, Min=, Max=, Unit=, Def=0, Use=1, MemoryType=1, Val=ASCII:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0018    Name=IPAddress, Vid=125, Type=16, Size=16, Min=, Max=, Unit=, Def=127.0.0.1, Use=1, MemoryType=1, Val=ASCII:127.0.0.1 th=405c
+09:54:01 [Debug:LDBInterface] 	0019    Name=PortNumber, Vid=126, Type=42, Size=1, Min=, Max=, Unit=, Def=6000, Use=1, MemoryType=1, Val=UINT2:6000 th=405c
+09:54:01 [Debug:LDBInterface] 	0020    Name=ActiveMode, Vid=127, Type=9, Size=1, Min=, Max=, Unit=, Def=0, Use=1, MemoryType=1, Val=BOOL:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0021    Name=LinkTestInterval, Vid=128, Type=41, Size=1, Min=, Max=, Unit=, Def=30, Use=1, MemoryType=1, Val=UINT1:30 th=405c
+09:54:01 [Debug:LDBInterface] 	0022    Name=RetryLimit, Vid=129, Type=41, Size=1, Min=, Max=, Unit=, Def=0, Use=1, MemoryType=1, Val=UINT1:0 th=405c
+09:54:01 [Debug:LDBInterface] 	0023    Name=BypassReadID, Vid=5026, Type=9, Size=1, Min=, Max=, Unit=, Def=0, Use=1, MemoryType=1, Val=BOOL:0 th=405c
+09:54:01 [Debug:LDBInterface] Complete to reading ECV information from database(mdb file). th=405c
+09:54:01 [Debug:LDBInterface] Start to reading data item dictionary information from database(mdb file). th=405c
+09:54:01 [Debug:LDBInterface] 	0000    Name=ABS, Type=8, Size=-1 th=405c
+09:54:01 [Debug:LDBInterface] 	0001    Name=ACCESSMODE, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0002    Name=ACDS, Type=42, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0003    Name=ACKA, Type=9, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0004    Name=ACKC10, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0005    Name=ACKC5, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0006    Name=ACKC6, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0007    Name=ACKC7, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0008    Name=ACKC7A, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0009    Name=ALCD, Type=8, Size=-1 th=405c
+09:54:01 [Debug:LDBInterface] 	0010    Name=ALED, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0011    Name=ALID, Type=42, Size=-1 th=405c
+09:54:01 [Debug:LDBInterface] 	0012    Name=ALTX, Type=16, Size=120 th=405c
+09:54:01 [Debug:LDBInterface] 	0013    Name=ATTRDATA, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0014    Name=ATTRID, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0015    Name=BATCHLOCID, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0016    Name=BATCHLOCIDVALUE, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0017    Name=CAACK, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0018    Name=CAPACITY, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0019    Name=CARRIERACCESSINGSTATUS, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0020    Name=CARRIERACTION, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0021    Name=CARRIERID, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0022    Name=CARRIERIDSTATUS, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0023    Name=CARRIERINPUTID, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0024    Name=CARRIERINPUTSPEC, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0025    Name=CARRIERSPEC, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0026    Name=CATTRDATA, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0027    Name=CATTRID, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0028    Name=CCODE, Type=42, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0029    Name=CEED, Type=9, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0030    Name=CEID, Type=44, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0031    Name=CENAME, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0032    Name=CEPACK, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0033    Name=COMMACK, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0034    Name=CPACK, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0035    Name=CPNAME, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0036    Name=CPVAL, Type=32, Size=-1 th=405c
+09:54:01 [Debug:LDBInterface] 	0037    Name=CTLJOBCMD, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0038    Name=CTLJOBID, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0039    Name=DATA, Type=16, Size=100 th=405c
+09:54:01 [Debug:LDBInterface] 	0040    Name=DATACOLLECTIONPLAN, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0041    Name=DATAID, Type=42, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0042    Name=DATALENGTH, Type=42, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0043    Name=DATASEG, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0044    Name=DESTCARRIERID, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0045    Name=DISABLEEVENTS, Type=9, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0046    Name=DRACK, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0047    Name=DSID, Type=42, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0048    Name=DSPER, Type=16, Size=8 th=405c
+09:54:01 [Debug:LDBInterface] 	0049    Name=DVVAL, Type=32, Size=-1 th=405c
+09:54:01 [Debug:LDBInterface] 	0050    Name=DVVALNAME, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0051    Name=EAC, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0052    Name=ECDEF, Type=32, Size=-1 th=405c
+09:54:01 [Debug:LDBInterface] 	0053    Name=ECID, Type=42, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0054    Name=ECMAX, Type=32, Size=-1 th=405c
+09:54:01 [Debug:LDBInterface] 	0055    Name=ECMIN, Type=32, Size=-1 th=405c
+09:54:01 [Debug:LDBInterface] 	0056    Name=ECNAME, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0057    Name=ECV, Type=32, Size=-1 th=405c
+09:54:01 [Debug:LDBInterface] 	0058    Name=EDID, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0059    Name=EPT_BLOCKED_REASON, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0060    Name=EPT_BLOCKED_REASON_TEXT, Type=16, Size=80 th=405c
+09:54:01 [Debug:LDBInterface] 	0061    Name=EPT_ELEMENTNAME, Type=16, Size=80 th=405c
+09:54:01 [Debug:LDBInterface] 	0062    Name=EPT_ELEMENTTYPE, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0063    Name=EPT_PREV_STATE, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0064    Name=EPT_PREV_TASKNAME, Type=16, Size=80 th=405c
+09:54:01 [Debug:LDBInterface] 	0065    Name=EPT_PREV_TASKTYPE, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0066    Name=EPT_STATE, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0067    Name=EPT_STATETIME, Type=44, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0068    Name=EPT_TASKNAME, Type=16, Size=80 th=405c
+09:54:01 [Debug:LDBInterface] 	0069    Name=EPT_TASKTYPE, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0070    Name=EPT_TRNASITION, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0071    Name=EPT_TRNASITION_TIMESTAMP, Type=16, Size=16 th=405c
+09:54:01 [Debug:LDBInterface] 	0072    Name=ERACK, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0073    Name=ERRCODE, Type=42, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0074    Name=ERRTEXT, Type=16, Size=120 th=405c
+09:54:01 [Debug:LDBInterface] 	0075    Name=ERRW7, Type=16, Size=120 th=405c
+09:54:01 [Debug:LDBInterface] 	0076    Name=FCNID, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0077    Name=GRANT, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0078    Name=GRANT6, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0079    Name=HCACK, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0080    Name=LENGTH, Type=42, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0081    Name=LIMITACK, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0082    Name=LIMITID, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0083    Name=LIMITMAX, Type=32, Size=-1 th=405c
+09:54:01 [Debug:LDBInterface] 	0084    Name=LIMITMIN, Type=32, Size=-1 th=405c
+09:54:01 [Debug:LDBInterface] 	0085    Name=LINKID, Type=44, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0086    Name=LOCID, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0087    Name=LOTID, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0088    Name=LOWERDB, Type=32, Size=-1 th=405c
+09:54:01 [Debug:LDBInterface] 	0089    Name=LRACK, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0090    Name=LVACK, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0091    Name=MATERIALSTATUS, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0092    Name=MDLN, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0093    Name=MEXP, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0094    Name=MF, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0095    Name=MHEAD, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0096    Name=MID, Type=16, Size=80 th=405c
+09:54:01 [Debug:LDBInterface] 	0097    Name=MTRLOUTSPEC, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0098    Name=OBJACK, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0099    Name=OBJID, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0100    Name=OBJSPEC, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0101    Name=OBJTYPE, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0102    Name=OFLACK, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0103    Name=ONLACK, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0104    Name=OPID, Type=42, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0105    Name=ORDERVALUE, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0106    Name=OUTPUTRULEVALUE, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0107    Name=PARAMNAME, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0108    Name=PARAMVAL, Type=32, Size=-1 th=405c
+09:54:01 [Debug:LDBInterface] 	0109    Name=PAUSEEVENT, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0110    Name=PFCD, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0111    Name=PORTACTION, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0112    Name=PPARM, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0113    Name=PPBODY, Type=16, Size=10000 th=405c
+09:54:01 [Debug:LDBInterface] 	0114    Name=PPGNT, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0115    Name=PPID, Type=16, Size=120 th=405c
+09:54:01 [Debug:LDBInterface] 	0116    Name=PPNAME, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0117    Name=PPVALUE, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0118    Name=PRCMDNAME, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0119    Name=PREVENTID, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0120    Name=PRJOBID, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0121    Name=PRJOBMILESTONE, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0122    Name=PRJOBSPACE, Type=42, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0123    Name=PRMTRLORDER, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0124    Name=PROCESSINGCTRLSPEC, Type=16, Size=80 th=405c
+09:54:01 [Debug:LDBInterface] 	0125    Name=PROCESSINGJOBID, Type=16, Size=80 th=405c
+09:54:01 [Debug:LDBInterface] 	0126    Name=PROCESSORDERMGMT, Type=16, Size=80 th=405c
+09:54:01 [Debug:LDBInterface] 	0127    Name=PRPROCESSSTART, Type=9, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0128    Name=PRRECIPEMETHOD, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0129    Name=PRSTATE, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0130    Name=PTN, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0131    Name=RCMD, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0132    Name=RCPPARNM, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0133    Name=RCPPARVAL, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0134    Name=RCPSPEC, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0135    Name=RECID, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0136    Name=REPGSZ, Type=44, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0137    Name=RPTID, Type=42, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0138    Name=RSDA, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0139    Name=RSDC, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0140    Name=RSPACK, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0141    Name=RULENAME, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0142    Name=RULEVALUE, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0143    Name=SEQNUM, Type=42, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0144    Name=SHEAD, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0145    Name=SLOTID, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0146    Name=SLOTMAP, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0147    Name=SLOTMAPSTATUS, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0148    Name=SMPLN, Type=44, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0149    Name=SOFTREV, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0150    Name=SPNAME, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0151    Name=SPVAL, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0152    Name=SRCCARRIERID, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0153    Name=SSACK, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0154    Name=STARTMETHOD, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0155    Name=STARTMETHODVALUE, Type=9, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0156    Name=STATE, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0157    Name=STATUS, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0158    Name=STIME, Type=16, Size=16 th=405c
+09:54:01 [Debug:LDBInterface] 	0159    Name=STRACK, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0160    Name=STRID, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0161    Name=SUBSTID, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0162    Name=SUBSTLOCID, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0163    Name=SUBSTPOSINBATCH, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0164    Name=SUBSTPROCESSINGSTATE, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0165    Name=SUBSTRATECOUNT, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0166    Name=SUBSTSTATE, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0167    Name=SUBSTTYPE, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0168    Name=SUBSTUSAGE, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0169    Name=SV, Type=32, Size=-1 th=405c
+09:54:01 [Debug:LDBInterface] 	0170    Name=SVCACK, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0171    Name=SVCNAME, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0172    Name=SVID, Type=44, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0173    Name=SVNAME, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0174    Name=TEXT, Type=16, Size=256 th=405c
+09:54:01 [Debug:LDBInterface] 	0175    Name=TIAACK, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0176    Name=TIACK, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0177    Name=TID, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0178    Name=TIME, Type=16, Size=16 th=405c
+09:54:01 [Debug:LDBInterface] 	0179    Name=TIMESTAMP, Type=16, Size=16 th=405c
+09:54:01 [Debug:LDBInterface] 	0180    Name=TOTSMP, Type=44, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0181    Name=TRID, Type=41, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0182    Name=UNITS, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0183    Name=UPPERDB, Type=32, Size=-1 th=405c
+09:54:01 [Debug:LDBInterface] 	0184    Name=USAGE, Type=16, Size=30 th=405c
+09:54:01 [Debug:LDBInterface] 	0185    Name=V, Type=32, Size=-1 th=405c
+09:54:01 [Debug:LDBInterface] 	0186    Name=VID, Type=42, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] 	0187    Name=VLAACK, Type=8, Size=1 th=405c
+09:54:01 [Debug:LDBInterface] Complete to reading data item dictionary information from database(mdb file). th=405c
+09:54:01 [Proc:Seq] Data Manager initialized. th=405c
+09:54:01 [Proc:Seq] Operator Manager initialized. th=405c
+09:54:01 [Proc:Seq] Host Communication Manager initialized. th=405c
+09:54:01 [Proc:Seq] Eq Communication Manager initialized. th=405c
+09:54:01 [Proc:Seq] Factory initialized. th=405c
+09:54:01 [Proc:Seq] XGem Initialized th=405c
+09:54:01 [Proc:Seq] XGem Started th=405c
+09:54:01 [Alarm:000012] [Sentinel:Alarm] Sentinel SuperPro Driver is not installed
+09:54:01 [Alarm:000000] can't read product type from SENTINEL driver., th=405c
+09:54:01 [Alarm:000000] failed to initialize ROCKEY driver., th=405c
+09:54:01 [Alarm:000012] [Sentinel:Alarm] Sentinel SuperPro Driver is not installed
+09:54:01 [Alarm:000000] can't read product type from SENTINEL driver., th=405c
+09:54:01 [Alarm:000000] failed to initialize ROCKEY driver., th=405c

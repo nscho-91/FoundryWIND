@@ -1,0 +1,6 @@
+10:10:35 [Proc:Seq] Disonnected with equipment application. TCP/IP
+10:10:36 [Alarm:-30008] fail to send command(GEMCommStateChanged)
+10:10:36 [Alarm:-30008] GEMCommStateChanged, State=1
+10:12:27 [Proc:Seq] Stop, TCP/IP Result = 0
+10:12:27 [Proc:Seq] Terminate, Result = 0
+10:12:27 [Proc:Seq] Terminate, Result = 0

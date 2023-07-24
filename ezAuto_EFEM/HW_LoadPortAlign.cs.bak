@@ -1,0 +1,112 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using ezAutoMom;
+using ezTools; 
+
+namespace ezAuto_EFEM
+{
+    class HW_LoadPortAlign 
+    {
+        enum eError { eAlign };
+        public string m_id;
+        bool m_bEnable2 = false;
+        Info_Carrier m_infoCarrier; 
+        Auto_Mom m_auto;
+        Log m_log;
+        Work_Mom m_work;
+        Control_Mom m_control;
+        XGem300_Mom m_xGem;
+        int m_msAlign = 3000;
+        int[,] m_doAlign = new int[2, 2] { { -1, -1 }, { -1, -1 } };
+        int[,] m_diAlign = new int[2, 2] { { -1, -1 }, { -1, -1 } };
+
+        public HW_LoadPortAlign()
+        {
+        }
+
+        public void Init(string id, Auto_Mom auto, Info_Carrier infoCarrier, Log log)
+        {
+            m_id = id; m_auto = auto; m_infoCarrier = infoCarrier; m_log = log;
+            m_work = m_auto.ClassWork();
+            m_control = m_auto.ClassControl();
+            m_xGem = m_auto.ClassXGem();
+            InitString(); 
+        }
+
+        public void InitString()
+        {
+            InitString(eError.eAlign, "Align Timeout");
+        }
+
+        void InitString(eError eErr, string str)
+        {
+            m_log.AddString(str);
+            if (m_xGem == null) return;
+            m_xGem.AddALID(m_id, (int)eErr, str);
+        }
+
+        void SetAlarm(eAlarm alarm, eError eErr)
+        {
+            m_work.SetError(alarm, m_log, (int)eErr);
+            if (m_xGem == null) return;
+            m_xGem.SetAlarm(m_id, (int)eErr);
+        }
+
+        public void ControlGrid(Control_Mom control, ezGrid rGrid, eGrid eMode)
+        {
+            control.AddDO(rGrid, ref m_doAlign[0, 1], m_id, "Align_On", "DO Align");
+            control.AddDO(rGrid, ref m_doAlign[0, 0], m_id, "Align_Off", "DO Align");
+            control.AddDO(rGrid, ref m_doAlign[1, 1], m_id, "Align8_On", "DO Align");
+            control.AddDO(rGrid, ref m_doAlign[1, 0], m_id, "Align8_Off", "DO Align");
+            control.AddDI(rGrid, ref m_diAlign[0, 1], m_id, "Align_On", "DI Align");
+            control.AddDI(rGrid, ref m_diAlign[0, 0], m_id, "Align_Off", "DI Align");
+            control.AddDI(rGrid, ref m_diAlign[1, 1], m_id, "Align8_On", "DI Align");
+            control.AddDI(rGrid, ref m_diAlign[1, 0], m_id, "Align8_Off", "DI Align");
+        }
+
+        public void RunGrid(ezGrid rGrid)
+        {
+            rGrid.Set(ref m_msAlign, "Timeout", "Align", "Carrier Align Timeout (ms)");
+        }
+
+        void CheckEnable2()
+        {
+            m_bEnable2 = ((int)m_infoCarrier.m_wafer.m_eSize >= (int)Wafer_Size.eSize.mm200); 
+        }
+
+        public eHWResult RunAlign(bool bAlign)
+        {
+            ezStopWatch sw = new ezStopWatch();
+            CheckEnable2();
+            DoAlign(bAlign);
+            while (!IsAlign(bAlign) && (sw.Check() <= m_msAlign)) Thread.Sleep(10);
+            if (sw.Check() <= m_msAlign) return eHWResult.OK;
+            SetAlarm(eAlarm.Warning, eError.eAlign); return eHWResult.Error;
+        }
+
+        void DoAlign(bool bAlign)
+        {
+            m_control.WriteOutputBit(m_doAlign[0, 1], bAlign);
+            m_control.WriteOutputBit(m_doAlign[0, 0], !bAlign);
+            m_control.WriteOutputBit(m_doAlign[1, 1], bAlign && m_bEnable2);
+            m_control.WriteOutputBit(m_doAlign[1, 0], !bAlign);
+        }
+
+        bool IsAlign(bool bAlign)
+        {
+            if (m_control.GetInputBit(m_diAlign[0, 1]) != bAlign) return false;
+            if (m_control.GetInputBit(m_diAlign[0, 0]) == bAlign) return false;
+            if (m_bEnable2)
+            {
+                if (m_control.GetInputBit(m_diAlign[1, 1]) != bAlign) return false;
+                if (m_control.GetInputBit(m_diAlign[1, 0]) == bAlign) return false;
+            }
+            return true;
+        }
+
+    }
+}

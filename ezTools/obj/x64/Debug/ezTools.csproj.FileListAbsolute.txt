@@ -1,0 +1,163 @@
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezTools\bin\x64\Debug\ezTools.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezTools\bin\x64\Debug\ezTools.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezTools\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezTools\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezTools\obj\x64\Debug\ezTools.ezFileSave.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezTools\obj\x64\Debug\ezTools.ImgPopup.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezTools\obj\x64\Debug\ezTools.Login.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezTools\obj\x64\Debug\ezTools.LogPopup.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezTools\obj\x64\Debug\ezTools.LogView.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezTools\obj\x64\Debug\ezTools.csproj.GenerateResource.Cache
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezTools\obj\x64\Debug\ezTools.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezTools\obj\x64\Debug\ezTools.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezTools\bin\x64\Debug\ezTools.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezTools\bin\x64\Debug\ezTools.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezTools\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezTools\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezTools\obj\x64\Debug\ezTools.ezFileSave.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezTools\obj\x64\Debug\ezTools.ImgPopup.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezTools\obj\x64\Debug\ezTools.Login.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezTools\obj\x64\Debug\ezTools.LogPopup.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezTools\obj\x64\Debug\ezTools.LogView.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezTools\obj\x64\Debug\ezTools.csproj.GenerateResource.Cache
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezTools\obj\x64\Debug\ezTools.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezTools\obj\x64\Debug\ezTools.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezTools\bin\x64\Debug\ezTools.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezTools\bin\x64\Debug\ezTools.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezTools\bin\x64\Debug\PropertyGridEx.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezTools\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezTools\obj\x64\Debug\ezTools.ezFileSave.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezTools\obj\x64\Debug\ezTools.ImgPopup.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezTools\obj\x64\Debug\ezTools.Login.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezTools\obj\x64\Debug\ezTools.LogPopup.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezTools\obj\x64\Debug\ezTools.LogView.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezTools\obj\x64\Debug\ezTools.csproj.GenerateResource.Cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezTools\obj\x64\Debug\ezTools.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezTools\obj\x64\Debug\ezTools.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezTools\obj\x64\Debug\ezTools.MarsLog.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezTools\obj\x64\Debug\ezTools.csprojResolveAssemblyReference.cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\obj\x64\Debug\ezTools.ezFileSave.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\obj\x64\Debug\ezTools.ImgPopup.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\obj\x64\Debug\ezTools.Login.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\obj\x64\Debug\ezTools.LogPopup.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\obj\x64\Debug\ezTools.LogView.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\obj\x64\Debug\ezTools.MarsLog.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\obj\x64\Debug\ezTools.csproj.GenerateResource.Cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\bin\x64\Debug\ezTools.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\bin\x64\Debug\ezTools.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\bin\x64\Debug\PropertyGridEx.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\obj\x64\Debug\ezTools.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\obj\x64\Debug\ezTools.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\bin\x64\Debug\ezTools.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\bin\x64\Debug\ezTools.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\obj\x64\Debug\ezTools.csprojResolveAssemblyReference.cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\obj\x64\Debug\ezTools.ezFileSave.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\obj\x64\Debug\ezTools.ImgPopup.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\obj\x64\Debug\ezTools.Login.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\obj\x64\Debug\ezTools.LogPopup.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\obj\x64\Debug\ezTools.LogView.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\obj\x64\Debug\ezTools.MarsLog.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\obj\x64\Debug\ezTools.csproj.GenerateResource.Cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\obj\x64\Debug\ezTools.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\obj\x64\Debug\ezTools.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\obj\x64\Debug\ezTools.csprojResolveAssemblyReference.cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezTools\bin\x64\Debug\ezTools.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezTools\bin\x64\Debug\ezTools.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezTools\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezTools\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezTools\obj\x64\Debug\ezTools.csprojResolveAssemblyReference.cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezTools\obj\x64\Debug\ezTools.ezFileSave.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezTools\obj\x64\Debug\ezTools.ImgPopup.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezTools\obj\x64\Debug\ezTools.Login.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezTools\obj\x64\Debug\ezTools.LogPopup.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezTools\obj\x64\Debug\ezTools.LogView.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezTools\obj\x64\Debug\ezTools.MarsLog.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezTools\obj\x64\Debug\ezTools.csproj.GenerateResource.Cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezTools\obj\x64\Debug\ezTools.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezTools\obj\x64\Debug\ezTools.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezTools\bin\x64\Debug\ezTools.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezTools\bin\x64\Debug\ezTools.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezTools\bin\x64\Debug\PropertyGridEx.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezTools\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezTools\obj\x64\Debug\ezTools.csprojResolveAssemblyReference.cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezTools\obj\x64\Debug\ezTools.ezFileSave.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezTools\obj\x64\Debug\ezTools.ImgPopup.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezTools\obj\x64\Debug\ezTools.Login.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezTools\obj\x64\Debug\ezTools.LogPopup.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezTools\obj\x64\Debug\ezTools.LogView.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezTools\obj\x64\Debug\ezTools.MarsLog.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezTools\obj\x64\Debug\ezTools.csproj.GenerateResource.Cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezTools\obj\x64\Debug\ezTools.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezTools\obj\x64\Debug\ezTools.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezTools\bin\x64\Debug\ezTools.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezTools\bin\x64\Debug\ezTools.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezTools\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezTools\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezTools\obj\x64\Debug\ezTools.csprojResolveAssemblyReference.cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezTools\obj\x64\Debug\ezTools.ezFileSave.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezTools\obj\x64\Debug\ezTools.ImgPopup.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezTools\obj\x64\Debug\ezTools.Login.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezTools\obj\x64\Debug\ezTools.LogPopup.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezTools\obj\x64\Debug\ezTools.LogView.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezTools\obj\x64\Debug\ezTools.MarsLog.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezTools\obj\x64\Debug\ezTools.csproj.GenerateResource.Cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezTools\obj\x64\Debug\ezTools.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezTools\obj\x64\Debug\ezTools.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezTools\bin\x64\Debug\ezTools.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezTools\bin\x64\Debug\ezTools.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezTools\bin\x64\Debug\PropertyGridEx.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezTools\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezTools\obj\x64\Debug\ezTools.csprojResolveAssemblyReference.cache
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezTools\obj\x64\Debug\ezTools.ezFileSave.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezTools\obj\x64\Debug\ezTools.ImgPopup.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezTools\obj\x64\Debug\ezTools.Login.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezTools\obj\x64\Debug\ezTools.LogPopup.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezTools\obj\x64\Debug\ezTools.LogView.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezTools\obj\x64\Debug\ezTools.MarsLog.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezTools\obj\x64\Debug\ezTools.csproj.GenerateResource.Cache
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezTools\obj\x64\Debug\ezTools.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezTools\obj\x64\Debug\ezTools.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezTools\bin\x64\Debug\ezTools.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezTools\bin\x64\Debug\ezTools.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezTools\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezTools\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezTools\obj\x64\Debug\ezTools.csprojResolveAssemblyReference.cache
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezTools\obj\x64\Debug\ezTools.ezFileSave.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezTools\obj\x64\Debug\ezTools.ImgPopup.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezTools\obj\x64\Debug\ezTools.Login.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezTools\obj\x64\Debug\ezTools.LogPopup.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezTools\obj\x64\Debug\ezTools.LogView.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezTools\obj\x64\Debug\ezTools.MarsLog.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezTools\obj\x64\Debug\ezTools.csproj.GenerateResource.Cache
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezTools\obj\x64\Debug\ezTools.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezTools\obj\x64\Debug\ezTools.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezTools\bin\x64\Debug\ezTools.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezTools\bin\x64\Debug\ezTools.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezTools\bin\x64\Debug\PropertyGridEx.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezTools\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezTools\obj\x64\Debug\ezTools.ezFileSave.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezTools\obj\x64\Debug\ezTools.ImgPopup.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezTools\obj\x64\Debug\ezTools.Login.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezTools\obj\x64\Debug\ezTools.LogPopup.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezTools\obj\x64\Debug\ezTools.LogView.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezTools\obj\x64\Debug\ezTools.MarsLog.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezTools\obj\x64\Debug\ezTools.csproj.GenerateResource.Cache
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezTools\obj\x64\Debug\ezTools.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezTools\obj\x64\Debug\ezTools.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezTools\bin\x64\Debug\ezTools.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezTools\bin\x64\Debug\ezTools.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezTools\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezTools\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezTools\obj\x64\Debug\ezTools.csprojResolveAssemblyReference.cache
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezTools\obj\x64\Debug\ezTools.ezFileSave.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezTools\obj\x64\Debug\ezTools.ImgPopup.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezTools\obj\x64\Debug\ezTools.Login.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezTools\obj\x64\Debug\ezTools.LogPopup.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezTools\obj\x64\Debug\ezTools.LogView.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezTools\obj\x64\Debug\ezTools.MarsLog.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezTools\obj\x64\Debug\ezTools.csproj.GenerateResource.Cache
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezTools\obj\x64\Debug\ezTools.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezTools\obj\x64\Debug\ezTools.pdb

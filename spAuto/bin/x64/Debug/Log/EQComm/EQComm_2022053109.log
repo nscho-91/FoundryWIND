@@ -1,0 +1,217 @@
+09:41:40 [Proc:Seq] >>>>>>>>>>>>>>>>>>>>>>>  Logging Started  <<<<<<<<<<<<<<<<<<<<<<<<
+09:41:40 [Proc:Seq] Build date time: Apr  1 2021 10:52:54
+09:41:40 [Proc:Seq] File Version: 3.4.4.36
+         
+09:41:40 [Proc:Seq] Initialize DeGem, Result = 0
+09:41:40 [Proc:Seq] Initialize DeCms, Result = 0
+09:41:40 [Proc:Seq] Initialize DePj, Result = 0
+09:41:40 [Proc:Seq] Initialize DeCj, Result = 0
+09:41:40 [Proc:Seq] Initialize DeSts, Result = 0
+09:41:40 [Proc:Seq] Initialize EnGem, Result = 0
+09:41:40 [Proc:Seq] Initialize EnCms, Result = 0
+09:41:40 [Proc:Seq] Initialize EnPj, Result = 0
+09:41:40 [Proc:Seq] Initialize EnCj, Result = 0
+09:41:40 [Proc:Seq] Initialize EnSts, Result = 0
+09:41:40 [Proc:Seq] Initialize Ept, Result = 0
+09:41:40 [Proc:Seq] Initialize TCP/IP, Result = 0
+09:41:40 [Proc:Seq] Initialize, Result = 0
+09:41:40 [Proc:Seq] Start, IP=127.0.0.1, Port=2001, Active=false TCP/IP Result = 0
+09:41:40 [Proc:Seq] Connected with equipment application. TCP/IP
+09:41:40 [Recv:00000000] command=GEMGetLicense
+09:41:40 [Send:00000000] command=GEMGetLicense
+09:41:40 [Proc:Seq] (EQ->E30) GEMGetLicense, m_sLicenseName=XGemUnknown
+09:41:40 [Proc:Seq] (E30->EQ) GEMGetLicense
+09:41:40 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000000, nLen=40
+09:41:40 [Recv:00000000] command=GEMGetParam
+09:41:40 [Send:00000000] command=GEMGetParam
+09:41:40 [Proc:Seq] (EQ->E30) GEMGetParam, Param Count=49
+09:41:40 [Proc:Seq] (E30->EQ) GEMGetParam
+09:41:40 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000016, nLen=40
+09:41:40 [Recv:00000000] command=GEMGetAttributeV
+09:41:40 [Send:00000000] command=GEMGetAttributeV
+09:41:40 [Proc:Seq] (EQ->E30) GEMGetAttributeV, Vid count=0
+09:41:40 [Proc:Seq] (E30->EQ) GEMGetAttributeV, class=2, memorytype=3
+09:41:40 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000000, nLen=48
+09:45:15 [Proc:Seq] Disonnected with equipment application. TCP/IP
+09:45:15 [Alarm:-30008] fail to send command(GEMCommStateChanged)
+09:45:15 [Alarm:-30008] GEMCommStateChanged, State=1
+09:54:01 [Proc:Seq] >>>>>>>>>>>>>>>>>>>>>>>  Logging Started  <<<<<<<<<<<<<<<<<<<<<<<<
+09:54:01 [Proc:Seq] Build date time: Apr  1 2021 10:52:54
+09:54:01 [Proc:Seq] File Version: 3.4.4.36
+         
+09:54:01 [Proc:Seq] Initialize DeGem, Result = 0
+09:54:01 [Proc:Seq] Initialize DeCms, Result = 0
+09:54:01 [Proc:Seq] Initialize DePj, Result = 0
+09:54:01 [Proc:Seq] Initialize DeCj, Result = 0
+09:54:01 [Proc:Seq] Initialize DeSts, Result = 0
+09:54:01 [Proc:Seq] Initialize EnGem, Result = 0
+09:54:01 [Proc:Seq] Initialize EnCms, Result = 0
+09:54:01 [Proc:Seq] Initialize EnPj, Result = 0
+09:54:01 [Proc:Seq] Initialize EnCj, Result = 0
+09:54:01 [Proc:Seq] Initialize EnSts, Result = 0
+09:54:01 [Proc:Seq] Initialize Ept, Result = 0
+09:54:01 [Proc:Seq] Initialize TCP/IP, Result = 0
+09:54:01 [Proc:Seq] Initialize, Result = 0
+09:54:01 [Proc:Seq] Start, IP=127.0.0.1, Port=2001, Active=false TCP/IP Result = 0
+09:54:01 [Proc:Seq] Connected with equipment application. TCP/IP
+09:54:01 [Recv:00000000] command=GEMGetLicense
+09:54:01 [Send:00000000] command=GEMGetLicense
+09:54:01 [Proc:Seq] (EQ->E30) GEMGetLicense, m_sLicenseName=XGemUnknown
+09:54:01 [Proc:Seq] (E30->EQ) GEMGetLicense
+09:54:01 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000016, nLen=40
+09:54:01 [Recv:00000000] command=GEMGetParam
+09:54:01 [Send:00000000] command=GEMGetParam
+09:54:01 [Proc:Seq] (EQ->E30) GEMGetParam, Param Count=49
+09:54:01 [Proc:Seq] (E30->EQ) GEMGetParam
+09:54:01 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000000, nLen=40
+09:54:01 [Recv:00000000] command=GEMGetAttributeV
+09:54:01 [Send:00000000] command=GEMGetAttributeV
+09:54:01 [Proc:Seq] (EQ->E30) GEMGetAttributeV, Vid count=0
+09:54:01 [Proc:Seq] (E30->EQ) GEMGetAttributeV, class=2, memorytype=3
+09:54:01 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000000, nLen=48
+09:54:05 [Recv:00000000] command=GEMSetEstablish
+09:54:05 [Send:00000000] command=GEMCommStateChanged
+09:54:05 [Proc:Seq] (EQ->E30) GEMCommStateChanged, State=4
+09:54:05 [Proc:Seq] (E30->EQ) GEMSetEstablish, State=1
+09:54:05 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000015, nLen=43
+09:54:05 [Recv:00000000] command=GEMReqControlState
+09:54:05 [Send:00000000] command=GEMErrorOccurred
+09:54:05 [Proc:Seq] (EQ->E30) GEMErrorOccurred, InterfaceName=GEMReqRemote, ErrorCode=-30011
+09:54:05 [Proc:Seq] (E30->EQ) GEMReqControlState, State=5
+09:54:05 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000000, nLen=43
+09:54:05 [Recv:00000000] command=CMSReqChangeServiceStatus
+09:54:05 [Send:00000000] command=CMSTransferStateChanged
+09:54:05 [Proc:Seq] (EQ->E87) CMSTransferStateChanged, LocId=LP1, State=0
+09:54:05 [Send:00000000] command=CMSRspChangeServiceStatus
+09:54:05 [Proc:Seq] (EQ->E87) CMSRspChangeServiceStatus, LocId=LP1, State=0, Result=0
+09:54:05 [Proc:Seq] (E87->EQ) CMSReqChangeServiceStatus, LocId=LP1, State=0
+09:54:05 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000016, nLen=50
+09:54:05 [Recv:00000000] command=CMSReqChangeServiceStatus
+09:54:05 [Send:00000000] command=CMSTransferStateChanged
+09:54:05 [Proc:Seq] (EQ->E87) CMSTransferStateChanged, LocId=LP2, State=0
+09:54:05 [Send:00000000] command=CMSRspChangeServiceStatus
+09:54:05 [Proc:Seq] (EQ->E87) CMSRspChangeServiceStatus, LocId=LP2, State=0, Result=0
+09:54:05 [Proc:Seq] (E87->EQ) CMSReqChangeServiceStatus, LocId=LP2, State=0
+09:54:05 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000000, nLen=50
+09:54:05 [Recv:00000000] command=CMSReqChangeAccess
+09:54:05 [Send:00000000] command=CMSRspChangeAccess
+09:54:05 [Proc:Seq] (EQ->E87) CMSRspChangeAccess, Mode=0, LocId=LP1, Result=-32254
+09:54:05 [Proc:Seq] (E87->EQ) CMSReqChangeAccess, Mode=0, LocId=LP1
+09:54:05 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000000, nLen=50
+09:54:05 [Recv:00000000] command=CMSReqChangeAccess
+09:54:05 [Send:00000000] command=CMSRspChangeAccess
+09:54:05 [Proc:Seq] (EQ->E87) CMSRspChangeAccess, Mode=0, LocId=LP2, Result=-32254
+09:54:05 [Proc:Seq] (E87->EQ) CMSReqChangeAccess, Mode=0, LocId=LP2
+09:54:05 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000000, nLen=50
+09:54:07 [Recv:00000000] command=GEMSetAlarm
+09:54:07 [Proc:Seq] (E30->EQ) GEMSetAlarm, AlarmId=20, AlarmSet=true
+09:54:07 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000000, nLen=51
+09:54:28 [Send:00000000] command=GEMCommStateChanged
+09:54:28 [Proc:Seq] (EQ->E30) GEMCommStateChanged, State=5
+09:54:28 [Recv:00000000] command=GEMSetEstablish
+09:54:28 [Proc:Seq] (E30->EQ) GEMSetEstablish, State=1
+09:54:28 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000000, nLen=43
+09:54:33 [Recv:00000000] command=GEMReqControlState
+09:54:33 [Send:00000000] command=GEMControlStateChanged
+09:54:33 [Proc:Seq] (EQ->E30) GEMControlStateChanged, State=2
+09:54:33 [Proc:Seq] (E30->EQ) GEMReqControlState, State=5
+09:54:33 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000016, nLen=43
+09:54:33 [Send:00000000] command=GEMControlStateChanged
+09:54:33 [Proc:Seq] (EQ->E30) GEMControlStateChanged, State=5
+09:54:33 [Recv:00000000] command=CMSSetPresenceSensor
+09:54:33 [Send:00000000] command=GEMErrorOccurred
+09:54:33 [Proc:Seq] (EQ->E30) GEMErrorOccurred, InterfaceName=CMSSetPresenceSensor, ErrorCode=-32254
+09:54:33 [Proc:Seq] (E87->EQ) CMSSetPresenceSensor, LocId=LP1, State=0
+09:54:33 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000016, nLen=50
+09:54:33 [Recv:00000000] command=CMSSetCarrierOnOff
+09:54:33 [Send:00000000] command=CMSReservationStateChanged
+09:54:33 [Proc:Seq] (EQ->E87) CMSReservationStateChanged, LocId=LP1, State=0
+09:54:33 [Send:00000000] command=CMSAssociationStateChanged
+09:54:33 [Proc:Seq] (EQ->E87) CMSAssociationStateChanged, LocId=LP1, State=0
+09:54:33 [Proc:Seq] (E87->EQ) CMSSetCarrierOnOff, LocId=LP1, State=0
+09:54:33 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000031, nLen=50
+09:54:33 [Recv:00000000] command=CMSSetReadyToLoad
+09:54:33 [Send:00000000] command=GEMErrorOccurred
+09:54:33 [Proc:Seq] (EQ->E30) GEMErrorOccurred, InterfaceName=CMSSetSetReadyToLoad, ErrorCode=-32254
+09:54:33 [Proc:Seq] (E87->EQ) CMSSetReadyToLoad, LocId=LP1
+09:54:33 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000016, nLen=45
+09:54:33 [Recv:00000000] command=GEMReqControlState
+09:54:33 [Proc:Seq] (E30->EQ) GEMReqControlState, State=5
+09:54:33 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000000, nLen=43
+09:54:33 [Recv:00000000] command=CMSReqChangeAccess
+09:54:33 [Send:00000000] command=CMSRspChangeAccess
+09:54:33 [Proc:Seq] (EQ->E87) CMSRspChangeAccess, Mode=0, LocId=LP1, Result=-32254
+09:54:33 [Proc:Seq] (E87->EQ) CMSReqChangeAccess, Mode=0, LocId=LP1
+09:54:33 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000000, nLen=50
+09:54:33 [Recv:00000000] command=CMSSetLPInfo
+09:54:33 [Send:00000000] command=CMSTransferStateChanged
+09:54:33 [Proc:Seq] (EQ->E87) CMSTransferStateChanged, LocId=LP1, State=2
+09:54:33 [Send:00000000] command=CMSAccessModeStateChanged
+09:54:33 [Proc:Seq] (EQ->E87) CMSAccessModeStateChanged, LocId=LP1, State=0
+09:54:33 [Send:00000000] command=CMSReservationStateChanged
+09:54:33 [Proc:Seq] (EQ->E87) CMSReservationStateChanged, LocId=LP1, State=0
+09:54:33 [Send:00000000] command=CMSAssociationStateChanged
+09:54:33 [Proc:Seq] (EQ->E87) CMSAssociationStateChanged, LocId=LP1, State=0
+09:54:33 [Proc:Seq] (E87->EQ) CMSSetLPInfo, LocId=LP1, CarrierId=, State=2, AccessMode=0, ReserveState=0, AssociateState=0
+09:54:33 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000015, nLen=61
+09:54:33 [Recv:00000000] command=CMSSetPresenceSensor
+09:54:33 [Send:00000000] command=GEMErrorOccurred
+09:54:33 [Proc:Seq] (EQ->E30) GEMErrorOccurred, InterfaceName=CMSSetPresenceSensor, ErrorCode=-32254
+09:54:33 [Proc:Seq] (E87->EQ) CMSSetPresenceSensor, LocId=LP2, State=0
+09:54:33 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000000, nLen=50
+09:54:33 [Recv:00000000] command=CMSSetCarrierOnOff
+09:54:33 [Send:00000000] command=CMSReservationStateChanged
+09:54:33 [Proc:Seq] (EQ->E87) CMSReservationStateChanged, LocId=LP2, State=0
+09:54:33 [Send:00000000] command=CMSAssociationStateChanged
+09:54:33 [Proc:Seq] (EQ->E87) CMSAssociationStateChanged, LocId=LP2, State=0
+09:54:33 [Proc:Seq] (E87->EQ) CMSSetCarrierOnOff, LocId=LP2, State=0
+09:54:33 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000016, nLen=50
+09:54:33 [Recv:00000000] command=CMSSetReadyToLoad
+09:54:33 [Send:00000000] command=GEMErrorOccurred
+09:54:33 [Proc:Seq] (EQ->E30) GEMErrorOccurred, InterfaceName=CMSSetSetReadyToLoad, ErrorCode=-32254
+09:54:33 [Proc:Seq] (E87->EQ) CMSSetReadyToLoad, LocId=LP2
+09:54:33 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000000, nLen=45
+09:54:33 [Recv:00000000] command=CMSReqChangeAccess
+09:54:33 [Send:00000000] command=CMSRspChangeAccess
+09:54:33 [Proc:Seq] (EQ->E87) CMSRspChangeAccess, Mode=0, LocId=LP2, Result=-32254
+09:54:33 [Proc:Seq] (E87->EQ) CMSReqChangeAccess, Mode=0, LocId=LP2
+09:54:33 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000000, nLen=50
+09:54:33 [Recv:00000000] command=CMSSetLPInfo
+09:54:33 [Send:00000000] command=CMSTransferStateChanged
+09:54:33 [Proc:Seq] (EQ->E87) CMSTransferStateChanged, LocId=LP2, State=2
+09:54:33 [Send:00000000] command=CMSAccessModeStateChanged
+09:54:33 [Proc:Seq] (EQ->E87) CMSAccessModeStateChanged, LocId=LP2, State=0
+09:54:33 [Send:00000000] command=CMSReservationStateChanged
+09:54:33 [Proc:Seq] (EQ->E87) CMSReservationStateChanged, LocId=LP2, State=0
+09:54:33 [Send:00000000] command=CMSAssociationStateChanged
+09:54:33 [Proc:Seq] (EQ->E87) CMSAssociationStateChanged, LocId=LP2, State=0
+09:54:33 [Proc:Seq] (E87->EQ) CMSSetLPInfo, LocId=LP2, CarrierId=, State=2, AccessMode=0, ReserveState=0, AssociateState=0
+09:54:33 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000016, nLen=61
+09:54:33 [Recv:00000000] command=CMSSetPresenceSensor
+09:54:33 [Send:00000000] command=GEMErrorOccurred
+09:54:33 [Proc:Seq] (EQ->E30) GEMErrorOccurred, InterfaceName=CMSSetPresenceSensor, ErrorCode=-32252
+09:54:33 [Proc:Seq] (E87->EQ) CMSSetPresenceSensor, LocId=LP3, State=0
+09:54:33 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000000, nLen=50
+09:54:33 [Recv:00000000] command=CMSSetCarrierOnOff
+09:54:33 [Send:00000000] command=GEMErrorOccurred
+09:54:33 [Proc:Seq] (EQ->E30) GEMErrorOccurred, InterfaceName=CMSSetCarrierOnOff, ErrorCode=-32252
+09:54:33 [Proc:Seq] (E87->EQ) CMSSetCarrierOnOff, LocId=LP3, State=0
+09:54:33 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000000, nLen=50
+09:54:33 [Recv:00000000] command=CMSSetReadyToLoad
+09:54:33 [Send:00000000] command=GEMErrorOccurred
+09:54:33 [Proc:Seq] (EQ->E30) GEMErrorOccurred, InterfaceName=CMSSetSetReadyToLoad, ErrorCode=-32252
+09:54:33 [Proc:Seq] (E87->EQ) CMSSetReadyToLoad, LocId=LP3
+09:54:33 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000015, nLen=45
+09:54:33 [Recv:00000000] command=CMSReqChangeAccess
+09:54:33 [Send:00000000] command=CMSRspChangeAccess
+09:54:33 [Proc:Seq] (EQ->E87) CMSRspChangeAccess, Mode=0, LocId=LP3, Result=-32252
+09:54:33 [Proc:Seq] (E87->EQ) CMSReqChangeAccess, Mode=0, LocId=LP3
+09:54:33 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000000, nLen=50
+09:54:33 [Recv:00000000] command=CMSSetLPInfo
+09:54:33 [Send:00000000] command=GEMErrorOccurred
+09:54:33 [Proc:Seq] (EQ->E30) GEMErrorOccurred, InterfaceName=CMSSetLPInfo, ErrorCode=-32252
+09:54:33 [Proc:Seq] (E87->EQ) CMSSetLPInfo, LocId=LP3, CarrierId=, State=2, AccessMode=0, ReserveState=0, AssociateState=0
+09:54:33 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000000, nLen=61
+09:56:24 [Recv:00000000] command=GEMSetVariable
+09:56:24 [Proc:Seq] (E30->EQ) GEMSetVariable, Vid Count=1
+09:56:24 [Debug:LEqMain] LoadStream elapsed time : 00000000, RecvData elapsed time : 00000016, nLen=56

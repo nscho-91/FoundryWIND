@@ -1,0 +1,26 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly ezATI3D_CLR, Version=1.0.*, Culture=고정 언어(고정 국가): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class ezATI3D_CLR.ATI_3D: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    Init(Int32 IsLong): PrivateScope, Public, HideBySig
+    ThreadStop(): PrivateScope, Public, HideBySig
+    GrabDone(Int32 IsLong, Byte*): PrivateScope, Public, HideBySig
+    IsDone(): PrivateScope, Public, HideBySig
+    SetBuffer(Int32 IsLong, UInt16*, Byte*): PrivateScope, Public, HideBySig
+    SetBuffer(Int32 IsLong, Int32 IsLong, Int32 IsLong, Int32 IsLong, Int32 IsLong): PrivateScope, Public, HideBySig
+    GetBufCalc(Int32 IsLong): PrivateScope, Public, HideBySig
+    StartCalc_Ave(Boolean(HasFieldMarshal), Int32 IsLong, Int32 IsLong, Int32 IsLong, Int32 IsLong, Int32 IsLong): PrivateScope, Public, HideBySig
+    StartCalc_PeakDown(Boolean(HasFieldMarshal), Int32 IsLong, Int32 IsLong, Int32 IsLong, Int32 IsLong, Int32 IsLong, Int32 IsLong): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig

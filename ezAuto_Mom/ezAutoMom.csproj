@@ -1,0 +1,618 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C5AAB995-1C9E-4781-B02E-3D8D86D277D6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ezAutoMom</RootNamespace>
+    <AssemblyName>ezAutoMom</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cognex.VisionPro, Version=47.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.Core, Version=47.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.CorePlus, Version=57.4.1.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro.CorePlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.ImageFile, Version=47.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro.ImageFile.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.Interop.Core, Version=57.4.1.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro.Interop.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.OC, Version=47.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro.OC.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.OCRMax, Version=47.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro.OCRMax.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.OCVMax, Version=47.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro.OCVMax.dll</HintPath>
+    </Reference>
+    <Reference Include="CyUSB">
+      <HintPath>Light_ATI\CyUSB.dll</HintPath>
+    </Reference>
+    <Reference Include="DALSA.SaperaLT.SapClassBasic, Version=8.0.0.1509, Culture=neutral, PublicKeyToken=4d8604101dcb6b58, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Teledyne DALSA\Sapera\Components\NET\Bin\DALSA.SaperaLT.SapClassBasic.dll</HintPath>
+    </Reference>
+    <Reference Include="EasyModbus, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x64\Debug\EasyModbus.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel1">
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office14\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PropertyGridEx">
+      <HintPath>..\packages\PropertyGridEx.1.0.0\lib\net20\PropertyGridEx.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.9.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\DockPanelSuite.2.9.0.0\lib\net40\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="XGem300Pro_Net40_01_64">
+      <HintPath>C:\Program Files\Linkgenesis\XGem300Pro v3.x\SE\Bin\XGem300Pro_Net40_01_64.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alarm_Mom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alarm_Mom.Designer.cs">
+      <DependentUpon>Alarm_Mom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Auto_Mom.cs" />
+    <Compile Include="Boat_Mom.cs" />
+    <Compile Include="HW_FFU_Mars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_FFU_Mom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_FFU_Mom.Designer.cs">
+      <DependentUpon>HW_FFU_Mom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW_FFU_UI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_FFU_UI.Designer.cs">
+      <DependentUpon>HW_FFU_UI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW_RnR_Mom.cs" />
+    <Compile Include="InfoCarrier.cs" />
+    <Compile Include="InfoWafer.cs" />
+    <Compile Include="InitState.cs" />
+    <Compile Include="Light_ATI_4CH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Work_Run_2017.cs" />
+    <Compile Include="Work_Run_Org.cs" />
+    <Compile Include="WTR_Child.cs" />
+    <Compile Include="WTR_Mom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WTR_Mom.Designer.cs">
+      <DependentUpon>WTR_Mom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gem_SSEM.cs" />
+    <Compile Include="Control_Child.cs" />
+    <Compile Include="Control_Mom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control_Mom.Designer.cs">
+      <DependentUpon>Control_Mom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Count_Mom.cs" />
+    <Compile Include="Count_Tray.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Count_Tray.Designer.cs">
+      <DependentUpon>Count_Tray.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Count_TrayLED.cs" />
+    <Compile Include="Display_Mom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Display_Mom.Designer.cs">
+      <DependentUpon>Display_Mom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW_Aligner_Mom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_Aligner_Mom.Designer.cs">
+      <DependentUpon>HW_Aligner_Mom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW_BackSide_Mom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_BackSide_Mom.Designer.cs">
+      <DependentUpon>HW_BackSide_Mom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW_ExcuteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_ExcuteForm.Designer.cs">
+      <DependentUpon>HW_ExcuteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW_PowerMeter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_PowerMeter.Designer.cs">
+      <DependentUpon>HW_PowerMeter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW_FDC_Mom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_FDC_Mom.Designer.cs">
+      <DependentUpon>HW_FDC_Mom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW_ImageVS_Mom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_ImageVS_Mom.Designer.cs">
+      <DependentUpon>HW_ImageVS_Mom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW_LoadPort_Mom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_LoadPort_Mom.Designer.cs">
+      <DependentUpon>HW_LoadPort_Mom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW_Rail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_Rail_Mom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_Rail_Mom.Designer.cs">
+      <DependentUpon>HW_Rail_Mom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW_RFID_Mom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_RFID_Mom.Designer.cs">
+      <DependentUpon>HW_RFID_Mom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW_Thick1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_Thick1.Designer.cs">
+      <DependentUpon>HW_Thick1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW_UnloadEV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_UnloadEV.Designer.cs">
+      <DependentUpon>HW_UnloadEV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW_VisionWorks_Mom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_VisionWorks_Mom.Designer.cs">
+      <DependentUpon>HW_VisionWorks_Mom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW_WTR_Mom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_WTR_Mom.Designer.cs">
+      <DependentUpon>HW_WTR_Mom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="If_InlineFlow.cs" />
+    <Compile Include="ImageEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageEdit.Designer.cs">
+      <DependentUpon>ImageEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info_Carrier.cs" />
+    <Compile Include="Info_Strip.cs" />
+    <Compile Include="Info_Wafer.cs" />
+    <Compile Include="LampSet_Mom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LampSet_Mom.Designer.cs">
+      <DependentUpon>LampSet_Mom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Light_RGBW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model.Designer.cs">
+      <DependentUpon>Model.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Handler_Mom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Handler_Mom.Designer.cs">
+      <DependentUpon>Handler_Mom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW_LoadEV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_LoadEV.Designer.cs">
+      <DependentUpon>HW_LoadEV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW_LoadEV_Mom.cs" />
+    <Compile Include="HW_Picker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_Picker_Fix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_Picker_Mom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_Picker_Mom.Designer.cs">
+      <DependentUpon>HW_Picker_Mom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW_Thick6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_Thick6.Designer.cs">
+      <DependentUpon>HW_Thick6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HW_Turnover.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_Turnover_Mom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HW_Turnover_Mom.Designer.cs">
+      <DependentUpon>HW_Turnover_Mom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Light_ATI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Light_Mom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Light_Mom.Designer.cs">
+      <DependentUpon>Light_Mom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OCRTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OCRTool.Designer.cs">
+      <DependentUpon>OCRTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PowerMeter_Mom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PowerMeter_Mom.Designer.cs">
+      <DependentUpon>PowerMeter_Mom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reject_Mom.cs" />
+    <Compile Include="TrayMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayMonitor.Designer.cs">
+      <DependentUpon>TrayMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recipe_Mom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recipe_Mom.Designer.cs">
+      <DependentUpon>Recipe_Mom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_EFEM_Mom.cs" />
+    <Compile Include="UI_ManualJob_Mom.cs" />
+    <Compile Include="ezView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ezView.Designer.cs">
+      <DependentUpon>ezView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaferMapData.cs" />
+    <Compile Include="Work_Mom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Work_Mom.Designer.cs">
+      <DependentUpon>Work_Mom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Work_Run.cs" />
+    <Compile Include="WTR_Mom_Wafers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WTR_Mom_Wafers.Designer.cs">
+      <DependentUpon>WTR_Mom_Wafers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XGem300Data.cs" />
+    <Compile Include="XGem300_Mom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XGem300_Mom.Designer.cs">
+      <DependentUpon>XGem300_Mom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XGem300Pro_Mom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XGem300Pro_Mom.Designer.cs">
+      <DependentUpon>XGem300Pro_Mom.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ezAxis\ezAxis.csproj">
+      <Project>{5fe38647-bdba-4722-ac72-878eb0a38f1f}</Project>
+      <Name>ezAxis</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ezCam\ezCam.csproj">
+      <Project>{50829b09-147b-4a52-a7bc-084a4078e53e}</Project>
+      <Name>ezCam</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ezTools\ezTools.csproj">
+      <Project>{1f27233b-dd04-4c96-b046-1425096226fe}</Project>
+      <Name>ezTools</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="license.txt" />
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Resources\2.PNG" />
+    <None Include="Resources\1.PNG" />
+    <None Include="Resources\page_white_delete.png" />
+    <None Include="Resources\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Alarm_Mom.resx">
+      <DependentUpon>Alarm_Mom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control_Mom.resx">
+      <DependentUpon>Control_Mom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Count_Tray.resx">
+      <DependentUpon>Count_Tray.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display_Mom.resx">
+      <DependentUpon>Display_Mom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW_Aligner_Mom.resx">
+      <DependentUpon>HW_Aligner_Mom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW_BackSide_Mom.resx">
+      <DependentUpon>HW_BackSide_Mom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW_ExcuteForm.resx">
+      <DependentUpon>HW_ExcuteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="HW_FFU_UI.resx">
+      <DependentUpon>HW_FFU_UI.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="HW_FFU_Mom.resx">
+      <DependentUpon>HW_FFU_Mom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW_PowerMeter.resx">
+      <DependentUpon>HW_PowerMeter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW_FDC_Mom.resx">
+      <DependentUpon>HW_FDC_Mom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW_ImageVS_Mom.resx">
+      <DependentUpon>HW_ImageVS_Mom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW_LoadPort_Mom.resx">
+      <DependentUpon>HW_LoadPort_Mom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW_Rail_Mom.resx">
+      <DependentUpon>HW_Rail_Mom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW_RFID_Mom.resx">
+      <DependentUpon>HW_RFID_Mom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW_Thick1.resx">
+      <DependentUpon>HW_Thick1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW_UnloadEV.resx">
+      <DependentUpon>HW_UnloadEV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW_VisionWorks_Mom.resx">
+      <DependentUpon>HW_VisionWorks_Mom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW_WTR_Mom.resx">
+      <DependentUpon>HW_WTR_Mom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageEdit.resx">
+      <DependentUpon>ImageEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LampSet_Mom.resx">
+      <DependentUpon>LampSet_Mom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model.resx">
+      <DependentUpon>Model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Handler_Mom.resx">
+      <DependentUpon>Handler_Mom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW_LoadEV.resx">
+      <DependentUpon>HW_LoadEV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW_Picker_Mom.resx">
+      <DependentUpon>HW_Picker_Mom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW_Thick6.resx">
+      <DependentUpon>HW_Thick6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HW_Turnover_Mom.resx">
+      <DependentUpon>HW_Turnover_Mom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Light_Mom.resx">
+      <DependentUpon>Light_Mom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OCRTool.resx">
+      <DependentUpon>OCRTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PowerMeter_Mom.resx">
+      <DependentUpon>PowerMeter_Mom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayMonitor.resx">
+      <DependentUpon>TrayMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recipe_Mom.resx">
+      <DependentUpon>Recipe_Mom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ezView.resx">
+      <DependentUpon>ezView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Work_Mom.resx">
+      <DependentUpon>Work_Mom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WTR_Mom.resx">
+      <DependentUpon>WTR_Mom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WTR_Mom_Wafers.resx">
+      <DependentUpon>WTR_Mom_Wafers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XGem300_Mom.resx">
+      <DependentUpon>XGem300_Mom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XGem300Pro_Mom.resx">
+      <DependentUpon>XGem300Pro_Mom.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

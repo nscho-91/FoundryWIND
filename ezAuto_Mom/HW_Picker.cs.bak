@@ -1,0 +1,324 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using ezTools; 
+
+namespace ezAutoMom
+{
+    public class HW_Picker : HW_Picker_Mom, Control_Child
+    {
+        enum eError { eUp, eDown, eVac };
+        bool m_bRun, m_bSingle, m_bVacOn;
+        bool m_bWaitVacStop = true;
+        bool m_bDown = false;
+        public bool m_bError = false; 
+        String[] m_strMode = new String[2] { "Up", "Down" };
+        Thread m_thread;
+
+        public HW_Picker()
+        {
+        }
+
+        public void Init(string id, Auto_Mom auto, string sGroup = "Handler")
+        {
+            base.Init(id, auto, sGroup); 
+            m_control.Add(this);  
+            m_bRun = m_bLoad = false; 
+            InitString();
+            m_thread = new Thread(new ThreadStart(RunThread)); m_thread.Start();
+        }
+
+        public void ThreadStop()
+        {
+            if (m_bRun) { m_bRun = false; m_thread.Join(); }
+        }
+
+        void InitString()
+        {
+            m_lLogString = m_log.m_lLogString;
+            InitString(eError.eUp, "Picker Up Time over");
+            InitString(eError.eDown, "Picker Down Time over");
+            InitString(eError.eVac, "Vacuum Fail !!"); 
+        }
+
+        int m_lLogString = 0;
+        void InitString(eError eErr, string str)
+        {
+            m_log.AddString(str);
+            if (m_xGem == null) return;
+            m_xGem.AddALID(m_id, (int)eErr + m_lLogString, str);
+        }
+
+        void SetAlarm(eAlarm alarm, eError eErr)
+        {
+            m_bError = true; 
+            m_work.SetError(alarm, m_log, (int)eErr + m_lLogString);
+            if (m_xGem == null) return;
+            m_xGem.SetAlarm(m_id, (int)eErr + m_lLogString);
+        }
+
+        public void ControlGrid(Control_Mom control, ezGrid rGrid, eGrid eMode)
+        {
+            control.AddDI(rGrid, ref m_diUp, m_id, "Up", "DI Picker Up");
+            control.AddDI(rGrid, ref m_diDown, m_id, "Down", "DI Picker Down");
+            control.AddDI(rGrid, ref m_diVac[0], m_id, "Vac0", "DI Picker Vac0");
+            control.AddDI(rGrid, ref m_diVac[1], m_id, "Vac1", "DI Picker Vac0");
+            control.AddDO(rGrid, ref m_doDown, m_id, "Down", "DO Picker Down");
+            control.AddDO(rGrid, ref m_doBlow, m_id, "Blow", "DO Picker Blow");
+            if (m_bSingle)
+            {
+                control.AddDO(rGrid, ref m_doVac[0], m_id, "Vac0", "DO Picker Vac0");
+                control.AddDO(rGrid, ref m_doVac[1], m_id, "Vac1", "DO Picker Vac1");
+            }
+            else 
+            {
+                control.AddDO(rGrid, ref m_doVac[0], m_id, "VacOff", "DO Picker VacOff");
+                control.AddDO(rGrid, ref m_doVac[1], m_id, "VacOn", "DO Picker VacOn");
+            }
+        }
+
+        public override void RunGrid(eGrid eMode)
+        {
+            m_grid.Update(eMode, null);
+            m_grid.Set(ref m_msVac, "Load", "Vac", "Vac on Delay (ms)");
+            m_grid.Set(ref m_msBlow, "Unload", "Blow", "Blow Delat (ms)"); 
+            m_grid.Set(ref m_msEV, "Load", "EV", "EV Down Delay (ms)");
+            m_grid.Set(ref m_msLoadWait, "Load", "Wait", "EV Load Wait Delay (ms)");
+            m_grid.Set(ref m_nShake[0], "Load", "Shake", "# of Shake");
+            m_grid.Set(ref m_msShake[0], "Load", "Up", "Time Wait (ms)");
+            m_grid.Set(ref m_msShake[1], "Load", "Down", "Time Wait (ms)");
+            m_grid.Set(ref m_nShake[1], "Unload", "Shake", "# of Shake");
+            m_grid.Set(ref m_bSingle, "Type", "Single", "Vacuum DO");
+            m_grid.Set(ref m_bVacOn, "Type", "diVac", "Vacuum Sensor State");
+            m_grid.Set(ref m_bWaitVacStop, "Option", "WaitVacStop", "When Wait Vacuum Error Run Stop"); 
+            m_grid.Refresh(); 
+        }
+
+        bool m_bRunReset = false; 
+        public override void RunReset()
+        {
+            m_bError = false; 
+            m_bRunReset = true; 
+            PickerUp(); 
+            if (IsVac() && (m_infoStrip != null)) return;
+            RunInit();
+        }
+
+        public override void RunInit()
+        {
+            m_bError = false; 
+            m_bLoad = false; m_infoStrip = null; PickerUp();
+            if (!IsVac()) 
+            { 
+                m_control.WriteOutputBit(m_doVac[0], false);
+                m_control.WriteOutputBit(m_doVac[1], false); 
+            }
+        }
+
+        public override bool LoadDown(int iVac)
+        {
+            m_iVac = iVac; 
+            if (PickerDown()) { PickerUp(); return true; } else return false;
+        }
+
+        public override bool LoadUp(Info_Strip infoStrip, bool bUp = true)
+        {
+            if (RunLoadUp(infoStrip, bUp))
+            {
+                bool bError = !m_bRunReset;
+                if (m_bRunReset) m_log.Popup(m_id + " : RunReset InfoStrip Removed !!"); 
+                m_bRunReset = false;
+                return bError; 
+            }
+            else
+            {
+                m_infoStrip = infoStrip;
+                m_bLoad = true;
+                m_bRunReset = false;
+                return false;
+            }
+        }
+
+        bool RunLoadUp(Info_Strip infoStrip, bool bUp)
+        {
+            RunVac(true); //kns160726
+            if (WaitVac(m_bWaitVacStop))
+            {
+                PickerUp(bUp); return true;
+            }
+            if (PickerUp(bUp)) return true;
+            if (WaitVac(m_bWaitVacStop)) return true;
+            return false; 
+        }
+
+        int m_msLoadWait = 500; 
+        public override bool LoadEVUp(Info_Strip infoStrip, HW_LoadEV_Mom loadEV, bool bPaper = false)
+        {
+            int n;
+            if (loadEV == null) return LoadUp(infoStrip);
+            RunVac(true);
+            if (WaitVac(false))
+            { 
+                PickerUp(); 
+                if (loadEV != null) loadEV.LoadUp(); 
+                return true; 
+            }
+            if (loadEV != null)
+            {
+                loadEV.Down(m_msEV); Thread.Sleep(m_msLoadWait);
+                for (n = 0; n < m_nShake[0]; n++)
+                {
+                    m_bDown = false; 
+                    m_control.WriteOutputBit(m_doDown, false); Thread.Sleep(m_msShake[0]);
+                    m_bDown = true; 
+                    m_control.WriteOutputBit(m_doDown, true); Thread.Sleep(m_msShake[1]);
+                }
+            }
+            if (PickerUp()) return true;
+            if (IsVac() == false)
+            {
+                if (m_bWaitVacStop) SetAlarm(eAlarm.Stop, eError.eVac);  //박상영20180103
+                //else SetAlarm(eAlarm.Popup, eError.eVac);  //박상영20180103
+                if (loadEV != null) loadEV.LoadUp();
+                return true; 
+            }
+            m_infoStrip = infoStrip; m_bLoad = true; m_bPaper = bPaper;
+            if (loadEV != null) loadEV.LoadUp();
+            return false;
+        }
+
+        public override bool UnloadDown(bool bShake)
+        {
+            int n;
+            m_bLoad = false;
+            if (PickerDown()) { RunVac(false); return true; } RunVac(false);
+            if (bShake) for (n = 0; n < m_nShake[1]; n++) 
+            { 
+                if (PickerUp()) return true; 
+                if (PickerDown()) return true; 
+            }
+            return false;
+        }
+
+        public override bool UnloadUp(bool bUp = true)
+        {
+            if (PickerUp(bUp)) return true; 
+            return false;
+        }
+
+        public override bool PickerUp(bool bUp = true)
+        {
+            if (m_control == null) return false;
+            m_bDown = false; 
+            m_control.WriteOutputBit(m_doDown, false);
+            if (bUp) 
+            { 
+                if (!m_control.WaitInputBit(m_diUp, true)) 
+                { 
+                    m_control.WriteOutputBit(m_doBlow, false); return false; 
+                } 
+            }           
+            else 
+            { 
+                if (!m_control.WaitInputBit(m_diDown, false)) 
+                { 
+                    m_control.WriteOutputBit(m_doBlow, false); return false; 
+                } 
+            }
+            SetAlarm(eAlarm.Warning, eError.eUp); return true; 
+        }
+
+        public override bool PickerDown()
+        {
+            m_bDown = true;
+            m_control.WriteOutputBit(m_doDown, true);
+            if (!m_control.WaitInputBit(m_diDown, true)) return false;
+            else 
+            {
+                if (m_bDown) { SetAlarm(eAlarm.Warning, eError.eDown); return true; }
+                return false;
+            }
+        }
+
+        bool WaitVac(bool bStop)
+        {
+            if (m_work.m_bDryRun) return false;
+            if (m_bSingle) 
+            { 
+                if (!m_control.WaitInputBit(m_diVac[m_iVac % 2], m_bVacOn)) 
+                { 
+                    Thread.Sleep(m_msVac); return false; 
+                } 
+            } 
+            else 
+            { 
+                if (!m_control.WaitInputBit(m_diVac[1], m_bVacOn)) 
+                { 
+                    Thread.Sleep(m_msVac); return false; 
+                } 
+            }
+            m_log.Popup("Wait Vacuum Error");
+            if (bStop)
+            {
+                m_bError = true; 
+                //m_work.m_run.Stop();
+                SetAlarm(eAlarm.Stop, eError.eVac); 
+            }
+            return true;
+        }
+
+        public override void RunVac(bool bVac)
+        {
+            if (m_bSingle)
+            {
+                if (bVac) { m_control.WriteOutputBit(m_doVac[m_iVac % 2], true); }
+                else 
+                { 
+                    m_control.WriteOutputBit(m_doVac[0], false); 
+                    m_control.WriteOutputBit(m_doVac[1], false); 
+                    RunBlow(true); 
+                }
+            }
+            else
+            {
+                m_control.WriteOutputBit(m_doVac[1], bVac); 
+                m_control.WriteOutputBit(m_doVac[0], !bVac);
+                if (!bVac) RunBlow(true);
+            }
+        }
+
+        public void RunBlow(bool bBlow) //박상영20180110 public
+        {
+            m_control.WriteOutputBit(m_doBlow, bBlow);
+            if(bBlow) Thread.Sleep(m_msBlow);
+        }
+
+        public override bool IsVac()
+        {
+            if (m_work.m_bDryRun) return true;
+            return m_control.GetInputBit(m_diVac[m_iVac % 2]) == m_bVacOn;
+        }
+
+        public override bool IsDown()
+        {
+            return (!m_control.GetInputBit(m_diUp) || m_control.GetInputBit(m_diDown));
+        }
+
+        void RunThread()
+        {
+            m_bRun = true; Thread.Sleep(5000);
+            while (m_bRun)
+            {
+                Thread.Sleep(10);
+                if (m_bLoad && (IsVac() == false))
+                {
+                    m_bLoad = false;
+                    SetAlarm(eAlarm.Stop, eError.eVac); 
+                }
+            }
+        }
+    }
+}

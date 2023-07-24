@@ -1,0 +1,8 @@
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\obj\x64\Release\ezTools.csprojResolveAssemblyReference.cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\obj\x64\Release\ezTools.ezFileSave.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\obj\x64\Release\ezTools.ImgPopup.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\obj\x64\Release\ezTools.Login.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\obj\x64\Release\ezTools.LogPopup.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\obj\x64\Release\ezTools.LogView.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\obj\x64\Release\ezTools.MarsLog.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezTools\obj\x64\Release\ezTools.csproj.GenerateResource.Cache

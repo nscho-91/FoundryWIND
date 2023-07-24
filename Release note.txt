@@ -1,0 +1,33 @@
+2019/03/13 spAuto_2.0.42_TODO
+	1. RunAlignSetup 함수에서 inspect 실행시, 카메라 레졸루션 파라미터(2번째 인자)가 기본값으로 들어가는 부분 수정
+
+2019/03/15 spAuto_2.0.42_TODO
+	1. Centering 기능 결과 분석 관련하여, 실제 데이터 스케일 확인 용 로그 추가 min max 확인
+	2. Klarf 파일 내부 Defect정보 및 이미지 저장 기능을 레시피 파라미터 화. EBR>DCOL Enable (bool)
+
+2019/03/19 spAuto_2.0.42_TODO
+	1. 레시피 선택 방법 -> 더블 클릭으로 수정/ 클릭시 초기화? 다중 선택시 그리드 초기화 하며 딜레이 생기는 문제 수정
+	2. 레시피 단축키 추가 -> Ctrl+a : 전체 선택
+
+
+2019/03/22 spAuto_2.0.43_TODO 생성
+
+2019/04/05 spAuto_2.0.43_Klarf data save path change
+	1. 검사 데이터 저장 경로 수정: 슬랏단위 폴더 생성 하지 않고 카세트 단위 폴더 생성으로
+
+2019/04/10 spAuto_2.0.43_GPDM data save path change
+	1. 검사 데이터 저장 경로 재수정: Lotstart시점의 시간에 해당 LotID_FoupID로 폴더 생성하여 슬랏별 폴더에 이미지 정리.
+	
+
+
+=================================================================
+FOUNDRY
+
+2019/06/29 spAuto_Foundry_2.1.3_Img Binary algo add
+  1. 버전 생성
+
+2019/07/15 spAuto_Foundry_2.1.3_Img Binary algo add
+  1. add log for manual recovery part.
+ 
+2019/10/08 spAuto_Foundry_2.1.6_Loadport sequence optimise
+  1. loadport unload/load timing 조정

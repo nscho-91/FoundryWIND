@@ -1,0 +1,485 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Drawing;
+using System.Windows.Forms;
+using WeifenLuo.WinFormsUI.Docking;
+
+namespace ezTools
+{
+    public partial class MarsLog : DockContent
+    {
+        #region eLogType
+        public enum eLogType
+        {
+            PRC = 0,        // Process Log
+            XFR,            // Transfer
+            FNC,            // Function
+            LEH,            // LotEvent
+            CFG,            // Configuration
+            UI,
+            Communication,
+            Alarm,
+            EventIO,
+            SamplingIO,
+            Summary,
+        }
+        #endregion
+
+        #region LogData
+        public class LogData
+        {
+            public eLogType m_eLogType;
+            public string m_sLog;
+
+            public LogData(eLogType logType, string sLog)
+            {
+
+                m_eLogType = logType;
+                m_sLog = sLog; 
+            }
+        }
+        Queue<LogData> m_queue = new Queue<LogData>();
+
+        #endregion
+
+        #region ListBox
+        ListBox[] m_arrListBoxLog;
+        void InitListBox()
+        {
+            m_arrListBoxLog = new ListBox[Enum.GetNames(typeof(eLogType)).Length];
+            for (int n = 0; n < Enum.GetNames(typeof(eLogType)).Length; n++)
+            {
+                m_arrListBoxLog[n] = new ListBox();
+                AddLogTab(Enum.GetName(typeof(eLogType), (eLogType)(n)), m_arrListBoxLog[n]);
+            }
+        }
+
+        void AddLogTab(string Name, ListBox LogBox)
+        {
+            var page = new TabPage(Name);
+
+            page.Name = Name;
+            page.Controls.Add(LogBox);
+            page.Padding = tabControlLog.TabPages[0].Padding;
+
+            LogBox.Name = "listBox_" + Name;
+            LogBox.Dock = DockStyle.Fill;
+            LogBox.HorizontalScrollbar = true;
+
+            tabControlLog.TabPages.Add(page);
+        }
+
+        void AddList(ListBox listBox, LogData log)
+        {
+            listBox.Items.Add(log.m_sLog);
+            while (listBox.Items.Count >= 100) listBox.Items.RemoveAt(0);
+            listBox.SelectedIndex = listBox.Items.Count - 1;
+        }
+        #endregion
+
+        #region MarsLog Process
+        bool m_bProcess = false;
+        string m_idProcess = "Root_MarsLogView";
+        string m_sProcessFile = ""; 
+        bool RunProcess()
+        {
+            try
+            {
+                Process[] aProcess = Process.GetProcessesByName(m_idProcess);
+                if (m_bProcess != (aProcess.Length != 0))
+                {
+                    m_bProcess = (aProcess.Length != 0);
+                    m_socket.m_bConnecting = m_bProcess; 
+                }
+                if (m_sProcessFile.Contains(".exe") == false) return false;
+                if (aProcess.Length == 0) Process.Start(m_sProcessFile);
+                return aProcess.Length > 0; 
+            }
+            catch (Exception) { }
+            return false; 
+        }
+
+        void RunGridProcess(ezGrid rGrid, ezJob job = null)
+        {
+            rGrid.Set(ref m_idProcess, "Mars Log View", "Process", "Mars Log View Process Name");
+            rGrid.Set(ref m_sProcessFile, "Mars Log View", "File", "Mars Log View File Name");
+        }
+        #endregion
+
+        #region Timer
+        private void timerSave_Tick(object sender, EventArgs e)
+        {
+            if (RunProcess() == false) return;
+            if (m_queue.Count == 0) return;
+            if (m_bSend)
+            {
+                if (m_swSend.Check() > 1000) SendTCPIP(m_sSend);
+                return; 
+            }
+            LogData log = m_queue.Dequeue();
+            AddList(listBoxTotal, log);
+            AddList(m_arrListBoxLog[(int)log.m_eLogType], log);
+            SendTCPIP(log.m_sLog);
+        }
+        #endregion
+
+        #region PRC
+        public enum eProcess
+        {
+            // Main Event
+            PreProcess,
+            PostProcess,
+            Process,
+            IdleRun,
+            PreLotRun,
+            PostLotRun,
+            Autoleakcheck,
+            // Sub Event
+            StepProcess,
+        }
+
+        public enum eStatus
+        {
+            Start,
+            End,
+            Set, // 이벤트가 일시적인 동작을 할 때
+        }
+
+        public enum eMateral
+        {
+            Wafer,
+            Carrier
+        }
+
+        public class StepProcess
+        {
+            public int m_nNum;
+            public int m_nSeq;
+            public string m_id;
+
+            public StepProcess(int nNum, int nSeq, string id)
+            {
+                m_nNum = nNum;
+                m_nSeq = nSeq;
+                m_id = id;
+            }
+        }
+
+        string GetStepProcess(StepProcess step)
+        {
+            if (step == null) return "0\t0\t$\t"; //210414 jws
+            return GetIntLog(step.m_nNum) + GetIntLog(step.m_nSeq) + GetStringLog(step.m_id);
+        }
+
+        public void AddProcessLog(string sModule, eProcess eEvent, eStatus eStatus, string sWaferID, eMateral eMaterialType, int? nSlotNo, string sLotID, string sRecipe, StepProcess step, Datas aData) // ex) Aligner, EBR, eEventStatus.Start, Lot.SlotNum, 
+        {
+            string sLog = GetDateTime() + GetStringLog(sModule) + GetStringLog(eLogType.PRC.ToString()) + GetStringLog(eEvent.ToString()) + GetStringLog(eStatus.ToString())
+                + GetStringLog(sWaferID, '_', ':') + GetStringLog(eMaterialType.ToString()) + GetIntLog(nSlotNo) + GetStringLog(sLotID) + GetStringLog(sRecipe)
+                + GetStepProcess(step);
+            if (aData != null) sLog += aData.GetString();
+
+            m_queue.Enqueue(new LogData(eLogType.PRC, sLog));
+        }
+        #endregion
+
+        #region XFR
+        public void AddTransferLog(string sModule, string strTransfer, eStatus eStatus, string sWaferID, eMateral eMaterialType, string sLotID, string sFromDevice, int? nFromSlot, string sToDevice, int? nToSlot, Datas aData) // ex) Aligner, EBR, eEventStatus.Start, Lot.SlotNum, 
+        {
+            string sLog = GetDateTime() + GetStringLog(sModule) + GetStringLog(eLogType.XFR.ToString()) + GetStringLog(strTransfer) + GetStringLog(eStatus.ToString())
+                + GetStringLog(sWaferID, '_', ':') + GetStringLog(eMaterialType.ToString()) + GetStringLog(sLotID) + GetStringLog(sFromDevice) + GetIntLog(nFromSlot)
+                + GetStringLog(sToDevice) + GetIntLog(nToSlot);
+            if (aData != null) sLog += aData.GetString();
+            m_log.WriteLog("MarsLog", sLog); 
+            m_queue.Enqueue(new LogData(eLogType.XFR, sLog));
+        }
+        #endregion
+
+        #region FNC
+        public void AddFunctionLog(string sModule, string strFunctionEvent, eStatus eStatus, string sMaterialID, eMateral eMaterialType, Datas aData)
+        {
+            string sLog = GetDateTime() + GetStringLog(sModule) + GetStringLog(eLogType.FNC.ToString()) + GetStringLog(strFunctionEvent) + GetStringLog(eStatus.ToString())
+                + GetStringLog(sMaterialID, '_', ':') + GetStringLog(eMaterialType.ToString());
+            if (aData != null) sLog += aData.GetString();
+            m_log.WriteLog("MarsLog", sLog); 
+            m_queue.Enqueue(new LogData(eLogType.FNC, sLog));
+        }
+        #endregion
+
+        #region LEH
+        public enum eLotEvent
+        {
+            CarrierLoad,
+            ProcessJobStart,
+            ProcessJobEnd,
+            CarrierUnload,
+        }
+
+        public void AddLotEventLog(string sModule, eLotEvent eLotEvent, string sLotID, string sFlowRecipeID, string[] arrFlowModule, string[] arrCarrierID, Datas aData)
+        {
+            string sLog = GetDateTime() + GetStringLog(sModule) + GetStringLog(eLogType.LEH.ToString()) + GetStringLog(eLotEvent.ToString()) + GetStringLog(sLotID)
+                + GetStringLog(sFlowRecipeID) + GetArrStringLog(arrFlowModule) + GetArrStringLog(arrCarrierID);
+            if (aData != null) sLog += aData.GetString();
+            m_log.WriteLog("MarsLog", sLog); 
+            m_queue.Enqueue(new LogData(eLogType.LEH, sLog));
+        }
+        #endregion
+
+        #region CFG
+        public void AddConfigurationLog(string sModule, string sEvent, string sCfgID, string value, string sUnit, string sECID, Datas aData)
+        {
+            string sLog = GetDateTime() + GetStringLog(sModule) + GetStringLog(eLogType.CFG.ToString()) + GetStringLog(sEvent) + GetStringLog(sCfgID) + GetStringLog(value);
+            if (sUnit != null) sLog += sUnit+"\t";
+            if (sECID != null) sLog += sECID + "\t";
+            if (aData != null) sLog += aData.GetString();
+            m_log.WriteLog("MarsLog", sLog); 
+            m_queue.Enqueue(new LogData(eLogType.CFG, sLog));
+        }
+        #endregion
+
+        #region MarsData
+        public class Datas
+        {
+            class Value
+            {
+                public string m_sKey = null;
+                public string m_sUnit = null;
+                public object[] m_aValue = null;
+                public string m_sData = null;
+
+                public Value(string sKey, string sUnit, object obj)
+                {
+                    m_sKey = sKey;
+                    m_aValue = new object[1] { obj };
+                    m_sUnit = sUnit;
+                    m_sData = '(' + GetString(sKey) + ',' + GetArrayString() + ',' + GetString(sUnit) + ')';
+                }
+
+                public Value(string sKey, string sUnit, object[] aValue)
+                {
+                    m_sKey = sKey;
+                    m_aValue = aValue;
+                    m_sUnit = sUnit;
+                    m_sData = '(' + GetString(sKey) + ',' + GetArrayString() + ',' + GetString(sUnit) + ')';
+                }
+
+                string GetString(string str)
+                {
+                    if ((str == null) || (str == "")) return "$";
+                    return '\'' + str + '\'';
+                }
+
+                string GetArrayString()
+                {
+                    if ((m_aValue == null) || (m_aValue.Length == 0)) return "$";
+                    string sValue = GetValue(m_aValue[0]);
+                    for (int n = 1; n < m_aValue.Length; n++) sValue += ',' + GetValue(m_aValue[n]);
+                    return sValue;
+                }
+
+                string GetValue(object value)
+                {
+                    if (value.GetType() == typeof(string)) return GetString(value.ToString());
+                    else if (value.GetType() == typeof(int)) return value.ToString();
+                    else return "$";
+                }
+            }
+            List<Value> m_aData = new List<Value>();
+
+            string m_sDatas = "";
+            public void Add(string sKey, string sUnit, object obj)
+            {
+                Value value = new Value(sKey, sUnit, obj);
+                m_aData.Add(value);
+                if (m_sDatas != "") m_sDatas += "\t"; 
+                m_sDatas += value.m_sData;
+            }
+
+            public void Add(string sKey, string sUnit, object[] aValue)
+            {
+                Value value = new Value(sKey, sUnit, aValue); 
+                m_aData.Add(value);
+                if (m_sDatas != "") m_sDatas += "\t";
+                m_sDatas += value.m_sData;
+            }
+
+            public string GetString()
+            {
+                return m_sDatas; 
+            }
+        }
+
+        #endregion
+
+        #region Mars string Function
+        string GetDateTime()
+        {
+            DateTime dtNow = DateTime.Now;
+            string strDate = string.Format("{0:0000}/{1:00}/{2:00}\t", dtNow.Year, dtNow.Month, dtNow.Day);
+            string strTime = string.Format("{0:00}:{1:00}:{2:00}.{3:000}\t", dtNow.Hour, dtNow.Minute, dtNow.Second, dtNow.Millisecond);
+            return strDate + strTime;
+        }
+
+        string GetStringLog(string strString, char sOldReplace = ' ', char sNewReplace = ' ')
+        {
+            if ((strString == null) || (strString == "") || (strString == "$")) return "$\t"; //forget Mars 4
+            if (sOldReplace != sNewReplace) strString = strString.Replace(sOldReplace, sNewReplace);
+            return string.Format("'{0}'\t", strString);
+        }
+
+        string GetIntLog(int? n)
+        {
+            if (n == null) return "0\t"; //210414 jws
+            return string.Format("{0:D}\t", n);
+        }
+
+        string GetArrStringLog(string[] arrString, char sOldReplace = ' ', char sNewReplace = ' ')
+        {
+            string strLog;
+            if (arrString == null) strLog = "$\t"; //210412 jys
+            else if (arrString.Length == 1)
+            {
+                if (sOldReplace != sNewReplace) arrString[0] = arrString[0].Replace(sOldReplace, sNewReplace);
+                strLog = GetStringLog(arrString[0]);
+            }
+            else
+            {
+                strLog = string.Format("[{0:d}", arrString.Length.ToString());
+                for (int n = 0; n < arrString.Length; n++)
+                {
+                    if (sOldReplace != sNewReplace) arrString[n] = arrString[n].Replace(sOldReplace, sNewReplace);
+                    strLog += string.Format(",'{0}'", arrString[n]);
+                }
+                strLog += "]\t"; //MarsLog 1.LEH
+            }
+            return strLog;
+        }
+        #endregion
+
+        #region TCPIP
+        ezTCPSocket m_socket;
+        void InitTCPIP()
+        {
+            m_socket = new ezTCPSocket(m_id +  ".TCPIP", m_log, false);
+            m_socket.Init();
+            m_socket.m_bConnecting = false; 
+            m_socket.CallMsgRcv += M_socket_CallMsgRcv;
+        }
+
+        private void M_socket_CallMsgRcv(byte[] byteMsg, int nSize)
+        {
+            m_bSend = false; 
+        }
+
+        bool m_bSend = false;
+        string m_sSend = null;
+        ezStopWatch m_swSend = new ezStopWatch(); 
+        bool SendTCPIP(string sSend)
+        {
+            m_bSend = true;
+            m_sSend = sSend;
+            m_swSend.Start(); 
+            return (m_socket.Send(sSend) == eTCPResult.OK);
+        }
+        #endregion
+
+        #region UI Function
+        public IDockContent GetContentFromPersistString(string persistString)
+        {
+            if (persistString == typeof(MarsLog).ToString()) return this;
+            return null;
+        }
+
+        private void combo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (combo.SelectedIndex == 0)
+            {
+                grid.Hide();
+                tabControlLog.Show();
+                RunGrid(eGrid.eRegWrite);
+            }
+            else
+            {
+                grid.Show();
+                tabControlLog.Hide();
+                RunGrid(eGrid.eInit);
+            }
+        }
+
+        private void MarsLog_Resize(object sender, EventArgs e)
+        {
+            Control control = (Control)sender;
+            Size sz = control.Size;
+            if (control.Text == "MarsLog")
+            {
+                sz.Height -= (control.Location.Y + 30); sz.Width -= (control.Location.X + 30);
+                tabControlLog.Size = sz;
+                grid.Size = sz;
+            }
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                for (int n = 0; n < m_arrListBoxLog.Length; n++)
+                {
+                    m_arrListBoxLog[n].Items.Clear();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Log Clear Fail !!, Please Retry.");
+            }
+        }
+        #endregion
+
+        #region Grid
+        ezGrid m_grid;
+        void InitGrid(Log log)
+        {
+            grid.Location = tabControlLog.Location;
+            grid.Hide();
+            m_grid = new ezGrid(m_id, grid, log, false);
+            RunGrid(eGrid.eRegRead);
+            RunGrid(eGrid.eInit);
+        }
+
+        private void grid_PropertyValueChanged(object s, PropertyValueChangedEventArgs e)
+        {
+            m_grid.PropertyChange(e);
+            RunGrid(eGrid.eUpdate);
+            RunGrid(eGrid.eRegWrite);
+        }
+
+        void RunGrid(eGrid eMode, ezJob job = null)
+        {
+            if (m_grid == null) return;
+            m_grid.Update(eMode, job);
+            m_socket.RunGrid(m_grid, job);
+            RunGridProcess(m_grid, job); 
+            m_grid.Refresh();
+        }
+        #endregion
+
+        string m_id;
+        Log m_log; 
+        public MarsLog(string id, Log log)
+        {
+            InitializeComponent();
+            m_id = id;
+            m_log = log;
+            InitTCPIP();
+            InitGrid(log); 
+            InitListBox();
+            SendTCPIP("0\t0\t0\tReset");
+            AddConfigurationLog("EFEM", "Version", "Software Version", System.Reflection.Assembly.GetEntryAssembly().GetName().Version.ToString(), "$", "$", null);//jws 210603
+        }
+
+        public void ThreadStop()
+        {
+            m_socket.ThreadStop();
+        }
+    }
+ 
+}

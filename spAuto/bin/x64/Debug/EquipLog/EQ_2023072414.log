@@ -1,0 +1,22 @@
+14:35:15.646 [Proc:Seq] Log Initialized
+14:35:15.648 [Proc:Seq] Cfg File: C:\AVIS\Init_Gem300.cfg
+14:35:15.649 [Proc:Seq] (c) IT Innovation.  All rights reserved.
+14:35:15.737 [Proc:Seq] [DEBUG] Initialize() : TCP/IP Ret = 0, <Cls:LXGemConnectMgr>
+14:35:15.739 [Proc:Seq] [DEBUG] Execute Process(C:\Program Files (x86)\Linkgenesis\XGem300Pro v3.x\SE\Bin\XGem.exe) reading sucessed from registry., <Cls:LXGemProc>
+14:35:17.853 [Proc:Seq] [STATE] changed from INIT to IDLE
+14:35:17.855 [Proc:Seq] [DEBUG] Success to initialize = 0, <Cls:LXGemProc>
+14:35:17.856 [Proc:Seq] [DEBUG] XGem.Initialize: Release : th=9, <Cls:CEXGemCsCtrl>
+14:35:17.857 [Proc:Seq] [DEBUG] XGem.Start: Lock : th=9, <Cls:CEXGemCsCtrl>
+14:35:17.860 [Proc:Seq] XNetSocket::OpenClient2() OpenClient socket:ip=127.0.0.1, port=2001
+14:35:17.862 [Proc:Seq] XNetSocket::OpenClient2() Socket connected
+14:35:17.875 [Proc:Seq] [DEBUG] [CONNECTION STATE] Connected TCP/IP, <Cls:CXGemEventWnd>
+14:35:17.876 [Proc:Seq] [STATE] changed from IDLE to READY
+14:35:17.884 [Proc:Seq] [DEBUG] Success to send SendGetLicense = 0, <Cls:LXGemProc>
+14:35:17.891 [Proc:Seq] [DEBUG] Success to send SendGetParam = 0, <Cls:LXGemProc>
+14:35:17.895 [Proc:Seq] [DEBUG] Success to send SendGetAttributeV = 0, <Cls:LXGemProc>
+14:35:17.909 [Proc:Seq] [DEBUG] Start() : TCP/IP Ret = 0, IP:127.0.0.1, Port:2001, Active:true, <Cls:LXGemConnectMgr>
+14:35:17.911 [Proc:Seq] [DEBUG] Success to start = 0, <Cls:LXGemProc>
+14:35:17.913 [Proc:Seq] [DEBUG] XGem.Start: Release : th=9, <Cls:CEXGemCsCtrl>
+14:35:17.921 [Proc:Seq] XNetConnect::notifyEvent() Dequeue string: msg=System.Byte[]
+14:35:17.922 [Proc:Seq] XNetConnect::notifyEvent() Dequeue string: msg=System.Byte[]
+14:35:17.924 [Proc:Seq] XNetConnect::notifyEvent() Dequeue string: msg=System.Byte[]

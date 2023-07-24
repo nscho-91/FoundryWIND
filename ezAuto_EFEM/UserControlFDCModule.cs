@@ -1,0 +1,97 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Drawing;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using ezAutoMom;
+using ezTools;
+
+namespace ezAuto_EFEM
+{
+    public partial class UserControlFDCModule : UserControl
+    {
+        FDCModule m_FDCModule = null;
+        ezStopWatch sw = new ezStopWatch();         
+        Log m_log = null;
+        bool bLimitErr = false;
+        Auto_Mom m_auto;
+
+        public UserControlFDCModule(int ModuleNum, string Name, Log Log, Auto_Mom auto)
+        {
+            InitializeComponent();
+            lbName.Text = Name + "  :";
+            m_log = Log;
+            m_auto = auto;
+        }
+
+        public void SetFDCData(FDCModule cFDC)
+        {
+            m_FDCModule = cFDC;
+            lbName.Text = cFDC.m_sName;
+            if (cFDC.m_eUnit == FDCModule.eUnit.Temp)
+                lbValue.Text = cFDC.GetFDCData().ToString() + " °C";
+            else if (cFDC.m_eUnit == FDCModule.eUnit.Voltage)
+                lbValue.Text = cFDC.GetFDCData().ToString() + " V";
+            else if (cFDC.m_eUnit == FDCModule.eUnit.KPA)
+                lbValue.Text = cFDC.GetFDCData().ToString() + " kPa";
+            else if (cFDC.m_eUnit == FDCModule.eUnit.MPA)
+                lbValue.Text = cFDC.GetFDCData().ToString() + " MPa";
+        } 
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (m_FDCModule != null && m_FDCModule.GetFDCData() != 0)
+            {
+                if (m_FDCModule.GetFDCData() > m_FDCModule.m_fHighLimit)
+                {
+                    if (m_FDCModule.m_bFDCError)
+                    {
+                        m_FDCModule.m_sFDCError = m_FDCModule.m_sName + " : " + m_FDCModule.m_fData + ", HighLimit : " + m_FDCModule.m_fHighLimit;
+                        return;
+                    } 
+
+                    if (!bLimitErr)
+                    {
+                        sw.Start();
+                        bLimitErr = true;
+                    }
+                    if (sw.Check() > 5000)                //sdh
+                    {
+                        m_log.Popup("FDC Data Error (High limit Error) : " + m_FDCModule.m_sName + ", Data : " + m_FDCModule.m_fData.ToString());
+                        this.BackColor = Color.Firebrick;
+                    } 
+                }
+                else if (m_FDCModule.GetFDCData() < m_FDCModule.m_fLowLimit)
+                {
+                    if (m_FDCModule.m_bFDCError)
+                    {
+                        m_FDCModule.m_sFDCError = m_FDCModule.m_sName + " : " + m_FDCModule.m_fData + ", LowLimit : " + m_FDCModule.m_fLowLimit;
+                        return;
+                    } 
+
+                    if (!bLimitErr)
+                    {
+                        sw.Start();
+                        bLimitErr = true;
+                    }
+                    if (sw.Check() > 5000)
+                    {
+                        m_log.Popup("FDC Data Error (Low limit Error) : " + m_FDCModule.m_sName + ", Data : " + m_FDCModule.m_fData.ToString());
+                        this.BackColor = Color.Firebrick;
+                    } 
+                }
+                else
+                {
+                    this.BackColor = Color.PaleTurquoise;
+                    m_FDCModule.m_sFDCError = ""; 
+                    sw.Stop();
+                    bLimitErr = false;
+                }
+            } 
+        }
+    }
+}

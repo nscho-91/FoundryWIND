@@ -1,0 +1,4 @@
+1. SevenZip의 7z920.exe파일 설치
+ - C:\\Program Files\\7-Zip 에 설치
+
+2. 정상적으로 압축되는지 확인 

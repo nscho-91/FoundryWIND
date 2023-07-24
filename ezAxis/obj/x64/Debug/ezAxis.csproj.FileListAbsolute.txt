@@ -1,0 +1,192 @@
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAxis\bin\x64\Debug\ezAxis.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAxis\bin\x64\Debug\ezAxis.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAxis\bin\x64\Debug\ezTools.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAxis\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAxis\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAxis\bin\x64\Debug\ezTools.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAxis\obj\x64\Debug\ezAxis.csprojResolveAssemblyReference.cache
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAxis\obj\x64\Debug\ezAxis.Axiss_Ajin.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAxis\obj\x64\Debug\ezAxis.DB96T2_Ajin.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAxis\obj\x64\Debug\ezAxis.DIO_Ajin.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAxis\obj\x64\Debug\ezAxis.DIO_Ajin_ID.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAxis\obj\x64\Debug\ezAxis.DI_Ajin.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAxis\obj\x64\Debug\ezAxis.DO_Ajin_ID.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAxis\obj\x64\Debug\ezAxis.csproj.GenerateResource.Cache
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAxis\obj\x64\Debug\ezAxis.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAxis\obj\x64\Debug\ezAxis.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\bin\x64\Debug\ezAxis.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\bin\x64\Debug\ezAxis.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\bin\x64\Debug\ezTools.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\bin\x64\Debug\ezTools.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\obj\x64\Debug\ezAxis.csprojResolveAssemblyReference.cache
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\obj\x64\Debug\ezAxis.Axiss_Ajin.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\obj\x64\Debug\ezAxis.DB96T2_Ajin.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\obj\x64\Debug\ezAxis.DIO_Ajin.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\obj\x64\Debug\ezAxis.DIO_Ajin_ID.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\obj\x64\Debug\ezAxis.DI_Ajin.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\obj\x64\Debug\ezAxis.DO_Ajin_ID.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\obj\x64\Debug\ezAxis.csproj.GenerateResource.Cache
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\obj\x64\Debug\ezAxis.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\obj\x64\Debug\ezAxis.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\bin\x64\Debug\ezAxis.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\bin\x64\Debug\ezAxis.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\bin\x64\Debug\ezTools.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\bin\x64\Debug\PropertyGridEx.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\bin\x64\Debug\ezTools.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\obj\x64\Debug\ezAxis.csprojResolveAssemblyReference.cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\obj\x64\Debug\ezAxis.Axiss_Ajin.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\obj\x64\Debug\ezAxis.DB96T2_Ajin.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\obj\x64\Debug\ezAxis.DIO_Ajin.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\obj\x64\Debug\ezAxis.DIO_Ajin_ID.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\obj\x64\Debug\ezAxis.DI_Ajin.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\obj\x64\Debug\ezAxis.DO_Ajin_ID.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\obj\x64\Debug\ezAxis.csproj.GenerateResource.Cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\obj\x64\Debug\ezAxis.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAxis\obj\x64\Debug\ezAxis.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\obj\x64\Debug\ezAxis.Axiss_Ajin.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\obj\x64\Debug\ezAxis.DB96T2_Ajin.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\obj\x64\Debug\ezAxis.DIO_Ajin.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\obj\x64\Debug\ezAxis.DIO_Ajin_ID.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\obj\x64\Debug\ezAxis.DI_Ajin.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\obj\x64\Debug\ezAxis.DO_Ajin_ID.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\obj\x64\Debug\ezAxis.csproj.GenerateResource.Cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\bin\x64\Debug\ezAxis.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\bin\x64\Debug\ezAxis.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\bin\x64\Debug\ezTools.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\bin\x64\Debug\PropertyGridEx.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\bin\x64\Debug\ezTools.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\obj\x64\Debug\ezAxis.csprojResolveAssemblyReference.cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\obj\x64\Debug\ezAxis.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\obj\x64\Debug\ezAxis.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\bin\x64\Debug\ezAxis.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\bin\x64\Debug\ezAxis.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\bin\x64\Debug\ezTools.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\bin\x64\Debug\ezTools.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\obj\x64\Debug\ezAxis.csprojResolveAssemblyReference.cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\obj\x64\Debug\ezAxis.Axiss_Ajin.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\obj\x64\Debug\ezAxis.DB96T2_Ajin.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\obj\x64\Debug\ezAxis.DIO_Ajin.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\obj\x64\Debug\ezAxis.DIO_Ajin_ID.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\obj\x64\Debug\ezAxis.DI_Ajin.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\obj\x64\Debug\ezAxis.DO_Ajin_ID.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\obj\x64\Debug\ezAxis.csproj.GenerateResource.Cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\obj\x64\Debug\ezAxis.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAxis\obj\x64\Debug\ezAxis.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\bin\x64\Debug\ezAxis.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\bin\x64\Debug\ezAxis.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\bin\x64\Debug\ezTools.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\bin\x64\Debug\ezTools.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\obj\x64\Debug\ezAxis.csprojResolveAssemblyReference.cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\obj\x64\Debug\ezAxis.Axiss_Ajin.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\obj\x64\Debug\ezAxis.DB96T2_Ajin.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\obj\x64\Debug\ezAxis.DIO_Ajin.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\obj\x64\Debug\ezAxis.DIO_Ajin_ID.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\obj\x64\Debug\ezAxis.DI_Ajin.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\obj\x64\Debug\ezAxis.DO_Ajin_ID.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\obj\x64\Debug\ezAxis.csproj.GenerateResource.Cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\obj\x64\Debug\ezAxis.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\obj\x64\Debug\ezAxis.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\bin\x64\Debug\ezAxis.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\bin\x64\Debug\ezAxis.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\bin\x64\Debug\ezTools.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\bin\x64\Debug\PropertyGridEx.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\bin\x64\Debug\ezTools.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\obj\x64\Debug\ezAxis.csprojResolveAssemblyReference.cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\obj\x64\Debug\ezAxis.Axiss_Ajin.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\obj\x64\Debug\ezAxis.DB96T2_Ajin.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\obj\x64\Debug\ezAxis.DIO_Ajin.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\obj\x64\Debug\ezAxis.DIO_Ajin_ID.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\obj\x64\Debug\ezAxis.DI_Ajin.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\obj\x64\Debug\ezAxis.DO_Ajin_ID.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\obj\x64\Debug\ezAxis.csproj.GenerateResource.Cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\obj\x64\Debug\ezAxis.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAxis\obj\x64\Debug\ezAxis.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAxis\bin\x64\Debug\ezAxis.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAxis\bin\x64\Debug\ezAxis.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAxis\bin\x64\Debug\ezTools.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAxis\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAxis\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAxis\bin\x64\Debug\ezTools.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAxis\obj\x64\Debug\ezAxis.csprojResolveAssemblyReference.cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAxis\obj\x64\Debug\ezAxis.Axiss_Ajin.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAxis\obj\x64\Debug\ezAxis.DB96T2_Ajin.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAxis\obj\x64\Debug\ezAxis.DIO_Ajin.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAxis\obj\x64\Debug\ezAxis.DIO_Ajin_ID.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAxis\obj\x64\Debug\ezAxis.DI_Ajin.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAxis\obj\x64\Debug\ezAxis.DO_Ajin_ID.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAxis\obj\x64\Debug\ezAxis.csproj.GenerateResource.Cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAxis\obj\x64\Debug\ezAxis.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAxis\obj\x64\Debug\ezAxis.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAxis\bin\x64\Debug\ezAxis.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAxis\bin\x64\Debug\ezAxis.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAxis\bin\x64\Debug\ezTools.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAxis\bin\x64\Debug\PropertyGridEx.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAxis\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAxis\bin\x64\Debug\ezTools.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAxis\obj\x64\Debug\ezAxis.csprojResolveAssemblyReference.cache
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAxis\obj\x64\Debug\ezAxis.Axiss_Ajin.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAxis\obj\x64\Debug\ezAxis.DB96T2_Ajin.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAxis\obj\x64\Debug\ezAxis.DIO_Ajin.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAxis\obj\x64\Debug\ezAxis.DIO_Ajin_ID.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAxis\obj\x64\Debug\ezAxis.DI_Ajin.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAxis\obj\x64\Debug\ezAxis.DO_Ajin_ID.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAxis\obj\x64\Debug\ezAxis.csproj.GenerateResource.Cache
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAxis\obj\x64\Debug\ezAxis.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAxis\obj\x64\Debug\ezAxis.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\bin\x64\Debug\ezAxis.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\bin\x64\Debug\ezAxis.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\bin\x64\Debug\ezTools.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\bin\x64\Debug\ezTools.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\obj\x64\Debug\ezAxis.csprojResolveAssemblyReference.cache
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\obj\x64\Debug\ezAxis.Axiss_Ajin.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\obj\x64\Debug\ezAxis.DB96T2_Ajin.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\obj\x64\Debug\ezAxis.DIO_Ajin.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\obj\x64\Debug\ezAxis.DIO_Ajin_ID.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\obj\x64\Debug\ezAxis.DI_Ajin.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\obj\x64\Debug\ezAxis.DO_Ajin_ID.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\obj\x64\Debug\ezAxis.csproj.GenerateResource.Cache
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\obj\x64\Debug\ezAxis.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\obj\x64\Debug\ezAxis.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\bin\x64\Debug\ezAxis.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\bin\x64\Debug\ezAxis.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\bin\x64\Debug\ezTools.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\bin\x64\Debug\PropertyGridEx.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\bin\x64\Debug\ezTools.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\obj\x64\Debug\ezAxis.csprojResolveAssemblyReference.cache
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\obj\x64\Debug\ezAxis.Axiss_Ajin.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\obj\x64\Debug\ezAxis.DB96T2_Ajin.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\obj\x64\Debug\ezAxis.DIO_Ajin.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\obj\x64\Debug\ezAxis.DIO_Ajin_ID.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\obj\x64\Debug\ezAxis.DI_Ajin.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\obj\x64\Debug\ezAxis.DO_Ajin_ID.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\obj\x64\Debug\ezAxis.csproj.GenerateResource.Cache
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\obj\x64\Debug\ezAxis.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAxis\obj\x64\Debug\ezAxis.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAxis\bin\x64\Debug\ezAxis.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAxis\bin\x64\Debug\ezAxis.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAxis\bin\x64\Debug\ezTools.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAxis\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAxis\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAxis\bin\x64\Debug\ezTools.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAxis\obj\x64\Debug\ezAxis.csprojResolveAssemblyReference.cache
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAxis\obj\x64\Debug\ezAxis.Axiss_Ajin.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAxis\obj\x64\Debug\ezAxis.DB96T2_Ajin.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAxis\obj\x64\Debug\ezAxis.DIO_Ajin.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAxis\obj\x64\Debug\ezAxis.DIO_Ajin_ID.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAxis\obj\x64\Debug\ezAxis.DI_Ajin.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAxis\obj\x64\Debug\ezAxis.DO_Ajin_ID.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAxis\obj\x64\Debug\ezAxis.csproj.GenerateResource.Cache
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAxis\obj\x64\Debug\ezAxis.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAxis\obj\x64\Debug\ezAxis.pdb

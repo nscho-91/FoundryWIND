@@ -1,0 +1,6 @@
+10:10:35 [Proc:Seq] Communication state is changed from COMMUNICATING to DISABLED th=405c
+10:10:36 [Proc:Seq] HSMS state is changed from Selected to NotConnected th=405c
+10:10:36 [Alarm:-30008] GEMCommStateChanged, State=1 th=405c
+10:10:36 [Proc:Seq] Eq connection state is changed from Connected to NotConnected th=405c
+10:12:26 [Proc:Seq] Stop, Result = 0 th=1338
+10:12:26 [Proc:Seq] Terminate, Result = 0 th=1338

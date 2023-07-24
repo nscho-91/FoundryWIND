@@ -1,0 +1,624 @@
+09:41:40[Proc:Event] XComGPro Initialized
+09:41:40[Proc:Event] XComGPro File: C:\Program Files (x86)\Linkgenesis\XGem300Pro v3.x\SE\Bin\XComGPro_X40_01_32.ocx
+09:41:40[Proc:Event] XComGPro Version: XComGPro WSE SECS Driver v1.0.0.9 - 2021-03-08
+09:54:01[Proc:Event] XComGPro Initialized
+09:54:01[Proc:Event] XComGPro File: C:\Program Files (x86)\Linkgenesis\XGem300Pro v3.x\SE\Bin\XComGPro_X40_01_32.ocx
+09:54:01[Proc:Event] XComGPro Version: XComGPro WSE SECS Driver v1.0.0.9 - 2021-03-08
+09:54:05[Proc:Event] XComGPro Started
+09:54:28[HSMS:State] State Changed : Not Connected -> Not Selected
+09:54:28 [Socket:Rcv]
+	00 00 00 0A FF FF 00 00 00 01 00 00 3D A2
+09:54:28[HSMS:Rcv] Select.req, 00003DA2
+09:54:28[HSMS:Send] Select.rsp, 00003DA2
+09:54:28 [Socket:Send]
+	00 00 00 0A FF FF 00 00 00 02 00 00 3D A2
+09:54:28[HSMS:State] State Changed : Not Selected -> Selected
+09:54:28 [SECS-II:Send]
+	S1, F13 [Establish Communications Request (CR)], Device ID =   0, WBit = 1, SystemByte = 000040B6
+	LIST, 2
+		ASCII,      1, [MDLN] <0>
+		ASCII,      1, [SOFTREV] <0>
+09:54:28 [Socket:Send]
+	00 00 00 12 00 00 81 0D 00 00 00 00 40 B6 01 02 41 01 30 41 01 30
+09:54:28 [Socket:Rcv]
+	00 00 00 17 00 00 01 0E 00 00 00 00 40 B6 01 02 21 01 00 01 02 41 01 30 41 01 30
+09:54:28 [SECS-II:Rcv]
+	S1, F14 [Establish Communications Request Acknowledge (CRA)], Device ID =   0, WBit = 0, SystemByte = 000040B6
+	LIST, 2
+		BINARY,     1, [COMMACK] <00>
+		LIST, 2
+			ASCII,      1, [MDLN] <0>
+			ASCII,      1, [SOFTREV] <0>
+09:54:33 [SECS-II:Send]
+	S1, F1 [Are You There Request (R)], Device ID =   0, WBit = 1, SystemByte = 000040B8
+09:54:33 [Socket:Send]
+	00 00 00 0A 00 00 81 01 00 00 00 00 40 B8
+09:54:33 [Socket:Rcv]
+	00 00 00 0C 00 00 01 02 00 00 00 00 40 B8 01 00
+09:54:33 [SECS-II:Rcv]
+	S1, F2 [On Line Data (D)], Device ID =   0, WBit = 0, SystemByte = 000040B8
+	LIST, 0
+09:54:33 [SECS-II:Send]
+	S6, F11 [Event Report Send (ERS)], Device ID =   0, WBit = 1, SystemByte = 000040BA
+	LIST, 3
+		UINT2,      1, <1>
+		UINT4,      1, <3>
+		LIST, 1
+			LIST, 2
+				UINT2,      1, <4>
+				LIST, 3
+					UINT1,      1, <5>
+					UINT1,      1, <2>
+					ASCII,     16, <2022053109543327>
+09:54:33 [Socket:Send]
+	00 00 00 38 00 00 86 0B 00 00 00 00 40 BA 01 03 A9 02 00 01 B1 04 00 00 00 03 01 01 01 02
+	A9 02 00 04 01 03 A5 01 05 A5 01 02 41 10 32 30 32 32 30 35 33 31 30 39 35 34 33 33 32 37
+09:54:33 [SECS-II:Send]
+	S6, F11 [Event Report Send (ERS)], Device ID =   0, WBit = 1, SystemByte = 000040BC
+	LIST, 3
+		UINT2,      1, <2>
+		UINT4,      1, <12>
+		LIST, 1
+			LIST, 2
+				UINT2,      1, <10>
+				LIST, 1
+					UINT1,      1, <1>
+09:54:33 [Socket:Send]
+	00 00 00 23 00 00 86 0B 00 00 00 00 40 BC 01 03 A9 02 00 02 B1 04 00 00 00 0C 01 01 01 02
+	A9 02 00 0A 01 01 A5 01 01
+09:54:33 [Socket:Rcv]
+	00 00 00 0D 00 00 06 0C 00 00 00 00 40 BA 21 01 00
+09:54:33 [SECS-II:Send]
+	S6, F11 [Event Report Send (ERS)], Device ID =   0, WBit = 1, SystemByte = 000040BE
+	LIST, 3
+		UINT2,      1, <3>
+		UINT4,      1, <5025>
+		LIST, 0
+09:54:33 [Socket:Send]
+	00 00 00 18 00 00 86 0B 00 00 00 00 40 BE 01 03 A9 02 00 03 B1 04 00 00 13 A1 01 00
+09:54:33 [SECS-II:Rcv]
+	S6, F12 [Event Report Acknowledge (ERA)], Device ID =   0, WBit = 0, SystemByte = 000040BA
+	BINARY,     1, [ACKC6] <00>
+09:54:33 [SECS-II:Send]
+	S6, F11 [Event Report Send (ERS)], Device ID =   0, WBit = 1, SystemByte = 000040C0
+	LIST, 3
+		UINT2,      1, <4>
+		UINT4,      1, <5026>
+		LIST, 0
+09:54:33 [Socket:Send]
+	00 00 00 18 00 00 86 0B 00 00 00 00 40 C0 01 03 A9 02 00 04 B1 04 00 00 13 A2 01 00
+09:54:33 [SECS-II:Send]
+	S6, F11 [Event Report Send (ERS)], Device ID =   0, WBit = 1, SystemByte = 000040C2
+	LIST, 3
+		UINT2,      1, <5>
+		UINT4,      1, <5028>
+		LIST, 0
+09:54:33 [Socket:Send]
+	00 00 00 18 00 00 86 0B 00 00 00 00 40 C2 01 03 A9 02 00 05 B1 04 00 00 13 A4 01 00
+09:54:33 [SECS-II:Send]
+	S6, F11 [Event Report Send (ERS)], Device ID =   0, WBit = 1, SystemByte = 000040C4
+	LIST, 3
+		UINT2,      1, <6>
+		UINT4,      1, <5030>
+		LIST, 0
+09:54:33 [Socket:Send]
+	00 00 00 18 00 00 86 0B 00 00 00 00 40 C4 01 03 A9 02 00 06 B1 04 00 00 13 A6 01 00
+09:54:33 [SECS-II:Send]
+	S6, F11 [Event Report Send (ERS)], Device ID =   0, WBit = 1, SystemByte = 000040C6
+	LIST, 3
+		UINT2,      1, <7>
+		UINT4,      1, <5037>
+		LIST, 0
+09:54:33 [Socket:Send]
+	00 00 00 18 00 00 86 0B 00 00 00 00 40 C6 01 03 A9 02 00 07 B1 04 00 00 13 AD 01 00
+09:54:33 [SECS-II:Send]
+	S6, F11 [Event Report Send (ERS)], Device ID =   0, WBit = 1, SystemByte = 000040C8
+	LIST, 3
+		UINT2,      1, <8>
+		UINT4,      1, <12>
+		LIST, 1
+			LIST, 2
+				UINT2,      1, <10>
+				LIST, 1
+					UINT1,      1, <2>
+09:54:33 [Socket:Send]
+	00 00 00 23 00 00 86 0B 00 00 00 00 40 C8 01 03 A9 02 00 08 B1 04 00 00 00 0C 01 01 01 02
+	A9 02 00 0A 01 01 A5 01 02
+09:54:33 [SECS-II:Send]
+	S6, F11 [Event Report Send (ERS)], Device ID =   0, WBit = 1, SystemByte = 000040CA
+	LIST, 3
+		UINT2,      1, <9>
+		UINT4,      1, <5025>
+		LIST, 0
+09:54:33 [Socket:Send]
+	00 00 00 18 00 00 86 0B 00 00 00 00 40 CA 01 03 A9 02 00 09 B1 04 00 00 13 A1 01 00
+09:54:33 [SECS-II:Send]
+	S6, F11 [Event Report Send (ERS)], Device ID =   0, WBit = 1, SystemByte = 000040CC
+	LIST, 3
+		UINT2,      1, <10>
+		UINT4,      1, <5026>
+		LIST, 0
+09:54:33 [Socket:Send]
+	00 00 00 18 00 00 86 0B 00 00 00 00 40 CC 01 03 A9 02 00 0A B1 04 00 00 13 A2 01 00
+09:54:33 [SECS-II:Send]
+	S6, F11 [Event Report Send (ERS)], Device ID =   0, WBit = 1, SystemByte = 000040CE
+	LIST, 3
+		UINT2,      1, <11>
+		UINT4,      1, <5028>
+		LIST, 0
+09:54:33 [Socket:Send]
+	00 00 00 18 00 00 86 0B 00 00 00 00 40 CE 01 03 A9 02 00 0B B1 04 00 00 13 A4 01 00
+09:54:33 [SECS-II:Send]
+	S6, F11 [Event Report Send (ERS)], Device ID =   0, WBit = 1, SystemByte = 000040D0
+	LIST, 3
+		UINT2,      1, <12>
+		UINT4,      1, <5030>
+		LIST, 0
+09:54:33 [Socket:Rcv]
+	00 00 00 0D 00 00 06 0C 00 00 00 00 40 BC 21 01 00
+09:54:33 [Socket:Send]
+	00 00 00 18 00 00 86 0B 00 00 00 00 40 D0 01 03 A9 02 00 0C B1 04 00 00 13 A6 01 00
+09:54:33 [SECS-II:Send]
+	S6, F11 [Event Report Send (ERS)], Device ID =   0, WBit = 1, SystemByte = 000040D2
+	LIST, 3
+		UINT2,      1, <13>
+		UINT4,      1, <5037>
+		LIST, 0
+09:54:33 [Socket:Send]
+	00 00 00 18 00 00 86 0B 00 00 00 00 40 D2 01 03 A9 02 00 0D B1 04 00 00 13 AD 01 00
+09:54:33 [SECS-II:Rcv]
+	S6, F12 [Event Report Acknowledge (ERA)], Device ID =   0, WBit = 0, SystemByte = 000040BC
+	BINARY,     1, [ACKC6] <00>
+09:54:33 [Socket:Rcv]
+	00 00 00 0D 00 00 06 0C 00 00 00 00 40 BE 21 01 00
+09:54:33 [SECS-II:Rcv]
+	S6, F12 [Event Report Acknowledge (ERA)], Device ID =   0, WBit = 0, SystemByte = 000040BE
+	BINARY,     1, [ACKC6] <00>
+09:54:33 [Socket:Rcv]
+	00 00 00 0D 00 00 06 0C 00 00 00 00 40 C0 21 01 00
+09:54:33 [SECS-II:Rcv]
+	S6, F12 [Event Report Acknowledge (ERA)], Device ID =   0, WBit = 0, SystemByte = 000040C0
+	BINARY,     1, [ACKC6] <00>
+09:54:33 [Socket:Rcv]
+	00 00 00 0D 00 00 06 0C 00 00 00 00 40 C2 21 01 00
+09:54:33 [SECS-II:Rcv]
+	S6, F12 [Event Report Acknowledge (ERA)], Device ID =   0, WBit = 0, SystemByte = 000040C2
+	BINARY,     1, [ACKC6] <00>
+09:54:33 [Socket:Rcv]
+	00 00 00 0D 00 00 06 0C 00 00 00 00 40 C4 21 01 00
+09:54:33 [SECS-II:Rcv]
+	S6, F12 [Event Report Acknowledge (ERA)], Device ID =   0, WBit = 0, SystemByte = 000040C4
+	BINARY,     1, [ACKC6] <00>
+09:54:33 [Socket:Rcv]
+	00 00 00 0D 00 00 06 0C 00 00 00 00 40 C6 21 01 00
+09:54:33 [SECS-II:Rcv]
+	S6, F12 [Event Report Acknowledge (ERA)], Device ID =   0, WBit = 0, SystemByte = 000040C6
+	BINARY,     1, [ACKC6] <00>
+09:54:33 [Socket:Rcv]
+	00 00 00 0D 00 00 06 0C 00 00 00 00 40 C8 21 01 00
+09:54:33 [SECS-II:Rcv]
+	S6, F12 [Event Report Acknowledge (ERA)], Device ID =   0, WBit = 0, SystemByte = 000040C8
+	BINARY,     1, [ACKC6] <00>
+09:54:33 [Socket:Rcv]
+	00 00 00 0D 00 00 06 0C 00 00 00 00 40 CA 21 01 00
+09:54:33 [SECS-II:Rcv]
+	S6, F12 [Event Report Acknowledge (ERA)], Device ID =   0, WBit = 0, SystemByte = 000040CA
+	BINARY,     1, [ACKC6] <00>
+09:54:33 [Socket:Rcv]
+	00 00 00 0D 00 00 06 0C 00 00 00 00 40 CC 21 01 00
+09:54:33 [SECS-II:Rcv]
+	S6, F12 [Event Report Acknowledge (ERA)], Device ID =   0, WBit = 0, SystemByte = 000040CC
+	BINARY,     1, [ACKC6] <00>
+09:54:33 [Socket:Rcv]
+	00 00 00 0D 00 00 06 0C 00 00 00 00 40 CE 21 01 00
+09:54:33 [SECS-II:Rcv]
+	S6, F12 [Event Report Acknowledge (ERA)], Device ID =   0, WBit = 0, SystemByte = 000040CE
+	BINARY,     1, [ACKC6] <00>
+09:54:33 [Socket:Rcv]
+	00 00 00 0D 00 00 06 0C 00 00 00 00 40 D0 21 01 00
+09:54:33 [SECS-II:Rcv]
+	S6, F12 [Event Report Acknowledge (ERA)], Device ID =   0, WBit = 0, SystemByte = 000040D0
+	BINARY,     1, [ACKC6] <00>
+09:54:33 [Socket:Rcv]
+	00 00 00 0D 00 00 06 0C 00 00 00 00 40 D2 21 01 00
+09:54:33 [SECS-II:Rcv]
+	S6, F12 [Event Report Acknowledge (ERA)], Device ID =   0, WBit = 0, SystemByte = 000040D2
+	BINARY,     1, [ACKC6] <00>
+09:54:43 [Socket:Rcv]
+	00 00 00 39 00 00 82 17 00 00 00 00 3D C4 01 05 A5 01 01 41 08 30 30 30 30 31 30 30 30 B1
+	04 00 00 00 14 B1 04 00 00 00 01 01 03 B1 04 00 00 07 D1 B1 04 00 00 07 D2 B1 04 00 00 23
+	8D
+09:54:43 [SECS-II:Rcv]
+	S2, F23 [Trace Initialize Send (TIS)], Device ID =   0, WBit = 1, SystemByte = 00003DC4
+	LIST, 5
+		UINT1,      1, [TRID] <1>
+		ASCII,      8, [DSPER] <00001000>
+		UINT4,      1, [TOTSMP] <20>
+		UINT4,      1, [REPGSZ] <1>
+		LIST, 3
+			UINT4,      1, [SVID] <2001>
+			UINT4,      1, [SVID] <2002>
+			UINT4,      1, [SVID] <9101>
+09:54:43 [SECS-II:Send]
+	S2, F24 [Trace Initialize Acknowledge (TIA)], Device ID =   0, WBit = 0, SystemByte = 00003DC4
+	BINARY,     1, [TIAACK] <00>
+09:54:43 [Socket:Send]
+	00 00 00 0D 00 00 02 18 00 00 00 00 3D C4 21 01 00
+09:54:53 [SECS-II:Send]
+	S6, F1 [Trace Data Send (TDS)], Device ID =   0, WBit = 1, SystemByte = 000040D6
+	LIST, 4
+		UINT1,      1, <1>
+		UINT4,      1, <1>
+		ASCII,     16, <2022053109545360>
+		LIST, 3
+			ASCII,      1, <5>
+			ASCII,      2, <10>
+			ASCII,      1, <0>
+09:54:53 [Socket:Send]
+	00 00 00 33 00 00 86 01 00 00 00 00 40 D6 01 04 A5 01 01 B1 04 00 00 00 01 41 10 32 30 32
+	32 30 35 33 31 30 39 35 34 35 33 36 30 01 03 41 01 35 41 02 31 30 41 01 30
+09:54:53 [Socket:Rcv]
+	00 00 00 0D 00 00 06 02 00 00 00 00 40 D6 21 01 00
+09:54:53 [SECS-II:Rcv]
+	S6, F2 [Trace Data Acknowledge (TDA)], Device ID =   0, WBit = 0, SystemByte = 000040D6
+	BINARY,     1, [ACKC6] <00>
+09:55:03 [SECS-II:Send]
+	S6, F1 [Trace Data Send (TDS)], Device ID =   0, WBit = 1, SystemByte = 000040D8
+	LIST, 4
+		UINT1,      1, <1>
+		UINT4,      1, <2>
+		ASCII,     16, <2022053109550361>
+		LIST, 3
+			ASCII,      1, <5>
+			ASCII,      2, <10>
+			ASCII,      1, <0>
+09:55:03 [Socket:Send]
+	00 00 00 33 00 00 86 01 00 00 00 00 40 D8 01 04 A5 01 01 B1 04 00 00 00 02 41 10 32 30 32
+	32 30 35 33 31 30 39 35 35 30 33 36 31 01 03 41 01 35 41 02 31 30 41 01 30
+09:55:03 [Socket:Rcv]
+	00 00 00 0D 00 00 06 02 00 00 00 00 40 D8 21 01 00
+09:55:03 [SECS-II:Rcv]
+	S6, F2 [Trace Data Acknowledge (TDA)], Device ID =   0, WBit = 0, SystemByte = 000040D8
+	BINARY,     1, [ACKC6] <00>
+09:55:13 [SECS-II:Send]
+	S6, F1 [Trace Data Send (TDS)], Device ID =   0, WBit = 1, SystemByte = 000040DA
+	LIST, 4
+		UINT1,      1, <1>
+		UINT4,      1, <3>
+		ASCII,     16, <2022053109551361>
+		LIST, 3
+			ASCII,      1, <5>
+			ASCII,      2, <10>
+			ASCII,      1, <0>
+09:55:13 [Socket:Send]
+	00 00 00 33 00 00 86 01 00 00 00 00 40 DA 01 04 A5 01 01 B1 04 00 00 00 03 41 10 32 30 32
+	32 30 35 33 31 30 39 35 35 31 33 36 31 01 03 41 01 35 41 02 31 30 41 01 30
+09:55:13 [Socket:Rcv]
+	00 00 00 0D 00 00 06 02 00 00 00 00 40 DA 21 01 00
+09:55:13 [SECS-II:Rcv]
+	S6, F2 [Trace Data Acknowledge (TDA)], Device ID =   0, WBit = 0, SystemByte = 000040DA
+	BINARY,     1, [ACKC6] <00>
+09:55:23 [SECS-II:Send]
+	S6, F1 [Trace Data Send (TDS)], Device ID =   0, WBit = 1, SystemByte = 000040DC
+	LIST, 4
+		UINT1,      1, <1>
+		UINT4,      1, <4>
+		ASCII,     16, <2022053109552361>
+		LIST, 3
+			ASCII,      1, <5>
+			ASCII,      2, <10>
+			ASCII,      1, <0>
+09:55:23 [Socket:Send]
+	00 00 00 33 00 00 86 01 00 00 00 00 40 DC 01 04 A5 01 01 B1 04 00 00 00 04 41 10 32 30 32
+	32 30 35 33 31 30 39 35 35 32 33 36 31 01 03 41 01 35 41 02 31 30 41 01 30
+09:55:23 [Socket:Rcv]
+	00 00 00 0D 00 00 06 02 00 00 00 00 40 DC 21 01 00
+09:55:23 [SECS-II:Rcv]
+	S6, F2 [Trace Data Acknowledge (TDA)], Device ID =   0, WBit = 0, SystemByte = 000040DC
+	BINARY,     1, [ACKC6] <00>
+09:55:33 [SECS-II:Send]
+	S6, F1 [Trace Data Send (TDS)], Device ID =   0, WBit = 1, SystemByte = 000040DE
+	LIST, 4
+		UINT1,      1, <1>
+		UINT4,      1, <5>
+		ASCII,     16, <2022053109553360>
+		LIST, 3
+			ASCII,      1, <5>
+			ASCII,      2, <10>
+			ASCII,      1, <0>
+09:55:33 [Socket:Send]
+	00 00 00 33 00 00 86 01 00 00 00 00 40 DE 01 04 A5 01 01 B1 04 00 00 00 05 41 10 32 30 32
+	32 30 35 33 31 30 39 35 35 33 33 36 30 01 03 41 01 35 41 02 31 30 41 01 30
+09:55:33 [Socket:Rcv]
+	00 00 00 0D 00 00 06 02 00 00 00 00 40 DE 21 01 00
+09:55:33 [SECS-II:Rcv]
+	S6, F2 [Trace Data Acknowledge (TDA)], Device ID =   0, WBit = 0, SystemByte = 000040DE
+	BINARY,     1, [ACKC6] <00>
+09:55:43 [SECS-II:Send]
+	S6, F1 [Trace Data Send (TDS)], Device ID =   0, WBit = 1, SystemByte = 000040E0
+	LIST, 4
+		UINT1,      1, <1>
+		UINT4,      1, <6>
+		ASCII,     16, <2022053109554361>
+		LIST, 3
+			ASCII,      1, <5>
+			ASCII,      2, <10>
+			ASCII,      1, <0>
+09:55:43 [Socket:Send]
+	00 00 00 33 00 00 86 01 00 00 00 00 40 E0 01 04 A5 01 01 B1 04 00 00 00 06 41 10 32 30 32
+	32 30 35 33 31 30 39 35 35 34 33 36 31 01 03 41 01 35 41 02 31 30 41 01 30
+09:55:43 [Socket:Rcv]
+	00 00 00 0D 00 00 06 02 00 00 00 00 40 E0 21 01 00
+09:55:43 [SECS-II:Rcv]
+	S6, F2 [Trace Data Acknowledge (TDA)], Device ID =   0, WBit = 0, SystemByte = 000040E0
+	BINARY,     1, [ACKC6] <00>
+09:55:53 [SECS-II:Send]
+	S6, F1 [Trace Data Send (TDS)], Device ID =   0, WBit = 1, SystemByte = 000040E2
+	LIST, 4
+		UINT1,      1, <1>
+		UINT4,      1, <7>
+		ASCII,     16, <2022053109555361>
+		LIST, 3
+			ASCII,      1, <5>
+			ASCII,      2, <10>
+			ASCII,      1, <0>
+09:55:53 [Socket:Send]
+	00 00 00 33 00 00 86 01 00 00 00 00 40 E2 01 04 A5 01 01 B1 04 00 00 00 07 41 10 32 30 32
+	32 30 35 33 31 30 39 35 35 35 33 36 31 01 03 41 01 35 41 02 31 30 41 01 30
+09:55:53 [Socket:Rcv]
+	00 00 00 0D 00 00 06 02 00 00 00 00 40 E2 21 01 00
+09:55:53 [SECS-II:Rcv]
+	S6, F2 [Trace Data Acknowledge (TDA)], Device ID =   0, WBit = 0, SystemByte = 000040E2
+	BINARY,     1, [ACKC6] <00>
+09:56:03 [SECS-II:Send]
+	S6, F1 [Trace Data Send (TDS)], Device ID =   0, WBit = 1, SystemByte = 000040E4
+	LIST, 4
+		UINT1,      1, <1>
+		UINT4,      1, <8>
+		ASCII,     16, <2022053109560362>
+		LIST, 3
+			ASCII,      1, <5>
+			ASCII,      2, <10>
+			ASCII,      1, <0>
+09:56:03 [Socket:Send]
+	00 00 00 33 00 00 86 01 00 00 00 00 40 E4 01 04 A5 01 01 B1 04 00 00 00 08 41 10 32 30 32
+	32 30 35 33 31 30 39 35 36 30 33 36 32 01 03 41 01 35 41 02 31 30 41 01 30
+09:56:03 [Socket:Rcv]
+	00 00 00 0D 00 00 06 02 00 00 00 00 40 E4 21 01 00
+09:56:03 [SECS-II:Rcv]
+	S6, F2 [Trace Data Acknowledge (TDA)], Device ID =   0, WBit = 0, SystemByte = 000040E4
+	BINARY,     1, [ACKC6] <00>
+09:56:13 [SECS-II:Send]
+	S6, F1 [Trace Data Send (TDS)], Device ID =   0, WBit = 1, SystemByte = 000040E6
+	LIST, 4
+		UINT1,      1, <1>
+		UINT4,      1, <9>
+		ASCII,     16, <2022053109561361>
+		LIST, 3
+			ASCII,      1, <5>
+			ASCII,      2, <10>
+			ASCII,      1, <0>
+09:56:13 [Socket:Send]
+	00 00 00 33 00 00 86 01 00 00 00 00 40 E6 01 04 A5 01 01 B1 04 00 00 00 09 41 10 32 30 32
+	32 30 35 33 31 30 39 35 36 31 33 36 31 01 03 41 01 35 41 02 31 30 41 01 30
+09:56:13 [Socket:Rcv]
+	00 00 00 0D 00 00 06 02 00 00 00 00 40 E6 21 01 00
+09:56:13 [SECS-II:Rcv]
+	S6, F2 [Trace Data Acknowledge (TDA)], Device ID =   0, WBit = 0, SystemByte = 000040E6
+	BINARY,     1, [ACKC6] <00>
+09:56:23 [SECS-II:Send]
+	S6, F1 [Trace Data Send (TDS)], Device ID =   0, WBit = 1, SystemByte = 000040E8
+	LIST, 4
+		UINT1,      1, <1>
+		UINT4,      1, <10>
+		ASCII,     16, <2022053109562360>
+		LIST, 3
+			ASCII,      1, <5>
+			ASCII,      2, <10>
+			ASCII,      1, <0>
+09:56:23 [Socket:Send]
+	00 00 00 33 00 00 86 01 00 00 00 00 40 E8 01 04 A5 01 01 B1 04 00 00 00 0A 41 10 32 30 32
+	32 30 35 33 31 30 39 35 36 32 33 36 30 01 03 41 01 35 41 02 31 30 41 01 30
+09:56:23 [Socket:Rcv]
+	00 00 00 0D 00 00 06 02 00 00 00 00 40 E8 21 01 00
+09:56:23 [SECS-II:Rcv]
+	S6, F2 [Trace Data Acknowledge (TDA)], Device ID =   0, WBit = 0, SystemByte = 000040E8
+	BINARY,     1, [ACKC6] <00>
+09:56:33 [SECS-II:Send]
+	S6, F1 [Trace Data Send (TDS)], Device ID =   0, WBit = 1, SystemByte = 000040EA
+	LIST, 4
+		UINT1,      1, <1>
+		UINT4,      1, <11>
+		ASCII,     16, <2022053109563362>
+		LIST, 3
+			ASCII,      1, <5>
+			ASCII,      2, <10>
+			ASCII,      4, <50.7>
+09:56:33 [Socket:Send]
+	00 00 00 36 00 00 86 01 00 00 00 00 40 EA 01 04 A5 01 01 B1 04 00 00 00 0B 41 10 32 30 32
+	32 30 35 33 31 30 39 35 36 33 33 36 32 01 03 41 01 35 41 02 31 30 41 04 35 30 2E 37
+09:56:33 [Socket:Rcv]
+	00 00 00 0D 00 00 06 02 00 00 00 00 40 EA 21 01 00
+09:56:33 [SECS-II:Rcv]
+	S6, F2 [Trace Data Acknowledge (TDA)], Device ID =   0, WBit = 0, SystemByte = 000040EA
+	BINARY,     1, [ACKC6] <00>
+09:56:43 [SECS-II:Send]
+	S6, F1 [Trace Data Send (TDS)], Device ID =   0, WBit = 1, SystemByte = 000040EC
+	LIST, 4
+		UINT1,      1, <1>
+		UINT4,      1, <12>
+		ASCII,     16, <2022053109564361>
+		LIST, 3
+			ASCII,      1, <5>
+			ASCII,      2, <10>
+			ASCII,      4, <50.7>
+09:56:43 [Socket:Send]
+	00 00 00 36 00 00 86 01 00 00 00 00 40 EC 01 04 A5 01 01 B1 04 00 00 00 0C 41 10 32 30 32
+	32 30 35 33 31 30 39 35 36 34 33 36 31 01 03 41 01 35 41 02 31 30 41 04 35 30 2E 37
+09:56:43 [Socket:Rcv]
+	00 00 00 0D 00 00 06 02 00 00 00 00 40 EC 21 01 00
+09:56:43 [SECS-II:Rcv]
+	S6, F2 [Trace Data Acknowledge (TDA)], Device ID =   0, WBit = 0, SystemByte = 000040EC
+	BINARY,     1, [ACKC6] <00>
+09:56:53 [SECS-II:Send]
+	S6, F1 [Trace Data Send (TDS)], Device ID =   0, WBit = 1, SystemByte = 000040EE
+	LIST, 4
+		UINT1,      1, <1>
+		UINT4,      1, <13>
+		ASCII,     16, <2022053109565361>
+		LIST, 3
+			ASCII,      1, <5>
+			ASCII,      2, <10>
+			ASCII,      4, <50.7>
+09:56:53 [Socket:Send]
+	00 00 00 36 00 00 86 01 00 00 00 00 40 EE 01 04 A5 01 01 B1 04 00 00 00 0D 41 10 32 30 32
+	32 30 35 33 31 30 39 35 36 35 33 36 31 01 03 41 01 35 41 02 31 30 41 04 35 30 2E 37
+09:56:53 [Socket:Rcv]
+	00 00 00 0D 00 00 06 02 00 00 00 00 40 EE 21 01 00
+09:56:53 [SECS-II:Rcv]
+	S6, F2 [Trace Data Acknowledge (TDA)], Device ID =   0, WBit = 0, SystemByte = 000040EE
+	BINARY,     1, [ACKC6] <00>
+09:57:03 [SECS-II:Send]
+	S6, F1 [Trace Data Send (TDS)], Device ID =   0, WBit = 1, SystemByte = 000040F0
+	LIST, 4
+		UINT1,      1, <1>
+		UINT4,      1, <14>
+		ASCII,     16, <2022053109570361>
+		LIST, 3
+			ASCII,      1, <5>
+			ASCII,      2, <10>
+			ASCII,      4, <50.7>
+09:57:03 [Socket:Send]
+	00 00 00 36 00 00 86 01 00 00 00 00 40 F0 01 04 A5 01 01 B1 04 00 00 00 0E 41 10 32 30 32
+	32 30 35 33 31 30 39 35 37 30 33 36 31 01 03 41 01 35 41 02 31 30 41 04 35 30 2E 37
+09:57:03 [Socket:Rcv]
+	00 00 00 0D 00 00 06 02 00 00 00 00 40 F0 21 01 00
+09:57:03 [SECS-II:Rcv]
+	S6, F2 [Trace Data Acknowledge (TDA)], Device ID =   0, WBit = 0, SystemByte = 000040F0
+	BINARY,     1, [ACKC6] <00>
+09:57:13 [SECS-II:Send]
+	S6, F1 [Trace Data Send (TDS)], Device ID =   0, WBit = 1, SystemByte = 000040F2
+	LIST, 4
+		UINT1,      1, <1>
+		UINT4,      1, <15>
+		ASCII,     16, <2022053109571361>
+		LIST, 3
+			ASCII,      1, <5>
+			ASCII,      2, <10>
+			ASCII,      4, <50.7>
+09:57:13 [Socket:Send]
+	00 00 00 36 00 00 86 01 00 00 00 00 40 F2 01 04 A5 01 01 B1 04 00 00 00 0F 41 10 32 30 32
+	32 30 35 33 31 30 39 35 37 31 33 36 31 01 03 41 01 35 41 02 31 30 41 04 35 30 2E 37
+09:57:13 [Socket:Rcv]
+	00 00 00 0D 00 00 06 02 00 00 00 00 40 F2 21 01 00
+09:57:13 [SECS-II:Rcv]
+	S6, F2 [Trace Data Acknowledge (TDA)], Device ID =   0, WBit = 0, SystemByte = 000040F2
+	BINARY,     1, [ACKC6] <00>
+09:57:23 [SECS-II:Send]
+	S6, F1 [Trace Data Send (TDS)], Device ID =   0, WBit = 1, SystemByte = 000040F4
+	LIST, 4
+		UINT1,      1, <1>
+		UINT4,      1, <16>
+		ASCII,     16, <2022053109572361>
+		LIST, 3
+			ASCII,      1, <5>
+			ASCII,      2, <10>
+			ASCII,      4, <50.7>
+09:57:23 [Socket:Send]
+	00 00 00 36 00 00 86 01 00 00 00 00 40 F4 01 04 A5 01 01 B1 04 00 00 00 10 41 10 32 30 32
+	32 30 35 33 31 30 39 35 37 32 33 36 31 01 03 41 01 35 41 02 31 30 41 04 35 30 2E 37
+09:57:23 [Socket:Rcv]
+	00 00 00 0D 00 00 06 02 00 00 00 00 40 F4 21 01 00
+09:57:23 [SECS-II:Rcv]
+	S6, F2 [Trace Data Acknowledge (TDA)], Device ID =   0, WBit = 0, SystemByte = 000040F4
+	BINARY,     1, [ACKC6] <00>
+09:57:33 [SECS-II:Send]
+	S6, F1 [Trace Data Send (TDS)], Device ID =   0, WBit = 1, SystemByte = 000040F6
+	LIST, 4
+		UINT1,      1, <1>
+		UINT4,      1, <17>
+		ASCII,     16, <2022053109573361>
+		LIST, 3
+			ASCII,      1, <5>
+			ASCII,      2, <10>
+			ASCII,      4, <50.7>
+09:57:33 [Socket:Send]
+	00 00 00 36 00 00 86 01 00 00 00 00 40 F6 01 04 A5 01 01 B1 04 00 00 00 11 41 10 32 30 32
+	32 30 35 33 31 30 39 35 37 33 33 36 31 01 03 41 01 35 41 02 31 30 41 04 35 30 2E 37
+09:57:33 [Socket:Rcv]
+	00 00 00 0D 00 00 06 02 00 00 00 00 40 F6 21 01 00
+09:57:33 [SECS-II:Rcv]
+	S6, F2 [Trace Data Acknowledge (TDA)], Device ID =   0, WBit = 0, SystemByte = 000040F6
+	BINARY,     1, [ACKC6] <00>
+09:57:43 [SECS-II:Send]
+	S6, F1 [Trace Data Send (TDS)], Device ID =   0, WBit = 1, SystemByte = 000040F8
+	LIST, 4
+		UINT1,      1, <1>
+		UINT4,      1, <18>
+		ASCII,     16, <2022053109574361>
+		LIST, 3
+			ASCII,      1, <5>
+			ASCII,      2, <10>
+			ASCII,      4, <50.7>
+09:57:43 [Socket:Send]
+	00 00 00 36 00 00 86 01 00 00 00 00 40 F8 01 04 A5 01 01 B1 04 00 00 00 12 41 10 32 30 32
+	32 30 35 33 31 30 39 35 37 34 33 36 31 01 03 41 01 35 41 02 31 30 41 04 35 30 2E 37
+09:57:43 [Socket:Rcv]
+	00 00 00 0D 00 00 06 02 00 00 00 00 40 F8 21 01 00
+09:57:43 [SECS-II:Rcv]
+	S6, F2 [Trace Data Acknowledge (TDA)], Device ID =   0, WBit = 0, SystemByte = 000040F8
+	BINARY,     1, [ACKC6] <00>
+09:57:53 [SECS-II:Send]
+	S6, F1 [Trace Data Send (TDS)], Device ID =   0, WBit = 1, SystemByte = 000040FA
+	LIST, 4
+		UINT1,      1, <1>
+		UINT4,      1, <19>
+		ASCII,     16, <2022053109575361>
+		LIST, 3
+			ASCII,      1, <5>
+			ASCII,      2, <10>
+			ASCII,      4, <50.7>
+09:57:53 [Socket:Send]
+	00 00 00 36 00 00 86 01 00 00 00 00 40 FA 01 04 A5 01 01 B1 04 00 00 00 13 41 10 32 30 32
+	32 30 35 33 31 30 39 35 37 35 33 36 31 01 03 41 01 35 41 02 31 30 41 04 35 30 2E 37
+09:57:53 [Socket:Rcv]
+	00 00 00 0D 00 00 06 02 00 00 00 00 40 FA 21 01 00
+09:57:53 [SECS-II:Rcv]
+	S6, F2 [Trace Data Acknowledge (TDA)], Device ID =   0, WBit = 0, SystemByte = 000040FA
+	BINARY,     1, [ACKC6] <00>
+09:58:03 [SECS-II:Send]
+	S6, F1 [Trace Data Send (TDS)], Device ID =   0, WBit = 1, SystemByte = 000040FC
+	LIST, 4
+		UINT1,      1, <1>
+		UINT4,      1, <20>
+		ASCII,     16, <2022053109580361>
+		LIST, 3
+			ASCII,      1, <5>
+			ASCII,      2, <10>
+			ASCII,      4, <50.7>
+09:58:03 [Socket:Send]
+	00 00 00 36 00 00 86 01 00 00 00 00 40 FC 01 04 A5 01 01 B1 04 00 00 00 14 41 10 32 30 32
+	32 30 35 33 31 30 39 35 38 30 33 36 31 01 03 41 01 35 41 02 31 30 41 04 35 30 2E 37
+09:58:03 [Socket:Rcv]
+	00 00 00 0D 00 00 06 02 00 00 00 00 40 FC 21 01 00
+09:58:03 [SECS-II:Rcv]
+	S6, F2 [Trace Data Acknowledge (TDA)], Device ID =   0, WBit = 0, SystemByte = 000040FC
+	BINARY,     1, [ACKC6] <00>
+09:58:34[HSMS:Send] Linktest.req, 000040FE
+09:58:34 [Socket:Send]
+	00 00 00 0A FF FF 00 00 00 05 00 00 40 FE
+09:58:34 [Socket:Rcv]
+	00 00 00 0A FF FF 00 00 00 06 00 00 40 FE
+09:58:34[HSMS:Rcv] Linktest.rsp, 000040FE
+09:59:05[HSMS:Send] Linktest.req, 00004102
+09:59:05 [Socket:Send]
+	00 00 00 0A FF FF 00 00 00 05 00 00 41 02
+09:59:05 [Socket:Rcv]
+	00 00 00 0A FF FF 00 00 00 06 00 00 41 02
+09:59:05[HSMS:Rcv] Linktest.rsp, 00004102
+09:59:36[HSMS:Send] Linktest.req, 00004106
+09:59:36 [Socket:Send]
+	00 00 00 0A FF FF 00 00 00 05 00 00 41 06
+09:59:36 [Socket:Rcv]
+	00 00 00 0A FF FF 00 00 00 06 00 00 41 06
+09:59:36[HSMS:Rcv] Linktest.rsp, 00004106

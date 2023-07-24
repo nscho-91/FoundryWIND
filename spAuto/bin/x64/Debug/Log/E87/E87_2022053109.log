@@ -1,0 +1,191 @@
+09:41:40 [Proc:Seq] >>>>>>>>>>>>>>>>>>>>>>>  Logging Started  <<<<<<<<<<<<<<<<<<<<<<<< th=550c
+09:41:40 [Proc:Seq] Build date time: Apr  1 2021 10:53:34 th=550c
+09:41:40 [Proc:Seq] Success to open database(MDB). th=550c
+09:41:40 [Proc:Seq] EquipmentType table reading... th=550c
+09:41:40 [Proc:Seq] Index =    0, Item = Batch, ItemValue = BATCHLOC th=550c
+09:41:40 [Proc:Seq] Index =    1, Item = Buffer_Type, ItemValue = Fixed Buffer th=550c
+09:41:40 [Proc:Seq] Index =    2, Item = Carrier_Capacity, ItemValue = 25 th=550c
+09:41:40 [Proc:Seq] Index =    3, Item = CJ_Auto_Select, ItemValue = True th=550c
+09:41:40 [Proc:Seq] Index =    4, Item = CJ_Queue_Max_Space, ItemValue = 10 th=550c
+09:41:40 [Proc:Seq] Index =    5, Item = E40_INIT_CEID, ItemValue = 4000 th=550c
+09:41:40 [Proc:Seq] Index =    6, Item = E40_INIT_RPTID, ItemValue = 200 th=550c
+09:41:40 [Proc:Seq] Index =    7, Item = E40_INIT_VID, ItemValue = 4000 th=550c
+09:41:40 [Proc:Seq] Index =    8, Item = E40_USE, ItemValue = True th=550c
+09:41:40 [Proc:Seq] Index =    9, Item = E87_CarrierLoc_Interval, ItemValue = 10 th=550c
+09:41:40 [Proc:Seq] Index =   10, Item = E87_INIT_CEID, ItemValue = 5000 th=550c
+09:41:40 [Proc:Seq] Index =   11, Item = E87_INIT_RPTID, ItemValue = 300 th=550c
+09:41:40 [Proc:Seq] Index =   12, Item = E87_INIT_VID, ItemValue = 5000 th=550c
+09:41:40 [Proc:Seq] Index =   13, Item = E87_LoadportLoc_Interval, ItemValue = 11 th=550c
+09:41:40 [Proc:Seq] Index =   14, Item = E87_OBJECTS_INTERVAL, ItemValue = 200 th=550c
+09:41:40 [Proc:Seq] Index =   15, Item = E87_PartitionLoc_Interval, ItemValue = 10 th=550c
+09:41:40 [Proc:Seq] Index =   16, Item = E87_USE, ItemValue = True th=550c
+09:41:40 [Proc:Seq] Index =   17, Item = E90_BatchLoc_Interval, ItemValue = 10 th=550c
+09:41:40 [Proc:Seq] Index =   18, Item = E90_INIT_CEID, ItemValue = 6000 th=550c
+09:41:40 [Proc:Seq] Index =   19, Item = E90_INIT_RPTID, ItemValue = 400 th=550c
+09:41:40 [Proc:Seq] Index =   20, Item = E90_INIT_VID, ItemValue = 6000 th=550c
+09:41:40 [Proc:Seq] Index =   21, Item = E90_OBJECTS_INTERVAL, ItemValue = 200 th=550c
+09:41:40 [Proc:Seq] Index =   22, Item = E90_SubstrateLoc_Interval, ItemValue = 10 th=550c
+09:41:40 [Proc:Seq] Index =   23, Item = E90_USE, ItemValue = True th=550c
+09:41:40 [Proc:Seq] Index =   24, Item = E94_INIT_CEID, ItemValue = 7000 th=550c
+09:41:40 [Proc:Seq] Index =   25, Item = E94_INIT_RPTID, ItemValue = 500 th=550c
+09:41:40 [Proc:Seq] Index =   26, Item = E94_INIT_VID, ItemValue = 7000 th=550c
+09:41:40 [Proc:Seq] Index =   27, Item = E94_USE, ItemValue = True th=550c
+09:41:40 [Proc:Seq] Index =   28, Item = Equipment_Verifies_Job, ItemValue = False th=550c
+09:41:40 [Proc:Seq] Index =   29, Item = EventCreate, ItemValue = True th=550c
+09:41:40 [Proc:Seq] Index =   30, Item = EventLink, ItemValue = False th=550c
+09:41:40 [Proc:Seq] Index =   31, Item = External_Buffer, ItemValue = EB th=550c
+09:41:40 [Proc:Seq] Index =   32, Item = FIMS_Location, ItemValue = FIMS th=550c
+09:41:40 [Proc:Seq] Index =   33, Item = Internal_Buffer, ItemValue = IB th=550c
+09:41:40 [Proc:Seq] Index =   34, Item = Load_Port, ItemValue = LP th=550c
+09:41:40 [Proc:Seq] Index =   35, Item = Material_Format, ItemValue = Carrier th=550c
+09:41:40 [Proc:Seq] Index =   36, Item = Material_Format, ItemValue = Carrier th=550c
+09:41:40 [Proc:Seq] Index =   37, Item = Multi_CJ_Use, ItemValue = True th=550c
+09:41:40 [Proc:Seq] Index =   38, Item = Multi_PJ_Use, ItemValue = True th=550c
+09:41:40 [Proc:Seq] Index =   39, Item = Other, ItemValue = OLOC th=550c
+09:41:40 [Proc:Seq] Index =   40, Item = Partition, ItemValue = PATLOC th=550c
+09:41:40 [Proc:Seq] Index =   41, Item = PJ_Queue_Max_Space, ItemValue = 100 th=550c
+09:41:40 [Proc:Seq] Index =   42, Item = ReportCreate, ItemValue = False th=550c
+09:41:40 [Proc:Seq] Index =   43, Item = ReportLink, ItemValue = False th=550c
+09:41:40 [Proc:Seq] Index =   44, Item = Substrate, ItemValue = SUBLOC th=550c
+09:41:40 [Proc:Seq] Index =   45, Item = Transfer, ItemValue = Tran th=550c
+09:41:40 [Proc:Seq] Index =   46, Item = VIDCreate, ItemValue = True th=550c
+09:41:40 [Proc:Seq] EquipmentType table complete... th=550c
+09:41:40 [Proc:Seq] CarrierLocation table LoadPort reading... th=550c
+09:41:40 [Proc:Seq] Index =    0, Type = LoadPort, LocID = LP1, LocIndex = 0, Capacity = 25 th=550c
+09:41:40 [Proc:Seq] Index =    1, Type = LoadPort, LocID = LP2, LocIndex = 1, Capacity = 25 th=550c
+09:41:40 [Proc:Seq] CarrierLocation table LoadPort complete... th=550c
+09:41:40 [Proc:Seq] CarrierLocation table Internal Buffer reading... th=550c
+09:41:40 [Proc:Seq] CarrierLocation table Internal Buffer complete... th=550c
+09:41:40 [Proc:Seq] CarrierLocation table External Buffer reading... th=550c
+09:41:40 [Proc:Seq] CarrierLocation table External Buffer complete... th=550c
+09:41:40 [Proc:Seq] CarrierLocation table FIMS reading... th=550c
+09:41:40 [Proc:Seq] CarrierLocation table FIMS complete... th=550c
+09:41:40 [Proc:Seq] CarrierLocation table Transfer Unit reading... th=550c
+09:41:40 [Proc:Seq] CarrierLocation table Transfer Unit complete... th=550c
+09:41:40 [Proc:Seq] PartitionToCarrierLocation table reading... th=550c
+09:41:40 [Proc:Seq] PartitionToCarrierLocation table complete... th=550c
+09:41:40 [Proc:Seq] Partition table reading... th=550c
+09:41:40 [Proc:Seq] Partition table complete... th=550c
+09:54:01 [Proc:Seq] >>>>>>>>>>>>>>>>>>>>>>>  Logging Started  <<<<<<<<<<<<<<<<<<<<<<<< th=405c
+09:54:01 [Proc:Seq] Build date time: Apr  1 2021 10:53:34 th=405c
+09:54:01 [Proc:Seq] Success to open database(MDB). th=405c
+09:54:01 [Proc:Seq] EquipmentType table reading... th=405c
+09:54:01 [Proc:Seq] Index =    0, Item = Batch, ItemValue = BATCHLOC th=405c
+09:54:01 [Proc:Seq] Index =    1, Item = Buffer_Type, ItemValue = Fixed Buffer th=405c
+09:54:01 [Proc:Seq] Index =    2, Item = Carrier_Capacity, ItemValue = 25 th=405c
+09:54:01 [Proc:Seq] Index =    3, Item = CJ_Auto_Select, ItemValue = True th=405c
+09:54:01 [Proc:Seq] Index =    4, Item = CJ_Queue_Max_Space, ItemValue = 10 th=405c
+09:54:01 [Proc:Seq] Index =    5, Item = E40_INIT_CEID, ItemValue = 4000 th=405c
+09:54:01 [Proc:Seq] Index =    6, Item = E40_INIT_RPTID, ItemValue = 200 th=405c
+09:54:01 [Proc:Seq] Index =    7, Item = E40_INIT_VID, ItemValue = 4000 th=405c
+09:54:01 [Proc:Seq] Index =    8, Item = E40_USE, ItemValue = True th=405c
+09:54:01 [Proc:Seq] Index =    9, Item = E87_CarrierLoc_Interval, ItemValue = 10 th=405c
+09:54:01 [Proc:Seq] Index =   10, Item = E87_INIT_CEID, ItemValue = 5000 th=405c
+09:54:01 [Proc:Seq] Index =   11, Item = E87_INIT_RPTID, ItemValue = 300 th=405c
+09:54:01 [Proc:Seq] Index =   12, Item = E87_INIT_VID, ItemValue = 5000 th=405c
+09:54:01 [Proc:Seq] Index =   13, Item = E87_LoadportLoc_Interval, ItemValue = 11 th=405c
+09:54:01 [Proc:Seq] Index =   14, Item = E87_OBJECTS_INTERVAL, ItemValue = 200 th=405c
+09:54:01 [Proc:Seq] Index =   15, Item = E87_PartitionLoc_Interval, ItemValue = 10 th=405c
+09:54:01 [Proc:Seq] Index =   16, Item = E87_USE, ItemValue = True th=405c
+09:54:01 [Proc:Seq] Index =   17, Item = E90_BatchLoc_Interval, ItemValue = 10 th=405c
+09:54:01 [Proc:Seq] Index =   18, Item = E90_INIT_CEID, ItemValue = 6000 th=405c
+09:54:01 [Proc:Seq] Index =   19, Item = E90_INIT_RPTID, ItemValue = 400 th=405c
+09:54:01 [Proc:Seq] Index =   20, Item = E90_INIT_VID, ItemValue = 6000 th=405c
+09:54:01 [Proc:Seq] Index =   21, Item = E90_OBJECTS_INTERVAL, ItemValue = 200 th=405c
+09:54:01 [Proc:Seq] Index =   22, Item = E90_SubstrateLoc_Interval, ItemValue = 10 th=405c
+09:54:01 [Proc:Seq] Index =   23, Item = E90_USE, ItemValue = True th=405c
+09:54:01 [Proc:Seq] Index =   24, Item = E94_INIT_CEID, ItemValue = 7000 th=405c
+09:54:01 [Proc:Seq] Index =   25, Item = E94_INIT_RPTID, ItemValue = 500 th=405c
+09:54:01 [Proc:Seq] Index =   26, Item = E94_INIT_VID, ItemValue = 7000 th=405c
+09:54:01 [Proc:Seq] Index =   27, Item = E94_USE, ItemValue = True th=405c
+09:54:01 [Proc:Seq] Index =   28, Item = Equipment_Verifies_Job, ItemValue = False th=405c
+09:54:01 [Proc:Seq] Index =   29, Item = EventCreate, ItemValue = True th=405c
+09:54:01 [Proc:Seq] Index =   30, Item = EventLink, ItemValue = False th=405c
+09:54:01 [Proc:Seq] Index =   31, Item = External_Buffer, ItemValue = EB th=405c
+09:54:01 [Proc:Seq] Index =   32, Item = FIMS_Location, ItemValue = FIMS th=405c
+09:54:01 [Proc:Seq] Index =   33, Item = Internal_Buffer, ItemValue = IB th=405c
+09:54:01 [Proc:Seq] Index =   34, Item = Load_Port, ItemValue = LP th=405c
+09:54:01 [Proc:Seq] Index =   35, Item = Material_Format, ItemValue = Carrier th=405c
+09:54:01 [Proc:Seq] Index =   36, Item = Material_Format, ItemValue = Carrier th=405c
+09:54:01 [Proc:Seq] Index =   37, Item = Multi_CJ_Use, ItemValue = True th=405c
+09:54:01 [Proc:Seq] Index =   38, Item = Multi_PJ_Use, ItemValue = True th=405c
+09:54:01 [Proc:Seq] Index =   39, Item = Other, ItemValue = OLOC th=405c
+09:54:01 [Proc:Seq] Index =   40, Item = Partition, ItemValue = PATLOC th=405c
+09:54:01 [Proc:Seq] Index =   41, Item = PJ_Queue_Max_Space, ItemValue = 100 th=405c
+09:54:01 [Proc:Seq] Index =   42, Item = ReportCreate, ItemValue = False th=405c
+09:54:01 [Proc:Seq] Index =   43, Item = ReportLink, ItemValue = False th=405c
+09:54:01 [Proc:Seq] Index =   44, Item = Substrate, ItemValue = SUBLOC th=405c
+09:54:01 [Proc:Seq] Index =   45, Item = Transfer, ItemValue = Tran th=405c
+09:54:01 [Proc:Seq] Index =   46, Item = VIDCreate, ItemValue = True th=405c
+09:54:01 [Proc:Seq] EquipmentType table complete... th=405c
+09:54:01 [Proc:Seq] CarrierLocation table LoadPort reading... th=405c
+09:54:01 [Proc:Seq] Index =    0, Type = LoadPort, LocID = LP1, LocIndex = 0, Capacity = 25 th=405c
+09:54:01 [Proc:Seq] Index =    1, Type = LoadPort, LocID = LP2, LocIndex = 1, Capacity = 25 th=405c
+09:54:01 [Proc:Seq] CarrierLocation table LoadPort complete... th=405c
+09:54:01 [Proc:Seq] CarrierLocation table Internal Buffer reading... th=405c
+09:54:01 [Proc:Seq] CarrierLocation table Internal Buffer complete... th=405c
+09:54:01 [Proc:Seq] CarrierLocation table External Buffer reading... th=405c
+09:54:01 [Proc:Seq] CarrierLocation table External Buffer complete... th=405c
+09:54:01 [Proc:Seq] CarrierLocation table FIMS reading... th=405c
+09:54:01 [Proc:Seq] CarrierLocation table FIMS complete... th=405c
+09:54:01 [Proc:Seq] CarrierLocation table Transfer Unit reading... th=405c
+09:54:01 [Proc:Seq] CarrierLocation table Transfer Unit complete... th=405c
+09:54:01 [Proc:Seq] PartitionToCarrierLocation table reading... th=405c
+09:54:01 [Proc:Seq] PartitionToCarrierLocation table complete... th=405c
+09:54:01 [Proc:Seq] Partition table reading... th=405c
+09:54:01 [Proc:Seq] Partition table complete... th=405c
+09:54:05 [Proc:Seq] receive message(CMSReqChangeServiceStatus), LocID(LP1), State(0) th=405c
+09:54:05 [Proc:Seq] TransferState is changed to LocID(LP1), State(0), Ret=0 th=405c
+09:54:05 [Proc:Seq] send message(CMSRspChangeServiceStatus), LocID(LP1), State(OutOfService), Ret(0) th=405c
+09:54:05 [Proc:Seq] receive message(CMSReqChangeServiceStatus), LocID(LP2), State(0) th=405c
+09:54:05 [Proc:Seq] TransferState is changed to LocID(LP2), State(0), Ret=0 th=405c
+09:54:05 [Proc:Seq] send message(CMSRspChangeServiceStatus), LocID(LP2), State(OutOfService), Ret(0) th=405c
+09:54:05 [Proc:Seq] receive message(CMSReqChangeAccess), LocID(LP1), Mode(0) th=405c
+09:54:05 [Alarm:-32254] [CMSReqChangeAccess]TransferState is OutOfService(LocID = LP1) th=405c
+09:54:05 [Proc:Seq] send message(CMSRspChangeAccess), Mode(0), LocID(LP1), Ret(-32254) th=405c
+09:54:05 [Proc:Seq] receive message(CMSReqChangeAccess), LocID(LP2), Mode(0) th=405c
+09:54:05 [Alarm:-32254] [CMSReqChangeAccess]TransferState is OutOfService(LocID = LP2) th=405c
+09:54:05 [Proc:Seq] send message(CMSRspChangeAccess), Mode(0), LocID(LP2), Ret(-32254) th=405c
+09:54:33 [Proc:Seq] receive message(CMSSetPresenceSensor), LocID(LP1), State(0) th=405c
+09:54:33 [Alarm:-32254] [CMSSetPresenceSensor]TransferState is OutOfService(state = 0) th=405c
+09:54:33 [Proc:Seq] receive message(CMSSetCarrierOnOff), LocID(LP1), State(0) th=405c
+09:54:33 [Proc:Seq] send message(S6F11:MaterialRemoved) th=405c
+09:54:33 [Proc:Seq] AccessModeState is changed to LocID(LP1), State(0), Ret=0 th=405c
+09:54:33 [Proc:Seq] AssociationState is changed to LocID(LP1), State(0), Ret=0 th=405c
+09:54:33 [Proc:Seq] receive message(CMSSetReadyToLoad), LocID(LP1) th=405c
+09:54:33 [Alarm:-32254] [CMSSetSetReadyToLoad]TransferState is OutOfService(state = 0) th=405c
+09:54:33 [Proc:Seq] receive message(CMSReqChangeAccess), LocID(LP1), Mode(0) th=405c
+09:54:33 [Alarm:-32254] [CMSReqChangeAccess]TransferState is OutOfService(LocID = LP1) th=405c
+09:54:33 [Proc:Seq] send message(CMSRspChangeAccess), Mode(0), LocID(LP1), Ret(-32254) th=405c
+09:54:33 [Proc:Seq] receive message(CMSSetLPInfo), LocID(LP1), TransferState(2), AccessMode(0), ReservationState(0), AssociationState(0), CarrID() th=405c
+09:54:33 [Proc:Seq] TransferState is changed to LocID(LP1), State(2), Ret=0 th=405c
+09:54:33 [Proc:Seq] AccessModeState is changed to LocID(LP1), State(0), Ret=0 th=405c
+09:54:33 [Proc:Seq] AccessModeState is changed to LocID(LP1), State(0), Ret=0 th=405c
+09:54:33 [Proc:Seq] AssociationState is changed to LocID(LP1), State(0), Ret=0 th=405c
+09:54:33 [Proc:Seq] receive message(CMSSetPresenceSensor), LocID(LP2), State(0) th=405c
+09:54:33 [Alarm:-32254] [CMSSetPresenceSensor]TransferState is OutOfService(state = 0) th=405c
+09:54:33 [Proc:Seq] receive message(CMSSetCarrierOnOff), LocID(LP2), State(0) th=405c
+09:54:33 [Proc:Seq] send message(S6F11:MaterialRemoved) th=405c
+09:54:33 [Proc:Seq] AccessModeState is changed to LocID(LP2), State(0), Ret=0 th=405c
+09:54:33 [Proc:Seq] AssociationState is changed to LocID(LP2), State(0), Ret=0 th=405c
+09:54:33 [Proc:Seq] receive message(CMSSetReadyToLoad), LocID(LP2) th=405c
+09:54:33 [Alarm:-32254] [CMSSetSetReadyToLoad]TransferState is OutOfService(state = 0) th=405c
+09:54:33 [Proc:Seq] receive message(CMSReqChangeAccess), LocID(LP2), Mode(0) th=405c
+09:54:33 [Alarm:-32254] [CMSReqChangeAccess]TransferState is OutOfService(LocID = LP2) th=405c
+09:54:33 [Proc:Seq] send message(CMSRspChangeAccess), Mode(0), LocID(LP2), Ret(-32254) th=405c
+09:54:33 [Proc:Seq] receive message(CMSSetLPInfo), LocID(LP2), TransferState(2), AccessMode(0), ReservationState(0), AssociationState(0), CarrID() th=405c
+09:54:33 [Proc:Seq] TransferState is changed to LocID(LP2), State(2), Ret=0 th=405c
+09:54:33 [Proc:Seq] AccessModeState is changed to LocID(LP2), State(0), Ret=0 th=405c
+09:54:33 [Proc:Seq] AccessModeState is changed to LocID(LP2), State(0), Ret=0 th=405c
+09:54:33 [Proc:Seq] AssociationState is changed to LocID(LP2), State(0), Ret=0 th=405c
+09:54:33 [Proc:Seq] receive message(CMSSetPresenceSensor), LocID(LP3), State(0) th=405c
+09:54:33 [Alarm:-32252] [CMSSetPresenceSensor]LocationID is invalid(LocID = LP3) th=405c
+09:54:33 [Proc:Seq] receive message(CMSSetCarrierOnOff), LocID(LP3), State(0) th=405c
+09:54:33 [Alarm:-32252] [CMSSetCarrierOnOff]LocationID is invalid(LocID = LP3) th=405c
+09:54:33 [Proc:Seq] receive message(CMSSetReadyToLoad), LocID(LP3) th=405c
+09:54:33 [Alarm:-32252] [CMSSetSetReadyToLoad]LocationID is invalid(LocID = LP3) th=405c
+09:54:33 [Proc:Seq] receive message(CMSReqChangeAccess), LocID(LP3), Mode(0) th=405c
+09:54:33 [Alarm:-32252] [CMSReqChangeAccess]LocationID is invalid(LocID = LP3) th=405c
+09:54:33 [Proc:Seq] send message(CMSRspChangeAccess), Mode(0), LocID(LP3), Ret(-32252) th=405c
+09:54:33 [Proc:Seq] receive message(CMSSetLPInfo), LocID(LP3), TransferState(2), AccessMode(0), ReservationState(0), AssociationState(0), CarrID() th=405c
+09:54:33 [Alarm:-32252] [CMSSetLPInfo]LocationID is invalid(LocID = LP3) th=405c

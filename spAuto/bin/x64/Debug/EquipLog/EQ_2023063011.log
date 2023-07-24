@@ -1,0 +1,26 @@
+11:25:11.000 [Proc:Seq] Log Initialized
+11:25:11.008 [Proc:Seq] Cfg File: C:\AVIS\Init_Gem300.cfg
+11:25:11.009 [Proc:Seq] (c) IT Innovation.  All rights reserved.
+11:25:11.148 [Proc:Seq] [DEBUG] Initialize() : TCP/IP Ret = 0, <Cls:LXGemConnectMgr>
+11:25:11.150 [Proc:Seq] [DEBUG] Execute Process(C:\Program Files (x86)\Linkgenesis\XGem300Pro v3.x\SE\Bin\XGem.exe) reading sucessed from registry., <Cls:LXGemProc>
+11:25:14.609 [Proc:Seq] [STATE] changed from INIT to IDLE
+11:25:14.614 [Proc:Seq] [DEBUG] Success to initialize = 0, <Cls:LXGemProc>
+11:25:14.615 [Proc:Seq] [DEBUG] XGem.Initialize: Release : th=9, <Cls:CEXGemCsCtrl>
+11:25:14.616 [Proc:Seq] [DEBUG] XGem.Start: Lock : th=9, <Cls:CEXGemCsCtrl>
+11:25:14.618 [Proc:Seq] XNetSocket::OpenClient2() OpenClient socket:ip=127.0.0.1, port=2001
+11:25:14.620 [Proc:Seq] XNetSocket::OpenClient2() Socket connected
+11:25:14.631 [Proc:Seq] [DEBUG] [CONNECTION STATE] Connected TCP/IP, <Cls:CXGemEventWnd>
+11:25:14.632 [Proc:Seq] [STATE] changed from IDLE to READY
+11:25:14.638 [Proc:Seq] [DEBUG] Success to send SendGetLicense = 0, <Cls:LXGemProc>
+11:25:14.652 [Proc:Seq] XNetConnect::notifyEvent() Dequeue string: msg=System.Byte[]
+11:25:14.665 [Proc:Seq] XNetConnect::notifyEvent() Dequeue string: msg=System.Byte[]
+11:25:14.680 [Proc:Seq] [DEBUG] Success to send SendGetParam = 0, <Cls:LXGemProc>
+11:25:14.684 [Proc:Seq] [DEBUG] Success to send SendGetAttributeV = 0, <Cls:LXGemProc>
+11:25:14.707 [Proc:Seq] [DEBUG] Start() : TCP/IP Ret = 0, IP:127.0.0.1, Port:2001, Active:true, <Cls:LXGemConnectMgr>
+11:25:14.722 [Proc:Seq] [DEBUG] Success to start = 0, <Cls:LXGemProc>
+11:25:14.723 [Proc:Seq] [DEBUG] XGem.Start: Release : th=9, <Cls:CEXGemCsCtrl>
+11:25:14.743 [Proc:Seq] XNetConnect::notifyEvent() Dequeue string: msg=System.Byte[]
+11:28:03.221 [Proc:Seq] [DEBUG] XGem.GEMSetAlarm: Lock : th=143, <Cls:CEXGemCsCtrl>
+11:28:03.222 [Alarm:000000] [DEBUG] [Error] Now disconnected with XGem.(Func:GEMSetAlarm)., <Cls:LXGemProc>
+11:28:03.222 [Alarm:-10008] [DEBUG] Fail to send GEMSetAlarm = -10008, <Cls:LXGemProc>
+11:28:03.223 [Proc:Seq] [DEBUG] XGem.GEMSetAlarm: Release : th=143, <Cls:CEXGemCsCtrl>

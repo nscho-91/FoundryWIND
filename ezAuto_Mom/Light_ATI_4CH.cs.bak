@@ -1,0 +1,188 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using ezAutoMom;
+using ezTools; 
+
+namespace ezAutoMom
+{
+    public class Light_ATI_4CH : Light_Mom
+    {
+        enum eError { eConnect };
+
+        Auto_Mom m_auto;
+        Work_Mom m_work;
+        XGem300_Mom m_xGem;
+        ezRS232 m_rs232;
+
+        const int BUF_SIZE = 4096;
+        byte[] m_aBuf = new byte[BUF_SIZE];
+
+        public Light_ATI_4CH()
+        {
+
+        }
+
+        public void Init(string id, Auto_Mom auto)
+        {
+            m_auto = auto;
+            m_rs232 = new ezRS232(id, m_log, true);
+            base.Init(id, (object)auto);
+            m_work = m_auto.ClassWork();
+            m_xGem = m_auto.ClassXGem();
+            int nConnect = 0;
+            if (!m_rs232.Connect(true))
+            {
+                Thread.Sleep(100);
+                while (!m_rs232.Connect(true)) {
+                    Thread.Sleep(100);
+                    nConnect++;
+                    if (nConnect == 5)
+                        break;
+                }
+            }
+            InitString();
+        }
+
+        public override void ThreadStop()
+        {
+            base.ThreadStop();
+            m_rs232.ThreadStop();
+        }
+
+        void InitString()
+        {
+            InitString(eError.eConnect, "LED Connect Error !!");
+        }
+
+        void InitString(eError eErr, string str)
+        {
+            m_log.AddString(str);
+            if (m_xGem == null) return;
+            m_xGem.AddALID(m_id, (int)eErr, str);
+        }
+
+        void SetAlarm(eAlarm alarm, eError eErr)
+        {
+            m_work.SetError(alarm, m_log, (int)eErr);
+            if (m_xGem == null) return;
+            m_xGem.SetAlarm(m_id, (int)eErr);
+        }
+
+        protected override void RunGridSetup(bool bChecked, eGrid eMode, ezJob job)
+        {
+            int n, nMode;
+            if ((eMode == eGrid.eJobOpen) || (eMode == eGrid.eJobSave)) return;
+            if (!bChecked && (eMode <= eGrid.eUpdate)) return;
+            m_grid.Set(ref m_nMode, "Mode", "Count", "# of Total Mode");
+            if ((eMode == eGrid.eRegRead) || (eMode == eGrid.eRegWrite)) nMode = c_nLightMode; else nMode = m_nMode;
+            for (n = 0; n < nMode; n++) m_grid.Set(ref m_strMode[n], "Mode", "Mode" + n.ToString("00"), "Mode ID");
+            m_grid.Set(ref m_nCh, "Channel", "Count", "Total Channel Count");
+            if (m_nCh > c_nLightCh) m_nCh = c_nLightCh;
+            for (n = 0; n < m_nCh; n++) m_grid.Set(ref m_aSetup[n], "Channel", n.ToString("Ch00"), "Channel Setting");
+            m_rs232.RunGrid(m_grid, eMode);
+            m_grid.Refresh();
+        }
+
+        protected override void RunGridLight(bool bChecked, eGrid eMode, ezJob job)
+        {
+            int n, m;
+            if (bChecked && (eMode <= eGrid.eUpdate)) return;
+            if ((eMode == eGrid.eRegRead) || (eMode == eGrid.eRegWrite))
+            {
+                for (n = 0; n < c_nLightMode; n++) for (m = 0; m < c_nLightCh; m++)
+                        m_grid.Set(ref m_aPower[n, m], m_strMode[n], m_aSetup[m].m_id, "LED Power 0~100%");
+            }
+            if (eMode == eGrid.eJobSave || eMode == eGrid.eJobOpen)
+            {
+                for (n = 0; n < c_nLightMode; n++) for (m = 0; m < c_nLightCh; m++) if (m_aSetup[m].m_bUse)
+                            m_grid.Set(ref m_aPower[n, m], m_strMode[n], m_aSetup[m].m_id, "LED Power 0~100%");
+            }
+            if (comboMode.SelectedIndex >= 0)
+            {
+                n = comboMode.SelectedIndex;
+                for (m = 0; m < c_nLightCh; m++) if (m_aSetup[m].m_bUse)
+                        m_grid.Set(ref m_aPower[n, m], m_strMode[n], m_aSetup[m].m_id, "LED Power 0~100%");
+            }
+        }
+
+        public override void LightOn(int nID, bool bLightOn)
+        {
+            int n;
+            if (nID < 0) 
+                for (n = 0; n < m_nCh; n++) LightOn(n, bLightOn);
+            base.LightOn(nID, bLightOn);
+            try
+            {
+                ChangePower(nID, nID);
+            }
+            catch
+            {
+                ChangePower(nID, 0);
+            }
+        }
+
+        // kw 설정된 라벨의 체널을 찾아서 설정된 파워를 켜는 함수
+        // 끄는 기능은 기존 함수 활용
+        public void LightOn(string szLabel, int nPower)
+        {
+            try
+            {
+                for (int nCh = 0; nCh < m_nCh; nCh++)
+                    if (m_aSetup[nCh].m_bUse && szLabel == m_aSetup[nCh].ID)
+                    {
+                        ChangePower_OnlyOneCh(nCh, nPower);
+                    }
+            }
+            catch
+            {   
+            }
+        }
+
+        // kw 설정된 채널만 파워 조정 할 수 있도록
+        public void ChangePower_OnlyOneCh(int nID, int nPower)
+        {
+            if (m_aSetup[nID].m_bUse)
+            {
+                ChangeChannel(nID, nPower); // BHJ 190225 edit
+                //if (m_bLightOn) 
+                //    ChangeChannel(nID, nPower);
+                //else 
+                //    ChangeChannel(nID, 0);
+            }
+        }
+
+        public override void ChangePower(int nID, int nMode)
+        {
+            int nCh;
+            for (nCh = 0; nCh < m_nCh; nCh++) 
+                if (m_aSetup[nCh].m_bUse)
+                {
+                    if (m_bLightOn) 
+                        ChangeChannel(nCh, m_aPower[nMode, nCh]);
+                    else 
+                        ChangeChannel(nCh, 0);
+                }
+        }
+
+
+        bool ChangeChannel(int nCh, int nVal)
+        {
+            char[] bufCmd = new char[128];
+            string strCmd;
+            if (!m_rs232.IsConnect()) return false;
+            strCmd = "led " + nCh.ToString("0 ") + nVal.ToString("0");
+            for (int n = 0; n < strCmd.Length; n++)
+            {
+                bufCmd[n] = Convert.ToChar(strCmd[n]);
+            }
+            bufCmd[strCmd.Length] = (char)0x0d;
+            bufCmd[strCmd.Length + 1] = (char)0x0a; 
+            m_rs232.Write(bufCmd, strCmd.Length + 1, true);
+            return true;
+        }
+    }
+}

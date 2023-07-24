@@ -1,0 +1,806 @@
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.csprojResolveAssemblyReference.cache
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_HomeProgressBar.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_RnR.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_3D.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_3D_Graph.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_EBR.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_EBR_Graph.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_Edge.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_BackSide_ATI_AOI.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_Recovery.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_RecoveryModule.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Edge.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Code.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Manual.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_RemoteUI.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.MSB_JobCompleteForm.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.OHT_EFEM.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.Properties.Resources.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.RFIDReadFail.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Button.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.Ui_FDC.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_JobLog.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Loadport.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_RunData.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Simulation.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_STATE.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_SystemTime.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Time.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_EFEM_New.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_EFEM_old.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_MSB.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_Hynix.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_Sanken.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Manual_BCR.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlFDCModule.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlIOIndicator.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlLoadPort.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlOverViewLP.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlWaferInfo.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.csproj.GenerateResource.Cache
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.dll.config
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\bin\x64\Debug\ezATI3D_CLR.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\bin\x64\Debug\ezAutoMom.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\bin\x64\Debug\ezAxis.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\bin\x64\Debug\ezCam.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\bin\x64\Debug\ezTools.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\bin\x64\Debug\XGem300Pro_Net40_01_64.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\bin\x64\Debug\EasyModbus.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\bin\x64\Debug\CyUSB.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\bin\x64\Debug\XSecsMsg_C40_01_64.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\bin\x64\Debug\XSmNet_C40_01_64.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\bin\x64\Debug\ezATI3D_CLR.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\bin\x64\Debug\ezAutoMom.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\bin\x64\Debug\ezAxis.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\bin\x64\Debug\ezCam.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\bin\x64\Debug\ezTools.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.012_FDC Alarm\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.dll.config
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\ezATI3D_CLR.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\ezAutoMom.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\ezAxis.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\ezCam.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\ezTools.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\XGem300Pro_Net40_01_64.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\EasyModbus.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\CyUSB.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\XSecsMsg_C40_01_64.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\XSmNet_C40_01_64.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\ezATI3D_CLR.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\ezAutoMom.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\ezAxis.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\ezCam.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\ezTools.pdb
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.csprojResolveAssemblyReference.cache
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_HomeProgressBar.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_RnR.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_3D.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_3D_Graph.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_EBR.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_EBR_Graph.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_Edge.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_BackSide_ATI_AOI.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_Recovery.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_RecoveryModule.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Edge.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Code.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Manual.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_RemoteUI.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.MSB_JobCompleteForm.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.OHT_EFEM.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.Properties.Resources.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.RFIDReadFail.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Button.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.Ui_FDC.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_JobLog.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Loadport.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_RunData.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Simulation.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_STATE.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_SystemTime.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Time.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_EFEM_New.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_EFEM_old.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_MSB.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_Hynix.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_Sanken.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Manual_BCR.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlFDCModule.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlIOIndicator.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlLoadPort.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlOverViewLP.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlWaferInfo.resources
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.csproj.GenerateResource.Cache
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.dll
+D:\Pending\samsung\화성 Foundry\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.csprojResolveAssemblyReference.cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_HomeProgressBar.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_RnR.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_3D.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_3D_Graph.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_EBR.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_EBR_Graph.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_Edge.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_BackSide_ATI_AOI.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_Recovery.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_RecoveryModule.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Edge.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Code.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Manual.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_RemoteUI.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.MSB_JobCompleteForm.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.OHT_EFEM.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.Properties.Resources.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.RFIDReadFail.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Button.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.Ui_FDC.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_JobLog.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Loadport.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_RunData.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Simulation.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_STATE.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_SystemTime.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Time.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_EFEM_New.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_EFEM_old.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_MSB.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_Hynix.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_Sanken.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Manual_BCR.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlFDCModule.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlIOIndicator.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlLoadPort.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlOverViewLP.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlWaferInfo.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.csproj.GenerateResource.Cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.dll.config
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\ezATI3D_CLR.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\ezAutoMom.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\ezAxis.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\ezCam.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\ezTools.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\PropertyGridEx.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\XGem300Pro_Net40_01_64.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\EasyModbus.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\CyUSB.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\XSecsMsg_C40_01_64.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\XSmNet_C40_01_64.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\ezATI3D_CLR.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\ezAutoMom.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\ezAxis.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\ezCam.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\ezTools.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.013_MarsFFU Error\ezAuto_EFEM\bin\x64\Debug\SevenZipSharp.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.csprojResolveAssemblyReference.cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_HomeProgressBar.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_RnR.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_3D.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_3D_Graph.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_EBR.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_EBR_Graph.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_Edge.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_BackSide_ATI_AOI.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_Recovery.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_RecoveryModule.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Edge.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Code.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Manual.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_RemoteUI.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.MSB_JobCompleteForm.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.OHT_EFEM.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.Properties.Resources.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.RFIDReadFail.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Button.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.Ui_FDC.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_JobLog.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Loadport.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_RunData.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Simulation.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_STATE.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_SystemTime.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Time.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_EFEM_New.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_EFEM_old.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_MSB.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_Hynix.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_Sanken.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Manual_BCR.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlFDCModule.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlIOIndicator.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlLoadPort.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlOverViewLP.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlWaferInfo.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.csproj.GenerateResource.Cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.dll.config
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\ezATI3D_CLR.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\ezAutoMom.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\ezAxis.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\ezCam.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\ezTools.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\PropertyGridEx.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\SevenZipSharp.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\XGem300Pro_Net40_01_64.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\EasyModbus.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\CyUSB.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\XSecsMsg_C40_01_64.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\XSmNet_C40_01_64.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\ezATI3D_CLR.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\ezAutoMom.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\ezAxis.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\ezCam.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\ezTools.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.dll.config
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\ezATI3D_CLR.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\ezAutoMom.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\ezAxis.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\ezCam.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\ezTools.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\SevenZipSharp.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\XGem300Pro_Net40_01_64.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\EasyModbus.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\CyUSB.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\XSecsMsg_C40_01_64.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\XSmNet_C40_01_64.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\ezATI3D_CLR.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\ezAutoMom.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\ezAxis.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\ezCam.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\bin\x64\Debug\ezTools.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.csprojResolveAssemblyReference.cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_HomeProgressBar.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_RnR.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_3D.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_3D_Graph.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_EBR.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_EBR_Graph.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_Edge.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_BackSide_ATI_AOI.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_Recovery.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_RecoveryModule.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Edge.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Code.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Manual.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_RemoteUI.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.MSB_JobCompleteForm.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.OHT_EFEM.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.Properties.Resources.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.RFIDReadFail.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Button.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.Ui_FDC.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_JobLog.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Loadport.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_RunData.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Simulation.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_STATE.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_SystemTime.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Time.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_EFEM_New.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_EFEM_old.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_MSB.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_Hynix.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_Sanken.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Manual_BCR.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlFDCModule.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlIOIndicator.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlLoadPort.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlOverViewLP.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlWaferInfo.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.csproj.GenerateResource.Cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.014_Add RecipeCheck\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.dll.config
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\ezATI3D_CLR.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\ezAutoMom.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\ezAxis.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\ezCam.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\ezTools.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\SevenZipSharp.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\XGem300Pro_Net40_01_64.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\EasyModbus.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\CyUSB.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\XSecsMsg_C40_01_64.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\XSmNet_C40_01_64.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\ezATI3D_CLR.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\ezAutoMom.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\ezAxis.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\ezCam.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\ezTools.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.csprojResolveAssemblyReference.cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_HomeProgressBar.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_RnR.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_3D.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_3D_Graph.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_EBR.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_EBR_Graph.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_Edge.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_BackSide_ATI_AOI.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_Recovery.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_RecoveryModule.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Edge.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Code.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Manual.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_RemoteUI.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.MSB_JobCompleteForm.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.OHT_EFEM.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.Properties.Resources.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.RFIDReadFail.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Button.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.Ui_FDC.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_JobLog.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Loadport.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_RunData.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Simulation.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_STATE.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_SystemTime.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Time.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_EFEM_New.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_EFEM_old.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_MSB.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_Hynix.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_Sanken.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Manual_BCR.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlFDCModule.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlIOIndicator.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlLoadPort.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlOverViewLP.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlWaferInfo.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.csproj.GenerateResource.Cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.dll.config
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\ezATI3D_CLR.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\ezAutoMom.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\ezAxis.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\ezCam.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\ezTools.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\PropertyGridEx.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\SevenZipSharp.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\XGem300Pro_Net40_01_64.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\EasyModbus.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\CyUSB.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\XSecsMsg_C40_01_64.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\XSmNet_C40_01_64.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\ezATI3D_CLR.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\ezAutoMom.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\ezAxis.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\ezCam.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\bin\x64\Debug\ezTools.pdb
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.csprojResolveAssemblyReference.cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_HomeProgressBar.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_RnR.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_3D.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_3D_Graph.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_EBR.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_EBR_Graph.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_Edge.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_BackSide_ATI_AOI.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_Recovery.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_RecoveryModule.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Edge.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Code.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Manual.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_RemoteUI.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.MSB_JobCompleteForm.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.OHT_EFEM.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.Properties.Resources.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.RFIDReadFail.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Button.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.Ui_FDC.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_JobLog.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Loadport.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_RunData.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Simulation.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_STATE.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_SystemTime.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Time.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_EFEM_New.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_EFEM_old.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_MSB.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_Hynix.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_Sanken.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Manual_BCR.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlFDCModule.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlIOIndicator.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlLoadPort.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlOverViewLP.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlWaferInfo.resources
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.csproj.GenerateResource.Cache
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.dll
+C:\Users\nscho\Desktop\spAuto_Foundry_2.1.015_WaferIDSlotID\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.dll.config
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\ezATI3D_CLR.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\ezAutoMom.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\ezAxis.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\ezCam.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\ezTools.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\SevenZipSharp.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\XGem300Pro_Net40_01_64.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\EasyModbus.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\CyUSB.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\XSecsMsg_C40_01_64.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\XSmNet_C40_01_64.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\ezATI3D_CLR.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\ezAutoMom.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\ezAxis.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\ezCam.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\ezTools.pdb
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.csprojResolveAssemblyReference.cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_HomeProgressBar.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_RnR.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_3D.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_3D_Graph.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_EBR.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_EBR_Graph.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_Edge.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_BackSide_ATI_AOI.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_Recovery.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_RecoveryModule.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Edge.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Code.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Manual.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_RemoteUI.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.MSB_JobCompleteForm.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.OHT_EFEM.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.Properties.Resources.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.RFIDReadFail.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Button.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.Ui_FDC.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_JobLog.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Loadport.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_RunData.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Simulation.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_STATE.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_SystemTime.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Time.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_EFEM_New.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_EFEM_old.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_MSB.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_Hynix.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_Sanken.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Manual_BCR.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlFDCModule.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlIOIndicator.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlLoadPort.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlOverViewLP.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlWaferInfo.resources
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.csproj.GenerateResource.Cache
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.dll
+D:\Pending\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.dll.config
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\ezATI3D_CLR.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\ezAutoMom.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\ezAxis.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\ezCam.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\ezTools.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\PropertyGridEx.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\SevenZipSharp.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\XGem300Pro_Net40_01_64.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\EasyModbus.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\CyUSB.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\XSecsMsg_C40_01_64.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\XSmNet_C40_01_64.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\ezATI3D_CLR.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\ezAutoMom.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\ezAxis.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\ezCam.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\ezTools.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.csprojResolveAssemblyReference.cache
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_HomeProgressBar.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_RnR.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_3D.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_3D_Graph.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_EBR.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_EBR_Graph.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_Edge.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_BackSide_ATI_AOI.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_Recovery.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_RecoveryModule.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Edge.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Code.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Manual.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_RemoteUI.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.MSB_JobCompleteForm.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.OHT_EFEM.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.Properties.Resources.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.RFIDReadFail.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Button.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.Ui_FDC.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_JobLog.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Loadport.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_RunData.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Simulation.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_STATE.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_SystemTime.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Time.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_EFEM_New.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_EFEM_old.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_MSB.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_Hynix.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_Sanken.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Manual_BCR.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlFDCModule.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlIOIndicator.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlLoadPort.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlOverViewLP.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlWaferInfo.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.csproj.GenerateResource.Cache
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_DailyGV\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.XML
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.csprojResolveAssemblyReference.cache
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_HomeProgressBar.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_RnR.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_3D.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_3D_Graph.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_EBR.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_EBR_Graph.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_Edge.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_BackSide_ATI_AOI.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_Recovery.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_RecoveryModule.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Edge.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Code.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Manual.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_RemoteUI.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.MSB_JobCompleteForm.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.OHT_EFEM.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.Properties.Resources.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.RFIDReadFail.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Button.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.Ui_FDC.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_JobLog.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Loadport.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_RunData.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Simulation.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_STATE.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_SystemTime.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Time.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_EFEM_New.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_EFEM_old.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_MSB.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_Hynix.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_Sanken.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Manual_BCR.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlFDCModule.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlIOIndicator.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlLoadPort.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlOverViewLP.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlWaferInfo.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.csproj.GenerateResource.Cache
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.dll.config
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.XML
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\ezATI3D_CLR.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\ezAutoMom.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\ezAxis.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\ezCam.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\ezTools.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\SevenZipSharp.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\XGem300Pro_Net40_01_64.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\EasyModbus.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\CyUSB.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\XSecsMsg_C40_01_64.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\XSmNet_C40_01_64.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\ezATI3D_CLR.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\ezAutoMom.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\ezAxis.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\ezCam.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\ezTools.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.dll.config
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.XML
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\ezATI3D_CLR.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\ezAutoMom.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\ezAxis.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\ezCam.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\ezTools.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\PropertyGridEx.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\SevenZipSharp.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\XGem300Pro_Net40_01_64.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\EasyModbus.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\CyUSB.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\XSecsMsg_C40_01_64.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\XSmNet_C40_01_64.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\ezATI3D_CLR.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\ezAutoMom.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\ezAxis.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\ezCam.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\bin\x64\Debug\ezTools.pdb
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.csprojResolveAssemblyReference.cache
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_HomeProgressBar.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_RnR.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_3D.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_3D_Graph.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_EBR.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_EBR_Graph.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_Edge.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_BackSide_ATI_AOI.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_Recovery.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_RecoveryModule.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Edge.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Code.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Manual.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_RemoteUI.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.MSB_JobCompleteForm.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.OHT_EFEM.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.Properties.Resources.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.RFIDReadFail.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Button.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.Ui_FDC.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_JobLog.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Loadport.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_RunData.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Simulation.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_STATE.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_SystemTime.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Time.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_EFEM_New.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_EFEM_old.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_MSB.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_Hynix.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_Sanken.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Manual_BCR.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlFDCModule.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlIOIndicator.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlLoadPort.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlOverViewLP.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlWaferInfo.resources
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.csproj.GenerateResource.Cache
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.dll
+C:\Users\nscho\OneDrive - 에이티아이\바탕 화면\spAuto_Foundry_2.1.016_M1_CheckRecipe\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.dll.config
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.XML
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\bin\x64\Debug\ezAuto_EFEM.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\bin\x64\Debug\ezATI3D_CLR.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\bin\x64\Debug\ezAutoMom.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\bin\x64\Debug\ezAxis.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\bin\x64\Debug\ezCam.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\bin\x64\Debug\ezTools.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\bin\x64\Debug\SevenZipSharp.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\bin\x64\Debug\XGem300Pro_Net40_01_64.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\bin\x64\Debug\EasyModbus.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\bin\x64\Debug\CyUSB.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.SDK.Discovery.PC.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.SDK.PC.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\bin\x64\Debug\DALSA.SaperaLT.SapClassBasic.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\bin\x64\Debug\XSecsMsg_C40_01_64.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\bin\x64\Debug\XSmNet_C40_01_64.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\bin\x64\Debug\Cognex.DataMan.CogNamer.PC.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\bin\x64\Debug\ezATI3D_CLR.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\bin\x64\Debug\ezAutoMom.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\bin\x64\Debug\ezAxis.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\bin\x64\Debug\ezCam.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\bin\x64\Debug\ezTools.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.csprojResolveAssemblyReference.cache
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_HomeProgressBar.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_RnR.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_3D.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_3D_Graph.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_EBR.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_EBR_Graph.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_EBR_Edge.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_BackSide_ATI_AOI.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_Recovery.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.EFEM_RecoveryModule.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Edge.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Code.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_Aligner_ATI_Manual.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.HW_RemoteUI.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.MSB_JobCompleteForm.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.OHT_EFEM.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.Properties.Resources.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.RFIDReadFail.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Button.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.Ui_FDC.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_JobLog.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Loadport.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_RunData.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Simulation.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_STATE.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_SystemTime.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Time.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_EFEM_New.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_EFEM_old.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_MSB.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_Hynix.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_ManualJob_Sanken.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UI_Manual_BCR.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlFDCModule.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlIOIndicator.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlLoadPort.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlOverViewLP.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.UserControlWaferInfo.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.csproj.GenerateResource.Cache
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezAuto_EFEM\obj\x64\Debug\ezAuto_EFEM.pdb
