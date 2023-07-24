@@ -789,7 +789,16 @@ namespace ezAuto_EFEM
                 m_loadport[n].Reset();
             m_xGem.ClearAlarm(); // ing 170807
         }
-
+        /**
+* @brief 전체 home동작
+* @param 없음
+* @return 없음
+* @note Patch-notes
+* 날짜|작성자|설명|비고
+* -|-|-|-
+* 2023-07-24|조남수|Home동작에 대한 Log 추가|-
+* @warning 없음
+*/
         void RunHome()
         {
             int n;

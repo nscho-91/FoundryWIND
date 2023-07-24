@@ -247,7 +247,16 @@ namespace ezAuto_EFEM
 
             m_grid.Refresh();
         }
-
+        /**
+* @brief Vision Thread 동작
+* @param 없음
+* @return 없음
+* @note Patch-notes
+* 날짜|작성자|설명|비고
+* -|-|-|-
+* 2023-07-24|조남수|Home 동작이 완료되면 Home Pass 로그 추가 |-
+* @warning 없음
+*/
         protected override void RunThread()
         {
             m_bRunThread = true;
@@ -412,7 +421,16 @@ namespace ezAuto_EFEM
             lock (m_csLock) m_bCommunicating = false;
             return eHWResult.OK;
         }
-
+        /**
+* @brief Vision Home 동작
+* @param 없음
+* @return "OK" 혹은 "Error" 출력
+* @note Patch-notes
+* 날짜|작성자|설명|비고
+* -|-|-|-
+* 2023-07-24|조남수|home동작에 대한 로그 추가 |-
+* @warning 없음
+*/
         protected override eHWResult RunHome()
         {
             m_log.WriteLog("Sequence", "[" + m_id + "Start]" + " Home"); //230724 nscho

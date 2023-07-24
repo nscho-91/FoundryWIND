@@ -20,3 +20,25 @@
 15:03:00.790 [Proc:Seq] [DEBUG] XGem.Start: Release : th=10, <Cls:CEXGemCsCtrl>
 15:03:00.807 [Proc:Seq] XNetConnect::notifyEvent() Dequeue string: msg=System.Byte[]
 15:03:00.820 [Proc:Seq] XNetConnect::notifyEvent() Dequeue string: msg=System.Byte[]
+15:26:39.994 [Proc:Seq] Log Initialized
+15:26:39.996 [Proc:Seq] Cfg File: C:\AVIS\Init_Gem300.cfg
+15:26:39.996 [Proc:Seq] (c) IT Innovation.  All rights reserved.
+15:26:40.060 [Proc:Seq] [DEBUG] Initialize() : TCP/IP Ret = 0, <Cls:LXGemConnectMgr>
+15:26:40.062 [Proc:Seq] [DEBUG] Execute Process(C:\Program Files (x86)\Linkgenesis\XGem300Pro v3.x\SE\Bin\XGem.exe) reading sucessed from registry., <Cls:LXGemProc>
+15:26:42.522 [Proc:Seq] [STATE] changed from INIT to IDLE
+15:26:42.524 [Proc:Seq] [DEBUG] Success to initialize = 0, <Cls:LXGemProc>
+15:26:42.525 [Proc:Seq] [DEBUG] XGem.Initialize: Release : th=10, <Cls:CEXGemCsCtrl>
+15:26:42.526 [Proc:Seq] [DEBUG] XGem.Start: Lock : th=10, <Cls:CEXGemCsCtrl>
+15:26:42.530 [Proc:Seq] XNetSocket::OpenClient2() OpenClient socket:ip=127.0.0.1, port=2001
+15:26:42.531 [Proc:Seq] XNetSocket::OpenClient2() Socket connected
+15:26:42.547 [Proc:Seq] [DEBUG] [CONNECTION STATE] Connected TCP/IP, <Cls:CXGemEventWnd>
+15:26:42.548 [Proc:Seq] [STATE] changed from IDLE to READY
+15:26:42.557 [Proc:Seq] [DEBUG] Success to send SendGetLicense = 0, <Cls:LXGemProc>
+15:26:42.571 [Proc:Seq] [DEBUG] Success to send SendGetParam = 0, <Cls:LXGemProc>
+15:26:42.593 [Proc:Seq] XNetConnect::notifyEvent() Dequeue string: msg=System.Byte[]
+15:26:42.603 [Proc:Seq] XNetConnect::notifyEvent() Dequeue string: msg=System.Byte[]
+15:26:42.604 [Proc:Seq] [DEBUG] Success to send SendGetAttributeV = 0, <Cls:LXGemProc>
+15:26:42.608 [Proc:Seq] XNetConnect::notifyEvent() Dequeue string: msg=System.Byte[]
+15:26:42.610 [Proc:Seq] [DEBUG] Start() : TCP/IP Ret = 0, IP:127.0.0.1, Port:2001, Active:true, <Cls:LXGemConnectMgr>
+15:26:42.622 [Proc:Seq] [DEBUG] Success to start = 0, <Cls:LXGemProc>
+15:26:42.623 [Proc:Seq] [DEBUG] XGem.Start: Release : th=10, <Cls:CEXGemCsCtrl>

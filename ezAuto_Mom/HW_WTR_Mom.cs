@@ -980,7 +980,17 @@ namespace ezAutoMom
             }
             return bResult;
         }
-
+        /**
+* @brief Loadport에서 Wafer를 Get하는 함수
+* @param eArm nArm : Arm 위치 설정
+* @param Info_Wafer : Wafer 정보
+* @return 없음
+* @note Patch-notes
+* 날짜|작성자|설명|비고
+* -|-|-|-
+* 2023-07-24|조남수|Loadport에서 Get하는 로그 추가와 Slot이 시작하는 로그 추가|-
+* @warning 없음
+*/
         void RunGetLoadPort(eArm nArm, Info_Wafer infoWafer)
         {
             int nPos = m_nTeaching[(int)infoWafer.m_wafer.m_eSize, (int)eTeaching.LoadPort0 + infoWafer.m_nLoadPort];
@@ -1068,7 +1078,16 @@ namespace ezAutoMom
             SetInfoWafer(nArm, infoWafer);
             m_eGetLoc = Info_Wafer.eLocate.LoadPort;
         }
-
+        /**
+* @brief Aligner에서 Wafer를 Get하는 함수
+* @param eArm nArm : Arm 위치 설정
+* @return 없음
+* @note Patch-notes
+* 날짜|작성자|설명|비고
+* -|-|-|-
+* 2023-07-24|조남수|Aligner에서 Get하는 로그 추가|-
+* @warning 없음
+*/
         bool RunGetAligner(eArm nArm)
         {
             int nPos = m_nTeaching[(int)m_aligner.InfoWafer.m_wafer.m_eSize, (int)eTeaching.Aligner];
@@ -1108,7 +1127,16 @@ namespace ezAutoMom
             m_eGetLoc = Info_Wafer.eLocate.Aligner;
             return false;
         }
-
+        /**
+* @brief Vision에서 Wafer를 Get하는 함수
+* @param eArm nArm : Arm 위치 설정
+* @return 없음
+* @note Patch-notes
+* 날짜|작성자|설명|비고
+* -|-|-|-
+* 2023-07-24|조남수|Vision에서 Get하는 로그 추가|-
+* @warning 없음
+*/
         bool RunGetVision(eArm nArm)
         {
             string sLog = String.Format("[WTRStart] Get Vision, Arm : {0}, Slot : {1}", nArm.ToString(), (m_vision.InfoWafer.m_nID + 1).ToString("00")); // 230724 nscho
@@ -1240,6 +1268,16 @@ namespace ezAutoMom
 
             return bRun;
         }
+        /**
+* @brief Loadport에 Wafer를 Put하는 함수
+* @param eArm nArm : Arm 위치 설정
+* @return 없음
+* @note Patch-notes
+* 날짜|작성자|설명|비고
+* -|-|-|-
+* 2023-07-24|조남수|Loadport에 Put하는 로그 추가와 Slot검사가 끝난 로그 추가|-
+* @warning 없음
+*/
         void RunPutLoadPort(eArm nArm)
         {
             string sLog = String.Format("[WTRStart] Put LoadPort : {0}, Arm : {1}, CarrierID : {2}, Slot : {3} ", m_InfoWafer[(int)nArm].m_nLoadPort + 1, nArm.ToString(), m_InfoWafer[(int)nArm].m_strCarrierID.ToString(), (GetInfoWafer(nArm).m_nID + 1).ToString("00")); //230724 nscho
@@ -1365,6 +1403,16 @@ namespace ezAutoMom
             SetInfoWafer(nArm, null);
         }
 
+        /**
+* @brief Aligner에 Wafer를 Put하는 함수
+* @param eArm nArm : Arm 위치 설정
+* @return 없음
+* @note Patch-notes
+* 날짜|작성자|설명|비고
+* -|-|-|-
+* 2023-07-24|조남수|Aligner에 Put하는 로그 추가|-
+* @warning 없음
+*/
         void RunPutAligner(eArm nArm)
         {
             string sLog = String.Format("[WTRStart] Put Aligner, Arm : {0}, CarrierID : {1}, Slot : {2}", nArm.ToString(), m_InfoWafer[(int)nArm].m_strCarrierID, (m_InfoWafer[(int)nArm].m_nSlot).ToString("00")); // 230724 nscho
@@ -1469,7 +1517,16 @@ namespace ezAutoMom
 
             m_bHoldWTRShift = false; // BHJ 190312 add
         }
-
+        /**
+* @brief Vision에 Wafer를 Put하는 함수
+* @param eArm nArm : Arm 위치 설정
+* @return 없음
+* @note Patch-notes
+* 날짜|작성자|설명|비고
+* -|-|-|-
+* 2023-07-24|조남수|Vision에 Put하는 로그 추가|-
+* @warning 없음
+*/
         void RunPutVision(eArm nArm, Info_Wafer m_infoWafer, bool bMSG = true) //211012 nscho Wafer정보가 다른 경우 WTR의 정보로 LoadDone 시킴.
         {
             int nPos = m_nTeaching[(int)m_InfoWafer[(int)nArm].m_wafer.m_eSize, (int)eTeaching.Vision];

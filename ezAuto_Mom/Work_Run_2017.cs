@@ -270,7 +270,18 @@ namespace ezAutoMom
         {
             if (m_eRun != eWorkRun.Run) m_work.RunDoorLock(bOn);
         }
-
+        /**
+* @brief Error처리
+* @param eAlarm alarm : Alarm에 대한 처리
+* @param Log log : log 정보
+* @param int iError : Error level
+* @return 없음
+* @note Patch-notes
+* 날짜|작성자|설명|비고
+* -|-|-|-
+* 2023-07-24|조남수|Error발생하는 경우 로그 추가|-
+* @warning 없음
+*/
         public void SetError(eAlarm alarm, Log log, int iError)
         {
             SetError(alarm);

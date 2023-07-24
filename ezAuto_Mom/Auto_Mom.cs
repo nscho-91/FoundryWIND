@@ -46,7 +46,17 @@ namespace ezAutoMom
         protected DockPanel m_dockPanel;
 
         Model m_model;
-
+        /**
+* @brief Auto_mom Init
+* @param Model model : 모델 설정
+* @param Model DoclPanel dockPanel : UI
+* @return 없음
+* @note Patch-notes
+* 날짜|작성자|설명|비고
+* -|-|-|-
+* 2023-07-24|조남수| m_log를 사용하기 위해 init 진행|-
+* @warning 없음
+*/
         public virtual void Init(Model model, DockPanel dockPanel)
         {
             m_model = model; 
@@ -57,7 +67,16 @@ namespace ezAutoMom
             model.Init(this); 
             m_login = new Login(m_logView);
         }
-
+        /**
+* @brief 프로그램 종료시 Thread 종료
+* @param 없음
+* @return 없음
+* @note Patch-notes
+* 날짜|작성자|설명|비고
+* -|-|-|-
+* 2023-07-24|조남수|P/G이 종료되었다는 로그 추가|-
+* @warning 없음
+*/
         public virtual void ThreadStop()
         {
             m_log.WriteLog("Sequence", "[P/G END]"); //230724 nscho 

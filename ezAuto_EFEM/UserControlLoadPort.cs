@@ -730,7 +730,17 @@ namespace ezAuto_EFEM
                 m_xGem.LPAccessModeChange(XGem300Carrier.ePortAccess.Manual, m_xGem.m_aXGem300Carrier[m_nLP].m_sLocID);  //170711 SDH ADD
             }
         }
-
+        /**
+* @brief UnloadRequest Btn 동작
+* @param ojbect sendar : 전달할 정보
+* @param EventArgs e : 이벤트
+* @return 없음
+* @note Patch-notes
+* 날짜|작성자|설명|비고
+* -|-|-|-
+* 2023-07-24|조남수| UnloadRequest 동작 시 로그 추가|-
+* @warning 없음
+*/
         private void btnUploadReq_Click(object sender, EventArgs e)
         {
             m_log.WriteLog("Sequence", "[Button Click] Upload Request"); //230724 nscho 

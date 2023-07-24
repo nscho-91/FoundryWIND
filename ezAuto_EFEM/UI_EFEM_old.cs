@@ -568,7 +568,17 @@ namespace ezAuto_EFEM
             for (int i = 0; i < m_nLoadPort; i++)
                 UpdateLoadport(i);
         }
-
+        /**
+* @brief Start Btn 동작
+* @param ojbect sendar : 전달할 정보
+* @param EventArgs e : 이벤트
+* @return 없음
+* @note Patch-notes
+* 날짜|작성자|설명|비고
+* -|-|-|-
+* 2023-07-24|조남수| Start 동작 시 로그 추가|-
+* @warning 없음
+*/
         private void btnStart_Click(object sender, EventArgs e)
         {
             m_log.WriteLog("Sequence", "[Button Click] Start"); //230724 nscho 
@@ -590,7 +600,17 @@ namespace ezAuto_EFEM
             m_work.m_bBuzzerOff = false;
             m_work.m_run.Run();
         }
-
+        /**
+* @brief Stop Btn 동작
+* @param ojbect sendar : 전달할 정보
+* @param EventArgs e : 이벤트
+* @return 없음
+* @note Patch-notes
+* 날짜|작성자|설명|비고
+* -|-|-|-
+* 2023-07-24|조남수| Stop 동작 시 로그 추가|-
+* @warning 없음
+*/
         private void btnStop_Click(object sender, EventArgs e)
         {
             m_log.WriteLog("Sequence", "[Button Click] Stop"); //230724 nscho
@@ -606,7 +626,17 @@ namespace ezAuto_EFEM
                 m_handler.ClassWTR().m_bCycleStop = true;
             }
         }
-
+        /**
+        * @brief Recovery Btn 동작
+        * @param ojbect sendar : 전달할 정보
+        * @param EventArgs e : 이벤트
+        * @return 없음
+        * @note Patch-notes
+        * 날짜|작성자|설명|비고
+        * -|-|-|-
+        * 2023-07-24|조남수| Recovery 동작 시 로그 추가|-
+        * @warning 없음
+        */
         private void btnRecovery_Click(object sender, EventArgs e)
         {
             m_log.WriteLog("Sequence", "[Button Click] Recovery"); //230724 nscho 
@@ -676,12 +706,33 @@ namespace ezAuto_EFEM
 
             return -1;
         }
+        /**
+* @brief Home Btn 동작
+* @param ojbect sendar : 전달할 정보
+* @param EventArgs e : 이벤트
+* @return 없음
+* @note Patch-notes
+* 날짜|작성자|설명|비고
+* -|-|-|-
+* 2023-07-24|조남수| Home 동작 시 로그 추가|-
+* @warning 없음
+*/
         private void btnHome_Click(object sender, EventArgs e)
         {
             m_log.WriteLog("Sequence", "[Button Click] Home"); //230724 nscho 
             m_work.m_run.Home();
         }
-
+        /**
+* @brief Reset Btn 동작
+* @param ojbect sendar : 전달할 정보
+* @param EventArgs e : 이벤트
+* @return 없음
+* @note Patch-notes
+* 날짜|작성자|설명|비고
+* -|-|-|-
+* 2023-07-24|조남수| Reset 동작 시 로그 추가|-
+* @warning 없음
+*/
         private void btnReset_Click(object sender, EventArgs e)
         {
             m_log.WriteLog("Sequence", "[Button Click] Reset"); //230724 nscho 
@@ -701,7 +752,17 @@ namespace ezAuto_EFEM
                 m_work.m_run.Reset();
             }
         }
-
+        /**
+* @brief Buzzer Off Btn 동작
+* @param ojbect sendar : 전달할 정보
+* @param EventArgs e : 이벤트
+* @return 없음
+* @note Patch-notes
+* 날짜|작성자|설명|비고
+* -|-|-|-
+* 2023-07-24|조남수| BuzzerOff 동작 시 로그 추가|-
+* @warning 없음
+*/
         private void btnBuzzerOff_Click(object sender, EventArgs e)
         {
             m_log.WriteLog("Sequence", "[Button Click] BuzzerOff"); //230724 nscho 
@@ -815,14 +876,34 @@ namespace ezAuto_EFEM
         {
 
         }
-
+        /**
+* @brief Offline Btn 동작
+* @param ojbect sendar : 전달할 정보
+* @param EventArgs e : 이벤트
+* @return 없음
+* @note Patch-notes
+* 날짜|작성자|설명|비고
+* -|-|-|-
+* 2023-07-24|조남수| Offline 동작 시 로그 추가|-
+* @warning 없음
+*/
         private void btnOffline_Click(object sender, EventArgs e)
         {
             m_log.WriteLog("Sequence", "[Button Click] Offline"); // 230724 nscho 
             m_auto.ClassXGem().XGemOffline();
             m_log.Add("Offline BTN Click");
         }
-
+        /**
+* @brief Local Btn 동작
+* @param ojbect sendar : 전달할 정보
+* @param EventArgs e : 이벤트
+* @return 없음
+* @note Patch-notes
+* 날짜|작성자|설명|비고
+* -|-|-|-
+* 2023-07-24|조남수| Local 동작 시 로그 추가|-
+* @warning 없음
+*/
         private void btnLocal_Click(object sender, EventArgs e)
         {
             m_log.WriteLog("Sequence", "[Button Click] OnlineLocal"); //230724 nscho 
@@ -847,7 +928,17 @@ namespace ezAuto_EFEM
             }
             m_log.Add("Local BTN Click");
         }
-
+        /**
+* @brief Remote Btn 동작
+* @param ojbect sendar : 전달할 정보
+* @param EventArgs e : 이벤트
+* @return 없음
+* @note Patch-notes
+* 날짜|작성자|설명|비고
+* -|-|-|-
+* 2023-07-24|조남수| Remote 동작 시 로그 추가|-
+* @warning 없음
+*/
         private void btnRemote_Click(object sender, EventArgs e)
         {
             m_log.WriteLog("Sequence", "[Button Click] OnlineRemote");  //230724 nscho 
@@ -892,7 +983,17 @@ namespace ezAuto_EFEM
         {
 
         }
-
+        /**
+* @brief DoorLock Btn 동작
+* @param ojbect sendar : 전달할 정보
+* @param EventArgs e : 이벤트
+* @return 없음
+* @note Patch-notes
+* 날짜|작성자|설명|비고
+* -|-|-|-
+* 2023-07-24|조남수| Doorlock 동작 시 로그 추가|-
+* @warning 없음
+*/
         private void btnDoorLock_Click(object sender, EventArgs e)
         {
             m_log.WriteLog("Sequence", "[Button Click] DoorLock"); //230724 nscho 

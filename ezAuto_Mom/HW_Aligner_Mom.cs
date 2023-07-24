@@ -344,7 +344,16 @@ namespace ezAutoMom
                 SetProcess(eProcess.PreProcess);
             }
         }
-
+        /**
+* @brief Aligner Process 동작
+* @param eProcess run : 동작중인 Process
+* @return 없음
+* @note Patch-notes
+* 날짜|작성자|설명|비고
+* -|-|-|-
+* 2023-07-24|조남수|현재의 Process와 다음의 process를 출력하는 로그 추가|-
+* @warning 없음
+*/
         protected virtual void SetProcess(eProcess run)
         {
             m_log.Add("Set Run Process : " + m_eRun.ToString() + " to " + run.ToString());

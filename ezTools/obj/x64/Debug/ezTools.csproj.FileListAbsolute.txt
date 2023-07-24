@@ -161,3 +161,16 @@ D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog
 D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezTools\obj\x64\Debug\ezTools.csproj.GenerateResource.Cache
 D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezTools\obj\x64\Debug\ezTools.dll
 D:\Pending\WIND\samsung\화성\화성 Foundry\spAuto_Foundry_2.1.017_SequenceLog\ezTools\obj\x64\Debug\ezTools.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\FoundryWIND\ezTools\bin\x64\Debug\ezTools.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\FoundryWIND\ezTools\bin\x64\Debug\ezTools.pdb
+D:\Pending\WIND\samsung\화성\화성 Foundry\FoundryWIND\ezTools\bin\x64\Debug\PropertyGridEx.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\FoundryWIND\ezTools\bin\x64\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\FoundryWIND\ezTools\obj\x64\Debug\ezTools.ezFileSave.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\FoundryWIND\ezTools\obj\x64\Debug\ezTools.ImgPopup.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\FoundryWIND\ezTools\obj\x64\Debug\ezTools.Login.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\FoundryWIND\ezTools\obj\x64\Debug\ezTools.LogPopup.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\FoundryWIND\ezTools\obj\x64\Debug\ezTools.LogView.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\FoundryWIND\ezTools\obj\x64\Debug\ezTools.MarsLog.resources
+D:\Pending\WIND\samsung\화성\화성 Foundry\FoundryWIND\ezTools\obj\x64\Debug\ezTools.csproj.GenerateResource.Cache
+D:\Pending\WIND\samsung\화성\화성 Foundry\FoundryWIND\ezTools\obj\x64\Debug\ezTools.dll
+D:\Pending\WIND\samsung\화성\화성 Foundry\FoundryWIND\ezTools\obj\x64\Debug\ezTools.pdb

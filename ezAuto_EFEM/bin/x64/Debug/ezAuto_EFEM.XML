@@ -140,6 +140,16 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="M:ezAuto_EFEM.EFEM_Handler.RunHome">
+            @brief 전체 home동작
+            @param 없음
+            @return 없음
+            @note Patch-notes
+            날짜|작성자|설명|비고
+            -|-|-|-
+            2023-07-24|조남수|Home동작에 대한 Log 추가|-
+            @warning 없음
+        </member>
         <member name="F:ezAuto_EFEM.EFEM_Recovery.components">
             <summary>
             Required designer variable.
@@ -207,6 +217,16 @@
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.HW_Aligner_ATI.Home">
+            @brief Aligner home동작
+            @param 없음
+            @return 없음
+            @note Patch-notes
+            날짜|작성자|설명|비고
+            -|-|-|-
+            2023-07-24|조남수|Aligner Home동작에 대한 Log 추가|-
+            @warning 없음
         </member>
         <member name="F:ezAuto_EFEM.HW_Aligner_ATI_Code.components">
             <summary>
@@ -890,6 +910,56 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="M:ezAuto_EFEM.HW_LoadPort_RND.ProcHome">
+            @brief Loadport home동작
+            @param 없음
+            @return 없음
+            @note Patch-notes
+            날짜|작성자|설명|비고
+            -|-|-|-
+            2023-07-24|조남수|Loadport Home동작에 대한 Log 추가|-
+            @warning 없음
+        </member>
+        <member name="M:ezAuto_EFEM.HW_LoadPort_RND.ProcWaitProcessEnd">
+            @brief 반대쪽 Port가 동작이 완료되면 Loadport Load 동작
+            @param 없음
+            @return 없음
+            @note Patch-notes
+            날짜|작성자|설명|비고
+            -|-|-|-
+            2023-07-24|조남수|Load 동작이 완료되면 LotStart 로그 추가|-
+            @warning 없음
+        </member>
+        <member name="M:ezAuto_EFEM.HW_LoadPort_RND.ProcLoad">
+            @brief Loadport Load 동작
+            @param 없음
+            @return 없음
+            @note Patch-notes
+            날짜|작성자|설명|비고
+            -|-|-|-
+            2023-07-24|조남수|Load 동작이 완료되면 LotStart 로그 추가|-
+            @warning 없음
+        </member>
+        <member name="M:ezAuto_EFEM.HW_VisionWorks.RunThread">
+            @brief Vision Thread 동작
+            @param 없음
+            @return 없음
+            @note Patch-notes
+            날짜|작성자|설명|비고
+            -|-|-|-
+            2023-07-24|조남수|Home 동작이 완료되면 Home Pass 로그 추가 |-
+            @warning 없음
+        </member>
+        <member name="M:ezAuto_EFEM.HW_VisionWorks.RunHome">
+            @brief Vision Home 동작
+            @param 없음
+            @return "OK" 혹은 "Error" 출력
+            @note Patch-notes
+            날짜|작성자|설명|비고
+            -|-|-|-
+            2023-07-24|조남수|home동작에 대한 로그 추가 |-
+            @warning 없음
+        </member>
         <member name="F:ezAuto_EFEM.RFIDReadFail.components">
             <summary>
             Required designer variable.
@@ -906,6 +976,116 @@
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.UI_EFEM_old.btnStart_Click(System.Object,System.EventArgs)">
+            @brief Start Btn 동작
+            @param ojbect sendar : 전달할 정보
+            @param EventArgs e : 이벤트
+            @return 없음
+            @note Patch-notes
+            날짜|작성자|설명|비고
+            -|-|-|-
+            2023-07-24|조남수| Start 동작 시 로그 추가|-
+            @warning 없음
+        </member>
+        <member name="M:ezAuto_EFEM.UI_EFEM_old.btnStop_Click(System.Object,System.EventArgs)">
+            @brief Stop Btn 동작
+            @param ojbect sendar : 전달할 정보
+            @param EventArgs e : 이벤트
+            @return 없음
+            @note Patch-notes
+            날짜|작성자|설명|비고
+            -|-|-|-
+            2023-07-24|조남수| Stop 동작 시 로그 추가|-
+            @warning 없음
+        </member>
+        <member name="M:ezAuto_EFEM.UI_EFEM_old.btnRecovery_Click(System.Object,System.EventArgs)">
+            @brief Recovery Btn 동작
+            @param ojbect sendar : 전달할 정보
+            @param EventArgs e : 이벤트
+            @return 없음
+            @note Patch-notes
+            날짜|작성자|설명|비고
+            -|-|-|-
+            2023-07-24|조남수| Recovery 동작 시 로그 추가|-
+            @warning 없음
+        </member>
+        <member name="M:ezAuto_EFEM.UI_EFEM_old.btnHome_Click(System.Object,System.EventArgs)">
+            @brief Home Btn 동작
+            @param ojbect sendar : 전달할 정보
+            @param EventArgs e : 이벤트
+            @return 없음
+            @note Patch-notes
+            날짜|작성자|설명|비고
+            -|-|-|-
+            2023-07-24|조남수| Home 동작 시 로그 추가|-
+            @warning 없음
+        </member>
+        <member name="M:ezAuto_EFEM.UI_EFEM_old.btnReset_Click(System.Object,System.EventArgs)">
+            @brief Reset Btn 동작
+            @param ojbect sendar : 전달할 정보
+            @param EventArgs e : 이벤트
+            @return 없음
+            @note Patch-notes
+            날짜|작성자|설명|비고
+            -|-|-|-
+            2023-07-24|조남수| Reset 동작 시 로그 추가|-
+            @warning 없음
+        </member>
+        <member name="M:ezAuto_EFEM.UI_EFEM_old.btnBuzzerOff_Click(System.Object,System.EventArgs)">
+            @brief Buzzer Off Btn 동작
+            @param ojbect sendar : 전달할 정보
+            @param EventArgs e : 이벤트
+            @return 없음
+            @note Patch-notes
+            날짜|작성자|설명|비고
+            -|-|-|-
+            2023-07-24|조남수| BuzzerOff 동작 시 로그 추가|-
+            @warning 없음
+        </member>
+        <member name="M:ezAuto_EFEM.UI_EFEM_old.btnOffline_Click(System.Object,System.EventArgs)">
+            @brief Offline Btn 동작
+            @param ojbect sendar : 전달할 정보
+            @param EventArgs e : 이벤트
+            @return 없음
+            @note Patch-notes
+            날짜|작성자|설명|비고
+            -|-|-|-
+            2023-07-24|조남수| Offline 동작 시 로그 추가|-
+            @warning 없음
+        </member>
+        <member name="M:ezAuto_EFEM.UI_EFEM_old.btnLocal_Click(System.Object,System.EventArgs)">
+            @brief Local Btn 동작
+            @param ojbect sendar : 전달할 정보
+            @param EventArgs e : 이벤트
+            @return 없음
+            @note Patch-notes
+            날짜|작성자|설명|비고
+            -|-|-|-
+            2023-07-24|조남수| Local 동작 시 로그 추가|-
+            @warning 없음
+        </member>
+        <member name="M:ezAuto_EFEM.UI_EFEM_old.btnRemote_Click(System.Object,System.EventArgs)">
+            @brief Remote Btn 동작
+            @param ojbect sendar : 전달할 정보
+            @param EventArgs e : 이벤트
+            @return 없음
+            @note Patch-notes
+            날짜|작성자|설명|비고
+            -|-|-|-
+            2023-07-24|조남수| Remote 동작 시 로그 추가|-
+            @warning 없음
+        </member>
+        <member name="M:ezAuto_EFEM.UI_EFEM_old.btnDoorLock_Click(System.Object,System.EventArgs)">
+            @brief DoorLock Btn 동작
+            @param ojbect sendar : 전달할 정보
+            @param EventArgs e : 이벤트
+            @return 없음
+            @note Patch-notes
+            날짜|작성자|설명|비고
+            -|-|-|-
+            2023-07-24|조남수| Doorlock 동작 시 로그 추가|-
+            @warning 없음
         </member>
         <member name="M:ezAuto_EFEM.UI_EFEM_old.CheckRecipeList">
             @brief EFEM 기준 Vision의 Recipe가 없는 경우 MainUI에서 표기 되는 기능
@@ -1001,6 +1181,17 @@
             디자이너 지원에 필요한 메서드입니다. 
             이 메서드의 내용을 코드 편집기로 수정하지 마십시오.
             </summary>
+        </member>
+        <member name="M:ezAuto_EFEM.UserControlLoadPort.btnUploadReq_Click(System.Object,System.EventArgs)">
+            @brief UnloadRequest Btn 동작
+            @param ojbect sendar : 전달할 정보
+            @param EventArgs e : 이벤트
+            @return 없음
+            @note Patch-notes
+            날짜|작성자|설명|비고
+            -|-|-|-
+            2023-07-24|조남수| UnloadRequest 동작 시 로그 추가|-
+            @warning 없음
         </member>
         <member name="F:ezAuto_EFEM.UserControlLoadPort.components">
             <summary> 

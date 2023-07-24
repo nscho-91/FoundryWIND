@@ -751,7 +751,16 @@ namespace ezAuto_EFEM
         protected override void ProcInit()
         {
         }
-
+        /**
+* @brief Loadport home동작
+* @param 없음
+* @return 없음
+* @note Patch-notes
+* 날짜|작성자|설명|비고
+* -|-|-|-
+* 2023-07-24|조남수|Loadport Home동작에 대한 Log 추가|-
+* @warning 없음
+*/
         protected override void ProcHome()
         {
             m_log.WriteLog("Sequence", "[" + m_id + "Start]" + " Home"); //230721 nscho 
@@ -1041,7 +1050,16 @@ namespace ezAuto_EFEM
             }
             return bRst;
         }
-
+        /**
+* @brief 반대쪽 Port가 동작이 완료되면 Loadport Load 동작
+* @param 없음
+* @return 없음
+* @note Patch-notes
+* 날짜|작성자|설명|비고
+* -|-|-|-
+* 2023-07-24|조남수|Load 동작이 완료되면 LotStart 로그 추가|-
+* @warning 없음
+*/
         protected override void ProcWaitProcessEnd()
         {
             //if (CheckState_OtherLP(m_nLPNum, ">", eState.Placed) && CheckState_OtherLP(m_nLPNum, "<", eState.WaitProcessEnd))
@@ -1101,7 +1119,16 @@ namespace ezAuto_EFEM
             SetState(eState.LoadDone);
             m_log.WriteLog("Sequence", "[Lot Start]" + " Portnum : " + (m_infoCarrier.m_nLoadPort + 1).ToString()); // 230721 nscho
         }
-
+        /**
+* @brief Loadport Load 동작
+* @param 없음
+* @return 없음
+* @note Patch-notes
+* 날짜|작성자|설명|비고
+* -|-|-|-
+* 2023-07-24|조남수|Load 동작이 완료되면 LotStart 로그 추가|-
+* @warning 없음
+*/
         protected override void ProcLoad()
         {
             m_bSlotMapFail = false;
